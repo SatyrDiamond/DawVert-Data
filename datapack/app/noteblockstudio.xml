@@ -1,0 +1,61 @@
+<datapack>
+  <category id="inst">
+    <object id="0">
+      <midi />
+      <visual name="Piano (Air)" color="#00448c" />
+    </object>
+    <object id="1">
+      <midi patch="35" />
+      <visual name="Double Bass (Wood)" color="#216d2d" />
+    </object>
+    <object id="10">
+      <midi patch="11" />
+      <visual name="Iron Xylophone (Iron Block)" color="#00709b" />
+    </object>
+    <object id="11">
+      <visual name="Cow Bell (Soul Sand)" color="#9b0a0c" />
+    </object>
+    <object id="12">
+      <visual name="Didgeridoo (Pumpkin)" color="#9b3a0f" />
+    </object>
+    <object id="13">
+      <visual name="Bit (Block of Emerald)" color="#009b00" />
+    </object>
+    <object id="14">
+      <midi patch="105" />
+      <visual name="Banjo (Hay)" color="#9b003a" />
+    </object>
+    <object id="15">
+      <visual name="Pling (Glowstone)" color="#3d3d3d" />
+    </object>
+    <object id="2">
+      <visual name="Bass Drum (Stone)" color="#9b4c4f" />
+    </object>
+    <object id="3">
+      <visual name="Snare Drum (Sand)" color="#9b9b00" />
+    </object>
+    <object id="4">
+      <midi patch="13" />
+      <visual name="Click (Glass)" color="#7c3d7a" />
+    </object>
+    <object id="5">
+      <midi patch="24" />
+      <visual name="Guitar (Wool)" color="#662d1e" />
+    </object>
+    <object id="6">
+      <midi patch="73" />
+      <visual name="Flute (Clay)" color="#9b933f" />
+    </object>
+    <object id="7">
+      <midi patch="112" />
+      <visual name="Bell (Block of Gold)" color="#9b009b" />
+    </object>
+    <object id="8">
+      <visual name="Chime (Packed Ice)" color="#35707c" />
+    </object>
+    <object id="9">
+      <midi patch="13" />
+      <visual name="Xylophone (Bone Block)" color="#9b9b9b" />
+    </object>
+  </category>
+</datapack>

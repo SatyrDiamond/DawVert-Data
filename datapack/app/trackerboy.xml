@@ -1,0 +1,13 @@
+<datapack>
+  <category id="chip">
+    <object id="noise">
+      <visual name="Noise" color="#cccccc" />
+    </object>
+    <object id="pulse">
+      <visual name="Pulse" color="#66ff33" />
+    </object>
+    <object id="wavetable">
+      <visual name="Wavetable" color="#ff7f33" />
+    </object>
+  </category>
+</datapack>

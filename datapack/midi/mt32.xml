@@ -1,0 +1,393 @@
+<datapack>
+  <category id="mt32_inst">
+    <object id="0_0_0">
+      <visual name="Acoustic Piano 1" />
+    </object>
+    <object id="0_0_1">
+      <visual name="Acoustic Piano 2" />
+    </object>
+    <object id="0_0_2">
+      <visual name="Acoustic Piano 3" />
+    </object>
+    <object id="0_0_3">
+      <visual name="Electric Piano 1" />
+    </object>
+    <object id="0_0_4">
+      <visual name="Electric Piano 2" />
+    </object>
+    <object id="0_0_5">
+      <visual name="Electric Piano 3" />
+    </object>
+    <object id="0_0_6">
+      <visual name="Electric Piano 4" />
+    </object>
+    <object id="0_0_7">
+      <visual name="Honkytonk" />
+    </object>
+    <object id="0_0_8">
+      <visual name="Electric Organ 1" />
+    </object>
+    <object id="0_0_9">
+      <visual name="Electric Organ 2" />
+    </object>
+    <object id="0_0_10">
+      <visual name="Electric Organ 3" />
+    </object>
+    <object id="0_0_11">
+      <visual name="Electric Organ 4" />
+    </object>
+    <object id="0_0_12">
+      <visual name="Pipe Organ 1" />
+    </object>
+    <object id="0_0_13">
+      <visual name="Pipe Organ 2" />
+    </object>
+    <object id="0_0_14">
+      <visual name="Pipe Organ 3" />
+    </object>
+    <object id="0_0_15">
+      <visual name="Accordion" />
+    </object>
+    <object id="0_0_16">
+      <visual name="Harpsichord 1" />
+    </object>
+    <object id="0_0_17">
+      <visual name="Harpsichord 2" />
+    </object>
+    <object id="0_0_18">
+      <visual name="Harpsichord 3" />
+    </object>
+    <object id="0_0_19">
+      <visual name="Clavinet 1" />
+    </object>
+    <object id="0_0_20">
+      <visual name="Clavinet 2" />
+    </object>
+    <object id="0_0_21">
+      <visual name="Clavinet 3" />
+    </object>
+    <object id="0_0_22">
+      <visual name="Celesta 1" />
+    </object>
+    <object id="0_0_23">
+      <visual name="Celesta 2" />
+    </object>
+    <object id="0_0_24">
+      <visual name="Synth Brass 1" />
+    </object>
+    <object id="0_0_25">
+      <visual name="Synth Brass 2" />
+    </object>
+    <object id="0_0_26">
+      <visual name="Synth Brass 3" />
+    </object>
+    <object id="0_0_27">
+      <visual name="Synth Brass 4" />
+    </object>
+    <object id="0_0_28">
+      <visual name="Synth Bass 1" />
+    </object>
+    <object id="0_0_29">
+      <visual name="Synth Bass 2" />
+    </object>
+    <object id="0_0_30">
+      <visual name="Synth Bass 3" />
+    </object>
+    <object id="0_0_31">
+      <visual name="Synth Bass 4" />
+    </object>
+    <object id="0_0_32">
+      <visual name="Fantasy" />
+    </object>
+    <object id="0_0_33">
+      <visual name="Harmo Pan" />
+    </object>
+    <object id="0_0_34">
+      <visual name="Chorale" />
+    </object>
+    <object id="0_0_35">
+      <visual name="Glasses" />
+    </object>
+    <object id="0_0_36">
+      <visual name="Soundtrack" />
+    </object>
+    <object id="0_0_37">
+      <visual name="Atmosphere" />
+    </object>
+    <object id="0_0_38">
+      <visual name="Warm Bell" />
+    </object>
+    <object id="0_0_39">
+      <visual name="Funny Vox" />
+    </object>
+    <object id="0_0_40">
+      <visual name="Echo Bell" />
+    </object>
+    <object id="0_0_41">
+      <visual name="Ice Rain" />
+    </object>
+    <object id="0_0_42">
+      <visual name="Oboe 2001" />
+    </object>
+    <object id="0_0_43">
+      <visual name="Echo Pan" />
+    </object>
+    <object id="0_0_44">
+      <visual name="Doctor Solo" />
+    </object>
+    <object id="0_0_45">
+      <visual name="School Daze" />
+    </object>
+    <object id="0_0_46">
+      <visual name="Bellsinger" />
+    </object>
+    <object id="0_0_47">
+      <visual name="Square Wave" />
+    </object>
+    <object id="0_0_48">
+      <visual name="String Section 1" />
+    </object>
+    <object id="0_0_49">
+      <visual name="String Section 2" />
+    </object>
+    <object id="0_0_50">
+      <visual name="String Section 3" />
+    </object>
+    <object id="0_0_51">
+      <visual name="Pizzicato" />
+    </object>
+    <object id="0_0_52">
+      <visual name="Violin 1" />
+    </object>
+    <object id="0_0_53">
+      <visual name="Violin 2" />
+    </object>
+    <object id="0_0_54">
+      <visual name="Cello 1" />
+    </object>
+    <object id="0_0_55">
+      <visual name="Cello 2" />
+    </object>
+    <object id="0_0_56">
+      <visual name="Contrabass" />
+    </object>
+    <object id="0_0_57">
+      <visual name="Harp 1" />
+    </object>
+    <object id="0_0_58">
+      <visual name="Harp 2" />
+    </object>
+    <object id="0_0_59">
+      <visual name="Guitar 1" />
+    </object>
+    <object id="0_0_60">
+      <visual name="Guitar 2" />
+    </object>
+    <object id="0_0_61">
+      <visual name="Elec Gtr 1" />
+    </object>
+    <object id="0_0_62">
+      <visual name="Elec Gtr 2" />
+    </object>
+    <object id="0_0_63">
+      <visual name="Sitar" />
+    </object>
+    <object id="0_0_64">
+      <visual name="Acou Bass 1" />
+    </object>
+    <object id="0_0_65">
+      <visual name="Acou Bass 2" />
+    </object>
+    <object id="0_0_66">
+      <visual name="Elec Bass 1" />
+    </object>
+    <object id="0_0_67">
+      <visual name="Elec Bass 2" />
+    </object>
+    <object id="0_0_68">
+      <visual name="Slap Bass 1" />
+    </object>
+    <object id="0_0_69">
+      <visual name="Slap Bass 2" />
+    </object>
+    <object id="0_0_70">
+      <visual name="Fretless 1" />
+    </object>
+    <object id="0_0_71">
+      <visual name="Fretless 2" />
+    </object>
+    <object id="0_0_72">
+      <visual name="Flute 1" />
+    </object>
+    <object id="0_0_73">
+      <visual name="Flute 2" />
+    </object>
+    <object id="0_0_74">
+      <visual name="Piccolo 1" />
+    </object>
+    <object id="0_0_75">
+      <visual name="Piccolo 2" />
+    </object>
+    <object id="0_0_76">
+      <visual name="Recorder" />
+    </object>
+    <object id="0_0_77">
+      <visual name="Pan Pipes" />
+    </object>
+    <object id="0_0_78">
+      <visual name="Sax 1" />
+    </object>
+    <object id="0_0_79">
+      <visual name="Sax 2" />
+    </object>
+    <object id="0_0_80">
+      <visual name="Sax 3" />
+    </object>
+    <object id="0_0_81">
+      <visual name="Sax 4" />
+    </object>
+    <object id="0_0_82">
+      <visual name="Clarinet 1" />
+    </object>
+    <object id="0_0_83">
+      <visual name="Clarinet 2" />
+    </object>
+    <object id="0_0_84">
+      <visual name="Oboe" />
+    </object>
+    <object id="0_0_85">
+      <visual name="English Horn" />
+    </object>
+    <object id="0_0_86">
+      <visual name="Bassoon" />
+    </object>
+    <object id="0_0_87">
+      <visual name="Harmonica" />
+    </object>
+    <object id="0_0_88">
+      <visual name="Trumpet 1" />
+    </object>
+    <object id="0_0_89">
+      <visual name="Trumpet 2" />
+    </object>
+    <object id="0_0_90">
+      <visual name="Trombone 1" />
+    </object>
+    <object id="0_0_91">
+      <visual name="Trombone 2" />
+    </object>
+    <object id="0_0_92">
+      <visual name="French Horn 1" />
+    </object>
+    <object id="0_0_93">
+      <visual name="French Horn 2" />
+    </object>
+    <object id="0_0_94">
+      <visual name="Tuba" />
+    </object>
+    <object id="0_0_95">
+      <visual name="Brass Section 1" />
+    </object>
+    <object id="0_0_96">
+      <visual name="Brass Section 2" />
+    </object>
+    <object id="0_0_97">
+      <visual name="Vibe 1" />
+    </object>
+    <object id="0_0_98">
+      <visual name="Vibe 2" />
+    </object>
+    <object id="0_0_99">
+      <visual name="Synth Mallet" />
+    </object>
+    <object id="0_0_100">
+      <visual name="Windbell" />
+    </object>
+    <object id="0_0_101">
+      <visual name="Glock" />
+    </object>
+    <object id="0_0_102">
+      <visual name="Tube Bell" />
+    </object>
+    <object id="0_0_103">
+      <visual name="Xylophone" />
+    </object>
+    <object id="0_0_104">
+      <visual name="Marimba" />
+    </object>
+    <object id="0_0_105">
+      <visual name="Koto" />
+    </object>
+    <object id="0_0_106">
+      <visual name="Sho" />
+    </object>
+    <object id="0_0_107">
+      <visual name="Shakuhachi" />
+    </object>
+    <object id="0_0_108">
+      <visual name="Whistle 1" />
+    </object>
+    <object id="0_0_109">
+      <visual name="Whistle 2" />
+    </object>
+    <object id="0_0_110">
+      <visual name="Bottleblow" />
+    </object>
+    <object id="0_0_111">
+      <visual name="Breathpipe" />
+    </object>
+    <object id="0_0_112">
+      <visual name="Timpani" />
+    </object>
+    <object id="0_0_113">
+      <visual name="Melodic Tom" />
+    </object>
+    <object id="0_0_114">
+      <visual name="Deep Snare" />
+    </object>
+    <object id="0_0_115">
+      <visual name="Elec Perc 1" />
+    </object>
+    <object id="0_0_116">
+      <visual name="Elec Perc 2" />
+    </object>
+    <object id="0_0_117">
+      <visual name="Taiko" />
+    </object>
+    <object id="0_0_118">
+      <visual name="Taiko Rim" />
+    </object>
+    <object id="0_0_119">
+      <visual name="Cymbal" />
+    </object>
+    <object id="0_0_120">
+      <visual name="Castanets" />
+    </object>
+    <object id="0_0_121">
+      <visual name="Triangle" />
+    </object>
+    <object id="0_0_122">
+      <visual name="Orchestra Hit" />
+    </object>
+    <object id="0_0_123">
+      <visual name="Telephone" />
+    </object>
+    <object id="0_0_124">
+      <visual name="Bird Tweet" />
+    </object>
+    <object id="0_0_125">
+      <visual name="One Note Jam" />
+    </object>
+    <object id="0_0_126">
+      <visual name="Water Bell" />
+    </object>
+    <object id="0_0_127">
+      <visual name="Jungle Tune" />
+    </object>
+  </category>
+  <category id="mt32_drums">
+    <object id="0_0_0">
+      <visual name="Standard Drum Kit" color="#ceccd1" />
+    </object>
+  </category>
+</datapack>

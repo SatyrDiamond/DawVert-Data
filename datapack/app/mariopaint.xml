@@ -1,0 +1,119 @@
+<datapack>
+  <category id="inst">
+    <object id="boat">
+      <visual name="Hat" color="#f40002" />
+    </object>
+    <object id="bobomb">
+      <midi patch="112" />
+      <visual name="Bell" color="#000000" />
+    </object>
+    <object id="bulletbill">
+      <midi patch="47" />
+      <visual name="Timpani" color="#000000" />
+    </object>
+    <object id="car">
+      <midi patch="16" />
+      <visual name="Organ" color="#e0872b" />
+    </object>
+    <object id="cat">
+      <visual name="Meow" color="#f9bf82" />
+    </object>
+    <object id="coin">
+      <midi patch="1" />
+      <visual name="Piano 2" color="#edbf33" />
+    </object>
+    <object id="dog">
+      <visual name="Bark" color="#ffffff" />
+    </object>
+    <object id="egg">
+      <midi patch="45" />
+      <visual name="Pizzicato strings" color="#00f700" />
+    </object>
+    <object id="face">
+      <visual name="Face" color="#f9c182" />
+    </object>
+    <object id="feather">
+      <midi patch="73" />
+      <visual name="Flute" color="#f77700" />
+    </object>
+    <object id="flower">
+      <midi patch="56" />
+      <visual name="Trumpet" color="#f47f00" />
+    </object>
+    <object id="fruit">
+      <midi patch="12" />
+      <visual name="Marimba" color="#f70000" />
+    </object>
+    <object id="gameboy">
+      <midi patch="80" />
+      <visual name="Square Wave" color="#c1c1c1" />
+    </object>
+    <object id="ghost">
+      <midi patch="46" />
+      <visual name="Harp" color="#91f4fc" />
+    </object>
+    <object id="gnome">
+      <visual name="Clown Horn" color="#007f3f" />
+    </object>
+    <object id="goomba">
+      <midi patch="70" />
+      <visual name="Bassoon" color="#bf3f21" />
+    </object>
+    <object id="heart">
+      <midi patch="32" />
+      <visual name="Bass Guitar" color="#f40000" />
+    </object>
+    <object id="luigi">
+      <midi patch="114" />
+      <visual name="Steel Drum" color="#00f77a" />
+    </object>
+    <object id="mario">
+      <midi />
+      <visual name="Piano" color="#eac48e" />
+    </object>
+    <object id="moon">
+      <midi patch="81" />
+      <visual name="Sawtooth Wave" color="#f7f700" />
+    </object>
+    <object id="oneup">
+      <visual name="Hi-Hat" color="#00f700" />
+    </object>
+    <object id="peach">
+      <midi patch="40" />
+      <visual name="Violin" color="#f74f8e" />
+    </object>
+    <object id="pig">
+      <visual name="Oink" color="#f4bf84" />
+    </object>
+    <object id="plane">
+      <midi patch="24" />
+      <visual name="Acoustic Guitar" color="#ffffff" />
+    </object>
+    <object id="plant">
+      <midi patch="30" />
+      <visual name="Distorted Guitar" color="#ba0002" />
+    </object>
+    <object id="shyguy">
+      <midi patch="48" />
+      <visual name="String" color="#a30002" />
+    </object>
+    <object id="spiny">
+      <midi patch="21" />
+      <visual name="Accordion" color="#f77f00" />
+    </object>
+    <object id="star">
+      <midi patch="13" />
+      <visual name="Xylophone" color="#f7f900" />
+    </object>
+    <object id="swan">
+      <midi patch="45" />
+      <visual name="String Hit" color="#bfbfc1" />
+    </object>
+    <object id="toad">
+      <visual name="Tom" color="#f90000" />
+    </object>
+    <object id="yoshi">
+      <visual name="SMW Yoshi" color="#00f905" />
+    </object>
+  </category>
+</datapack>

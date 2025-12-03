@@ -1,0 +1,835 @@
+<datapack>
+  <category id="gs_inst">
+    <object id="0_0_0">
+      <data group="piano" />
+      <visual name="Piano1" color="#191c1c" />
+    </object>
+    <object id="0_0_1">
+      <data group="piano" />
+      <visual name="Piano2" color="#191c1c" />
+    </object>
+    <object id="0_0_10">
+      <data group="chromaticperc" />
+      <visual name="MusicBox" color="#99938c" />
+    </object>
+    <object id="0_0_100">
+      <data group="synthfx" />
+      <visual name="Goblins" color="#b2b2b2" />
+    </object>
+    <object id="0_0_101">
+      <data group="synthfx" />
+      <visual name="EchoDrops" color="#b2b2b2" />
+    </object>
+    <object id="0_0_103">
+      <data group="synthfx" />
+      <visual name="StarTheme" color="#b2b2b2" />
+    </object>
+    <object id="0_0_104">
+      <data group="Ethnic" />
+      <visual name="Sitar" color="#66331e" />
+    </object>
+    <object id="0_0_105">
+      <data group="Ethnic" />
+      <visual name="Banjo" color="#7f5133" />
+    </object>
+    <object id="0_0_106">
+      <data group="Ethnic" />
+      <visual name="Shamisen" color="#722d26" />
+    </object>
+    <object id="0_0_107">
+      <data group="Ethnic" />
+      <visual name="Koto" color="#72281c" />
+    </object>
+    <object id="0_0_108">
+      <data group="Ethnic" />
+      <visual name="Kalimba" color="#af4428" />
+    </object>
+    <object id="0_0_109">
+      <data group="Ethnic" />
+      <visual name="Bagpipe" color="#b52626" />
+    </object>
+    <object id="0_0_11">
+      <data group="chromaticperc" />
+      <visual name="Vibraphone" color="#c1c6d1" />
+    </object>
+    <object id="0_0_110">
+      <data group="Ethnic" />
+      <visual name="Fiddle" color="#c14c02" />
+    </object>
+    <object id="0_0_111">
+      <data group="Ethnic" />
+      <visual name="Shanai" color="#a8281e" />
+    </object>
+    <object id="0_0_112">
+      <data group="perc" />
+      <visual name="TinkleBell" color="#aa7226" />
+    </object>
+    <object id="0_0_113">
+      <data group="perc" />
+      <visual name="Agogo" color="#19190c" />
+    </object>
+    <object id="0_0_114">
+      <data group="perc" />
+      <visual name="SteelDrums" color="#8e9191" />
+    </object>
+    <object id="0_0_115">
+      <data group="perc" />
+      <visual name="Woodblock" color="#e0ad70" />
+    </object>
+    <object id="0_0_116">
+      <data group="perc" />
+      <visual name="TaikoDrum" color="#5b1100" />
+    </object>
+    <object id="0_0_117">
+      <data group="perc" />
+      <visual name="MelodicTom1" color="#d6c4b5" />
+    </object>
+    <object id="0_0_118">
+      <data group="perc" />
+      <visual name="SynthDrum" color="#c40a07" />
+    </object>
+    <object id="0_0_119">
+      <data group="perc" />
+      <visual name="ReverseCymbal" color="#b59b5b" />
+    </object>
+    <object id="0_0_12">
+      <data group="chromaticperc" />
+      <visual name="Marimba" color="#d1512d" />
+    </object>
+    <object id="0_0_120">
+      <data group="perc" />
+      <visual name="GuitarFretNoise" color="#e59e59" />
+    </object>
+    <object id="0_0_121">
+      <data group="sfx" />
+      <visual name="BreathNoise" color="#efc1b2" />
+    </object>
+    <object id="0_0_122">
+      <data group="sfx" />
+      <visual name="Seashore" color="#3a8c87" />
+    </object>
+    <object id="0_0_123">
+      <data group="sfx" />
+      <visual name="BirdTweet" color="#e2ce2d" />
+    </object>
+    <object id="0_0_124">
+      <data group="sfx" />
+      <visual name="TelephoneRing" color="#353026" />
+    </object>
+    <object id="0_0_125">
+      <data group="sfx" />
+      <visual name="Helicopter" color="#2d42aa" />
+    </object>
+    <object id="0_0_126">
+      <data group="sfx" />
+      <visual name="Applause" color="#efc1b2" />
+    </object>
+    <object id="0_0_127">
+      <data group="sfx" />
+      <visual name="Gunshot" color="#514c44" />
+    </object>
+    <object id="0_0_13">
+      <data group="chromaticperc" />
+      <visual name="Xylophone" color="#6b3021" />
+    </object>
+    <object id="0_0_14">
+      <data group="chromaticperc" />
+      <visual name="TubularBells" color="#8793a3" />
+    </object>
+    <object id="0_0_15">
+      <data group="chromaticperc" />
+      <visual name="Santur" color="#af5614" />
+    </object>
+    <object id="0_0_16">
+      <data group="organ" />
+      <visual name="Organ1" color="#c17026" />
+    </object>
+    <object id="0_0_17">
+      <data group="organ" />
+      <visual name="Organ2" color="#c17026" />
+    </object>
+    <object id="0_0_18">
+      <data group="organ" />
+      <visual name="Organ3" color="#c17026" />
+    </object>
+    <object id="0_0_19">
+      <data group="organ" />
+      <visual name="ChurchOrgan1" color="#8c3d14" />
+    </object>
+    <object id="0_0_2">
+      <data group="piano" />
+      <visual name="Piano3" color="#191c1c" />
+    </object>
+    <object id="0_0_20">
+      <data group="organ" />
+      <visual name="ReedOrgan" color="#70260a" />
+    </object>
+    <object id="0_0_21">
+      <data group="organ" />
+      <visual name="Accordion French" color="#443f3a" />
+    </object>
+    <object id="0_0_22">
+      <data group="organ" />
+      <visual name="Harmonica" color="#b2b2a8" />
+    </object>
+    <object id="0_0_23">
+      <data group="organ" />
+      <visual name="Bandoneon" color="#443f3a" />
+    </object>
+    <object id="0_0_24">
+      <data group="guitar" />
+      <visual name="NylonGuitar" color="#d65900" />
+    </object>
+    <object id="0_0_25">
+      <data group="guitar" />
+      <visual name="SteelGuitar" color="#e59e59" />
+    </object>
+    <object id="0_0_26">
+      <data group="guitar" />
+      <visual name="JazzGuitar" color="#001c54" />
+    </object>
+    <object id="0_0_27">
+      <data group="guitar" />
+      <visual name="CleanGuitar" color="#001c54" />
+    </object>
+    <object id="0_0_28">
+      <data group="guitar" />
+      <visual name="MutedGuitar" color="#001c54" />
+    </object>
+    <object id="0_0_29">
+      <data group="guitar" />
+      <visual name="Overdriven" color="#e59e59" />
+    </object>
+    <object id="0_0_3">
+      <data group="piano" />
+      <visual name="Honkytonk" color="#993011" />
+    </object>
+    <object id="0_0_30">
+      <data group="guitar" />
+      <visual name="Distortion" color="#e59e59" />
+    </object>
+    <object id="0_0_31">
+      <data group="guitar" />
+      <visual name="GuitarHarmonics" color="#e59e59" />
+    </object>
+    <object id="0_0_32">
+      <data group="bass" />
+      <visual name="AcousticBass" color="#262626" />
+    </object>
+    <object id="0_0_33">
+      <data group="bass" />
+      <visual name="FingerBass" color="#161616" />
+    </object>
+    <object id="0_0_34">
+      <data group="bass" />
+      <visual name="PickBass" color="#161616" />
+    </object>
+    <object id="0_0_35">
+      <data group="bass" />
+      <visual name="FretlessBass" color="#e2b587" />
+    </object>
+    <object id="0_0_36">
+      <data group="bass" />
+      <visual name="SlapBass1" color="#e2b587" />
+    </object>
+    <object id="0_0_37">
+      <data group="bass" />
+      <visual name="SlapBass2" color="#e2b587" />
+    </object>
+    <object id="0_0_38">
+      <data group="bass" />
+      <visual name="SynthBass1" color="#2b2830" />
+    </object>
+    <object id="0_0_39">
+      <data group="bass" />
+      <visual name="SynthBass2" color="#2b2830" />
+    </object>
+    <object id="0_0_4">
+      <data group="piano" />
+      <visual name="ElectricPiano1" color="#494747" />
+    </object>
+    <object id="0_0_40">
+      <data group="strings" />
+      <visual name="Violin" color="#935123" />
+    </object>
+    <object id="0_0_41">
+      <data group="strings" />
+      <visual name="Viola" color="#bf4900" />
+    </object>
+    <object id="0_0_42">
+      <data group="strings" />
+      <visual name="Cello" color="#af3d02" />
+    </object>
+    <object id="0_0_43">
+      <data group="strings" />
+      <visual name="Contrabass" color="#a03314" />
+    </object>
+    <object id="0_0_44">
+      <data group="strings" />
+      <visual name="TremoloStrings" color="#680f05" />
+    </object>
+    <object id="0_0_45">
+      <data group="strings" />
+      <visual name="PizzicatoStrings" color="#680f05" />
+    </object>
+    <object id="0_0_46">
+      <data group="strings" />
+      <visual name="Harp" color="#93331e" />
+    </object>
+    <object id="0_0_47">
+      <data group="strings" />
+      <visual name="Timpani" color="#cec6b5" />
+    </object>
+    <object id="0_0_48">
+      <data group="ensemble" />
+      <visual name="Strings" color="#680f05" />
+    </object>
+    <object id="0_0_49">
+      <data group="ensemble" />
+      <visual name="SlowStrings" color="#680f05" />
+    </object>
+    <object id="0_0_5">
+      <data group="piano" />
+      <visual name="ElectricPiano2" color="#494747" />
+    </object>
+    <object id="0_0_50">
+      <data group="ensemble" />
+      <visual name="SynthStrings1" color="#6b3a1c" />
+    </object>
+    <object id="0_0_51">
+      <data group="ensemble" />
+      <visual name="SynthStrings2" color="#6b3a1c" />
+    </object>
+    <object id="0_0_52">
+      <data group="ensemble" />
+      <visual name="ChoirAahs" color="#efc1b2" />
+    </object>
+    <object id="0_0_53">
+      <data group="ensemble" />
+      <visual name="VoiceOohs" color="#efc1b2" />
+    </object>
+    <object id="0_0_54">
+      <data group="ensemble" />
+      <visual name="SynthVox" color="#3a3a3d" />
+    </object>
+    <object id="0_0_55">
+      <data group="ensemble" />
+      <visual name="OrchestraHit" color="#992d11" />
+    </object>
+    <object id="0_0_56">
+      <data group="brass" />
+      <visual name="Trumpet" color="#bf9644" />
+    </object>
+    <object id="0_0_57">
+      <data group="brass" />
+      <visual name="Trombone" color="#efdd77" />
+    </object>
+    <object id="0_0_58">
+      <data group="brass" />
+      <visual name="Tuba" color="#d8ad59" />
+    </object>
+    <object id="0_0_59">
+      <data group="brass" />
+      <visual name="MutedTrumpet" color="#bf9644" />
+    </object>
+    <object id="0_0_6">
+      <data group="piano" />
+      <visual name="Harpsichord" color="#914f2b" />
+    </object>
+    <object id="0_0_60">
+      <data group="brass" />
+      <visual name="FrenchHorn" color="#d8a549" />
+    </object>
+    <object id="0_0_61">
+      <data group="brass" />
+      <visual name="BrassSection" color="#60380f" />
+    </object>
+    <object id="0_0_62">
+      <data group="brass" />
+      <visual name="SynthBrass1" color="#6b3a1c" />
+    </object>
+    <object id="0_0_63">
+      <data group="brass" />
+      <visual name="SynthBrass2" color="#6b3a1c" />
+    </object>
+    <object id="0_0_64">
+      <data group="reed" />
+      <visual name="Soprano Sax" color="#d6af68" />
+    </object>
+    <object id="0_0_65">
+      <data group="reed" />
+      <visual name="Alto Sax" color="#b58c38" />
+    </object>
+    <object id="0_0_66">
+      <data group="reed" />
+      <visual name="Tenor Sax" color="#bc8c33" />
+    </object>
+    <object id="0_0_67">
+      <data group="reed" />
+      <visual name="Baritone Sax" color="#e0ad5b" />
+    </object>
+    <object id="0_0_68">
+      <data group="reed" />
+      <visual name="Oboe" color="#303033" />
+    </object>
+    <object id="0_0_69">
+      <data group="reed" />
+      <visual name="English Horn" color="#19161c" />
+    </object>
+    <object id="0_0_7">
+      <data group="piano" />
+      <visual name="Clavi" color="#967059" />
+    </object>
+    <object id="0_0_70">
+      <data group="pipe" />
+      <visual name="Bassoon" color="#c1260a" />
+    </object>
+    <object id="0_0_71">
+      <data group="pipe" />
+      <visual name="Clarinet" color="#444444" />
+    </object>
+    <object id="0_0_72">
+      <data group="pipe" />
+      <visual name="Piccolo" color="#111119" />
+    </object>
+    <object id="0_0_73">
+      <data group="pipe" />
+      <visual name="Flute" color="#bab7b7" />
+    </object>
+    <object id="0_0_74">
+      <data group="pipe" />
+      <visual name="Recorder" color="#ddb599" />
+    </object>
+    <object id="0_0_75">
+      <data group="pipe" />
+      <visual name="Pan Flute" color="#ad894c" />
+    </object>
+    <object id="0_0_76">
+      <data group="pipe" />
+      <visual name="Blown Bottle" color="#726802" />
+    </object>
+    <object id="0_0_77">
+      <data group="pipe" />
+      <visual name="Shakuhachi" color="#9b7f59" />
+    </object>
+    <object id="0_0_78">
+      <data group="pipe" />
+      <visual name="Whistle" color="#d63f11" />
+    </object>
+    <object id="0_0_79">
+      <data group="pipe" />
+      <visual name="Ocarina" color="#1951bc" />
+    </object>
+    <object id="0_0_8">
+      <data group="chromaticperc" />
+      <visual name="Celesta" color="#d6ad7a" />
+    </object>
+    <object id="0_0_80">
+      <data group="synthlead" />
+      <visual name="SquareWave" color="#b2b2b2" />
+    </object>
+    <object id="0_0_81">
+      <data group="synthlead" />
+      <visual name="SawWave" color="#b2b2b2" />
+    </object>
+    <object id="0_0_82">
+      <data group="synthlead" />
+      <visual name="SynthCalliope" color="#b2b2b2" />
+    </object>
+    <object id="0_0_83">
+      <data group="synthlead" />
+      <visual name="ChifferLead" color="#b2b2b2" />
+    </object>
+    <object id="0_0_84">
+      <data group="synthlead" />
+      <visual name="CharangLead" color="#b2b2b2" />
+    </object>
+    <object id="0_0_85">
+      <data group="synthlead" />
+      <visual name="SoloVox" color="#b2b2b2" />
+    </object>
+    <object id="0_0_86">
+      <data group="synthlead" />
+      <visual name="5thSawWave" color="#b2b2b2" />
+    </object>
+    <object id="0_0_87">
+      <data group="synthlead" />
+      <visual name="Bass&amp;Lead" color="#b2b2b2" />
+    </object>
+    <object id="0_0_88">
+      <data group="synthpad" />
+      <visual name="Fantasia" color="#b2b2b2" />
+    </object>
+    <object id="0_0_89">
+      <data group="synthpad" />
+      <visual name="WarmPad" color="#b2b2b2" />
+    </object>
+    <object id="0_0_9">
+      <data group="chromaticperc" />
+      <visual name="Glockenspiel" color="#d6d8dd" />
+    </object>
+    <object id="0_0_90">
+      <data group="synthpad" />
+      <visual name="PolySynthPad" color="#b2b2b2" />
+    </object>
+    <object id="0_0_91">
+      <data group="synthpad" />
+      <visual name="SpaceVoice" color="#b2b2b2" />
+    </object>
+    <object id="0_0_92">
+      <data group="synthpad" />
+      <visual name="BowedGlass" color="#b2b2b2" />
+    </object>
+    <object id="0_0_93">
+      <data group="synthpad" />
+      <visual name="MetalPad" color="#b2b2b2" />
+    </object>
+    <object id="0_0_94">
+      <data group="synthpad" />
+      <visual name="HaloPad" color="#b2b2b2" />
+    </object>
+    <object id="0_0_95">
+      <data group="synthpad" />
+      <visual name="SweepPad" color="#b2b2b2" />
+    </object>
+    <object id="0_0_96">
+      <data group="synthfx" />
+      <visual name="IceRain" color="#b2b2b2" />
+    </object>
+    <object id="0_0_97">
+      <data group="synthfx" />
+      <visual name="SoundTrack" color="#b2b2b2" />
+    </object>
+    <object id="0_0_98">
+      <data group="synthfx" />
+      <visual name="Crystal" color="#b2b2b2" />
+    </object>
+    <object id="0_0_99">
+      <data group="synthfx" />
+      <visual name="Atmosphere" color="#b2b2b2" />
+    </object>
+    <object id="0_16_0">
+      <visual name="Piano1 Dark" />
+    </object>
+    <object id="0_16_16">
+      <visual name="60sOrgan" />
+    </object>
+    <object id="0_16_19">
+      <visual name="ChurchOrgan3" />
+    </object>
+    <object id="0_16_24">
+      <visual name="NylonGuitar KeyOff" />
+    </object>
+    <object id="0_16_25">
+      <visual name="Mandolin" />
+    </object>
+    <object id="0_16_28">
+      <visual name="FunkGuitar2" />
+    </object>
+    <object id="0_16_39">
+      <visual name="RubberBass" />
+    </object>
+    <object id="0_16_4">
+      <visual name="ElectricPiano1 Wide" />
+    </object>
+    <object id="0_16_5">
+      <visual name="ElectricPiano2 Wide" />
+    </object>
+    <object id="0_16_6">
+      <visual name="Harpsichord Wide" />
+    </object>
+    <object id="0_16_62">
+      <visual name="AnalogBrass1" />
+    </object>
+    <object id="0_16_63">
+      <visual name="AnalogBrass2" />
+    </object>
+    <object id="0_1_102">
+      <visual name="EchoBell" />
+    </object>
+    <object id="0_1_104">
+      <visual name="Sitar2" />
+    </object>
+    <object id="0_1_120">
+      <visual name="GuitarCutNoise" />
+    </object>
+    <object id="0_1_121">
+      <visual name="FluteKeyClick" />
+    </object>
+    <object id="0_1_122">
+      <visual name="Rain" />
+    </object>
+    <object id="0_1_123">
+      <visual name="Dog" />
+    </object>
+    <object id="0_1_124">
+      <visual name="TelephoneRing2" />
+    </object>
+    <object id="0_1_125">
+      <visual name="CarEngine" />
+    </object>
+    <object id="0_1_126">
+      <visual name="Laughing" />
+    </object>
+    <object id="0_1_127">
+      <visual name="MachineGun" />
+    </object>
+    <object id="0_1_38">
+      <visual name="SynthBass101" />
+    </object>
+    <object id="0_1_57">
+      <visual name="Trombone2" />
+    </object>
+    <object id="0_1_60">
+      <visual name="FrenchHorn2" />
+    </object>
+    <object id="0_1_80">
+      <visual name="Square" />
+    </object>
+    <object id="0_1_81">
+      <visual name="Saw" />
+    </object>
+    <object id="0_1_98">
+      <visual name="SynthMallet" />
+    </object>
+    <object id="0_24_4">
+      <visual name="60sElectricPiano" />
+    </object>
+    <object id="0_24_6">
+      <visual name="Harpsi KeyOff" />
+    </object>
+    <object id="0_2_102">
+      <visual name="EchoPan" />
+    </object>
+    <object id="0_2_120">
+      <visual name="StringSlap" />
+    </object>
+    <object id="0_2_122">
+      <visual name="Thunder" />
+    </object>
+    <object id="0_2_123">
+      <visual name="HorseGallop" />
+    </object>
+    <object id="0_2_124">
+      <visual name="DoorCreaking" />
+    </object>
+    <object id="0_2_125">
+      <visual name="CarStop" />
+    </object>
+    <object id="0_2_126">
+      <visual name="Screaming" />
+    </object>
+    <object id="0_2_127">
+      <visual name="LaserGun" />
+    </object>
+    <object id="0_32_16">
+      <visual name="Organ4" />
+    </object>
+    <object id="0_32_17">
+      <visual name="Organ5" />
+    </object>
+    <object id="0_32_24">
+      <visual name="NylonGuitar2" />
+    </object>
+    <object id="0_32_52">
+      <visual name="ChoirAahs2" />
+    </object>
+    <object id="0_3_122">
+      <visual name="Wind" />
+    </object>
+    <object id="0_3_123">
+      <visual name="BirdTweet2" />
+    </object>
+    <object id="0_3_124">
+      <visual name="Door" />
+    </object>
+    <object id="0_3_125">
+      <visual name="CarPass" />
+    </object>
+    <object id="0_3_126">
+      <visual name="Punch" />
+    </object>
+    <object id="0_3_127">
+      <visual name="Explosion" />
+    </object>
+    <object id="0_4_122">
+      <visual name="Stream" />
+    </object>
+    <object id="0_4_124">
+      <visual name="Scratch" />
+    </object>
+    <object id="0_4_125">
+      <visual name="CarCrash" />
+    </object>
+    <object id="0_4_126">
+      <visual name="Heartbeat" />
+    </object>
+    <object id="0_5_122">
+      <visual name="Bubble" />
+    </object>
+    <object id="0_5_124">
+      <visual name="WindChime" />
+    </object>
+    <object id="0_5_125">
+      <visual name="Siren" />
+    </object>
+    <object id="0_5_126">
+      <visual name="Footsteps" />
+    </object>
+    <object id="0_6_125">
+      <visual name="Train" />
+    </object>
+    <object id="0_7_125">
+      <visual name="JetPlane" />
+    </object>
+    <object id="0_8_0">
+      <visual name="Piano1 Wide" />
+    </object>
+    <object id="0_8_1">
+      <visual name="Piano2 Wide" />
+    </object>
+    <object id="0_8_107">
+      <visual name="TaishoKoto" />
+    </object>
+    <object id="0_8_11">
+      <visual name="Vibraphone Wide" />
+    </object>
+    <object id="0_8_115">
+      <visual name="Castanets" />
+    </object>
+    <object id="0_8_116">
+      <visual name="ConcertBassDrum" />
+    </object>
+    <object id="0_8_117">
+      <visual name="MelodicTom2" />
+    </object>
+    <object id="0_8_118">
+      <visual name="808Tom" />
+    </object>
+    <object id="0_8_12">
+      <visual name="Marimba Wide" />
+    </object>
+    <object id="0_8_125">
+      <visual name="Starship" />
+    </object>
+    <object id="0_8_14">
+      <visual name="ChurchBells" />
+    </object>
+    <object id="0_8_16">
+      <visual name="DetunedOrgan1" />
+    </object>
+    <object id="0_8_17">
+      <visual name="DetunedOrgan2" />
+    </object>
+    <object id="0_8_19">
+      <visual name="ChurchOrgan2" />
+    </object>
+    <object id="0_8_2">
+      <visual name="Piano Wide3" />
+    </object>
+    <object id="0_8_21">
+      <visual name="Accordion Italian" />
+    </object>
+    <object id="0_8_24">
+      <visual name="Ukulele" />
+    </object>
+    <object id="0_8_25">
+      <visual name="12StrGuitar" />
+    </object>
+    <object id="0_8_26">
+      <visual name="HawaiianGuitar" />
+    </object>
+    <object id="0_8_27">
+      <visual name="ChorusGuitar" />
+    </object>
+    <object id="0_8_28">
+      <visual name="FunkGuitar" />
+    </object>
+    <object id="0_8_3">
+      <visual name="Honkytonk Wide" />
+    </object>
+    <object id="0_8_30">
+      <visual name="FeedbackGuitar" />
+    </object>
+    <object id="0_8_31">
+      <visual name="GuitarFeedback" />
+    </object>
+    <object id="0_8_38">
+      <visual name="SynthBass3" />
+    </object>
+    <object id="0_8_39">
+      <visual name="SynthBass4" />
+    </object>
+    <object id="0_8_4">
+      <visual name="DetunedEP1" />
+    </object>
+    <object id="0_8_40">
+      <visual name="SlowViolin" />
+    </object>
+    <object id="0_8_48">
+      <visual name="Orchestra" />
+    </object>
+    <object id="0_8_5">
+      <visual name="DetunedEP2" />
+    </object>
+    <object id="0_8_50">
+      <visual name="SynthStrings3" />
+    </object>
+    <object id="0_8_6">
+      <visual name="Coupled Harpsichord" />
+    </object>
+    <object id="0_8_61">
+      <visual name="BrassSection2" />
+    </object>
+    <object id="0_8_62">
+      <visual name="SynthBrass3" />
+    </object>
+    <object id="0_8_63">
+      <visual name="SynthBrass4" />
+    </object>
+    <object id="0_8_80">
+      <visual name="SineWave" />
+    </object>
+    <object id="0_8_81">
+      <visual name="DoctorSolo" />
+    </object>
+    <object id="0_9_118">
+      <visual name="ElectricDrum" />
+    </object>
+    <object id="0_9_125">
+      <visual name="BurstNoise" />
+    </object>
+    <object id="0_9_14">
+      <visual name="Carillon" />
+    </object>
+  </category>
+  <category id="gs_drums">
+    <object id="0_0_0">
+      <visual name="StandardSet" color="#ceccd1" />
+    </object>
+    <object id="0_0_8">
+      <visual name="RoomSet" color="#ceccd1" />
+    </object>
+    <object id="0_0_16">
+      <visual name="PowerSet" color="#ceccd1" />
+    </object>
+    <object id="0_0_24">
+      <visual name="ElectroSet" color="#ceccd1" />
+    </object>
+    <object id="0_0_25">
+      <visual name="AnalogSet" color="#ceccd1" />
+    </object>
+    <object id="0_0_32">
+      <visual name="JazzSet" color="#ceccd1" />
+    </object>
+    <object id="0_0_40">
+      <visual name="BrushSet" color="#ceccd1" />
+    </object>
+    <object id="0_0_48">
+      <visual name="OrchestraSet" color="#ceccd1" />
+    </object>
+    <object id="0_0_56">
+      <visual name="SFXSet" color="#ceccd1" />
+    </object>
+  </category>
+</datapack>

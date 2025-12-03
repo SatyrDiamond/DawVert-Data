@@ -1,0 +1,636 @@
+<datapack>
+  <category id="plugin">
+    <object id="BitCrusher">
+      <visual name="BitCrusher" />
+      <params>
+        <param id="bits" name="bits" type="float" def="12.22" max="16" min="2" />
+        <param id="down" name="down" type="float" def="0.7" />
+        <param id="mix" name="mix" type="float" def="1" />
+      </params>
+    </object>
+    <object id="Chorus">
+      <visual name="Chorus" />
+      <params>
+        <param id="delayLfoDepth" name="delayLfoDepth" type="float" def="0.15" />
+        <param id="delayLfoRateHz" name="delayLfoRateHz" type="float" def="0.7585" max="5" min="0.01" />
+        <param id="mix" name="mix" type="float" def="0.85" />
+        <param id="tone" name="tone" type="float" def="0.2" />
+      </params>
+    </object>
+    <object id="Compressor">
+      <visual name="Compressor" />
+      <params>
+        <param id="attackTimeMS" name="attackTimeMS" type="float" def="9" max="300" />
+        <param id="circuitMode" name="circuitMode" type="float" def="1" />
+        <param id="detectMode" name="detectMode" type="float" def="1" />
+        <param id="filterActive" name="filterActive" type="float" def="1" />
+        <param id="filterAudition" name="filterAudition" type="float" />
+        <param id="filterFrequency" name="filterFrequency" type="float" def="2018" max="20000" min="20" />
+        <param id="filterGainDB" name="filterGainDB" type="float" max="60" />
+        <param id="filterMode" name="filterMode" type="float" max="2" />
+        <param id="filterQ" name="filterQ" type="float" def="0.05" min="0.05" />
+        <param id="lookaheadTimeMS" name="lookaheadTimeMS" type="float" max="10" />
+        <param id="postGainDB" name="postGainDB" type="float" def="2.16" max="24" />
+        <param id="preGainDB" name="preGainDB" type="float" max="24" min="-12" />
+        <param id="ratio" name="ratio" type="float" def="4.04" max="20" min="1" />
+        <param id="releaseTimeMS" name="releaseTimeMS" type="float" def="200" max="5000" />
+        <param id="softKneeWidth" name="softKneeWidth" type="float" />
+        <param id="thresholdDB" name="thresholdDB" type="float" def="-19.2" max="0" min="-60" />
+      </params>
+    </object>
+    <object id="CompressorMini">
+      <visual name="Compressor Mini" />
+      <params>
+        <param id="squash" name="squash" type="float" def="0.15" />
+      </params>
+    </object>
+    <object id="Delay">
+      <visual name="Delay" />
+      <params>
+        <param id="cross" name="cross" type="float" def="1" max="0.99" />
+        <param id="damp" name="damp" type="float" />
+        <param id="fb" name="fb" type="float" def="0.3" />
+        <param id="mix" name="mix" type="float" def="0.5" />
+        <param id="offset" name="offset" type="float" max="0.1" />
+        <param id="time" name="time" type="float" def="0.5" />
+      </params>
+    </object>
+    <object id="Distortion">
+      <visual name="Distortion" />
+      <params>
+        <param id="blend" name="blend" type="float" def="1" />
+        <param id="boost" name="boost" type="float" max="2" />
+        <param id="feedback" name="feedback" type="float" def="0.3" min="-1" />
+        <param id="intensity" name="intensity" type="float" def="0.4" />
+        <param id="mix" name="mix" type="float" def="1" />
+        <param id="mode" name="mode" type="float" def="3" max="10" />
+        <param id="postGainDB" name="postGainDB" type="float" def="-3" max="30" min="-30" />
+        <param id="preGainDB" name="preGainDB" type="float" def="12" max="30" min="-30" />
+        <param id="tone" name="tone" type="float" def="1" />
+      </params>
+    </object>
+    <object id="Drumpler">
+      <visual name="Drumpler" />
+    </object>
+    <object id="Equalizer">
+      <visual name="Equalizer Mini" />
+      <params>
+        <param id="hpfreq" name="hpfreq" type="float" def="20" max="10000" min="20" />
+        <param id="lpfreq" name="lpfreq" type="float" def="10000" max="10000" min="20" />
+        <param id="peakfreq" name="peakfreq" type="float" def="2000" max="10000" min="20" />
+        <param id="peakgain" name="peakgain" type="float" max="48" min="-96" />
+        <param id="peakq" name="peakq" type="float" def="1" max="10" min="0.5" />
+      </params>
+    </object>
+    <object id="EqualizerPro">
+      <visual name="Equalizer" />
+      <params>
+        <param id="filter/1/active" name="filter/1/active" type="float" />
+        <param id="filter/1/freq" name="filter/1/freq" type="float" def="60" max="20000" min="20" />
+        <param id="filter/1/gain" name="filter/1/gain" type="float" max="24" min="-24" />
+        <param id="filter/1/q" name="filter/1/q" type="float" def="0.71" max="40" min="0.1" />
+        <param id="filter/1/type" name="filter/1/type" type="float" def="1" max="4" />
+        <param id="filter/2/active" name="filter/2/active" type="float" />
+        <param id="filter/2/freq" name="filter/2/freq" type="float" def="120" max="20000" min="20" />
+        <param id="filter/2/gain" name="filter/2/gain" type="float" max="24" min="-24" />
+        <param id="filter/2/q" name="filter/2/q" type="float" def="0.71" max="40" min="0.1" />
+        <param id="filter/2/type" name="filter/2/type" type="float" def="3" max="4" />
+        <param id="filter/3/active" name="filter/3/active" type="float" />
+        <param id="filter/3/freq" name="filter/3/freq" type="float" def="400" max="20000" min="20" />
+        <param id="filter/3/gain" name="filter/3/gain" type="float" max="24" min="-24" />
+        <param id="filter/3/q" name="filter/3/q" type="float" def="0.71" max="40" min="0.1" />
+        <param id="filter/3/type" name="filter/3/type" type="float" max="4" />
+        <param id="filter/4/active" name="filter/4/active" type="float" />
+        <param id="filter/4/freq" name="filter/4/freq" type="float" def="1200" max="20000" min="20" />
+        <param id="filter/4/gain" name="filter/4/gain" type="float" max="24" min="-24" />
+        <param id="filter/4/q" name="filter/4/q" type="float" def="0.71" max="40" min="0.1" />
+        <param id="filter/4/type" name="filter/4/type" type="float" max="4" />
+        <param id="filter/5/active" name="filter/5/active" type="float" />
+        <param id="filter/5/freq" name="filter/5/freq" type="float" def="3000" max="20000" min="20" />
+        <param id="filter/5/gain" name="filter/5/gain" type="float" max="24" min="-24" />
+        <param id="filter/5/q" name="filter/5/q" type="float" def="0.71" max="40" min="0.1" />
+        <param id="filter/5/type" name="filter/5/type" type="float" max="4" />
+        <param id="filter/6/active" name="filter/6/active" type="float" />
+        <param id="filter/6/freq" name="filter/6/freq" type="float" def="6000" max="20000" min="20" />
+        <param id="filter/6/gain" name="filter/6/gain" type="float" max="24" min="-24" />
+        <param id="filter/6/q" name="filter/6/q" type="float" def="0.71" max="40" min="0.1" />
+        <param id="filter/6/type" name="filter/6/type" type="float" max="4" />
+        <param id="filter/7/active" name="filter/7/active" type="float" />
+        <param id="filter/7/freq" name="filter/7/freq" type="float" def="9000" max="20000" min="20" />
+        <param id="filter/7/gain" name="filter/7/gain" type="float" max="24" min="-24" />
+        <param id="filter/7/q" name="filter/7/q" type="float" def="0.71" max="40" min="0.1" />
+        <param id="filter/7/type" name="filter/7/type" type="float" def="4" max="4" />
+        <param id="filter/8/active" name="filter/8/active" type="float" min="1" />
+        <param id="filter/8/freq" name="filter/8/freq" type="float" def="15000" max="20000" min="20" />
+        <param id="filter/8/gain" name="filter/8/gain" type="float" max="24" min="-24" />
+        <param id="filter/8/q" name="filter/8/q" type="float" def="0.71" max="40" min="0.1" />
+        <param id="filter/8/type" name="filter/8/type" type="float" def="2" max="4" />
+        <param id="postGain" name="postGain" type="float" max="24" />
+      </params>
+    </object>
+    <object id="Expander">
+      <visual name="Expander" />
+      <params>
+        <param id="attackTimeMS" name="attackTimeMS" type="float" max="300" />
+        <param id="circuitMode" name="circuitMode" type="float" def="1" />
+        <param id="detectMode" name="detectMode" type="float" />
+        <param id="filterActive" name="filterActive" type="float" />
+        <param id="filterAudition" name="filterAudition" type="float" />
+        <param id="filterFrequency" name="filterFrequency" type="float" def="200" max="20000" min="20" />
+        <param id="filterGainDB" name="filterGainDB" type="float" max="60" />
+        <param id="filterMode" name="filterMode" type="float" def="2" max="2" />
+        <param id="filterQ" name="filterQ" type="float" />
+        <param id="lookaheadTimeMS" name="lookaheadTimeMS" type="float" max="10" />
+        <param id="postGainDB" name="postGainDB" type="float" max="24" />
+        <param id="preGainDB" name="preGainDB" type="float" max="24" min="-12" />
+        <param id="ratio" name="ratio" type="float" def="2" max="20" min="1" />
+        <param id="releaseTimeMS" name="releaseTimeMS" type="float" def="150" max="5000" />
+        <param id="softKneeWidth" name="softKneeWidth" type="float" />
+        <param id="thresholdDB" name="thresholdDB" type="float" def="-60" max="0" min="-60" />
+      </params>
+    </object>
+    <object id="Flanger">
+      <visual name="Flanger" />
+      <params>
+        <param id="delayLfoDepth" name="delayLfoDepth" type="float" def="0.75" />
+        <param id="delayLfoRateHz" name="delayLfoRateHz" type="float" def="1.0579" max="5" min="0.01" />
+        <param id="delayTimeMS" name="delayTimeMS" type="float" def="4" max="10" min="2" />
+        <param id="mix" name="mix" type="float" def="1" />
+        <param id="tone" name="tone" type="float" def="0.3" />
+        <param id="voices" name="voices" type="float" def="2" max="3" min="1" />
+      </params>
+    </object>
+    <object id="Gate">
+      <visual name="Gate" />
+      <params>
+        <param id="attackCurve" name="attackCurve" type="float" />
+        <param id="attackTimeMS" name="attackTimeMS" type="float" max="300" />
+        <param id="circuitMode" name="circuitMode" type="float" def="1" />
+        <param id="detectMode" name="detectMode" type="float" />
+        <param id="filterActive" name="filterActive" type="float" />
+        <param id="filterAudition" name="filterAudition" type="float" />
+        <param id="filterFrequency" name="filterFrequency" type="float" def="200" max="20000" min="20" />
+        <param id="filterGainDB" name="filterGainDB" type="float" max="60" />
+        <param id="filterMode" name="filterMode" type="float" def="2" max="2" />
+        <param id="filterQ" name="filterQ" type="float" />
+        <param id="hysteresisDB" name="hysteresisDB" type="float" max="0" min="-24" />
+        <param id="lookaheadTimeMS" name="lookaheadTimeMS" type="float" max="10" />
+        <param id="postGainDB" name="postGainDB" type="float" max="24" />
+        <param id="preGainDB" name="preGainDB" type="float" max="24" min="-12" />
+        <param id="releaseCurve" name="releaseCurve" type="float" />
+        <param id="releaseTimeMS" name="releaseTimeMS" type="float" def="50" max="5000" />
+        <param id="thresholdDB" name="thresholdDB" type="float" def="-90" max="0" min="-90" />
+      </params>
+    </object>
+    <object id="Granny">
+      <visual name="Granny" />
+      <params>
+        <param id="amp/eg/A" name="amp/eg/A" type="float" />
+        <param id="amp/eg/D" name="amp/eg/D" type="float" def="1" min="1" />
+        <param id="amp/eg/R" name="amp/eg/R" type="float" def="0.83" min="0.83" />
+        <param id="amp/eg/S" name="amp/eg/S" type="float" def="0.16" min="0.16" />
+        <param id="amp/level" name="amp/level" type="float" def="0.37" min="0.37" />
+        <param id="filter/eg/A" name="filter/eg/A" type="float" />
+        <param id="filter/eg/D" name="filter/eg/D" type="float" def="0.86" min="0.86" />
+        <param id="filter/eg/R" name="filter/eg/R" type="float" def="0.77" min="0.77" />
+        <param id="filter/eg/S" name="filter/eg/S" type="float" def="0.12" min="0.12" />
+        <param id="filter/egamount" name="filter/egamount" type="float" def="1" min="1" />
+        <param id="filter/freq" name="filter/freq" type="float" def="1" min="1" />
+        <param id="filter/res" name="filter/res" type="float" />
+        <param id="osc/amp/compression" name="osc/amp/compression" type="float" />
+        <param id="osc/amp/level" name="osc/amp/level" type="float" def="0.5" min="0.5" />
+        <param id="osc/amp/random" name="osc/amp/random" type="float" max="0.99" />
+        <param id="osc/amp/width" name="osc/amp/width" type="float" def="0.5" min="0.5" />
+        <param id="osc/grain/duration" name="osc/grain/duration" type="float" def="0.07" min="0.07" />
+        <param id="osc/grain/keyfollow" name="osc/grain/keyfollow" type="float" def="1" min="1" />
+        <param id="osc/grain/randomDuration" name="osc/grain/randomDuration" type="float" def="0.09" />
+        <param id="osc/grain/randomInterval" name="osc/grain/randomInterval" type="float" min="-1" />
+        <param id="osc/grain/randomPitch" name="osc/grain/randomPitch" type="float" />
+        <param id="osc/shaper/alpha" name="osc/shaper/alpha" type="float" max="0" />
+        <param id="osc/shaper/length" name="osc/shaper/length" type="float" def="1" />
+        <param id="osc/shaper/shape" name="osc/shaper/shape" type="float" def="4" max="8" />
+        <param id="osc/stream/count" name="osc/stream/count" type="float" def="0.21" min="0.21" />
+        <param id="osc/stream/duration" name="osc/stream/duration" type="float" def="0.5" min="0.5" />
+        <param id="osc/stream/pitch" name="osc/stream/pitch" type="float" def="-1" min="-1" />
+        <param id="osc/stream/pitchmod" name="osc/stream/pitchmod" type="float" />
+        <param id="osc/stream/position" name="osc/stream/position" type="float" def="0.1" min="0.1" />
+        <param id="pitch/coarse" name="pitch/coarse" type="float" def="0.34" min="0.34" />
+        <param id="pitch/fine" name="pitch/fine" type="float" def="-0.11" min="-0.11" />
+        <param id="pitch/fixed" name="pitch/fixed" type="float" />
+        <param id="pitch/formant" name="pitch/formant" type="float" min="-1" />
+        <param id="pitch/formantmod" name="pitch/formantmod" type="float" />
+        <param id="pitch/octave" name="pitch/octave" type="float" def="0.32" min="0.32" />
+        <param id="sample/end" name="sample/end" type="float" def="1" max="1.00163" />
+        <param id="sample/index" name="sample/index" type="float" max="0" />
+        <param id="sample/length" name="sample/length" type="float" max="0" />
+        <param id="sample/offset" name="sample/offset" type="float" min="-1" />
+        <param id="sample/position" name="sample/position" type="float" min="0.01" />
+        <param id="sample/randomPosition" name="sample/randomPosition" type="float" />
+        <param id="sample/rate" name="sample/rate" type="float" def="44100" max="44100" min="44100" />
+        <param id="sample/rootKey" name="sample/rootKey" type="float" def="60" max="60" min="60" />
+        <param id="sample/speed" name="sample/speed" type="float" />
+        <param id="sample/start" name="sample/start" type="float" max="0.988581" />
+      </params>
+    </object>
+    <object id="Limiter">
+      <visual name="Limiter" />
+      <params>
+        <param id="attackTimeMS" name="attackTimeMS" type="float" max="300" />
+        <param id="circuitMode" name="circuitMode" type="float" def="1" />
+        <param id="detectMode" name="detectMode" type="float" />
+        <param id="filterActive" name="filterActive" type="float" />
+        <param id="filterAudition" name="filterAudition" type="float" />
+        <param id="filterFrequency" name="filterFrequency" type="float" def="200" max="20000" min="20" />
+        <param id="filterGainDB" name="filterGainDB" type="float" max="60" />
+        <param id="filterMode" name="filterMode" type="float" def="2" max="2" />
+        <param id="filterQ" name="filterQ" type="float" />
+        <param id="lookaheadTimeMS" name="lookaheadTimeMS" type="float" max="10" />
+        <param id="postGainDB" name="postGainDB" type="float" max="24" />
+        <param id="preGainDB" name="preGainDB" type="float" max="24" min="-12" />
+        <param id="releaseTimeMS" name="releaseTimeMS" type="float" def="200" max="5000" />
+        <param id="thresholdDB" name="thresholdDB" type="float" max="0" min="-60" />
+      </params>
+    </object>
+    <object id="LimiterMini">
+      <visual name="Limiter Mini" />
+      <params>
+        <param id="postGainDB" name="postGainDB" type="float" max="24" />
+        <param id="preGainDB" name="preGainDB" type="float" max="24" min="-12" />
+        <param id="releaseTimeMS" name="releaseTimeMS" type="float" def="200" max="5000" min="200" />
+        <param id="thresholdDB" name="thresholdDB" type="float" max="0" min="-60" />
+      </params>
+    </object>
+    <object id="Phaser">
+      <visual name="Phaser" />
+      <params>
+        <param id="feedback" name="feedback" type="float" />
+        <param id="hzmin" name="hzmin" type="float" def="400" max="1000" min="100" />
+        <param id="hzrange" name="hzrange" type="float" def="4" max="10" min="2" />
+        <param id="mix" name="mix" type="float" def="1" />
+        <param id="rate" name="rate" type="float" def="1.5" max="5" />
+        <param id="stages" name="stages" type="float" def="8" max="16" min="2" />
+      </params>
+    </object>
+    <object id="Reverb">
+      <visual name="Reverb" />
+      <params>
+        <param id="fb" name="fb" type="float" def="0.65" />
+        <param id="lpf" name="lpf" type="float" def="10006" max="20000" min="12" />
+        <param id="mix" name="mix" type="float" def="0.5" />
+      </params>
+    </object>
+    <object id="SF2">
+      <visual name="GM Player" />
+      <params>
+        <param id="bank" name="bank" type="float" max="128" min="128" />
+        <param id="gain" name="gain" type="float" def="0.75" max="0.75" min="0.75" />
+        <param id="omni" name="omni" type="float" def="1" min="1" />
+        <param id="patch" name="patch" type="float" max="0" />
+        <param id="preset" name="preset" type="float" max="127" min="127" />
+      </params>
+    </object>
+    <object id="Sampler">
+      <visual name="Sampler" />
+    </object>
+    <object id="Tremolo">
+      <visual name="Tremolo" />
+      <params>
+        <param id="lfoADepth" name="lfoADepth" type="float" def="1" />
+        <param id="lfoARateHz" name="lfoARateHz" type="float" def="3.004" max="5" min="0.01" />
+      </params>
+    </object>
+    <object id="Vibrato">
+      <visual name="Vibrato" />
+      <params>
+        <param id="delayLfoDepth" name="delayLfoDepth" type="float" def="0.7" />
+        <param id="delayLfoRateHz" name="delayLfoRateHz" type="float" def="2.8044" max="5" min="0.01" />
+      </params>
+    </object>
+    <object id="Volt">
+      <visual name="VOLT" />
+      <params>
+        <param id="global/glide" name="global/glide" type="float" />
+        <param id="global/jr" name="global/jr" type="float" max="0" />
+        <param id="global/solo" name="global/solo" type="float" />
+        <param id="part/1/active" name="part/1/active" type="float" def="1" min="1" />
+        <param id="part/1/amp/level" name="part/1/amp/level" type="float" def="1" max="2" />
+        <param id="part/1/eg/1/A" name="part/1/eg/1/A" type="float" def="0.01" />
+        <param id="part/1/eg/1/D" name="part/1/eg/1/D" type="float" def="0.5" />
+        <param id="part/1/eg/1/L" name="part/1/eg/1/L" type="float" def="1" />
+        <param id="part/1/eg/1/R" name="part/1/eg/1/R" type="float" def="0.2" />
+        <param id="part/1/eg/1/S" name="part/1/eg/1/S" type="float" def="1" />
+        <param id="part/1/eg/1/curveA" name="part/1/eg/1/curveA" type="float" min="-1" />
+        <param id="part/1/eg/1/curveD" name="part/1/eg/1/curveD" type="float" min="-1" />
+        <param id="part/1/eg/1/curveR" name="part/1/eg/1/curveR" type="float" min="-1" />
+        <param id="part/1/eg/1/detune" name="part/1/eg/1/detune" type="float" />
+        <param id="part/1/eg/1/pitch" name="part/1/eg/1/pitch" type="float" />
+        <param id="part/1/eg/1/shape" name="part/1/eg/1/shape" type="float" />
+        <param id="part/1/eg/1/velocityTracker/gain/amount" name="part/1/eg/1/velocityTracker/gain/amount" type="float" />
+        <param id="part/1/eg/2/A" name="part/1/eg/2/A" type="float" def="0.01" />
+        <param id="part/1/eg/2/D" name="part/1/eg/2/D" type="float" def="0.5" />
+        <param id="part/1/eg/2/L" name="part/1/eg/2/L" type="float" def="1" />
+        <param id="part/1/eg/2/R" name="part/1/eg/2/R" type="float" def="0.2" />
+        <param id="part/1/eg/2/S" name="part/1/eg/2/S" type="float" def="1" />
+        <param id="part/1/eg/2/curveA" name="part/1/eg/2/curveA" type="float" min="-1" />
+        <param id="part/1/eg/2/curveD" name="part/1/eg/2/curveD" type="float" min="-1" />
+        <param id="part/1/eg/2/curveR" name="part/1/eg/2/curveR" type="float" min="-1" />
+        <param id="part/1/eg/2/detune" name="part/1/eg/2/detune" type="float" />
+        <param id="part/1/eg/2/pitch" name="part/1/eg/2/pitch" type="float" />
+        <param id="part/1/eg/2/shape" name="part/1/eg/2/shape" type="float" />
+        <param id="part/1/eg/2/velocityTracker/gain/amount" name="part/1/eg/2/velocityTracker/gain/amount" type="float" />
+        <param id="part/1/eg/3/A" name="part/1/eg/3/A" type="float" />
+        <param id="part/1/eg/3/D" name="part/1/eg/3/D" type="float" def="0.0264" />
+        <param id="part/1/eg/3/L" name="part/1/eg/3/L" type="float" def="0.77" />
+        <param id="part/1/eg/3/R" name="part/1/eg/3/R" type="float" def="0.0023" />
+        <param id="part/1/eg/3/S" name="part/1/eg/3/S" type="float" def="0.19" />
+        <param id="part/1/eg/3/curveA" name="part/1/eg/3/curveA" type="float" min="-1" />
+        <param id="part/1/eg/3/curveD" name="part/1/eg/3/curveD" type="float" def="0.19" min="-1" />
+        <param id="part/1/eg/3/curveR" name="part/1/eg/3/curveR" type="float" def="0.28" min="-1" />
+        <param id="part/1/eg/3/velocityTracker/gain/amount" name="part/1/eg/3/velocityTracker/gain/amount" type="float" def="0.74" />
+        <param id="part/1/eg/4/A" name="part/1/eg/4/A" type="float" />
+        <param id="part/1/eg/4/D" name="part/1/eg/4/D" type="float" def="0.5" />
+        <param id="part/1/eg/4/L" name="part/1/eg/4/L" type="float" def="1" />
+        <param id="part/1/eg/4/R" name="part/1/eg/4/R" type="float" def="0.0029" />
+        <param id="part/1/eg/4/S" name="part/1/eg/4/S" type="float" def="1" />
+        <param id="part/1/eg/4/curveA" name="part/1/eg/4/curveA" type="float" min="-1" />
+        <param id="part/1/eg/4/curveD" name="part/1/eg/4/curveD" type="float" min="-1" />
+        <param id="part/1/eg/4/curveR" name="part/1/eg/4/curveR" type="float" def="0.21" min="-1" />
+        <param id="part/1/eg/4/velocityTracker/gain/amount" name="part/1/eg/4/velocityTracker/gain/amount" type="float" def="0.805" />
+        <param id="part/1/filter/Q" name="part/1/filter/Q" type="float" def="1.1" max="10" />
+        <param id="part/1/filter/bypass" name="part/1/filter/bypass" type="float" max="0" />
+        <param id="part/1/filter/drive" name="part/1/filter/drive" type="float" def="0.27607" />
+        <param id="part/1/filter/fc" name="part/1/filter/fc" type="float" />
+        <param id="part/1/filter/mode" name="part/1/filter/mode" type="float" def="1" max="6" />
+        <param id="part/1/lfo/1/amp" name="part/1/lfo/1/amp" type="float" />
+        <param id="part/1/lfo/1/delay" name="part/1/lfo/1/delay" type="float" max="10" />
+        <param id="part/1/lfo/1/gain" name="part/1/lfo/1/gain" type="float" />
+        <param id="part/1/lfo/1/mode" name="part/1/lfo/1/mode" type="float" max="2" />
+        <param id="part/1/lfo/1/pan" name="part/1/lfo/1/pan" type="float" />
+        <param id="part/1/lfo/1/pitch" name="part/1/lfo/1/pitch" type="float" />
+        <param id="part/1/lfo/1/rate" name="part/1/lfo/1/rate" type="float" max="10" />
+        <param id="part/1/lfo/1/shape" name="part/1/lfo/1/shape" type="float" />
+        <param id="part/1/lfo/1/wave" name="part/1/lfo/1/wave" type="float" def="1" max="4" />
+        <param id="part/1/lfo/2/amp" name="part/1/lfo/2/amp" type="float" />
+        <param id="part/1/lfo/2/delay" name="part/1/lfo/2/delay" type="float" max="10" />
+        <param id="part/1/lfo/2/gain" name="part/1/lfo/2/gain" type="float" />
+        <param id="part/1/lfo/2/mode" name="part/1/lfo/2/mode" type="float" max="2" />
+        <param id="part/1/lfo/2/pan" name="part/1/lfo/2/pan" type="float" />
+        <param id="part/1/lfo/2/pitch" name="part/1/lfo/2/pitch" type="float" />
+        <param id="part/1/lfo/2/rate" name="part/1/lfo/2/rate" type="float" max="10" />
+        <param id="part/1/lfo/2/shape" name="part/1/lfo/2/shape" type="float" />
+        <param id="part/1/lfo/2/wave" name="part/1/lfo/2/wave" type="float" def="1" max="4" />
+        <param id="part/1/lfo/3/amp" name="part/1/lfo/3/amp" type="float" />
+        <param id="part/1/lfo/3/delay" name="part/1/lfo/3/delay" type="float" max="10" />
+        <param id="part/1/lfo/3/mode" name="part/1/lfo/3/mode" type="float" max="2" />
+        <param id="part/1/lfo/3/rate" name="part/1/lfo/3/rate" type="float" max="10" />
+        <param id="part/1/lfo/3/wave" name="part/1/lfo/3/wave" type="float" def="1" max="4" />
+        <param id="part/1/lfo/4/amp" name="part/1/lfo/4/amp" type="float" />
+        <param id="part/1/lfo/4/delay" name="part/1/lfo/4/delay" type="float" max="10" />
+        <param id="part/1/lfo/4/mode" name="part/1/lfo/4/mode" type="float" max="2" />
+        <param id="part/1/lfo/4/rate" name="part/1/lfo/4/rate" type="float" max="10" />
+        <param id="part/1/lfo/4/wave" name="part/1/lfo/4/wave" type="float" def="1" max="4" />
+        <param id="part/1/osc/1/active" name="part/1/osc/1/active" type="float" def="1" />
+        <param id="part/1/osc/1/coarse" name="part/1/osc/1/coarse" type="float" max="12" min="-12" />
+        <param id="part/1/osc/1/detune" name="part/1/osc/1/detune" type="float" def="0.3" />
+        <param id="part/1/osc/1/fine" name="part/1/osc/1/fine" type="float" def="-10" max="100" min="-100" />
+        <param id="part/1/osc/1/gain" name="part/1/osc/1/gain" type="float" def="1" max="2" />
+        <param id="part/1/osc/1/mix" name="part/1/osc/1/mix" type="float" def="0.5" />
+        <param id="part/1/osc/1/octave" name="part/1/osc/1/octave" type="float" def="-2" max="3" min="-3" />
+        <param id="part/1/osc/1/pan" name="part/1/osc/1/pan" type="float" def="0.5" />
+        <param id="part/1/osc/1/quality" name="part/1/osc/1/quality" type="float" def="1" />
+        <param id="part/1/osc/1/shape" name="part/1/osc/1/shape" type="float" />
+        <param id="part/1/osc/1/stereo" name="part/1/osc/1/stereo" type="float" def="0.84" />
+        <param id="part/1/osc/1/unison" name="part/1/osc/1/unison" type="float" def="5" max="7" min="1" />
+        <param id="part/1/osc/1/wave" name="part/1/osc/1/wave" type="float" def="3" max="4" />
+        <param id="part/1/osc/2/active" name="part/1/osc/2/active" type="float" def="1" />
+        <param id="part/1/osc/2/coarse" name="part/1/osc/2/coarse" type="float" max="12" min="-12" />
+        <param id="part/1/osc/2/detune" name="part/1/osc/2/detune" type="float" def="0.3" />
+        <param id="part/1/osc/2/fine" name="part/1/osc/2/fine" type="float" def="9" max="100" min="-100" />
+        <param id="part/1/osc/2/gain" name="part/1/osc/2/gain" type="float" def="1" max="2" />
+        <param id="part/1/osc/2/mix" name="part/1/osc/2/mix" type="float" def="0.5" />
+        <param id="part/1/osc/2/octave" name="part/1/osc/2/octave" type="float" def="-2" max="3" min="-3" />
+        <param id="part/1/osc/2/pan" name="part/1/osc/2/pan" type="float" def="0.5" />
+        <param id="part/1/osc/2/quality" name="part/1/osc/2/quality" type="float" def="1" />
+        <param id="part/1/osc/2/shape" name="part/1/osc/2/shape" type="float" def="0.1" />
+        <param id="part/1/osc/2/stereo" name="part/1/osc/2/stereo" type="float" />
+        <param id="part/1/osc/2/unison" name="part/1/osc/2/unison" type="float" def="1" max="7" min="1" />
+        <param id="part/1/osc/2/wave" name="part/1/osc/2/wave" type="float" def="1" max="4" />
+        <param id="part/1/oscmix" name="part/1/oscmix" type="float" def="0.5" />
+        <param id="part/1/oscmod" name="part/1/oscmod" type="float" max="2" />
+        <param id="part/2/active" name="part/2/active" type="float" />
+        <param id="part/2/amp/level" name="part/2/amp/level" type="float" def="1" max="2" />
+        <param id="part/2/eg/1/A" name="part/2/eg/1/A" type="float" def="0.01" />
+        <param id="part/2/eg/1/D" name="part/2/eg/1/D" type="float" def="0.5" />
+        <param id="part/2/eg/1/L" name="part/2/eg/1/L" type="float" def="1" />
+        <param id="part/2/eg/1/R" name="part/2/eg/1/R" type="float" def="0.2" />
+        <param id="part/2/eg/1/S" name="part/2/eg/1/S" type="float" def="1" />
+        <param id="part/2/eg/1/curveA" name="part/2/eg/1/curveA" type="float" min="-1" />
+        <param id="part/2/eg/1/curveD" name="part/2/eg/1/curveD" type="float" min="-1" />
+        <param id="part/2/eg/1/curveR" name="part/2/eg/1/curveR" type="float" min="-1" />
+        <param id="part/2/eg/1/detune" name="part/2/eg/1/detune" type="float" />
+        <param id="part/2/eg/1/pitch" name="part/2/eg/1/pitch" type="float" />
+        <param id="part/2/eg/1/shape" name="part/2/eg/1/shape" type="float" />
+        <param id="part/2/eg/1/velocityTracker/gain/amount" name="part/2/eg/1/velocityTracker/gain/amount" type="float" />
+        <param id="part/2/eg/2/A" name="part/2/eg/2/A" type="float" def="0.01" />
+        <param id="part/2/eg/2/D" name="part/2/eg/2/D" type="float" def="0.5" />
+        <param id="part/2/eg/2/L" name="part/2/eg/2/L" type="float" def="1" />
+        <param id="part/2/eg/2/R" name="part/2/eg/2/R" type="float" def="0.2" />
+        <param id="part/2/eg/2/S" name="part/2/eg/2/S" type="float" def="1" />
+        <param id="part/2/eg/2/curveA" name="part/2/eg/2/curveA" type="float" min="-1" />
+        <param id="part/2/eg/2/curveD" name="part/2/eg/2/curveD" type="float" min="-1" />
+        <param id="part/2/eg/2/curveR" name="part/2/eg/2/curveR" type="float" min="-1" />
+        <param id="part/2/eg/2/detune" name="part/2/eg/2/detune" type="float" />
+        <param id="part/2/eg/2/pitch" name="part/2/eg/2/pitch" type="float" />
+        <param id="part/2/eg/2/shape" name="part/2/eg/2/shape" type="float" />
+        <param id="part/2/eg/2/velocityTracker/gain/amount" name="part/2/eg/2/velocityTracker/gain/amount" type="float" />
+        <param id="part/2/eg/3/A" name="part/2/eg/3/A" type="float" def="0.01" />
+        <param id="part/2/eg/3/D" name="part/2/eg/3/D" type="float" def="0.5" />
+        <param id="part/2/eg/3/L" name="part/2/eg/3/L" type="float" def="1" />
+        <param id="part/2/eg/3/R" name="part/2/eg/3/R" type="float" def="0.2" />
+        <param id="part/2/eg/3/S" name="part/2/eg/3/S" type="float" def="1" />
+        <param id="part/2/eg/3/curveA" name="part/2/eg/3/curveA" type="float" min="-1" />
+        <param id="part/2/eg/3/curveD" name="part/2/eg/3/curveD" type="float" min="-1" />
+        <param id="part/2/eg/3/curveR" name="part/2/eg/3/curveR" type="float" min="-1" />
+        <param id="part/2/eg/3/velocityTracker/gain/amount" name="part/2/eg/3/velocityTracker/gain/amount" type="float" def="1" />
+        <param id="part/2/eg/4/A" name="part/2/eg/4/A" type="float" def="0.01" />
+        <param id="part/2/eg/4/D" name="part/2/eg/4/D" type="float" def="0.5" />
+        <param id="part/2/eg/4/L" name="part/2/eg/4/L" type="float" def="1" />
+        <param id="part/2/eg/4/R" name="part/2/eg/4/R" type="float" def="0.2" />
+        <param id="part/2/eg/4/S" name="part/2/eg/4/S" type="float" def="1" />
+        <param id="part/2/eg/4/curveA" name="part/2/eg/4/curveA" type="float" min="-1" />
+        <param id="part/2/eg/4/curveD" name="part/2/eg/4/curveD" type="float" min="-1" />
+        <param id="part/2/eg/4/curveR" name="part/2/eg/4/curveR" type="float" min="-1" />
+        <param id="part/2/eg/4/velocityTracker/gain/amount" name="part/2/eg/4/velocityTracker/gain/amount" type="float" def="1" />
+        <param id="part/2/filter/Q" name="part/2/filter/Q" type="float" max="10" />
+        <param id="part/2/filter/bypass" name="part/2/filter/bypass" type="float" max="0" />
+        <param id="part/2/filter/drive" name="part/2/filter/drive" type="float" />
+        <param id="part/2/filter/fc" name="part/2/filter/fc" type="float" def="1" />
+        <param id="part/2/filter/mode" name="part/2/filter/mode" type="float" def="1" max="6" />
+        <param id="part/2/lfo/1/amp" name="part/2/lfo/1/amp" type="float" />
+        <param id="part/2/lfo/1/delay" name="part/2/lfo/1/delay" type="float" max="10" />
+        <param id="part/2/lfo/1/gain" name="part/2/lfo/1/gain" type="float" />
+        <param id="part/2/lfo/1/mode" name="part/2/lfo/1/mode" type="float" max="2" />
+        <param id="part/2/lfo/1/pan" name="part/2/lfo/1/pan" type="float" />
+        <param id="part/2/lfo/1/pitch" name="part/2/lfo/1/pitch" type="float" />
+        <param id="part/2/lfo/1/rate" name="part/2/lfo/1/rate" type="float" max="10" />
+        <param id="part/2/lfo/1/shape" name="part/2/lfo/1/shape" type="float" />
+        <param id="part/2/lfo/1/wave" name="part/2/lfo/1/wave" type="float" def="1" max="4" />
+        <param id="part/2/lfo/2/amp" name="part/2/lfo/2/amp" type="float" />
+        <param id="part/2/lfo/2/delay" name="part/2/lfo/2/delay" type="float" max="10" />
+        <param id="part/2/lfo/2/gain" name="part/2/lfo/2/gain" type="float" />
+        <param id="part/2/lfo/2/mode" name="part/2/lfo/2/mode" type="float" max="2" />
+        <param id="part/2/lfo/2/pan" name="part/2/lfo/2/pan" type="float" />
+        <param id="part/2/lfo/2/pitch" name="part/2/lfo/2/pitch" type="float" />
+        <param id="part/2/lfo/2/rate" name="part/2/lfo/2/rate" type="float" max="10" />
+        <param id="part/2/lfo/2/shape" name="part/2/lfo/2/shape" type="float" />
+        <param id="part/2/lfo/2/wave" name="part/2/lfo/2/wave" type="float" def="1" max="4" />
+        <param id="part/2/lfo/3/amp" name="part/2/lfo/3/amp" type="float" />
+        <param id="part/2/lfo/3/delay" name="part/2/lfo/3/delay" type="float" max="10" />
+        <param id="part/2/lfo/3/mode" name="part/2/lfo/3/mode" type="float" max="2" />
+        <param id="part/2/lfo/3/rate" name="part/2/lfo/3/rate" type="float" max="10" />
+        <param id="part/2/lfo/3/wave" name="part/2/lfo/3/wave" type="float" def="1" max="4" />
+        <param id="part/2/lfo/4/amp" name="part/2/lfo/4/amp" type="float" />
+        <param id="part/2/lfo/4/delay" name="part/2/lfo/4/delay" type="float" max="10" />
+        <param id="part/2/lfo/4/mode" name="part/2/lfo/4/mode" type="float" max="2" />
+        <param id="part/2/lfo/4/rate" name="part/2/lfo/4/rate" type="float" max="10" />
+        <param id="part/2/lfo/4/wave" name="part/2/lfo/4/wave" type="float" def="1" max="4" />
+        <param id="part/2/osc/1/active" name="part/2/osc/1/active" type="float" />
+        <param id="part/2/osc/1/coarse" name="part/2/osc/1/coarse" type="float" max="12" min="-12" />
+        <param id="part/2/osc/1/detune" name="part/2/osc/1/detune" type="float" def="0.3" />
+        <param id="part/2/osc/1/fine" name="part/2/osc/1/fine" type="float" max="100" min="-100" />
+        <param id="part/2/osc/1/gain" name="part/2/osc/1/gain" type="float" def="1" max="2" />
+        <param id="part/2/osc/1/mix" name="part/2/osc/1/mix" type="float" def="0.5" />
+        <param id="part/2/osc/1/octave" name="part/2/osc/1/octave" type="float" def="-1" max="3" min="-3" />
+        <param id="part/2/osc/1/pan" name="part/2/osc/1/pan" type="float" def="0.5" />
+        <param id="part/2/osc/1/quality" name="part/2/osc/1/quality" type="float" />
+        <param id="part/2/osc/1/shape" name="part/2/osc/1/shape" type="float" />
+        <param id="part/2/osc/1/stereo" name="part/2/osc/1/stereo" type="float" />
+        <param id="part/2/osc/1/unison" name="part/2/osc/1/unison" type="float" def="1" max="7" min="1" />
+        <param id="part/2/osc/1/wave" name="part/2/osc/1/wave" type="float" def="3" max="4" />
+        <param id="part/2/osc/2/active" name="part/2/osc/2/active" type="float" />
+        <param id="part/2/osc/2/coarse" name="part/2/osc/2/coarse" type="float" max="12" min="-12" />
+        <param id="part/2/osc/2/detune" name="part/2/osc/2/detune" type="float" def="0.3" />
+        <param id="part/2/osc/2/fine" name="part/2/osc/2/fine" type="float" max="100" min="-100" />
+        <param id="part/2/osc/2/gain" name="part/2/osc/2/gain" type="float" def="1" max="2" />
+        <param id="part/2/osc/2/mix" name="part/2/osc/2/mix" type="float" def="0.5" />
+        <param id="part/2/osc/2/octave" name="part/2/osc/2/octave" type="float" def="-1" max="3" min="-3" />
+        <param id="part/2/osc/2/pan" name="part/2/osc/2/pan" type="float" def="0.5" />
+        <param id="part/2/osc/2/quality" name="part/2/osc/2/quality" type="float" />
+        <param id="part/2/osc/2/shape" name="part/2/osc/2/shape" type="float" />
+        <param id="part/2/osc/2/stereo" name="part/2/osc/2/stereo" type="float" />
+        <param id="part/2/osc/2/unison" name="part/2/osc/2/unison" type="float" def="1" max="7" min="1" />
+        <param id="part/2/osc/2/wave" name="part/2/osc/2/wave" type="float" def="3" max="4" />
+        <param id="part/2/oscmix" name="part/2/oscmix" type="float" def="0.5" />
+        <param id="part/2/oscmod" name="part/2/oscmod" type="float" max="2" />
+      </params>
+    </object>
+    <object id="VoltMini">
+      <visual name="VOLT Mini" />
+      <params>
+        <param id="global/glide" name="global/glide" type="float" />
+        <param id="global/jr" name="global/jr" type="float" def="1" min="1" />
+        <param id="global/solo" name="global/solo" type="float" />
+        <param id="part/1/active" name="part/1/active" type="float" def="1" min="1" />
+        <param id="part/1/amp/level" name="part/1/amp/level" type="float" def="0.56" max="2" />
+        <param id="part/1/eg/1/A" name="part/1/eg/1/A" type="float" def="0.0253" />
+        <param id="part/1/eg/1/D" name="part/1/eg/1/D" type="float" def="0.0082" />
+        <param id="part/1/eg/1/L" name="part/1/eg/1/L" type="float" def="1" />
+        <param id="part/1/eg/1/R" name="part/1/eg/1/R" type="float" def="0.17" />
+        <param id="part/1/eg/1/S" name="part/1/eg/1/S" type="float" />
+        <param id="part/1/eg/1/curveA" name="part/1/eg/1/curveA" type="float" def="-0.41" min="-1" />
+        <param id="part/1/eg/1/curveD" name="part/1/eg/1/curveD" type="float" def="0.35" min="-1" />
+        <param id="part/1/eg/1/curveR" name="part/1/eg/1/curveR" type="float" min="-1" />
+        <param id="part/1/eg/1/detune" name="part/1/eg/1/detune" type="float" />
+        <param id="part/1/eg/1/pitch" name="part/1/eg/1/pitch" type="float" />
+        <param id="part/1/eg/1/shape" name="part/1/eg/1/shape" type="float" def="0.07" />
+        <param id="part/1/eg/1/velocityTracker/gain/amount" name="part/1/eg/1/velocityTracker/gain/amount" type="float" def="0.58" />
+        <param id="part/1/eg/3/A" name="part/1/eg/3/A" type="float" def="0.0002" />
+        <param id="part/1/eg/3/D" name="part/1/eg/3/D" type="float" def="0.0812" />
+        <param id="part/1/eg/3/L" name="part/1/eg/3/L" type="float" def="0.87" />
+        <param id="part/1/eg/3/R" name="part/1/eg/3/R" type="float" def="0.0319" />
+        <param id="part/1/eg/3/S" name="part/1/eg/3/S" type="float" def="0.22" />
+        <param id="part/1/eg/3/curveA" name="part/1/eg/3/curveA" type="float" def="0.56" min="-1" />
+        <param id="part/1/eg/3/curveD" name="part/1/eg/3/curveD" type="float" def="-0.31" min="-1" />
+        <param id="part/1/eg/3/curveR" name="part/1/eg/3/curveR" type="float" min="-1" />
+        <param id="part/1/eg/3/velocityTracker/gain/amount" name="part/1/eg/3/velocityTracker/gain/amount" type="float" def="0.74" />
+        <param id="part/1/eg/4/A" name="part/1/eg/4/A" type="float" def="0.0005" />
+        <param id="part/1/eg/4/D" name="part/1/eg/4/D" type="float" def="0.0216" />
+        <param id="part/1/eg/4/L" name="part/1/eg/4/L" type="float" def="1" />
+        <param id="part/1/eg/4/R" name="part/1/eg/4/R" type="float" def="0.0153" />
+        <param id="part/1/eg/4/S" name="part/1/eg/4/S" type="float" def="1" />
+        <param id="part/1/eg/4/curveA" name="part/1/eg/4/curveA" type="float" min="-1" />
+        <param id="part/1/eg/4/curveD" name="part/1/eg/4/curveD" type="float" min="-1" />
+        <param id="part/1/eg/4/curveR" name="part/1/eg/4/curveR" type="float" min="-1" />
+        <param id="part/1/eg/4/velocityTracker/gain/amount" name="part/1/eg/4/velocityTracker/gain/amount" type="float" def="0.77" min="0.77" />
+        <param id="part/1/filter/Q" name="part/1/filter/Q" type="float" max="10" />
+        <param id="part/1/filter/bypass" name="part/1/filter/bypass" type="float" max="0" min="1" />
+        <param id="part/1/filter/drive" name="part/1/filter/drive" type="float" def="0.19783" />
+        <param id="part/1/filter/fc" name="part/1/filter/fc" type="float" />
+        <param id="part/1/filter/mode" name="part/1/filter/mode" type="float" max="4" />
+        <param id="part/1/lfo/1/amp" name="part/1/lfo/1/amp" type="float" />
+        <param id="part/1/lfo/1/delay" name="part/1/lfo/1/delay" type="float" max="10" />
+        <param id="part/1/lfo/1/gain" name="part/1/lfo/1/gain" type="float" />
+        <param id="part/1/lfo/1/mode" name="part/1/lfo/1/mode" type="float" max="2" />
+        <param id="part/1/lfo/1/pan" name="part/1/lfo/1/pan" type="float" />
+        <param id="part/1/lfo/1/pitch" name="part/1/lfo/1/pitch" type="float" />
+        <param id="part/1/lfo/1/rate" name="part/1/lfo/1/rate" type="float" max="10" />
+        <param id="part/1/lfo/1/shape" name="part/1/lfo/1/shape" type="float" />
+        <param id="part/1/lfo/1/wave" name="part/1/lfo/1/wave" type="float" def="1" max="4" />
+        <param id="part/1/lfo/3/amp" name="part/1/lfo/3/amp" type="float" />
+        <param id="part/1/lfo/3/delay" name="part/1/lfo/3/delay" type="float" max="10" />
+        <param id="part/1/lfo/3/mode" name="part/1/lfo/3/mode" type="float" max="2" />
+        <param id="part/1/lfo/3/rate" name="part/1/lfo/3/rate" type="float" max="10" />
+        <param id="part/1/lfo/3/wave" name="part/1/lfo/3/wave" type="float" def="1" max="4" />
+        <param id="part/1/lfo/4/amp" name="part/1/lfo/4/amp" type="float" />
+        <param id="part/1/lfo/4/delay" name="part/1/lfo/4/delay" type="float" max="10" />
+        <param id="part/1/lfo/4/mode" name="part/1/lfo/4/mode" type="float" max="2" />
+        <param id="part/1/lfo/4/rate" name="part/1/lfo/4/rate" type="float" max="10" />
+        <param id="part/1/lfo/4/wave" name="part/1/lfo/4/wave" type="float" def="1" max="4" />
+        <param id="part/1/osc/1/active" name="part/1/osc/1/active" type="float" def="1" />
+        <param id="part/1/osc/1/coarse" name="part/1/osc/1/coarse" type="float" max="12" min="-12" />
+        <param id="part/1/osc/1/detune" name="part/1/osc/1/detune" type="float" def="0.14" />
+        <param id="part/1/osc/1/fine" name="part/1/osc/1/fine" type="float" max="100" min="-100" />
+        <param id="part/1/osc/1/gain" name="part/1/osc/1/gain" type="float" def="0.8" max="2" />
+        <param id="part/1/osc/1/mix" name="part/1/osc/1/mix" type="float" def="0.45" />
+        <param id="part/1/osc/1/octave" name="part/1/osc/1/octave" type="float" def="1" max="3" min="-3" />
+        <param id="part/1/osc/1/pan" name="part/1/osc/1/pan" type="float" def="0.5" />
+        <param id="part/1/osc/1/quality" name="part/1/osc/1/quality" type="float" def="1" />
+        <param id="part/1/osc/1/shape" name="part/1/osc/1/shape" type="float" def="0.32" />
+        <param id="part/1/osc/1/stereo" name="part/1/osc/1/stereo" type="float" def="0.62" />
+        <param id="part/1/osc/1/unison" name="part/1/osc/1/unison" type="float" def="7" max="7" min="1" />
+        <param id="part/1/osc/1/wave" name="part/1/osc/1/wave" type="float" max="4" />
+        <param id="part/1/oscmix" name="part/1/oscmix" type="float" def="0.5" max="0.5" min="0.5" />
+        <param id="part/1/oscmod" name="part/1/oscmod" type="float" max="0" />
+      </params>
+    </object>
+    <object id="WAM">
+      <visual name="Metal Machine" />
+    </object>
+  </category>
+  <category id="plugin_wam">
+    <object id="AUGUR">
+      <visual name="Augur" color="#4682b4" />
+    </object>
+    <object id="DEXED">
+      <visual name="Dexed" color="#534d44" />
+    </object>
+    <object id="Europa">
+      <visual name="Europa" color="#ae1807" />
+    </object>
+    <object id="OBXD">
+      <visual name="OBXD" color="#84aad6" />
+    </object>
+    <object id="WASABI_SC.CleanMachine">
+      <visual name="Clean Machine" color="#e3bc8b" />
+    </object>
+    <object id="WASABI_SC.DistoMachine">
+      <visual name="Distortion Machine" color="#bdbec0" />
+    </object>
+    <object id="WASABI_SC.MetalMachine">
+      <visual name="Metal Machine" color="#787879" />
+    </object>
+    <object id="WASABI_SC.Utility">
+      <visual name="Amp Sim Utility" color="#787879" />
+    </object>
+  </category>
+</datapack>

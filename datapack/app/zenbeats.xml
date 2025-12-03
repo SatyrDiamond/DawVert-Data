@@ -1,0 +1,23 @@
+<datapack>
+  <category id="global">
+    <colorset id="main">
+      <color>#91F6FF</color>
+      <color>#64CCFF</color>
+      <color>#6569FF</color>
+      <color>#8745C1</color>
+      <color>#FF569E</color>
+      <color>#FF6A37</color>
+      <color>#FFA043</color>
+    </colorset>
+    <colorset id="drum">
+      <color>#8F37D4</color>
+      <color>#8F37D4</color>
+      <color>#3D5DE4</color>
+      <color>#3D5DE4</color>
+      <color>#139ADE</color>
+      <color>#139ADE</color>
+      <color>#00E6E6</color>
+      <color>#00E6E6</color>
+    </colorset>
+  </category>
+</datapack>

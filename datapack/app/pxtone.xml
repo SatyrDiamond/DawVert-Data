@@ -1,0 +1,15 @@
+<datapack>
+  <category id="track">
+    <colorset id="main">
+      <color>#00BDFF</color>
+      <color>#FF775D</color>
+      <color>#00C060</color>
+      <color>#FC32CB</color>
+      <color>#92C600</color>
+      <color>#AE40FF</color>
+      <color>#CAB8B8</color>
+      <color>#6979FF</color>
+      <color>#F08000</color>
+    </colorset>
+  </category>
+</datapack>

@@ -1,0 +1,10 @@
+<datapack>
+  <category id="inst">
+    <colorset id="main">
+      <color>#41607C</color>
+      <color>#5D6E75</color>
+      <color>#839179</color>
+      <color>#94A267</color>
+    </colorset>
+  </category>
+</datapack>

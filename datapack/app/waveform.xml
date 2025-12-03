@@ -1,0 +1,398 @@
+<datapack>
+  <category id="plugin">
+    <object id="1bandEq">
+      <visual name="1-Band Equalizer" color="#33363d" />
+      <params>
+        <param id="freq" name="Freq" type="float" def="83.2131" max="135.076" min="15.4868" />
+        <param id="gain" name="Gain" type="float" max="20" min="-20" />
+        <param id="q" name="Q" type="float" def="0.5" max="4" min="0.1" />
+        <param id="shape" name="Shape" type="int" def="2" max="5" />
+        <param id="slope" name="Slope" type="int" def="12" max="48" min="12" />
+      </params>
+    </object>
+    <object id="3bandEq">
+      <visual name="3-Band Equalizer" color="#33363d" />
+      <params>
+        <param id="freq1" name="Freq 1" type="float" def="43.35" max="135.076" min="15.4868" />
+        <param id="freq2" name="Freq 2" type="float" def="90.2326" max="135.076" min="15.4868" />
+        <param id="freq3" name="Freq 3" type="float" def="119.213" max="135.076" min="15.4868" />
+        <param id="gain1" name="Gain 1" type="float" max="20" min="-20" />
+        <param id="gain2" name="Gain 2" type="float" max="20" min="-20" />
+        <param id="gain3" name="Gain 3" type="float" max="20" min="-20" />
+      </params>
+    </object>
+    <object id="4bandEq">
+      <visual name="4-Band Equalizer" color="#33363d" />
+      <params>
+        <param id="hiFreq" name="hiFreq" type="float" def="17000" max="20000" min="20" />
+        <param id="hiGain" name="hiGain" type="float" max="20" min="-20" />
+        <param id="hiQ" name="hiQ" type="float" def="0.5" max="4" min="0.1" />
+        <param id="loFreq" name="loFreq" type="float" def="80" max="20000" min="20" />
+        <param id="loGain" name="loGain" type="float" max="20" min="-20" />
+        <param id="loQ" name="loQ" type="float" def="0.5" max="4" min="0.1" />
+        <param id="midFreq1" name="midFreq1" type="float" def="3000" max="20000" min="20" />
+        <param id="midFreq2" name="midFreq2" type="float" def="5000" max="20000" min="20" />
+        <param id="midGain1" name="midGain1" type="float" max="20" min="-20" />
+        <param id="midGain2" name="midGain2" type="float" max="20" min="-20" />
+        <param id="midQ1" name="midQ1" type="float" def="0.5" max="4" min="0.1" />
+        <param id="midQ2" name="midQ2" type="float" def="0.5" max="4" min="0.1" />
+        <param id="phaseInvert" name="phaseInvert" type="bool" />
+      </params>
+    </object>
+    <object id="8bandEq">
+      <visual name="8-Band Equalizer" color="#33363d" />
+      <params>
+        <param id="analyzer" name="analyzer" type="int" def="0" />
+        <param id="enable1lm" name="enable1lm" type="float" def="0" />
+        <param id="enable1rs" name="enable1rs" type="float" def="0" />
+        <param id="enable2lm" name="enable2lm" type="float" def="0" />
+        <param id="enable2rs" name="enable2rs" type="float" def="0" />
+        <param id="enable3lm" name="enable3lm" type="float" def="0" />
+        <param id="enable3rs" name="enable3rs" type="float" def="0" />
+        <param id="enable4lm" name="enable4lm" type="float" def="0" />
+        <param id="enable4rs" name="enable4rs" type="float" def="0" />
+        <param id="enable5lm" name="enable5lm" type="float" def="0" />
+        <param id="enable5rs" name="enable5rs" type="float" def="0" />
+        <param id="enable6lm" name="enable6lm" type="float" def="0" />
+        <param id="enable6rs" name="enable6rs" type="float" def="0" />
+        <param id="enable7lm" name="enable7lm" type="float" def="0" />
+        <param id="enable7rs" name="enable7rs" type="float" def="0" />
+        <param id="enable8lm" name="enable8lm" type="float" def="0" />
+        <param id="enable8rs" name="enable8rs" type="float" def="0" />
+        <param id="freq1lm" name="freq1lm" type="float" def="22.5063" />
+        <param id="freq1rs" name="freq1rs" type="float" def="22.5063" />
+        <param id="freq2lm" name="freq2lm" type="float" def="22.5063" />
+        <param id="freq2rs" name="freq2rs" type="float" def="22.5063" />
+        <param id="freq3lm" name="freq3lm" type="float" def="22.5063" />
+        <param id="freq3rs" name="freq3rs" type="float" def="22.5063" />
+        <param id="freq4lm" name="freq4lm" type="float" def="22.5063" />
+        <param id="freq4rs" name="freq4rs" type="float" def="22.5063" />
+        <param id="freq5lm" name="freq5lm" type="float" def="22.5063" />
+        <param id="freq5rs" name="freq5rs" type="float" def="22.5063" />
+        <param id="freq6lm" name="freq6lm" type="float" def="22.5063" />
+        <param id="freq6rs" name="freq6rs" type="float" def="22.5063" />
+        <param id="freq7lm" name="freq7lm" type="float" def="22.5063" />
+        <param id="freq7rs" name="freq7rs" type="float" def="22.5063" />
+        <param id="freq8lm" name="freq8lm" type="float" def="22.5063" />
+        <param id="freq8rs" name="freq8rs" type="float" def="22.5063" />
+        <param id="gain1lm" name="gain1lm" type="float" />
+        <param id="gain1rs" name="gain1rs" type="float" />
+        <param id="gain2lm" name="gain2lm" type="float" />
+        <param id="gain2rs" name="gain2rs" type="float" />
+        <param id="gain3lm" name="gain3lm" type="float" />
+        <param id="gain3rs" name="gain3rs" type="float" />
+        <param id="gain4lm" name="gain4lm" type="float" />
+        <param id="gain4rs" name="gain4rs" type="float" />
+        <param id="gain5lm" name="gain5lm" type="float" />
+        <param id="gain5rs" name="gain5rs" type="float" />
+        <param id="gain6lm" name="gain6lm" type="float" />
+        <param id="gain6rs" name="gain6rs" type="float" />
+        <param id="gain7lm" name="gain7lm" type="float" />
+        <param id="gain7rs" name="gain7rs" type="float" />
+        <param id="gain8lm" name="gain8lm" type="float" />
+        <param id="gain8rs" name="gain8rs" type="float" />
+        <param id="mode" name="mode" type="int" max="2" />
+        <param id="q1lm" name="q1lm" type="float" def="0.5" />
+        <param id="q1rs" name="q1rs" type="float" def="0.5" />
+        <param id="q2lm" name="q2lm" type="float" def="0.5" />
+        <param id="q2rs" name="q2rs" type="float" def="0.5" />
+        <param id="q3lm" name="q3lm" type="float" def="0.5" />
+        <param id="q3rs" name="q3rs" type="float" def="0.5" />
+        <param id="q4lm" name="q4lm" type="float" def="0.5" />
+        <param id="q4rs" name="q4rs" type="float" def="0.5" />
+        <param id="q5lm" name="q5lm" type="float" def="0.5" />
+        <param id="q5rs" name="q5rs" type="float" def="0.5" />
+        <param id="q6lm" name="q6lm" type="float" def="0.5" />
+        <param id="q6rs" name="q6rs" type="float" def="0.5" />
+        <param id="q7lm" name="q7lm" type="float" def="0.5" />
+        <param id="q7rs" name="q7rs" type="float" def="0.5" />
+        <param id="q8lm" name="q8lm" type="float" def="0.5" />
+        <param id="q8rs" name="q8rs" type="float" def="0.5" />
+        <param id="shape1lm" name="shape1lm" type="float" def="1" />
+        <param id="shape1rs" name="shape1rs" type="float" def="1" />
+        <param id="shape2lm" name="shape2lm" type="float" def="1" />
+        <param id="shape2rs" name="shape2rs" type="float" def="1" />
+        <param id="shape3lm" name="shape3lm" type="float" def="1" />
+        <param id="shape3rs" name="shape3rs" type="float" def="1" />
+        <param id="shape4lm" name="shape4lm" type="float" def="1" />
+        <param id="shape4rs" name="shape4rs" type="float" def="1" />
+        <param id="shape5lm" name="shape5lm" type="float" def="1" />
+        <param id="shape5rs" name="shape5rs" type="float" def="1" />
+        <param id="shape6lm" name="shape6lm" type="float" def="1" />
+        <param id="shape6rs" name="shape6rs" type="float" def="1" />
+        <param id="shape7lm" name="shape7lm" type="float" def="1" />
+        <param id="shape7rs" name="shape7rs" type="float" def="1" />
+        <param id="shape8lm" name="shape8lm" type="float" def="1" />
+        <param id="shape8rs" name="shape8rs" type="float" def="1" />
+        <param id="slope1lm" type="int" def="12" max="48" min="12" />
+        <param id="slope1rs" type="int" def="12" max="48" min="12" />
+        <param id="slope2lm" type="int" def="12" max="48" min="12" />
+        <param id="slope2rs" type="int" def="12" max="48" min="12" />
+        <param id="slope3lm" type="int" def="12" max="48" min="12" />
+        <param id="slope3rs" type="int" def="12" max="48" min="12" />
+        <param id="slope4lm" type="int" def="12" max="48" min="12" />
+        <param id="slope4rs" type="int" def="12" max="48" min="12" />
+        <param id="slope5lm" type="int" def="12" max="48" min="12" />
+        <param id="slope5rs" type="int" def="12" max="48" min="12" />
+        <param id="slope6lm" type="int" def="12" max="48" min="12" />
+        <param id="slope6rs" type="int" def="12" max="48" min="12" />
+        <param id="slope7lm" type="int" def="12" max="48" min="12" />
+        <param id="slope7rs" type="int" def="12" max="48" min="12" />
+        <param id="slope8lm" type="int" def="12" max="48" min="12" />
+        <param id="slope8rs" type="int" def="12" max="48" min="12" />
+      </params>
+    </object>
+    <object id="chorus">
+      <visual name="Chorus (Old)" color="#33363d" />
+      <params>
+        <param id="depthMs" name="depthMs" type="float" def="3" max="20" min="0.1" />
+        <param id="mixProportion" name="mixProportion" type="float" def="0.5" />
+        <param id="speedHz" name="speedHz" type="float" def="1" max="10" min="0.1" />
+        <param id="width" name="width" type="float" def="0.5" />
+      </params>
+    </object>
+    <object id="chorusEffect">
+      <visual name="Chorus" color="#33363d" />
+      <params>
+        <param id="delay" name="Delay" type="float" def="10" max="30" />
+        <param id="depth" name="Depth" type="float" def="20" max="20" />
+        <param id="mix" name="Mix" type="float" def="1" />
+        <param id="mixLock" name="Mix Lock" type="bool" />
+        <param id="mode" name="Mode" type="int" def="1" max="2" />
+        <param id="rateSyncOff" name="Rate Sec" type="float" def="0.4" max="5" min="0.02" />
+        <param id="rateSyncOn" name="Rate Beat" type="int" def="15" max="35" />
+        <param id="sync" name="Sync" type="bool" />
+      </params>
+    </object>
+    <object id="comp">
+      <visual name="Compressor" color="#33363d" />
+      <params>
+        <param id="attack" name="attack" type="float" def="50" max="100" min="1" />
+        <param id="inputDb" name="inputDb" type="float" max="20" min="-20" />
+        <param id="knee" name="knee" type="float" max="18" />
+        <param id="outputDb" name="outputDb" type="float" max="20" min="-20" />
+        <param id="ratio" name="ratio" type="float" def="2" max="100" min="1" />
+        <param id="release" name="release" type="float" def="500" max="1000" min="1" />
+        <param id="rms" name="rms" type="float" />
+        <param id="sidechainTrigger" name="sidechainTrigger" type="bool" />
+        <param id="threshold" name="threshold" type="float" def="-30" max="0" min="-60" />
+      </params>
+    </object>
+    <object id="compressor">
+      <visual name="Compressor (Old)" color="#33363d" />
+      <params>
+        <param id="attack" name="attack" type="float" def="100" max="200" min="0.3" />
+        <param id="inputDb" name="inputDb" type="float" max="24" min="-24" />
+        <param id="outputDb" name="outputDb" type="float" max="24" min="-10" />
+        <param id="ratio" name="ratio" type="float" def="0.5" max="0.949999" />
+        <param id="release" name="release" type="float" def="100" max="300" min="10" />
+        <param id="sidechainTrigger" name="sidechainTrigger" type="bool" />
+        <param id="threshold" name="threshold" type="float" def="0.501187" min="0.01" />
+      </params>
+    </object>
+    <object id="delay">
+      <visual name="Delay (Old)" color="#33363d" />
+      <params>
+        <param id="feedback" name="feedback" type="float" def="-6" max="0" min="-30" />
+        <param id="length" name="length" type="float" def="149" max="1000" />
+        <param id="mix" name="mix" type="float" def="0.3" />
+      </params>
+    </object>
+    <object id="distortion">
+      <visual name="Distortion" color="#33363d" />
+      <params>
+        <param id="drive" name="drive" type="float" />
+        <param id="dtype" name="dtype" type="int" max="5" />
+        <param id="emphasis" name="emphasis" type="float" def="0.25" />
+        <param id="mix" name="mix" type="float" def="1" />
+        <param id="mixLock" name="mixLock" type="bool" />
+        <param id="postGain" name="postGain" type="float" def="1" />
+        <param id="tone" name="tone" type="float" def="1" />
+      </params>
+    </object>
+    <object id="djeq">
+      <visual name="DJ EQ" color="#33363d" />
+      <params>
+        <param id="bass" name="bass" type="float" def="1" />
+        <param id="freq1" name="freq1" type="float" def="59.2131" max="135.076" min="15.487" />
+        <param id="freq2" name="freq2" type="float" def="99.0762" max="135.076" min="15.487" />
+        <param id="mid" name="mid" type="float" def="1" />
+        <param id="treble" name="treble" type="float" def="1" />
+      </params>
+    </object>
+    <object id="djfilter">
+      <visual name="DJ Filter" color="#33363d" />
+      <params>
+        <param id="freq" name="freq" type="float" />
+        <param id="mix" name="mix" type="float" def="1" />
+        <param id="mixLock" name="mixLock" type="bool" />
+        <param id="q" name="q" type="float" def="0.707" max="4" min="0.1" />
+      </params>
+    </object>
+    <object id="gate">
+      <visual name="Gate" color="#33363d" />
+      <params>
+        <param id="attack" name="attack" type="float" def="3.02676" max="100" min="0.1" />
+        <param id="hold" name="hold" type="float" def="29.2969" max="1000" />
+        <param id="release" name="release" type="float" def="100" max="1000" min="1" />
+        <param id="threshold" name="threshold" type="float" def="-40" max="0" min="-60" />
+      </params>
+    </object>
+    <object id="limiter">
+      <visual name="Limiter" color="#33363d" />
+      <params>
+        <param id="ceiling" name="ceiling" type="float" def="-0.299999" max="0" min="-60" />
+        <param id="gain" name="gain" type="float" max="20" min="-20" />
+        <param id="release" name="release" type="float" def="300" max="300" min="1" />
+      </params>
+    </object>
+    <object id="lowpass">
+      <visual name="Low Pass (Old)" color="#33363d" />
+      <params>
+        <param id="frequency" name="Frequency" type="float" def="4000" max="22000" min="10" />
+        <dataval id="mode" name="Mode" type="string" def="lowpass" noauto="1" />
+      </params>
+    </object>
+    <object id="naturalReverb">
+      <visual name="Natural Reverb" color="#33363d" />
+      <params>
+        <param id="decay" name="decay" type="float" def="0.2" />
+        <param id="definition" name="definition" type="float" def="0.8" />
+        <param id="diffusion" name="diffusion" type="float" def="0.829297" />
+        <param id="highCut" name="highCut" type="float" def="1" />
+        <param id="highDamp" name="highDamp" type="float" def="1" />
+        <param id="lowCut" name="lowCut" type="float" />
+        <param id="lowDamp" name="lowDamp" type="float" />
+        <param id="mix" name="mix" type="float" def="0.5" />
+        <param id="mixLock" name="mixLock" type="bool" />
+        <param id="pan" name="pan" type="float" def="0.5" />
+        <param id="preDelay" name="preDelay" type="float" />
+        <param id="size" name="size" type="float" def="0.5" />
+        <param id="slope" name="slope" type="float" def="0.25" />
+      </params>
+    </object>
+    <object id="nonLinearReverb">
+      <visual name="Non-linear Reverb" color="#33363d" />
+      <params>
+        <param id="decay" name="decay" type="float" def="0.2" />
+        <param id="definition" name="definition" type="float" def="0.25" />
+        <param id="diffusion" name="diffusion" type="float" def="0.8" />
+        <param id="highCut" name="highCut" type="float" def="1" />
+        <param id="highDamp" name="highDamp" type="float" def="1" />
+        <param id="lowCut" name="lowCut" type="float" />
+        <param id="lowDamp" name="lowDamp" type="float" />
+        <param id="mix" name="mix" type="float" def="0.5" />
+        <param id="mixLock" name="mixLock" type="bool" />
+        <param id="pan" name="pan" type="float" def="0.5" />
+        <param id="preDelay" name="preDelay" type="float" />
+        <param id="size" name="size" type="float" def="0.5" />
+      </params>
+    </object>
+    <object id="phaser">
+      <visual name="Phaser (Old)" color="#33363d" />
+      <params>
+        <param id="depth" name="depth" type="float" def="5" max="7" min="0.1" />
+        <param id="feedback" name="feedback" type="float" def="0.7" max="0.99" />
+        <param id="rate" name="rate" type="float" def="0.4" max="16" min="0.01" />
+      </params>
+    </object>
+    <object id="phaser2">
+      <visual name="Phaser" color="#33363d" />
+      <params>
+        <param id="ceiling" name="ceiling" type="float" def="20000" max="20000" />
+        <param id="feedback" name="feedback" type="float" def="50" max="100" />
+        <param id="floor" name="floor" type="float" def="20" max="20000" />
+        <param id="mix" name="mix" type="float" def="1" />
+        <param id="mixLock" name="mixLock" type="bool" />
+        <param id="rateSyncOn" name="rateSyncOn" type="int" def="8" max="35" />
+        <param id="rateSyncOff" name="rateSyncOff" type="float" def="0.02" max="5" />
+        <param id="stages" name="stages" type="int" def="6" max="12" />
+        <param id="sync" name="sync" type="bool" />
+      </params>
+    </object>
+    <object id="pitchShifter">
+      <data group="" />
+      <visual name="Pitch Shifter" color="#33363d" />
+      <params>
+        <dataval id="elastiqueOptions" name="Elastique Options" type="string" def="1/0/0/0/64" noauto="1" />
+        <param id="semitonesUp" name="Pitch" type="float" max="24" min="-24" />
+      </params>
+    </object>
+    <object id="plateReverb">
+      <visual name="Plate Reverb" color="#33363d" />
+      <params>
+        <param id="decay" name="decay" type="float" def="0.2" />
+        <param id="definition" name="definition" type="float" def="0.8" />
+        <param id="diffusion" name="diffusion" type="float" def="0.8" />
+        <param id="highCut" name="highCut" type="float" def="1" />
+        <param id="highDamp" name="highDamp" type="float" def="1" />
+        <param id="lowCut" name="lowCut" type="float" />
+        <param id="lowDamp" name="lowDamp" type="float" />
+        <param id="mix" name="mix" type="float" def="0.5" />
+        <param id="mixLock" name="mixLock" type="float" def="1" />
+        <param id="pan" name="pan" type="float" def="0.5" />
+        <param id="preDelay" name="preDelay" type="float" />
+        <param id="size" name="size" type="float" def="0.5" />
+        <param id="slope" name="slope" type="float" def="0.25" />
+      </params>
+    </object>
+    <object id="reverb">
+      <visual name="Reverb (Old)" />
+      <params>
+        <param id="damp" name="damp" type="float" def="0.5" />
+        <param id="dry" name="dry" type="float" def="0.5" />
+        <param id="mode" name="mode" type="float" />
+        <param id="roomSize" name="roomSize" type="float" def="0.3" />
+        <param id="wet" name="wet" type="float" def="0.333333" />
+        <param id="width" name="width" type="float" def="0.970703" />
+      </params>
+    </object>
+    <object id="stereoDelay">
+      <data group="" />
+      <visual name="Delay" color="#33363d" />
+      <params>
+        <param id="crossL" name="crossL" type="float" def="8" max="99" />
+        <param id="crossR" name="crossR" type="float" def="8" max="99" />
+        <param id="delaySyncOffL" name="delaySyncOffL" type="float" max="5000" />
+        <param id="delaySyncOffR" name="delaySyncOffR" type="float" max="5000" />
+        <param id="delaySyncOnL" name="delaySyncOnL" type="int" def="1" max="35" />
+        <param id="delaySyncOnR" name="delaySyncOnR" type="int" def="1" max="35" />
+        <param id="feedbackL" name="feedbackL" type="float" def="8" max="99" />
+        <param id="feedbackR" name="feedbackR" type="float" def="8" max="99" />
+        <param id="highcut" name="highcut" type="float" def="5000" max="20000" min="20" />
+        <param id="lowcut" name="lowcut" type="float" def="300" max="20000" min="20" />
+        <param id="mix" name="mix" type="float" def="1" />
+        <param id="mixLock" name="mixLock" type="bool" />
+        <param id="panL" name="panL" type="float" def="-1" min="-1" />
+        <param id="panR" name="panR" type="float" def="1" min="-1" />
+        <param id="sync" name="sync" type="int" />
+        <param id="volL" name="volL" type="float" max="6" min="-12" />
+        <param id="volR" name="volR" type="float" max="6" min="-12" />
+      </params>
+    </object>
+    <object id="volume">
+      <visual name="Volume" color="#33363d" />
+      <params>
+        <param id="pan" name="Pan" type="float" min="-1" />
+        <param id="volume" name="Volume" type="float" def="1" />
+      </params>
+    </object>
+    <object id="monoSwitch">
+      <visual name="Volume" color="#33363d" />
+      <params>
+        <param id="mono" name="Mono" type="bool" />
+        <param id="monoMode" name="Mode" type="int" def="1" max="0" />
+        <param id="swap" name="Swap LR" type="bool" />
+        <param id="polarityL" name="L Polarity" type="bool" />
+        <param id="polarityR" name="R Polarity" type="bool" />
+      </params>
+    </object>
+    <colorset id="drum_sampler">
+      <color>#5089C2</color>
+      <color>#35A567</color>
+      <color>#B77817</color>
+      <color>#BF4042</color>
+      <color>#BF9542</color>
+    </colorset>
+  </category>
+</datapack>
