@@ -1,6 +1,7 @@
 <datapack>
   <category id="plugins">
     <object id="32">
+      <data role="fx" />
       <visual name="FX Reverb" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -22,6 +23,7 @@
       </params>
     </object>
     <object id="35">
+      <data role="fx" />
       <visual name="FX Reverb 2" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -46,6 +48,7 @@
       </params>
     </object>
     <object id="18">
+      <data role="fx" />
       <visual name="FX Tape Delay" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -56,6 +59,7 @@
       </params>
     </object>
     <object id="16">
+      <data role="fx" />
       <visual name="FX Trance Delay" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -68,6 +72,7 @@
       </params>
     </object>
     <object id="29">
+      <data role="fx" />
       <visual name="FX Autoduck" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -81,6 +86,7 @@
       </params>
     </object>
     <object id="20">
+      <data role="fx" />
       <visual name="FX Leveller" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -89,6 +95,7 @@
       </params>
     </object>
     <object id="8">
+      <data role="fx" />
       <visual name="FX Compressor" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -104,6 +111,7 @@
       </params>
     </object>
     <object id="28">
+      <data role="fx" />
       <visual name="FX Limiter" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -114,6 +122,7 @@
       </params>
     </object>
     <object id="6">
+      <data role="fx" />
       <visual name="FX Distortion" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -126,6 +135,7 @@
       </params>
     </object>
     <object id="41">
+      <data role="fx" />
       <visual name="Waveshaper" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -152,6 +162,7 @@
       </params>
     </object>
     <object id="27">
+      <data role="fx" />
       <visual name="FX Gate" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -166,6 +177,7 @@
       </params>
     </object>
     <object id="36">
+      <data role="fx" />
       <visual name="FX Multiband Compressor" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -202,6 +214,7 @@
       </params>
     </object>
     <object id="9">
+      <data role="fx" />
       <visual name="FX Filter" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -212,6 +225,7 @@
       </params>
     </object>
     <object id="3">
+      <data role="fx" />
       <visual name="FX Equalizer" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -238,6 +252,7 @@
       </params>
     </object>
     <object id="7">
+      <data role="fx" />
       <visual name="FX Graphic EQ" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -252,6 +267,7 @@
       </params>
     </object>
     <object id="30">
+      <data role="fx" />
       <visual name="FX Tuned EQ" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -268,6 +284,7 @@
       </params>
     </object>
     <object id="15">
+      <data role="fx" />
       <visual name="FX Stereorizer" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -280,6 +297,7 @@
       </params>
     </object>
     <object id="34">
+      <data role="fx" />
       <visual name="FX Spacer" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -293,6 +311,7 @@
       </params>
     </object>
     <object id="44">
+      <data role="fx" />
       <visual name="FX Spreader" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -301,6 +320,7 @@
       </params>
     </object>
     <object id="40">
+      <data role="fx" />
       <visual name="FX Comb Filter" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -318,6 +338,7 @@
       </params>
     </object>
     <object id="4">
+      <data role="fx" />
       <visual name="MultiFX" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -330,6 +351,7 @@
       </params>
     </object>
     <object id="11">
+      <data role="fx" />
       <visual name="FX Chorus" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -340,6 +362,7 @@
       </params>
     </object>
     <object id="13">
+      <data role="fx" />
       <visual name="FX Flanger" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -357,6 +380,7 @@
       </params>
     </object>
     <object id="14">
+      <data role="fx" />
       <visual name="FX Phaser" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -372,18 +396,21 @@
       </params>
     </object>
     <object id="24">
+      <data role="fx" />
       <visual name="FX Tuner" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
       </params>
     </object>
     <object id="26">
+      <data role="fx" />
       <visual name="FX Analyzer" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
       </params>
     </object>
     <object id="25">
+      <data role="fx" />
       <visual name="FX Pitcher" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -412,6 +439,7 @@
       </params>
     </object>
     <object id="45">
+      <data role="fx" />
       <visual name="FX Pitcher 2" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -444,6 +472,7 @@
       </params>
     </object>
     <object id="43">
+      <data role="fx" />
       <visual name="FX Wow &amp; Flutter" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -460,6 +489,7 @@
       </params>
     </object>
     <object id="42">
+      <data role="fx" />
       <visual name="FX Tape Stop" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -473,6 +503,7 @@
       </params>
     </object>
     <object id="23">
+      <data role="synth" />
       <visual name="SuperSaw" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -538,6 +569,7 @@
       </params>
     </object>
     <object id="39">
+      <data role="synth" />
       <visual name="3x Osc" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -692,6 +724,7 @@
       </params>
     </object>
     <object id="33">
+      <data role="synth" />
       <visual name="Slicer" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -704,6 +737,7 @@
       </params>
     </object>
     <object id="19">
+      <data role="synth" />
       <visual name="Transistor Bass" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -723,6 +757,7 @@
       </params>
     </object>
     <object id="2">
+      <data role="synth" />
       <visual name="GMSynth" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -803,6 +838,7 @@
       </params>
     </object>
     <object id="0">
+      <data role="synth" />
       <visual name="MiniSynth" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
@@ -852,6 +888,7 @@
       </params>
     </object>
     <object id="1">
+      <data role="synth" />
       <visual name="DW Sampler" />
       <params>
         <param id="0" name="Enable" type="float" def="1" />
