@@ -45,7 +45,7 @@
         <param id="levels" name="Levels" type="float" def="256" max="256" min="1" />
         <param id="outclip" name="Output clip" type="float" max="20" min="-20" />
         <param id="outgain" name="Output gain" type="float" max="20" min="-20" />
-        <dataval id="rate" name="Sample rate" type="float" def="44100" max="44100" min="20" noauto="1" />
+        <dataval id="rate" name="Sample rate" type="float" def="44100" max="44100" min="20" />
         <param id="rateon" name="Rate enabled" type="bool" def="1" />
         <param id="stereodiff" name="Stereo difference" type="float" max="50" min="-50" />
       </params>
@@ -57,8 +57,8 @@
         <param id="interpolation" name="Interpolation" type="bool" def="1" />
         <param id="normalize" name="Normalize" type="bool" def="1" />
         <param id="sampleLength" name="sampleLength" type="int" def="128" max="200" min="4" />
-        <dataval id="sampleShape" name="sampleShape" type="string" def="AACAPwAAgD8AAIC/AACAvw==" noauto="1" />
-        <dataval id="version" name="version" type="string" def="0.1" noauto="1" />
+        <dataval id="sampleShape" name="sampleShape" type="string" def="AACAPwAAgD8AAIC/AACAvw==" />
+        <dataval id="version" name="version" type="string" def="0.1" />
       </params>
     </object>
     <object id="chordcreator">
@@ -118,7 +118,7 @@
         <param id="outputGain" name="Output gain" type="float" def="1" max="5" />
         <param id="release" name="Release time" type="float" def="100" max="500" min="1" />
         <param id="stereoMode" name="Stereo mode " type="float" max="2" />
-        <dataval id="waveShape" name="waveShape" type="string" def="" noauto="1" />
+        <dataval id="waveShape" name="waveShape" type="string" def="" />
       </params>
     </object>
     <object id="eq">
@@ -185,7 +185,7 @@
         <param id="bank" name="bank" type="int" max="999" />
         <param id="gain" name="gain" type="float" def="1" max="5" />
         <param id="patch" name="patch" type="int" max="127" />
-        <dataval id="src" name="src" type="string" def="" noauto="1" />
+        <dataval id="src" name="src" type="string" def="" />
       </params>
     </object>
     <object id="kicker">
@@ -232,7 +232,7 @@
         <param id="modulator" name="Modulator" type="float" def="64" max="128" />
         <param id="oldversion" name="oldversion" type="float" def="-1" max="-1" min="-1" />
         <param id="position" name="Position" type="float" def="64" max="64" />
-        <dataval id="preset" name="preset" type="string" def="-1" noauto="1" />
+        <dataval id="preset" name="preset" type="string" def="-1" />
         <param id="pressure" name="Pressure" type="float" def="64" max="128" min="0.1" />
         <param id="spread" name="spread" type="float" def="-1" max="-1" min="-1" />
         <param id="stick_mix" name="Stick mix" type="float" max="128" />
@@ -345,9 +345,9 @@
     <object id="multitapecho">
       <visual name="Multitap Echo" />
       <params>
-        <dataval id="ampsteps" name="ampsteps" type="string" def="" noauto="1" />
+        <dataval id="ampsteps" name="ampsteps" type="string" def="" />
         <param id="drygain" name="m_dryGain" type="float" max="20" min="-80" />
-        <dataval id="lpsteps" name="lpsteps" type="string" def="" noauto="1" />
+        <dataval id="lpsteps" name="lpsteps" type="string" def="" />
         <param id="stages" name="m_stages" type="float" def="1" max="4" min="1" />
         <param id="steplength" name="m_stepLength" type="float" def="100" max="500" min="1" />
         <param id="steps" name="m_steps" type="float" def="16" max="32" min="4" />
@@ -467,7 +467,7 @@
         <param id="ch4ssl" name="Length of each step in sweep " type="float" max="7" />
         <param id="ch4vol" name="Channel 4 volume " type="float" def="15" max="15" />
         <param id="ch4vsd" name="Volume sweep direction " type="bool" />
-        <dataval id="sampleShape" name="sampleShape" type="string" def="" noauto="1" />
+        <dataval id="sampleShape" name="sampleShape" type="string" def="" />
         <param id="sd" name="Sweep direction " type="bool" />
         <param id="so1vol" name="Right output level" type="float" def="7" max="7" />
         <param id="so2vol" name="Left output level " type="float" def="7" max="7" />
@@ -652,15 +652,15 @@
         <param id="detune6" name="String 7 detune" type="float" max="0.1" min="-0.1" />
         <param id="detune7" name="String 8 detune" type="float" max="0.1" min="-0.1" />
         <param id="detune8" name="String 9 detune" type="float" max="0.1" min="-0.1" />
-        <dataval id="graph0" name="Graph 1" type="string" def="" noauto="1" />
-        <dataval id="graph1" name="Graph 2" type="string" def="" noauto="1" />
-        <dataval id="graph2" name="Graph 3" type="string" def="" noauto="1" />
-        <dataval id="graph3" name="Graph 4" type="string" def="" noauto="1" />
-        <dataval id="graph4" name="Graph 5" type="string" def="" noauto="1" />
-        <dataval id="graph5" name="Graph 6" type="string" def="" noauto="1" />
-        <dataval id="graph6" name="Graph 7" type="string" def="" noauto="1" />
-        <dataval id="graph7" name="Graph 8" type="string" def="" noauto="1" />
-        <dataval id="graph8" name="Graph 9" type="string" def="" noauto="1" />
+        <dataval id="graph0" name="Graph 1" type="string" def="" />
+        <dataval id="graph1" name="Graph 2" type="string" def="" />
+        <dataval id="graph2" name="Graph 3" type="string" def="" />
+        <dataval id="graph3" name="Graph 4" type="string" def="" />
+        <dataval id="graph4" name="Graph 5" type="string" def="" />
+        <dataval id="graph5" name="Graph 6" type="string" def="" />
+        <dataval id="graph6" name="Graph 7" type="string" def="" />
+        <dataval id="graph7" name="Graph 8" type="string" def="" />
+        <dataval id="graph8" name="Graph 9" type="string" def="" />
         <param id="impulse0" name="Impulse 1" type="bool" def="1" />
         <param id="impulse1" name="Impulse 2" type="bool" def="1" />
         <param id="impulse2" name="Impulse 3" type="bool" def="1" />
@@ -733,7 +733,7 @@
         <param id="stiffness6" name="String 7 stiffness" type="float" max="0.05" />
         <param id="stiffness7" name="String 8 stiffness" type="float" max="0.05" />
         <param id="stiffness8" name="String 9 stiffness" type="float" max="0.05" />
-        <dataval id="version" name="version" type="string" def="0.1" noauto="1" />
+        <dataval id="version" name="version" type="string" def="0.1" />
         <param id="volume0" name="String 1 volume" type="int" def="100" max="200" />
         <param id="volume1" name="String 2 volume" type="int" def="100" max="200" />
         <param id="volume2" name="String 3 volume" type="int" def="100" max="200" />
@@ -753,13 +753,13 @@
         <param id="a1_pan" name="Panning A1" type="float" max="100" min="-100" />
         <param id="a1_rtune" name="Right detune A1" type="float" max="600" min="-600" />
         <param id="a1_vol" name="Volume A1" type="float" def="100" max="200" />
-        <dataval id="a1_wave" name="Wave A1" type="string" def="" noauto="1" />
+        <dataval id="a1_wave" name="Wave A1" type="string" def="" />
         <param id="a2_ltune" name="Left detune A2" type="float" max="600" min="-600" />
         <param id="a2_mult" name="Freq. multiplier A2" type="float" def="8" max="24" min="1" />
         <param id="a2_pan" name="Panning A2" type="float" max="100" min="-100" />
         <param id="a2_rtune" name="Right detune A2" type="float" max="600" min="-600" />
         <param id="a2_vol" name="Volume A2" type="float" def="100" max="200" />
-        <dataval id="a2_wave" name="Wave A2" type="string" def="" noauto="1" />
+        <dataval id="a2_wave" name="Wave A2" type="string" def="" />
         <param id="abmix" name="A-B Mix" type="float" max="100" min="-100" />
         <param id="amod" name="A2-A1 modulation" type="float" max="3" />
         <param id="b1_ltune" name="Left detune B1" type="float" max="600" min="-600" />
@@ -767,13 +767,13 @@
         <param id="b1_pan" name="Panning B1" type="float" max="100" min="-100" />
         <param id="b1_rtune" name="Right detune B1" type="float" max="600" min="-600" />
         <param id="b1_vol" name="Volume B1" type="float" def="100" max="200" />
-        <dataval id="b1_wave" name="Wave B1" type="string" def="" noauto="1" />
+        <dataval id="b1_wave" name="Wave B1" type="string" def="" />
         <param id="b2_ltune" name="Left detune B2" type="float" max="600" min="-600" />
         <param id="b2_mult" name="Freq. multiplier B2" type="float" def="8" max="24" min="1" />
         <param id="b2_pan" name="Panning B2" type="float" max="100" min="-100" />
         <param id="b2_rtune" name="Right detune B2" type="float" max="600" min="-600" />
         <param id="b2_vol" name="Panning B2" type="float" def="100" max="200" />
-        <dataval id="b2_wave" name="Wave B2" type="string" def="" noauto="1" />
+        <dataval id="b2_wave" name="Wave B2" type="string" def="" />
         <param id="bmod" name="B2-B1 modulation" type="float" max="3" />
         <param id="envAmt" name="A-B Mix envelope amount" type="float" max="200" min="-200" />
         <param id="envAtt" name="A-B Mix envelope attack" type="float" max="2000" />
@@ -788,7 +788,7 @@
         <param id="clipInput" name="Clip input" type="bool" def="-1" />
         <param id="inputGain" name="Input gain" type="float" def="1" max="5" />
         <param id="outputGain" name="Output gain" type="float" def="1" max="5" />
-        <dataval id="waveShape" name="Shape" type="string" def="" noauto="1" />
+        <dataval id="waveShape" name="Shape" type="string" def="" />
       </params>
     </object>
     <object id="zynaddsubfx">
@@ -799,7 +799,7 @@
         <param id="filterq" name="Filter resonance" type="int" def="64" max="127" />
         <param id="fmgain" name="FM gain" type="int" def="127" max="127" />
         <param id="forwardmidicc" name="Forward MIDI control change events" type="int" def="1" />
-        <dataval id="modifiedcontrollers" name="Modified Controllers " type="string" def="" noauto="1" />
+        <dataval id="modifiedcontrollers" name="Modified Controllers " type="string" def="" />
         <param id="portamento" name="Portamento" type="int" max="127" />
         <param id="resbandwidth" name="Resonance bandwidth" type="int" def="64" max="127" />
         <param id="rescenterfreq" name="Resonance center frequency" type="int" def="64" max="127" />

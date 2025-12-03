@@ -1601,7 +1601,7 @@
     <object id="guitarAmp">
       <visual name="Guitar Amp" />
       <params>
-        <dataval id="irType" type="string" def="orangeClassicShort" noauto="1" />
+        <dataval id="irType" type="string" def="orangeClassicShort" />
         <param id="bass" type="float" def="4.5" max="10" />
         <param id="drive" type="float" def="5" max="10" />
         <param id="master" type="float" def="5" max="10" />
@@ -1614,14 +1614,14 @@
     <object id="cabinet">
       <visual name="Guitar Cab" />
       <params>
-        <dataval id="irType" type="string" def="2x12Celestion" noauto="1" />
+        <dataval id="irType" type="string" def="2x12Celestion" />
       </params>
       <data uniqueId="116269899" />
     </object>
     <object id="genericAmp">
       <visual name="Multi Amp Pro" />
       <params>
-        <dataval id="staticModel" type="string" def="fenderTwin" noauto="1" />
+        <dataval id="staticModel" type="string" def="fenderTwin" />
         <param id="bass" type="float" def="4.5" max="10" />
         <param id="drive" type="float" def="4" max="10" />
         <param id="mid" type="float" def="6" max="10" />
@@ -1634,9 +1634,9 @@
     <object id="guitarCab">
       <visual name="Multi Cab Pro" />
       <params>
-        <dataval id="cabModel" type="string" def="2x12Jenson" noauto="1" />
-        <dataval id="micModel" type="string" def="shureSM57" noauto="1" />
-        <dataval id="micPosition" type="string" def="onAxis" noauto="1" />
+        <dataval id="cabModel" type="string" def="2x12Jenson" />
+        <dataval id="micModel" type="string" def="shureSM57" />
+        <dataval id="micPosition" type="string" def="onAxis" />
       </params>
       <data uniqueId="791592824" />
     </object>
@@ -1711,7 +1711,7 @@
     <object id="ehSmallStone">
       <visual name="Little Rock" color="#7E3226" />
       <params>
-        <dataval id="resonance" type="string" def="high" noauto="1" />
+        <dataval id="resonance" type="string" def="high" />
         <param id="speed" type="float" def="3.962" max="20" min="0.2" />
       </params>
       <data uniqueId="1107099635" />
@@ -1761,8 +1761,8 @@
     <object id="ddelayPlus2">
       <visual name="D-Delay +" />
       <params>
-        <dataval id="delayTimeBeats" type="string" def="quarterNote" noauto="1" />
-        <dataval id="delayUnitSelection" type="string" def="delayTimeBeats" noauto="1" />
+        <dataval id="delayTimeBeats" type="string" def="quarterNote" />
+        <dataval id="delayUnitSelection" type="string" def="delayTimeBeats" />
         <param id="delayTimeMsec" type="float" def="0.45" max="2.6" min="0.01" />
         <param id="dry" type="float" def="1" />
         <param id="feedback" type="float" def="0.1" max="0.5" />
@@ -1777,8 +1777,8 @@
     <object id="beatSyncDelay2">
       <visual name="Filter Echo +" />
       <params>
-        <dataval id="delayUnitSelection" type="string" def="syncDelay" noauto="1" />
-        <dataval id="syncDelay" type="string" def="quarterNote" noauto="1" />
+        <dataval id="delayUnitSelection" type="string" def="syncDelay" />
+        <dataval id="syncDelay" type="string" def="quarterNote" />
         <param id="cutoff" type="float" def="12000" max="16000" min="300" />
         <param id="delayTime" type="float" def="0.2" />
         <param id="dryWetMix" type="float" def="0.4" />
@@ -1789,10 +1789,10 @@
     <object id="pingpongDelay">
       <visual name="Ping Pong Delay" />
       <params>
-        <dataval id="delayOffsetBeats" type="string" def="quarterNote" noauto="1" />
-        <dataval id="delayOffsetUnitSelection" type="string" def="delayOffsetBeats" noauto="1" />
-        <dataval id="delayTimeBeats" type="string" def="quarterNote" noauto="1" />
-        <dataval id="delayUnitSelection" type="string" def="delayTimeBeats" noauto="1" />
+        <dataval id="delayOffsetBeats" type="string" def="quarterNote" />
+        <dataval id="delayOffsetUnitSelection" type="string" def="delayOffsetBeats" />
+        <dataval id="delayTimeBeats" type="string" def="quarterNote" />
+        <dataval id="delayUnitSelection" type="string" def="delayTimeBeats" />
         <param id="cutoff" type="float" def="9000" max="16000" min="300" />
         <param id="delayOffsetSec" type="float" def="0.35" />
         <param id="delayTimeSec" type="float" def="0.7" />
@@ -1805,7 +1805,7 @@
     <object id="bitBandit">
       <visual name="Bit Bandit" />
       <params>
-        <dataval id="emulation" type="string" def="true" noauto="1" />
+        <dataval id="emulation" type="string" def="true" />
         <param id="clipperMix" type="float" def="0.65" />
         <param id="crush" type="float" def="12" max="16" min="2" />
         <param id="effectMix" type="float" def="0.5" />
@@ -1857,7 +1857,7 @@
     <object id="enhancer">
       <visual name="Vocal Enhancer" />
       <params>
-        <dataval id="mode" type="string" def="warm" noauto="1" />
+        <dataval id="mode" type="string" def="warm" />
         <param id="dryWetMix" type="float" def="0.5" />
       </params>
       <data uniqueId="525548948" />
@@ -1865,7 +1865,7 @@
     <object id="compr1176">
       <visual name="BL 1176" />
       <params>
-        <dataval id="ratio" type="string" def="12" noauto="1" />
+        <dataval id="ratio" type="string" def="12" />
         <param id="attack" type="float" def="1.2" max="10" />
         <param id="gain" type="float" def="10" max="20" />
         <param id="makeup" type="float" max="15" min="-15" />
@@ -1876,7 +1876,7 @@
     <object id="compander">
       <visual name="Compander" />
       <params>
-        <dataval id="mode" type="string" def="dynamic" noauto="1" />
+        <dataval id="mode" type="string" def="dynamic" />
         <param id="comprThreshold" type="float" def="-18" max="40" min="-30" />
         <param id="expThreshold" type="float" def="-40" max="-30" min="-90" />
         <param id="makeupGain" type="float" def="3" max="20" min="-20" />
@@ -1925,7 +1925,7 @@
     <object id="pumper2">
       <visual name="Pumper" />
       <params>
-        <dataval id="period" type="string" def="quarterNote" noauto="1" />
+        <dataval id="period" type="string" def="quarterNote" />
         <param id="amount" type="float" def="0.5" />
         <param id="phase" type="float" def="18" max="180" min="-180" />
       </params>
@@ -1934,7 +1934,7 @@
     <object id="la2aCompr">
       <visual name="TecLab BA-2A" />
       <params>
-        <dataval id="mode" type="string" def="compress" noauto="1" />
+        <dataval id="mode" type="string" def="compress" />
         <param id="makeupGain" type="float" def="3" max="15" min="-15" />
         <param id="threshold" type="float" def="25" max="40" min="-10" />
       </params>
@@ -1943,9 +1943,9 @@
     <object id="cleanLimiter">
       <visual name="Clean Limiter" />
       <params>
-        <dataval id="attack" type="string" def="fast" noauto="1" />
-        <dataval id="release" type="string" def="slow" noauto="1" />
-        <dataval id="type" type="string" def="none" noauto="1" />
+        <dataval id="attack" type="string" def="fast" />
+        <dataval id="release" type="string" def="slow" />
+        <dataval id="type" type="string" def="none" />
         <param id="input" type="float" def="0" max="24" min="-24" />
         <param id="threshold" type="float" def="0" max="0" min="-24" />
         <param id="truePeak" type="bool" />
@@ -1967,7 +1967,7 @@
     <object id="gater2">
       <visual name="Gater" />
       <params>
-        <dataval id="period" type="string" def="quarterNote" noauto="1" />
+        <dataval id="period" type="string" def="quarterNote" />
         <param id="depth" type="float" def="1" min="1" />
       </params>
       <data uniqueId="795558986" />
@@ -1975,9 +1975,9 @@
     <object id="autoFilter">
       <visual name="Auto Filter" />
       <params>
-        <dataval id="filterType" type="string" def="lpf" noauto="1" />
-        <dataval id="lfoRateUnitSelection" type="string" def="syncLfoRate" noauto="1" />
-        <dataval id="syncLfoRate" type="string" def="eighthNote" noauto="1" />
+        <dataval id="filterType" type="string" def="lpf" />
+        <dataval id="lfoRateUnitSelection" type="string" def="syncLfoRate" />
+        <dataval id="syncLfoRate" type="string" def="eighthNote" />
         <param id="drive" type="float" def="0.8" max="10" min="0.1" />
         <param id="frequency" type="float" def="2000" max="10000" min="20" />
         <param id="lfoDepth" type="float" def="0.5" />
@@ -1990,8 +1990,8 @@
     <object id="autoPan">
       <visual name="Auto Pan" />
       <params>
-        <dataval id="rateBeats" type="string" def="quarterNote" noauto="1" />
-        <dataval id="rateUnitSelection" type="string" def="rateBeats" noauto="1" />
+        <dataval id="rateBeats" type="string" def="quarterNote" />
+        <dataval id="rateUnitSelection" type="string" def="rateBeats" />
         <param id="rateHz" type="float" def="0.5" max="11" min="0.1" />
         <param id="spread" type="float" def="0.7" />
       </params>
@@ -2000,8 +2000,8 @@
     <object id="autoWah">
       <visual name="Auto Wah" />
       <params>
-        <dataval id="mode" type="string" def="lpf" noauto="1" />
-        <dataval id="polarity" type="string" def="negative" noauto="1" />
+        <dataval id="mode" type="string" def="lpf" />
+        <dataval id="polarity" type="string" def="negative" />
         <param id="depth" type="float" def="35" max="100" />
         <param id="filter" type="float" def="50" max="100" />
         <param id="outLevel" type="float" max="12" min="-40" />
@@ -2014,7 +2014,7 @@
     <object id="dimensionD">
       <visual name="Dimension B" />
       <params>
-        <dataval id="preset" type="string" def="01" noauto="1" />
+        <dataval id="preset" type="string" def="01" />
       </params>
       <data uniqueId="598969515" />
     </object>
@@ -2063,7 +2063,7 @@
     <object id="multiShifter">
       <visual name="Multi Shifter" />
       <params>
-        <dataval id="inputType" type="string" def="vocal" noauto="1" />
+        <dataval id="inputType" type="string" def="vocal" />
         <param id="dry" type="float" def="0.7" />
         <param id="fifthDown" type="float" def="0.6" />
         <param id="fifthUp" type="float" />
@@ -2077,7 +2077,7 @@
     <object id="pitchShifter">
       <visual name="Pitch Shifter" />
       <params>
-        <dataval id="inputType" type="string" def="vocal" noauto="1" />
+        <dataval id="inputType" type="string" def="vocal" />
         <param id="mix" type="float" def="1" />
         <param id="shift" type="float" def="-5" max="12" min="-12" />
       </params>
@@ -2086,7 +2086,7 @@
     <object id="reverbHybrid">
       <visual name="Space Maker" />
       <params>
-        <dataval id="irType" type="string" def="basic" noauto="1" />
+        <dataval id="irType" type="string" def="basic" />
         <param id="dampening" type="float" def="7500" max="16000" min="250" />
         <param id="dryWetMix" type="float" def="0.1" />
         <param id="roomSize" type="float" def="8" max="10" />
@@ -2097,7 +2097,7 @@
     <object id="springReverb2">
       <visual name="Spring Reverb" />
       <params>
-        <dataval id="mode" type="string" def="medium" noauto="1" />
+        <dataval id="mode" type="string" def="medium" />
         <param id="intensity" type="float" def="20" max="100" />
       </params>
       <data uniqueId="495073626" />
@@ -2114,7 +2114,7 @@
     <object id="univerb">
       <visual name="Univerb" />
       <params>
-        <dataval id="irType" type="string" def="womensInstitute" noauto="1" />
+        <dataval id="irType" type="string" def="womensInstitute" />
         <param id="dryWetMix" type="float" def="0.35" />
       </params>
       <data uniqueId="1120462778" />
@@ -2143,7 +2143,7 @@
     <object id="filter">
       <visual name="Multi Filter" />
       <params>
-        <dataval id="filterType" type="string" def="lowpass" noauto="1" />
+        <dataval id="filterType" type="string" def="lowpass" />
         <param id="frequency" type="float" def="8000" max="12000" min="30" />
         <param id="gain" type="float" max="20" min="-20" />
         <param id="q" type="float" def="2" max="10" />
@@ -2167,8 +2167,8 @@
     <object id="reverser">
       <visual name="Reverser" />
       <params>
-        <dataval id="intervalTimeBeats" type="string" def="eighthNote" noauto="1" />
-        <dataval id="intervalUnitSelection" type="string" def="intervalTimeBeats" noauto="1" />
+        <dataval id="intervalTimeBeats" type="string" def="eighthNote" />
+        <dataval id="intervalUnitSelection" type="string" def="intervalTimeBeats" />
         <param id="dryWetMix" type="float" def="0.61" />
         <param id="intervalTimeSec" type="float" def="0.449953" max="2.5" min="0.05" />
       </params>
@@ -2208,12 +2208,12 @@
         <param id="filter2Bandwidth" type="float" def="0.17" />
         <param id="filter2Freq" type="float" def="4985.0" />
         <param id="filter2Gain" type="float" def="0.0" />
-        <dataval id="filter0Active" type="string" def="true" noauto="1" />
-        <dataval id="filter0Type" type="string" def="peaking" noauto="1" />
-        <dataval id="filter1Active" type="string" def="true" noauto="1" />
-        <dataval id="filter1Type" type="string" def="peaking" noauto="1" />
-        <dataval id="filter2Active" type="string" def="true" noauto="1" />
-        <dataval id="filter2Type" type="string" def="peaking" noauto="1" />
+        <dataval id="filter0Active" type="string" def="true" />
+        <dataval id="filter0Type" type="string" def="peaking" />
+        <dataval id="filter1Active" type="string" def="true" />
+        <dataval id="filter1Type" type="string" def="peaking" />
+        <dataval id="filter2Active" type="string" def="true" />
+        <dataval id="filter2Type" type="string" def="peaking" />
       </params>
       <data uniqueId="907963035" />
     </object>

@@ -95,11 +95,11 @@
         <param id="CircuitBpNoMo" name="CircuitBpNoMo" type="int" />
         <param id="CircuitLpHp" name="CircuitLpHp" type="int" />
         <param id="Cutoff" name="Cutoff" type="float" def="103.636" max="135" min="20" />
-        <dataval id="CutoffLimit" name="CutoffLimit" type="float" def="135" noauto="1" />
+        <dataval id="CutoffLimit" name="CutoffLimit" type="float" def="135" />
         <param id="Drive" name="Drive" type="float" max="24" />
         <param id="FilterType" name="FilterType" type="int" />
         <param id="LegacyFilterType" name="LegacyFilterType" type="int" />
-        <dataval id="LegacyMode" name="LegacyMode" type="bool" noauto="1" />
+        <dataval id="LegacyMode" name="LegacyMode" type="bool" />
         <param id="LegacyQ" name="LegacyQ" type="float" def="0.82" max="3" min="0.2" />
         <param id="Lfo/BeatQuantize" name="Lfo: BeatQuantize" type="int" max="9" />
         <param id="Lfo/BeatRate" name="Lfo: BeatRate" type="float" max="21" />
@@ -205,12 +205,12 @@
     <object id="Collision">
       <data group="synth" />
       <params>
-        <dataval id="ChannelPressureOn" name="ChannelPressureOn" type="int" max="0" noauto="1" />
+        <dataval id="ChannelPressureOn" name="ChannelPressureOn" type="int" max="0" />
         <param id="ChannelPressureTarget1/Amount" name="ChannelPressureTarget1/Amount" type="float" def="2.5" max="5" min="-5" />
         <param id="ChannelPressureTarget1/Target" name="ChannelPressureTarget1/Target" type="int" />
         <param id="ChannelPressureTarget2/Amount" name="ChannelPressureTarget2/Amount" type="float" def="2.5" max="5" min="-5" />
         <param id="ChannelPressureTarget2/Target" name="ChannelPressureTarget2/Target" type="int" />
-        <dataval id="CurrentTab" name="CurrentTab" type="int" def="3" max="3" noauto="1" />
+        <dataval id="CurrentTab" name="CurrentTab" type="int" def="3" max="3" />
         <param id="Lfo1/Amount" name="Lfo1/Amount" type="float" def="0.5" />
         <param id="Lfo1/KeyToRate" name="Lfo1/KeyToRate" type="float" max="2" min="-2" />
         <param id="Lfo1/OnOff" name="Lfo1/OnOff" type="bool" />
@@ -250,7 +250,7 @@
         <param id="Mallet/VelToStiffness" name="Mallet/VelToStiffness" type="float" max="5" min="-5" />
         <param id="Mallet/VelToVolume" name="Mallet/VelToVolume" type="float" max="5" min="-5" />
         <param id="Mallet/Volume" name="Mallet/Volume" type="float" def="0.5" />
-        <dataval id="ModWheelOn" name="ModWheelOn" type="int" max="0" noauto="1" />
+        <dataval id="ModWheelOn" name="ModWheelOn" type="int" max="0" />
         <param id="ModWheelTarget1/Amount" name="ModWheelTarget1/Amount" type="float" def="2.5" max="5" min="-5" />
         <param id="ModWheelTarget1/Target" name="ModWheelTarget1/Target" type="int" />
         <param id="ModWheelTarget2/Amount" name="ModWheelTarget2/Amount" type="float" def="2.5" max="5" min="-5" />
@@ -269,7 +269,7 @@
         <param id="Noise/VelToFreq" name="Noise/VelToFreq" type="float" max="8" min="-8" />
         <param id="Noise/VelToVolume" name="Noise/VelToVolume" type="float" max="5" min="-5" />
         <param id="Noise/Volume" name="Noise/Volume" type="float" def="0.5" />
-        <dataval id="PitchBendOn" name="PitchBendOn" type="int" max="0" noauto="1" />
+        <dataval id="PitchBendOn" name="PitchBendOn" type="int" max="0" />
         <param id="PitchBendRange" name="PitchBendRange" type="float" def="5" max="24" />
         <param id="PitchBendTarget1/Amount" name="PitchBendTarget1/Amount" type="float" def="2.5" max="5" min="-5" />
         <param id="PitchBendTarget1/Target" name="PitchBendTarget1/Target" type="int" def="7" />
@@ -298,7 +298,7 @@
         <param id="Resonator1/StartTime" name="Resonator1/StartTime" type="float" def="0.5" />
         <param id="Resonator1/StartTranspose" name="Resonator1/StartTranspose" type="float" min="-1" />
         <param id="Resonator1/Transpose" name="Resonator1/Transpose" type="float" max="48" min="-48" />
-        <dataval id="Resonator1/TransposeRelativePosition" name="Resonator1/TransposeRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" noauto="1" />
+        <dataval id="Resonator1/TransposeRelativePosition" name="Resonator1/TransposeRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" />
         <param id="Resonator1/TubeOpening" name="Resonator1/TubeOpening" type="float" def="1" />
         <param id="Resonator1/Type" name="Resonator1/Type" type="int" />
         <param id="Resonator1/VelToDamp" name="Resonator1/VelToDamp" type="float" max="5" min="-5" />
@@ -332,7 +332,7 @@
         <param id="Resonator2/StartTime" name="Resonator2/StartTime" type="float" def="0.5" />
         <param id="Resonator2/StartTranspose" name="Resonator2/StartTranspose" type="float" min="-1" />
         <param id="Resonator2/Transpose" name="Resonator2/Transpose" type="float" max="48" min="-48" />
-        <dataval id="Resonator2/TransposeRelativePosition" name="Resonator2/TransposeRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" noauto="1" />
+        <dataval id="Resonator2/TransposeRelativePosition" name="Resonator2/TransposeRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" />
         <param id="Resonator2/TubeOpening" name="Resonator2/TubeOpening" type="float" def="1" />
         <param id="Resonator2/Type" name="Resonator2/Type" type="int" />
         <param id="Resonator2/VelToDamp" name="Resonator2/VelToDamp" type="float" max="5" min="-5" />
@@ -352,25 +352,25 @@
       <params>
         <param id="Attack" name="Attack" type="float" def="1000" max="1000" min="0.01" />
         <param id="AutoReleaseControlOnOff" name="AutoReleaseControlOnOff" type="bool" />
-        <dataval id="CrossfaderSmoothingTime" name="CrossfaderSmoothingTime" type="float" def="10" max="10" noauto="1" />
+        <dataval id="CrossfaderSmoothingTime" name="CrossfaderSmoothingTime" type="float" def="10" max="10" />
         <param id="DryWet" name="DryWet" type="float" def="1" />
         <param id="ExpansionRatio" name="ExpansionRatio" type="float" def="2" max="2" min="1" />
         <param id="Gain" name="Gain" type="float" def="36" max="36" min="-36" />
         <param id="GainCompensation" name="GainCompensation" type="bool" def="1" />
-        <dataval id="IsOutputCurveVisible" name="IsOutputCurveVisible" type="bool" noauto="1" />
+        <dataval id="IsOutputCurveVisible" name="IsOutputCurveVisible" type="bool" />
         <param id="Knee" name="Knee" type="float" def="18" max="18" />
         <param id="LegacyEnvFollowerMode" name="LegacyEnvFollowerMode" type="int" />
         <param id="LegacyModel" name="LegacyModel" type="int" def="1" />
-        <dataval id="Live8LegacyMode" name="Live8LegacyMode" type="bool" noauto="1" />
+        <dataval id="Live8LegacyMode" name="Live8LegacyMode" type="bool" />
         <param id="LogEnvelope" name="LogEnvelope" type="bool" def="1" />
         <param id="LookAhead" name="LookAhead" type="int" def="2" />
         <param id="Model" name="Model" type="int" />
         <param id="Ratio" name="Ratio" type="float" def="1" max="3.40282e+38" min="1" />
         <param id="Release" name="Release" type="float" def="3000" max="3000" min="1" />
-        <dataval id="ReleaseTimeLong" name="ReleaseTimeLong" type="float" def="1500" max="1500" noauto="1" />
-        <dataval id="ReleaseTimeShort" name="ReleaseTimeShort" type="float" def="15" max="15" noauto="1" />
-        <dataval id="RmsTimeLong" name="RmsTimeLong" type="float" def="250" max="250" noauto="1" />
-        <dataval id="RmsTimeShort" name="RmsTimeShort" type="float" def="8" max="8" noauto="1" />
+        <dataval id="ReleaseTimeLong" name="ReleaseTimeLong" type="float" def="1500" max="1500" />
+        <dataval id="ReleaseTimeShort" name="ReleaseTimeShort" type="float" def="15" max="15" />
+        <dataval id="RmsTimeLong" name="RmsTimeLong" type="float" def="250" max="250" />
+        <dataval id="RmsTimeShort" name="RmsTimeShort" type="float" def="8" max="8" />
         <param id="SideChain/DryWet" name="SideChain/DryWet" type="float" def="1" />
         <param id="SideChain/OnOff" name="SideChain/OnOff" type="bool" />
         <param id="SideChain/RoutedInput/Volume" name="SideChain/RoutedInput/Volume" type="float" def="1" max="15.8489" min="0.0003162" />
@@ -381,7 +381,7 @@
         <param id="SideChainEq/Q" name="SideChainEq/Q" type="float" def="0.707107" max="12" min="0.1" />
         <param id="SideListen" name="SideListen" type="bool" />
         <param id="Threshold" name="Threshold" type="float" def="1.99526" max="1.99526" min="0.0003162" />
-        <dataval id="ViewMode" name="ViewMode" type="int" def="1" max="2" noauto="1" />
+        <dataval id="ViewMode" name="ViewMode" type="int" def="1" max="2" />
       </params>
     </object>
     <object id="Corpus">
@@ -430,7 +430,7 @@
     <object id="Delay">
       <data group="fx" />
       <params>
-        <dataval id="DelayLine_CompatibilityMode" name="DelayLine_CompatibilityMode" type="int" noauto="1" />
+        <dataval id="DelayLine_CompatibilityMode" name="DelayLine_CompatibilityMode" type="int" />
         <param id="DelayLine_Link" name="DelayLine_Link" type="bool" def="1" />
         <param id="DelayLine_OffsetL" name="DelayLine_OffsetL" type="float" max="0.333" min="-0.333" />
         <param id="DelayLine_OffsetR" name="DelayLine_OffsetR" type="float" max="0.333" min="-0.333" />
@@ -447,7 +447,7 @@
         <param id="DelayLine_TimeL" name="DelayLine_TimeL" type="float" def="0.375" max="5" min="0.001" />
         <param id="DelayLine_TimeR" name="DelayLine_TimeR" type="float" def="0.375" max="5" min="0.001" />
         <param id="DryWet" name="DryWet" type="float" def="0.5" />
-        <dataval id="DryWetMode" name="DryWetMode" type="int" def="1" noauto="1" />
+        <dataval id="DryWetMode" name="DryWetMode" type="int" def="1" />
         <param id="Feedback" name="Feedback" type="float" def="0.5" max="0.95" />
         <param id="Filter_Bandwidth" name="Filter_Bandwidth" type="float" def="8" max="9" min="0.5" />
         <param id="Filter_Frequency" name="Filter_Frequency" type="float" def="1000" max="18000" min="50" />
@@ -481,7 +481,7 @@
       <params>
         <param id="ChannelMode" name="ChannelMode" type="int" def="0" />
         <param id="Clipper_Dry" name="Clipper_Dry" type="bool" />
-        <dataval id="CurrentTab" name="CurrentTab" type="int" noauto="1" />
+        <dataval id="CurrentTab" name="CurrentTab" type="int" />
         <param id="Delay_OffsetL" name="Delay_OffsetL" type="float" max="0.33" min="-0.33" />
         <param id="Delay_OffsetR" name="Delay_OffsetR" type="float" max="0.33" min="-0.33" />
         <param id="Delay_Repitch" name="Delay_Repitch" type="bool" def="1" />
@@ -497,7 +497,7 @@
         <param id="Delay_TimeLink" name="Delay_TimeLink" type="bool" def="1" />
         <param id="Delay_TimeR" name="Delay_TimeR" type="float" def="0.375" max="2.5" min="0.001" />
         <param id="DryWet" name="DryWet" type="float" def="0.650794" />
-        <dataval id="DryWetMode" name="DryWetMode" type="int" noauto="1" />
+        <dataval id="DryWetMode" name="DryWetMode" type="int" />
         <param id="Ducking_On" name="Ducking_On" type="bool" />
         <param id="Ducking_Release" name="Ducking_Release" type="float" def="0.1" max="1.5" min="0.02" />
         <param id="Ducking_Threshold" name="Ducking_Threshold" type="float" max="0" min="-60" />
@@ -528,7 +528,7 @@
         <param id="Reverb_Decay" name="Reverb_Decay" type="float" def="0.5" />
         <param id="Reverb_Level" name="Reverb_Level" type="float" />
         <param id="Reverb_Location" name="Reverb_Location" type="int" def="1" />
-        <dataval id="ShowFilter" name="ShowFilter" type="bool" noauto="1" />
+        <dataval id="ShowFilter" name="ShowFilter" type="bool" />
         <param id="StereoWidth" name="StereoWidth" type="float" def="1" max="2" />
         <param id="Wobble_Amount" name="Wobble_Amount" type="float" />
         <param id="Wobble_On" name="Wobble_On" type="bool" />
@@ -539,8 +539,8 @@
       <data group="fx" />
       <params>
         <param id="AdaptiveQ" name="AdaptiveQ" type="bool" />
-        <dataval id="AdaptiveQFactor" name="AdaptiveQFactor" type="float" def="1.12" max="1.12" noauto="1" />
-        <dataval id="AuditionOnOff" name="AuditionOnOff" type="bool" noauto="1" />
+        <dataval id="AdaptiveQFactor" name="AdaptiveQFactor" type="float" def="1.12" max="1.12" />
+        <dataval id="AuditionOnOff" name="AuditionOnOff" type="bool" />
         <param id="Bands.0/ParameterA/Freq" name="Bands.0/ParameterA/Freq" type="float" def="17.7823" max="22000" min="10" />
         <param id="Bands.0/ParameterA/Gain" name="Bands.0/ParameterA/Gain" type="float" def="0.619835" max="15" min="-15" />
         <param id="Bands.0/ParameterA/IsOn" name="Bands.0/ParameterA/IsOn" type="bool" />
@@ -621,13 +621,13 @@
         <param id="Bands.7/ParameterB/IsOn" name="Bands.7/ParameterB/IsOn" type="bool" />
         <param id="Bands.7/ParameterB/Mode" name="Bands.7/ParameterB/Mode" type="int" max="7" />
         <param id="Bands.7/ParameterB/Q" name="Bands.7/ParameterB/Q" type="float" def="0.1" max="18" min="0.1" />
-        <dataval id="EditMode" name="EditMode" type="bool" noauto="1" />
+        <dataval id="EditMode" name="EditMode" type="bool" />
         <param id="GlobalGain" name="GlobalGain" type="float" max="12" min="-12" />
-        <dataval id="Live8ShelfScaleLegacyMode" name="Live8ShelfScaleLegacyMode" type="bool" noauto="1" />
-        <dataval id="Mode" name="Mode" type="int" max="2" noauto="1" />
-        <dataval id="Precision" name="Precision" type="int" noauto="1" />
+        <dataval id="Live8ShelfScaleLegacyMode" name="Live8ShelfScaleLegacyMode" type="bool" />
+        <dataval id="Mode" name="Mode" type="int" max="2" />
+        <dataval id="Precision" name="Precision" type="int" />
         <param id="Scale" name="Scale" type="float" def="1" max="2" min="-2" />
-        <dataval id="SelectedBand" name="SelectedBand" type="int" def="2" max="2" noauto="1" />
+        <dataval id="SelectedBand" name="SelectedBand" type="int" def="2" max="2" />
       </params>
     </object>
     <object id="Erosion">
@@ -657,7 +657,7 @@
         <param id="DelayTimeSwitch1" name="DelayTimeSwitch1" type="bool" def="1" />
         <param id="DelayTimeSwitch2" name="DelayTimeSwitch2" type="bool" def="1" />
         <param id="DelayTimeSwitch3" name="DelayTimeSwitch3" type="bool" def="1" />
-        <dataval id="DelayTransitionMode" name="DelayTransitionMode" type="int" def="1" noauto="1" />
+        <dataval id="DelayTransitionMode" name="DelayTransitionMode" type="int" def="1" />
         <param id="DryVolume" name="DryVolume" type="float" def="0.562341" min="0.0003162" />
         <param id="Feedback1" name="Feedback1" type="float" def="0.21" />
         <param id="Feedback2" name="Feedback2" type="float" def="0.46" />
@@ -682,7 +682,7 @@
     <object id="FilterEQ3">
       <data group="fx" />
       <params>
-        <dataval id="FlatResponse" name="FlatResponse" type="bool" def="1" noauto="1" />
+        <dataval id="FlatResponse" name="FlatResponse" type="bool" def="1" />
         <param id="FreqHi" name="FreqHi" type="float" def="2500" max="18000" min="200" />
         <param id="FreqLo" name="FreqLo" type="float" def="250" max="5000" min="50" />
         <param id="GainHi" name="GainHi" type="float" def="1" max="1.99526" min="0.0003162" />
@@ -727,7 +727,7 @@
         <param id="FlipMode" name="FlipMode" type="int" />
         <param id="Gain" name="Gain" type="float" def="-40" max="0" min="-75" />
         <param id="Hold" name="Hold" type="float" def="10" max="1500" min="1" />
-        <dataval id="Live8LegacyMode" name="Live8LegacyMode" type="bool" noauto="1" />
+        <dataval id="Live8LegacyMode" name="Live8LegacyMode" type="bool" />
         <param id="LookAhead" name="LookAhead" type="int" def="1" />
         <param id="Release" name="Release" type="float" def="15" max="3000" min="0.1" />
         <param id="Return" name="Return" type="float" def="3" max="24" />
@@ -741,13 +741,13 @@
         <param id="Attack" name="Attack" type="float" def="3" max="6" />
         <param id="DryWet" name="DryWet" type="float" def="1" />
         <param id="Makeup" name="Makeup" type="float" max="20" />
-        <dataval id="Oversample" name="Oversample" type="bool" noauto="1" />
-        <dataval id="ParamBlockSize" name="ParamBlockSize" type="float" def="128" noauto="1" />
+        <dataval id="Oversample" name="Oversample" type="bool" />
+        <dataval id="ParamBlockSize" name="ParamBlockSize" type="float" def="128" />
         <param id="PeakClipIn" name="PeakClipIn" type="bool" />
         <param id="Range" name="Range" type="float" def="70" max="70" />
         <param id="Ratio" name="Ratio" type="float" def="1" max="2" />
         <param id="Release" name="Release" type="float" def="3" max="6" />
-        <dataval id="SideChainListen" name="SideChainListen" type="bool" noauto="1" />
+        <dataval id="SideChainListen" name="SideChainListen" type="bool" />
         <param id="Threshold" name="Threshold" type="float" max="0" min="-40" />
       </params>
     </object>
@@ -760,13 +760,13 @@
         <param id="Freq" name="Freq" type="float" def="1" max="150" min="1" />
         <param id="MsDelay" name="MsDelay" type="float" def="40" max="128" min="1" />
         <param id="NewDryWet" name="NewDryWet" type="float" def="0.757576" />
-        <dataval id="ParameterX" name="ParameterX" type="int" def="3" max="5" noauto="1" />
-        <dataval id="ParameterY" name="ParameterY" type="int" def="1" max="5" noauto="1" />
+        <dataval id="ParameterX" name="ParameterX" type="int" def="3" max="5" />
+        <dataval id="ParameterY" name="ParameterY" type="int" def="1" max="5" />
         <param id="Pitch" name="Pitch" type="float" def="3.42857" max="12" min="-36" />
         <param id="RandomPitch" name="RandomPitch" type="float" max="161.2" />
         <param id="Spray" name="Spray" type="float" def="51.6582" max="500" />
         <param id="SyncMode" name="SyncMode" type="bool" def="1" />
-        <dataval id="int" name="int" type="float" noauto="1" />
+        <dataval id="int" name="int" type="float" />
       </params>
     </object>
     <object id="Hybrid">
@@ -799,11 +799,11 @@
         <param id="Algorithm_Type" name="Algorithm_Type" type="int" />
         <param id="BassMono" name="BassMono" type="bool" />
         <param id="ConvoAlgoBlend" name="ConvoAlgoBlend" type="float" def="0.5" />
-        <dataval id="Convolution_IrAttackTime" name="Convolution_IrAttackTime" type="float" noauto="1" />
-        <dataval id="Convolution_IrDecayTime" name="Convolution_IrDecayTime" type="float" def="20" max="20" noauto="1" />
-        <dataval id="Convolution_IrPostProcessingOn" name="Convolution_IrPostProcessingOn" type="bool" def="1" noauto="1" />
-        <dataval id="Convolution_IrSize" name="Convolution_IrSize" type="float" def="1" noauto="1" />
-        <dataval id="CurrentTab" name="CurrentTab" type="int" noauto="1" />
+        <dataval id="Convolution_IrAttackTime" name="Convolution_IrAttackTime" type="float" />
+        <dataval id="Convolution_IrDecayTime" name="Convolution_IrDecayTime" type="float" def="20" max="20" />
+        <dataval id="Convolution_IrPostProcessingOn" name="Convolution_IrPostProcessingOn" type="bool" def="1" />
+        <dataval id="Convolution_IrSize" name="Convolution_IrSize" type="float" def="1" />
+        <dataval id="CurrentTab" name="CurrentTab" type="int" />
         <param id="DryWet" name="DryWet" type="float" def="0.5" />
         <param id="Eq_HighBandFrequency" name="Eq_HighBandFrequency" type="float" def="5000" max="20000" min="20" />
         <param id="Eq_HighBandGain" name="Eq_HighBandGain" type="float" def="1" max="4" min="0.25" />
@@ -859,14 +859,14 @@
         <param id="DecayDrive.5" name="DecayDrive.5" type="float" max="36" />
         <param id="DecayDrive.6" name="DecayDrive.6" type="float" max="36" />
         <param id="DecayDrive.7" name="DecayDrive.7" type="float" max="36" />
-        <dataval id="DecaySatOn.0" name="DecaySatOn.0" type="bool" noauto="1" />
-        <dataval id="DecaySatOn.1" name="DecaySatOn.1" type="bool" noauto="1" />
-        <dataval id="DecaySatOn.2" name="DecaySatOn.2" type="bool" noauto="1" />
-        <dataval id="DecaySatOn.3" name="DecaySatOn.3" type="bool" noauto="1" />
-        <dataval id="DecaySatOn.4" name="DecaySatOn.4" type="bool" noauto="1" />
-        <dataval id="DecaySatOn.5" name="DecaySatOn.5" type="bool" noauto="1" />
-        <dataval id="DecaySatOn.6" name="DecaySatOn.6" type="bool" noauto="1" />
-        <dataval id="DecaySatOn.7" name="DecaySatOn.7" type="bool" noauto="1" />
+        <dataval id="DecaySatOn.0" name="DecaySatOn.0" type="bool" />
+        <dataval id="DecaySatOn.1" name="DecaySatOn.1" type="bool" />
+        <dataval id="DecaySatOn.2" name="DecaySatOn.2" type="bool" />
+        <dataval id="DecaySatOn.3" name="DecaySatOn.3" type="bool" />
+        <dataval id="DecaySatOn.4" name="DecaySatOn.4" type="bool" />
+        <dataval id="DecaySatOn.5" name="DecaySatOn.5" type="bool" />
+        <dataval id="DecaySatOn.6" name="DecaySatOn.6" type="bool" />
+        <dataval id="DecaySatOn.7" name="DecaySatOn.7" type="bool" />
         <param id="FilterFreq.0" name="FilterFreq.0" type="float" def="18500" max="18500" min="30" />
         <param id="FilterFreq.1" name="FilterFreq.1" type="float" def="18500" max="18500" min="30" />
         <param id="FilterFreq.2" name="FilterFreq.2" type="float" def="18500" max="18500" min="30" />
@@ -875,14 +875,14 @@
         <param id="FilterFreq.5" name="FilterFreq.5" type="float" def="18500" max="18500" min="30" />
         <param id="FilterFreq.6" name="FilterFreq.6" type="float" def="18500" max="18500" min="30" />
         <param id="FilterFreq.7" name="FilterFreq.7" type="float" def="18500" max="18500" min="30" />
-        <dataval id="FilterOn.0" name="FilterOn.0" type="bool" noauto="1" />
-        <dataval id="FilterOn.1" name="FilterOn.1" type="bool" noauto="1" />
-        <dataval id="FilterOn.2" name="FilterOn.2" type="bool" noauto="1" />
-        <dataval id="FilterOn.3" name="FilterOn.3" type="bool" noauto="1" />
-        <dataval id="FilterOn.4" name="FilterOn.4" type="bool" noauto="1" />
-        <dataval id="FilterOn.5" name="FilterOn.5" type="bool" noauto="1" />
-        <dataval id="FilterOn.6" name="FilterOn.6" type="bool" noauto="1" />
-        <dataval id="FilterOn.7" name="FilterOn.7" type="bool" noauto="1" />
+        <dataval id="FilterOn.0" name="FilterOn.0" type="bool" />
+        <dataval id="FilterOn.1" name="FilterOn.1" type="bool" />
+        <dataval id="FilterOn.2" name="FilterOn.2" type="bool" />
+        <dataval id="FilterOn.3" name="FilterOn.3" type="bool" />
+        <dataval id="FilterOn.4" name="FilterOn.4" type="bool" />
+        <dataval id="FilterOn.5" name="FilterOn.5" type="bool" />
+        <dataval id="FilterOn.6" name="FilterOn.6" type="bool" />
+        <dataval id="FilterOn.7" name="FilterOn.7" type="bool" />
         <param id="FilterQ.0" name="FilterQ.0" type="float" def="0.7" max="10" min="0.3" />
         <param id="FilterQ.1" name="FilterQ.1" type="float" def="0.7" max="10" min="0.3" />
         <param id="FilterQ.2" name="FilterQ.2" type="float" def="0.7" max="10" min="0.3" />
@@ -918,16 +918,16 @@
         <param id="GlobalPitch" name="GlobalPitch" type="float" max="48" min="-48" />
         <param id="GlobalTime" name="GlobalTime" type="float" min="-1" />
         <param id="GlobalVolume" name="GlobalVolume" type="float" max="36" min="-36" />
-        <dataval id="LinkVoices7and8" name="LinkVoices7and8" type="bool" noauto="1" />
-        <dataval id="RelativePitchScrollPosition" name="RelativePitchScrollPosition" type="float" min="-1.07374e+09" noauto="1" />
-        <dataval id="SlotNumber.0" name="SlotNumber.0" type="float" noauto="1" />
-        <dataval id="SlotNumber.1" name="SlotNumber.1" type="float" def="1" noauto="1" />
-        <dataval id="SlotNumber.2" name="SlotNumber.2" type="float" def="2" max="2" noauto="1" />
-        <dataval id="SlotNumber.3" name="SlotNumber.3" type="float" def="3" max="3" noauto="1" />
-        <dataval id="SlotNumber.4" name="SlotNumber.4" type="float" def="4" max="4" noauto="1" />
-        <dataval id="SlotNumber.5" name="SlotNumber.5" type="float" def="5" max="5" noauto="1" />
-        <dataval id="SlotNumber.6" name="SlotNumber.6" type="float" def="6" max="6" noauto="1" />
-        <dataval id="SlotNumber.7" name="SlotNumber.7" type="float" def="7" max="7" noauto="1" />
+        <dataval id="LinkVoices7and8" name="LinkVoices7and8" type="bool" />
+        <dataval id="RelativePitchScrollPosition" name="RelativePitchScrollPosition" type="float" min="-1.07374e+09" />
+        <dataval id="SlotNumber.0" name="SlotNumber.0" type="float" />
+        <dataval id="SlotNumber.1" name="SlotNumber.1" type="float" def="1" />
+        <dataval id="SlotNumber.2" name="SlotNumber.2" type="float" def="2" max="2" />
+        <dataval id="SlotNumber.3" name="SlotNumber.3" type="float" def="3" max="3" />
+        <dataval id="SlotNumber.4" name="SlotNumber.4" type="float" def="4" max="4" />
+        <dataval id="SlotNumber.5" name="SlotNumber.5" type="float" def="5" max="5" />
+        <dataval id="SlotNumber.6" name="SlotNumber.6" type="float" def="6" max="6" />
+        <dataval id="SlotNumber.7" name="SlotNumber.7" type="float" def="7" max="7" />
         <param id="StartRandom.0" name="StartRandom.0" type="float" />
         <param id="StartRandom.1" name="StartRandom.1" type="float" />
         <param id="StartRandom.2" name="StartRandom.2" type="float" />
@@ -936,14 +936,14 @@
         <param id="StartRandom.5" name="StartRandom.5" type="float" />
         <param id="StartRandom.6" name="StartRandom.6" type="float" />
         <param id="StartRandom.7" name="StartRandom.7" type="float" />
-        <dataval id="StartSoft.0" name="StartSoft.0" type="bool" noauto="1" />
-        <dataval id="StartSoft.1" name="StartSoft.1" type="bool" noauto="1" />
-        <dataval id="StartSoft.2" name="StartSoft.2" type="bool" noauto="1" />
-        <dataval id="StartSoft.3" name="StartSoft.3" type="bool" noauto="1" />
-        <dataval id="StartSoft.4" name="StartSoft.4" type="bool" noauto="1" />
-        <dataval id="StartSoft.5" name="StartSoft.5" type="bool" noauto="1" />
-        <dataval id="StartSoft.6" name="StartSoft.6" type="bool" noauto="1" />
-        <dataval id="StartSoft.7" name="StartSoft.7" type="bool" noauto="1" />
+        <dataval id="StartSoft.0" name="StartSoft.0" type="bool" />
+        <dataval id="StartSoft.1" name="StartSoft.1" type="bool" />
+        <dataval id="StartSoft.2" name="StartSoft.2" type="bool" />
+        <dataval id="StartSoft.3" name="StartSoft.3" type="bool" />
+        <dataval id="StartSoft.4" name="StartSoft.4" type="bool" />
+        <dataval id="StartSoft.5" name="StartSoft.5" type="bool" />
+        <dataval id="StartSoft.6" name="StartSoft.6" type="bool" />
+        <dataval id="StartSoft.7" name="StartSoft.7" type="bool" />
         <param id="StartStart.0" name="StartStart.0" type="float" max="100" />
         <param id="StartStart.1" name="StartStart.1" type="float" max="100" />
         <param id="StartStart.2" name="StartStart.2" type="float" max="100" />
@@ -992,38 +992,38 @@
         <param id="StartVelocity.5" name="StartVelocity.5" type="float" />
         <param id="StartVelocity.6" name="StartVelocity.6" type="float" />
         <param id="StartVelocity.7" name="StartVelocity.7" type="float" />
-        <dataval id="TabAlpha.0" name="TabAlpha.0" type="float" noauto="1" />
-        <dataval id="TabAlpha.1" name="TabAlpha.1" type="float" noauto="1" />
-        <dataval id="TabAlpha.2" name="TabAlpha.2" type="float" noauto="1" />
-        <dataval id="TabAlpha.3" name="TabAlpha.3" type="float" noauto="1" />
-        <dataval id="TabAlpha.4" name="TabAlpha.4" type="float" noauto="1" />
-        <dataval id="TabAlpha.5" name="TabAlpha.5" type="float" noauto="1" />
-        <dataval id="TabAlpha.6" name="TabAlpha.6" type="float" noauto="1" />
-        <dataval id="TabAlpha.7" name="TabAlpha.7" type="float" noauto="1" />
-        <dataval id="TabOmega.0" name="TabOmega.0" type="float" def="2000" max="2000" noauto="1" />
-        <dataval id="TabOmega.1" name="TabOmega.1" type="float" def="2000" max="2000" noauto="1" />
-        <dataval id="TabOmega.2" name="TabOmega.2" type="float" def="2000" max="2000" noauto="1" />
-        <dataval id="TabOmega.3" name="TabOmega.3" type="float" def="2000" max="2000" noauto="1" />
-        <dataval id="TabOmega.4" name="TabOmega.4" type="float" def="2000" max="2000" noauto="1" />
-        <dataval id="TabOmega.5" name="TabOmega.5" type="float" def="2000" max="2000" noauto="1" />
-        <dataval id="TabOmega.6" name="TabOmega.6" type="float" def="2000" max="2000" noauto="1" />
-        <dataval id="TabOmega.7" name="TabOmega.7" type="float" def="2000" max="2000" noauto="1" />
-        <dataval id="TabTitle.0" name="TabTitle.0" type="string" noauto="1" />
-        <dataval id="TabTitle.1" name="TabTitle.1" type="string" noauto="1" />
-        <dataval id="TabTitle.2" name="TabTitle.2" type="string" noauto="1" />
-        <dataval id="TabTitle.3" name="TabTitle.3" type="string" noauto="1" />
-        <dataval id="TabTitle.4" name="TabTitle.4" type="string" noauto="1" />
-        <dataval id="TabTitle.5" name="TabTitle.5" type="string" noauto="1" />
-        <dataval id="TabTitle.6" name="TabTitle.6" type="string" noauto="1" />
-        <dataval id="TabTitle.7" name="TabTitle.7" type="string" noauto="1" />
-        <dataval id="VolumeMute.0" name="VolumeMute.0" type="bool" noauto="1" />
-        <dataval id="VolumeMute.1" name="VolumeMute.1" type="bool" noauto="1" />
-        <dataval id="VolumeMute.2" name="VolumeMute.2" type="bool" noauto="1" />
-        <dataval id="VolumeMute.3" name="VolumeMute.3" type="bool" noauto="1" />
-        <dataval id="VolumeMute.4" name="VolumeMute.4" type="bool" noauto="1" />
-        <dataval id="VolumeMute.5" name="VolumeMute.5" type="bool" noauto="1" />
-        <dataval id="VolumeMute.6" name="VolumeMute.6" type="bool" noauto="1" />
-        <dataval id="VolumeMute.7" name="VolumeMute.7" type="bool" noauto="1" />
+        <dataval id="TabAlpha.0" name="TabAlpha.0" type="float" />
+        <dataval id="TabAlpha.1" name="TabAlpha.1" type="float" />
+        <dataval id="TabAlpha.2" name="TabAlpha.2" type="float" />
+        <dataval id="TabAlpha.3" name="TabAlpha.3" type="float" />
+        <dataval id="TabAlpha.4" name="TabAlpha.4" type="float" />
+        <dataval id="TabAlpha.5" name="TabAlpha.5" type="float" />
+        <dataval id="TabAlpha.6" name="TabAlpha.6" type="float" />
+        <dataval id="TabAlpha.7" name="TabAlpha.7" type="float" />
+        <dataval id="TabOmega.0" name="TabOmega.0" type="float" def="2000" max="2000" />
+        <dataval id="TabOmega.1" name="TabOmega.1" type="float" def="2000" max="2000" />
+        <dataval id="TabOmega.2" name="TabOmega.2" type="float" def="2000" max="2000" />
+        <dataval id="TabOmega.3" name="TabOmega.3" type="float" def="2000" max="2000" />
+        <dataval id="TabOmega.4" name="TabOmega.4" type="float" def="2000" max="2000" />
+        <dataval id="TabOmega.5" name="TabOmega.5" type="float" def="2000" max="2000" />
+        <dataval id="TabOmega.6" name="TabOmega.6" type="float" def="2000" max="2000" />
+        <dataval id="TabOmega.7" name="TabOmega.7" type="float" def="2000" max="2000" />
+        <dataval id="TabTitle.0" name="TabTitle.0" type="string" />
+        <dataval id="TabTitle.1" name="TabTitle.1" type="string" />
+        <dataval id="TabTitle.2" name="TabTitle.2" type="string" />
+        <dataval id="TabTitle.3" name="TabTitle.3" type="string" />
+        <dataval id="TabTitle.4" name="TabTitle.4" type="string" />
+        <dataval id="TabTitle.5" name="TabTitle.5" type="string" />
+        <dataval id="TabTitle.6" name="TabTitle.6" type="string" />
+        <dataval id="TabTitle.7" name="TabTitle.7" type="string" />
+        <dataval id="VolumeMute.0" name="VolumeMute.0" type="bool" />
+        <dataval id="VolumeMute.1" name="VolumeMute.1" type="bool" />
+        <dataval id="VolumeMute.2" name="VolumeMute.2" type="bool" />
+        <dataval id="VolumeMute.3" name="VolumeMute.3" type="bool" />
+        <dataval id="VolumeMute.4" name="VolumeMute.4" type="bool" />
+        <dataval id="VolumeMute.5" name="VolumeMute.5" type="bool" />
+        <dataval id="VolumeMute.6" name="VolumeMute.6" type="bool" />
+        <dataval id="VolumeMute.7" name="VolumeMute.7" type="bool" />
         <param id="VolumePan.0" name="VolumePan.0" type="float" min="-1" />
         <param id="VolumePan.1" name="VolumePan.1" type="float" min="-1" />
         <param id="VolumePan.2" name="VolumePan.2" type="float" min="-1" />
@@ -1048,14 +1048,14 @@
         <param id="VolumePanVel.5" name="VolumePanVel.5" type="float" />
         <param id="VolumePanVel.6" name="VolumePanVel.6" type="float" />
         <param id="VolumePanVel.7" name="VolumePanVel.7" type="float" />
-        <dataval id="VolumeSolo.0" name="VolumeSolo.0" type="bool" noauto="1" />
-        <dataval id="VolumeSolo.1" name="VolumeSolo.1" type="bool" noauto="1" />
-        <dataval id="VolumeSolo.2" name="VolumeSolo.2" type="bool" noauto="1" />
-        <dataval id="VolumeSolo.3" name="VolumeSolo.3" type="bool" noauto="1" />
-        <dataval id="VolumeSolo.4" name="VolumeSolo.4" type="bool" noauto="1" />
-        <dataval id="VolumeSolo.5" name="VolumeSolo.5" type="bool" noauto="1" />
-        <dataval id="VolumeSolo.6" name="VolumeSolo.6" type="bool" noauto="1" />
-        <dataval id="VolumeSolo.7" name="VolumeSolo.7" type="bool" noauto="1" />
+        <dataval id="VolumeSolo.0" name="VolumeSolo.0" type="bool" />
+        <dataval id="VolumeSolo.1" name="VolumeSolo.1" type="bool" />
+        <dataval id="VolumeSolo.2" name="VolumeSolo.2" type="bool" />
+        <dataval id="VolumeSolo.3" name="VolumeSolo.3" type="bool" />
+        <dataval id="VolumeSolo.4" name="VolumeSolo.4" type="bool" />
+        <dataval id="VolumeSolo.5" name="VolumeSolo.5" type="bool" />
+        <dataval id="VolumeSolo.6" name="VolumeSolo.6" type="bool" />
+        <dataval id="VolumeSolo.7" name="VolumeSolo.7" type="bool" />
         <param id="VolumeVolume.0" name="VolumeVolume.0" type="float" max="36" min="-36" />
         <param id="VolumeVolume.1" name="VolumeVolume.1" type="float" max="36" min="-36" />
         <param id="VolumeVolume.2" name="VolumeVolume.2" type="float" max="36" min="-36" />
@@ -1077,18 +1077,18 @@
     <object id="InstrumentVector">
       <data group="synth" />
       <params>
-        <dataval id="AmpEnvelopeDisplayMode" name="AmpEnvelopeDisplayMode" type="int" max="0" noauto="1" />
-        <dataval id="Envelope2DisplayMode" name="Envelope2DisplayMode" type="int" max="0" noauto="1" />
-        <dataval id="Envelope3DisplayMode" name="Envelope3DisplayMode" type="int" max="0" noauto="1" />
-        <dataval id="MonoPoly" name="MonoPoly" type="int" def="1" min="1" noauto="1" />
-        <dataval id="PolyVoices" name="PolyVoices" type="int" def="6" max="6" min="6" noauto="1" />
-        <dataval id="SelectedModulationSourceVisualization" name="SelectedModulationSourceVisualization" type="int" max="0" noauto="1" />
-        <dataval id="SelectedOscillatorBreakout" name="SelectedOscillatorBreakout" type="int" max="0" noauto="1" />
-        <dataval id="SpriteName1" name="SpriteName1" type="string" def="Basic Shapes" max="-1e+07" min="1e+07" noauto="1" />
-        <dataval id="SpriteName2" name="SpriteName2" type="string" def="Basic Shapes" max="-1e+07" min="1e+07" noauto="1" />
-        <dataval id="UseRawUserWavetable1" name="UseRawUserWavetable1" type="bool" max="-1e+07" min="1e+07" noauto="1" />
-        <dataval id="UseRawUserWavetable2" name="UseRawUserWavetable2" type="bool" max="-1e+07" min="1e+07" noauto="1" />
-        <dataval id="VisualizationMode" name="VisualizationMode" type="int" max="0" noauto="1" />
+        <dataval id="AmpEnvelopeDisplayMode" name="AmpEnvelopeDisplayMode" type="int" max="0" />
+        <dataval id="Envelope2DisplayMode" name="Envelope2DisplayMode" type="int" max="0" />
+        <dataval id="Envelope3DisplayMode" name="Envelope3DisplayMode" type="int" max="0" />
+        <dataval id="MonoPoly" name="MonoPoly" type="int" def="1" min="1" />
+        <dataval id="PolyVoices" name="PolyVoices" type="int" def="6" max="6" min="6" />
+        <dataval id="SelectedModulationSourceVisualization" name="SelectedModulationSourceVisualization" type="int" max="0" />
+        <dataval id="SelectedOscillatorBreakout" name="SelectedOscillatorBreakout" type="int" max="0" />
+        <dataval id="SpriteName1" name="SpriteName1" type="string" def="Basic Shapes" max="-1e+07" min="1e+07" />
+        <dataval id="SpriteName2" name="SpriteName2" type="string" def="Basic Shapes" max="-1e+07" min="1e+07" />
+        <dataval id="UseRawUserWavetable1" name="UseRawUserWavetable1" type="bool" max="-1e+07" min="1e+07" />
+        <dataval id="UseRawUserWavetable2" name="UseRawUserWavetable2" type="bool" max="-1e+07" min="1e+07" />
+        <dataval id="VisualizationMode" name="VisualizationMode" type="int" max="0" />
         <param id="Voice_Filter1_CircuitBpNoMo" name="Voice_Filter1_CircuitBpNoMo" type="int" />
         <param id="Voice_Filter1_CircuitLpHp" name="Voice_Filter1_CircuitLpHp" type="int" />
         <param id="Voice_Filter1_Drive" name="Voice_Filter1_Drive" type="float" max="24" />
@@ -1107,7 +1107,7 @@
         <param id="Voice_Filter2_Resonance" name="Voice_Filter2_Resonance" type="float" max="1.25" />
         <param id="Voice_Filter2_Slope" name="Voice_Filter2_Slope" type="int" />
         <param id="Voice_Filter2_Type" name="Voice_Filter2_Type" type="int" def="1" />
-        <dataval id="Voice_Global_FilterRouting" name="Voice_Global_FilterRouting" type="int" max="0" noauto="1" />
+        <dataval id="Voice_Global_FilterRouting" name="Voice_Global_FilterRouting" type="int" max="0" />
         <param id="Voice_Global_Glide" name="Voice_Global_Glide" type="float" max="20" />
         <param id="Voice_Global_Transpose" name="Voice_Global_Transpose" type="float" max="48" min="-48" />
         <param id="Voice_Modulators_Amount" name="Voice_Modulators_Amount" type="float" def="1" max="2" />
@@ -1162,7 +1162,7 @@
         <param id="Voice_Modulators_TimeScale" name="Voice_Modulators_TimeScale" type="float" min="-1" />
         <param id="Voice_Oscillator1_Effects_Effect1" name="Voice_Oscillator1_Effects_Effect1" type="float" min="-1" />
         <param id="Voice_Oscillator1_Effects_Effect2" name="Voice_Oscillator1_Effects_Effect2" type="float" />
-        <dataval id="Voice_Oscillator1_Effects_EffectMode" name="Voice_Oscillator1_Effects_EffectMode" type="int" def="3" max="3" min="3" noauto="1" />
+        <dataval id="Voice_Oscillator1_Effects_EffectMode" name="Voice_Oscillator1_Effects_EffectMode" type="int" def="3" max="3" min="3" />
         <param id="Voice_Oscillator1_Gain" name="Voice_Oscillator1_Gain" type="float" def="1" />
         <param id="Voice_Oscillator1_On" name="Voice_Oscillator1_On" type="bool" def="1" />
         <param id="Voice_Oscillator1_Pan" name="Voice_Oscillator1_Pan" type="float" min="-1" />
@@ -1171,7 +1171,7 @@
         <param id="Voice_Oscillator1_Wavetables_WavePosition" name="Voice_Oscillator1_Wavetables_WavePosition" type="float" />
         <param id="Voice_Oscillator2_Effects_Effect1" name="Voice_Oscillator2_Effects_Effect1" type="float" min="-1" />
         <param id="Voice_Oscillator2_Effects_Effect2" name="Voice_Oscillator2_Effects_Effect2" type="float" />
-        <dataval id="Voice_Oscillator2_Effects_EffectMode" name="Voice_Oscillator2_Effects_EffectMode" type="int" max="0" noauto="1" />
+        <dataval id="Voice_Oscillator2_Effects_EffectMode" name="Voice_Oscillator2_Effects_EffectMode" type="int" max="0" />
         <param id="Voice_Oscillator2_Gain" name="Voice_Oscillator2_Gain" type="float" def="1" />
         <param id="Voice_Oscillator2_On" name="Voice_Oscillator2_On" type="bool" />
         <param id="Voice_Oscillator2_Pan" name="Voice_Oscillator2_Pan" type="float" min="-1" />
@@ -1183,8 +1183,8 @@
         <param id="Voice_SubOscillator_Tone" name="Voice_SubOscillator_Tone" type="float" />
         <param id="Voice_SubOscillator_Transpose" name="Voice_SubOscillator_Transpose" type="int" def="1" />
         <param id="Voice_Unison_Amount" name="Voice_Unison_Amount" type="float" def="0.3" />
-        <dataval id="Voice_Unison_Mode" name="Voice_Unison_Mode" type="int" max="0" noauto="1" />
-        <dataval id="Voice_Unison_VoiceCount" name="Voice_Unison_VoiceCount" type="int" def="3" max="3" min="3" noauto="1" />
+        <dataval id="Voice_Unison_Mode" name="Voice_Unison_Mode" type="int" max="0" />
+        <dataval id="Voice_Unison_VoiceCount" name="Voice_Unison_VoiceCount" type="int" def="3" max="3" min="3" />
         <param id="Volume" name="Volume" type="float" def="0.354813" />
       </params>
     </object>
@@ -1202,20 +1202,20 @@
     <object id="Looper">
       <data group="fx" />
       <params>
-        <dataval id="ExportCounter" name="ExportCounter" type="int" def="1" noauto="1" />
+        <dataval id="ExportCounter" name="ExportCounter" type="int" def="1" />
         <param id="Feedback" name="Feedback" type="float" def="1" />
-        <dataval id="FixedLengthRecord" name="FixedLengthRecord" type="int" def="10" noauto="1" />
+        <dataval id="FixedLengthRecord" name="FixedLengthRecord" type="int" def="10" />
         <param id="LocalQuantization" name="LocalQuantization" type="int" />
-        <dataval id="MappablePedal" name="MappablePedal" type="bool" noauto="1" />
+        <dataval id="MappablePedal" name="MappablePedal" type="bool" />
         <param id="Monitor" name="Monitor" type="int" />
-        <dataval id="OverdubAfterRecord" name="OverdubAfterRecord" type="bool" def="1" noauto="1" />
+        <dataval id="OverdubAfterRecord" name="OverdubAfterRecord" type="bool" def="1" />
         <param id="Pitch" name="Pitch" type="float" max="36" min="-36" />
         <param id="Reverse" name="Reverse" type="bool" />
-        <dataval id="SavedChannelCount" name="SavedChannelCount" type="int" def="-1" noauto="1" />
-        <dataval id="SavedLengthInBeats" name="SavedLengthInBeats" type="int" def="-1" noauto="1" />
-        <dataval id="SavedLengthInFrames" name="SavedLengthInFrames" type="int" def="-1" noauto="1" />
-        <dataval id="SavedSampleRate" name="SavedSampleRate" type="int" def="-1" noauto="1" />
-        <dataval id="SavedTempo" name="SavedTempo" type="float" def="-1" noauto="1" />
+        <dataval id="SavedChannelCount" name="SavedChannelCount" type="int" def="-1" />
+        <dataval id="SavedLengthInBeats" name="SavedLengthInBeats" type="int" def="-1" />
+        <dataval id="SavedLengthInFrames" name="SavedLengthInFrames" type="int" def="-1" />
+        <dataval id="SavedSampleRate" name="SavedSampleRate" type="int" def="-1" />
+        <dataval id="SavedTempo" name="SavedTempo" type="float" def="-1" />
         <param id="SongControl" name="SongControl" type="int" def="1" />
         <param id="State" name="State" type="int" />
         <param id="TempoControl" name="TempoControl" type="int" def="2" />
@@ -1267,7 +1267,7 @@
         <param id="AboveThresholdHigh" name="AboveThresholdHigh" type="float" def="-20" max="0" min="-80" />
         <param id="AboveThresholdLow" name="AboveThresholdLow" type="float" def="-20" max="0" min="-80" />
         <param id="AboveThresholdMid" name="AboveThresholdMid" type="float" def="-20" max="0" min="-80" />
-        <dataval id="ActiveEditMode" name="ActiveEditMode" type="int" noauto="1" />
+        <dataval id="ActiveEditMode" name="ActiveEditMode" type="int" />
         <param id="ActiveHigh" name="ActiveHigh" type="bool" def="1" />
         <param id="ActiveLow" name="ActiveLow" type="bool" def="1" />
         <param id="ActiveMid" name="ActiveMid" type="bool" def="1" />
@@ -1296,15 +1296,15 @@
         <param id="SideChain/DryWet" name="SideChain/DryWet" type="float" def="1" />
         <param id="SideChain/OnOff" name="SideChain/OnOff" type="bool" />
         <param id="SideChain/RoutedInput/Volume" name="SideChain/RoutedInput/Volume" type="float" def="1" max="15.8489" min="0.0003162" />
-        <dataval id="SideListen" name="SideListen" type="bool" noauto="1" />
+        <dataval id="SideListen" name="SideListen" type="bool" />
         <param id="SoftKnee" name="SoftKnee" type="bool" def="1" />
-        <dataval id="SoloHigh" name="SoloHigh" type="bool" noauto="1" />
-        <dataval id="SoloLow" name="SoloLow" type="bool" noauto="1" />
-        <dataval id="SoloMid" name="SoloMid" type="bool" noauto="1" />
+        <dataval id="SoloHigh" name="SoloHigh" type="bool" />
+        <dataval id="SoloLow" name="SoloLow" type="bool" />
+        <dataval id="SoloMid" name="SoloMid" type="bool" />
         <param id="SplitLowMid" name="SplitLowMid" type="float" def="120" max="3000" min="30" />
-        <dataval id="SplitLowMidOn" name="SplitLowMidOn" type="bool" def="1" noauto="1" />
+        <dataval id="SplitLowMidOn" name="SplitLowMidOn" type="bool" def="1" />
         <param id="SplitMidHigh" name="SplitMidHigh" type="float" def="2500" max="15000" min="300" />
-        <dataval id="SplitMidHighOn" name="SplitMidHighOn" type="bool" def="1" noauto="1" />
+        <dataval id="SplitMidHighOn" name="SplitMidHighOn" type="bool" def="1" />
       </params>
     </object>
     <object id="Operator">
@@ -1319,7 +1319,7 @@
         <param id="Filter/Envelope/AttackLevel" name="Filter/Envelope/AttackLevel" type="float" />
         <param id="Filter/Envelope/AttackSlope" name="Filter/Envelope/AttackSlope" type="float" min="-1" />
         <param id="Filter/Envelope/AttackTime" name="Filter/Envelope/AttackTime" type="float" def="0.1" max="20000" min="0.1" />
-        <dataval id="Filter/Envelope/CurrentOverlay" name="Filter/Envelope/CurrentOverlay" type="int" max="0" noauto="1" />
+        <dataval id="Filter/Envelope/CurrentOverlay" name="Filter/Envelope/CurrentOverlay" type="int" max="0" />
         <param id="Filter/Envelope/DecayLevel" name="Filter/Envelope/DecayLevel" type="float" def="1" />
         <param id="Filter/Envelope/DecaySlope" name="Filter/Envelope/DecaySlope" type="float" def="1" min="-1" />
         <param id="Filter/Envelope/DecayTime" name="Filter/Envelope/DecayTime" type="float" def="6971.01" max="60000" min="1" />
@@ -1343,26 +1343,26 @@
         <param id="Filter/Resonance" name="Filter/Resonance" type="float" def="0.267857" max="1.25" />
         <param id="Filter/Slope" name="Filter/Slope" type="bool" def="1" />
         <param id="Filter/Type" name="Filter/Type" type="int" />
-        <dataval id="Filter/VisibleDisplay" name="Filter/VisibleDisplay" type="int" max="0" noauto="1" />
+        <dataval id="Filter/VisibleDisplay" name="Filter/VisibleDisplay" type="int" max="0" />
         <param id="Globals/Algorithm" name="Globals/Algorithm" type="int" />
-        <dataval id="Globals/AntiAlias" name="Globals/AntiAlias" type="bool" def="1" max="1e+07" min="-1e+07" noauto="1" />
-        <dataval id="Globals/Interpolation" name="Globals/Interpolation" type="bool" def="1" max="1e+07" min="-1e+07" noauto="1" />
-        <dataval id="Globals/LegacyMode" name="Globals/LegacyMode" type="bool" max="1e+07" min="-1e+07" noauto="1" />
-        <dataval id="Globals/ModulationResolution" name="Globals/ModulationResolution" type="int" def="2" max="2" min="2" noauto="1" />
-        <dataval id="Globals/NumVoices" name="Globals/NumVoices" type="int" def="5" max="12" noauto="1" />
+        <dataval id="Globals/AntiAlias" name="Globals/AntiAlias" type="bool" def="1" max="1e+07" min="-1e+07" />
+        <dataval id="Globals/Interpolation" name="Globals/Interpolation" type="bool" def="1" max="1e+07" min="-1e+07" />
+        <dataval id="Globals/LegacyMode" name="Globals/LegacyMode" type="bool" max="1e+07" min="-1e+07" />
+        <dataval id="Globals/ModulationResolution" name="Globals/ModulationResolution" type="int" def="2" max="2" min="2" />
+        <dataval id="Globals/NumVoices" name="Globals/NumVoices" type="int" def="5" max="12" />
         <param id="Globals/Panorama" name="Globals/Panorama" type="float" min="-1" />
         <param id="Globals/PanoramaKeyScale" name="Globals/PanoramaKeyScale" type="float" max="100" />
         <param id="Globals/PanoramaRndScale" name="Globals/PanoramaRndScale" type="float" max="100" />
         <param id="Globals/PitchBendRange" name="Globals/PitchBendRange" type="float" def="24" max="24" />
-        <dataval id="Globals/PitchBendRangeRelativePosition" name="Globals/PitchBendRangeRelativePosition" type="int" max="-126" min="-1.07374e+09" noauto="1" />
+        <dataval id="Globals/PitchBendRangeRelativePosition" name="Globals/PitchBendRangeRelativePosition" type="int" max="-126" min="-1.07374e+09" />
         <param id="Globals/PortamentoOn" name="Globals/PortamentoOn" type="bool" />
         <param id="Globals/PortamentoTime" name="Globals/PortamentoTime" type="float" def="50" max="10000" min="0.1" />
-        <dataval id="Globals/RetriggerMode" name="Globals/RetriggerMode" type="bool" max="1e+07" min="-1e+07" noauto="1" />
+        <dataval id="Globals/RetriggerMode" name="Globals/RetriggerMode" type="bool" max="1e+07" min="-1e+07" />
         <param id="Globals/SpreadAmount" name="Globals/SpreadAmount" type="float" max="100" />
         <param id="Globals/Tone" name="Globals/Tone" type="float" def="0.7" />
         <param id="Globals/Transpose" name="Globals/Transpose" type="float" max="48" min="-48" />
-        <dataval id="Globals/TransposeRelativePosition" name="Globals/TransposeRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" noauto="1" />
-        <dataval id="Globals/VisibleDisplay" name="Globals/VisibleDisplay" type="int" noauto="1" />
+        <dataval id="Globals/TransposeRelativePosition" name="Globals/TransposeRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" />
+        <dataval id="Globals/VisibleDisplay" name="Globals/VisibleDisplay" type="int" />
         <param id="Globals/Volume" name="Globals/Volume" type="float" def="0.125892" max="1.99526" min="0.0003162" />
         <param id="Lfo/LfoAmount" name="Lfo/LfoAmount" type="float" def="0.2" />
         <param id="Lfo/LfoAmountA" name="Lfo/LfoAmountA" type="float" def="100" max="100" min="-100" />
@@ -1370,7 +1370,7 @@
         <param id="Lfo/LfoEnv/AttackLevel" name="Lfo/LfoEnv/AttackLevel" type="float" def="0.0003162" min="0.0003162" />
         <param id="Lfo/LfoEnv/AttackSlope" name="Lfo/LfoEnv/AttackSlope" type="float" min="-1" />
         <param id="Lfo/LfoEnv/AttackTime" name="Lfo/LfoEnv/AttackTime" type="float" def="0.1" max="20000" min="0.1" />
-        <dataval id="Lfo/LfoEnv/CurrentOverlay" name="Lfo/LfoEnv/CurrentOverlay" type="int" max="0" noauto="1" />
+        <dataval id="Lfo/LfoEnv/CurrentOverlay" name="Lfo/LfoEnv/CurrentOverlay" type="int" max="0" />
         <param id="Lfo/LfoEnv/DecayLevel" name="Lfo/LfoEnv/DecayLevel" type="float" def="1" min="0.0003162" />
         <param id="Lfo/LfoEnv/DecaySlope" name="Lfo/LfoEnv/DecaySlope" type="float" def="1" min="-1" />
         <param id="Lfo/LfoEnv/DecayTime" name="Lfo/LfoEnv/DecayTime" type="float" def="600" max="60000" min="1" />
@@ -1388,36 +1388,36 @@
         <param id="Lfo/LfoRate" name="Lfo/LfoRate" type="float" def="77" max="127" />
         <param id="Lfo/LfoRateKeyScale" name="Lfo/LfoRateKeyScale" type="float" />
         <param id="Lfo/LfoRateSynced" name="Lfo/LfoRateSynced" type="float" def="3" max="14" />
-        <dataval id="Lfo/LfoRateSyncedRelativePosition" name="Lfo/LfoRateSyncedRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" noauto="1" />
+        <dataval id="Lfo/LfoRateSyncedRelativePosition" name="Lfo/LfoRateSyncedRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" />
         <param id="Lfo/LfoRetrigger" name="Lfo/LfoRetrigger" type="bool" def="1" />
         <param id="Lfo/LfoType" name="Lfo/LfoType" type="int" />
         <param id="Lfo/ModDst/Amount" name="Lfo/ModDst/Amount" type="float" def="100" max="100" min="-100" />
         <param id="Lfo/ModDst/Connection" name="Lfo/ModDst/Connection" type="int" />
-        <dataval id="MidiCtrl/KeyDst/ModConnections.0/Amount" name="MidiCtrl/KeyDst/ModConnections.0/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/KeyDst/ModConnections.0/Connection" name="MidiCtrl/KeyDst/ModConnections.0/Connection" type="int" max="0" noauto="1" />
-        <dataval id="MidiCtrl/KeyDst/ModConnections.1/Amount" name="MidiCtrl/KeyDst/ModConnections.1/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/KeyDst/ModConnections.1/Connection" name="MidiCtrl/KeyDst/ModConnections.1/Connection" type="int" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.0/ModConnections.0/Amount" name="MidiCtrl/MidiCtrl.0/ModConnections.0/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.0/ModConnections.0/Connection" name="MidiCtrl/MidiCtrl.0/ModConnections.0/Connection" type="int" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.0/ModConnections.1/Amount" name="MidiCtrl/MidiCtrl.0/ModConnections.1/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.0/ModConnections.1/Connection" name="MidiCtrl/MidiCtrl.0/ModConnections.1/Connection" type="int" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.1/ModConnections.0/Amount" name="MidiCtrl/MidiCtrl.1/ModConnections.0/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.1/ModConnections.0/Connection" name="MidiCtrl/MidiCtrl.1/ModConnections.0/Connection" type="int" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.1/ModConnections.1/Amount" name="MidiCtrl/MidiCtrl.1/ModConnections.1/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.1/ModConnections.1/Connection" name="MidiCtrl/MidiCtrl.1/ModConnections.1/Connection" type="int" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.2/ModConnections.0/Amount" name="MidiCtrl/MidiCtrl.2/ModConnections.0/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.2/ModConnections.0/Connection" name="MidiCtrl/MidiCtrl.2/ModConnections.0/Connection" type="int" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.2/ModConnections.1/Amount" name="MidiCtrl/MidiCtrl.2/ModConnections.1/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/MidiCtrl.2/ModConnections.1/Connection" name="MidiCtrl/MidiCtrl.2/ModConnections.1/Connection" type="int" max="0" noauto="1" />
-        <dataval id="MidiCtrl/NeutralKey" name="MidiCtrl/NeutralKey" type="int" def="60" max="60" min="60" noauto="1" />
-        <dataval id="MidiCtrl/VelDst/ModConnections.0/Amount" name="MidiCtrl/VelDst/ModConnections.0/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/VelDst/ModConnections.0/Connection" name="MidiCtrl/VelDst/ModConnections.0/Connection" type="int" max="0" noauto="1" />
-        <dataval id="MidiCtrl/VelDst/ModConnections.1/Amount" name="MidiCtrl/VelDst/ModConnections.1/Amount" type="float" max="0" noauto="1" />
-        <dataval id="MidiCtrl/VelDst/ModConnections.1/Connection" name="MidiCtrl/VelDst/ModConnections.1/Connection" type="int" max="0" noauto="1" />
+        <dataval id="MidiCtrl/KeyDst/ModConnections.0/Amount" name="MidiCtrl/KeyDst/ModConnections.0/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/KeyDst/ModConnections.0/Connection" name="MidiCtrl/KeyDst/ModConnections.0/Connection" type="int" max="0" />
+        <dataval id="MidiCtrl/KeyDst/ModConnections.1/Amount" name="MidiCtrl/KeyDst/ModConnections.1/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/KeyDst/ModConnections.1/Connection" name="MidiCtrl/KeyDst/ModConnections.1/Connection" type="int" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.0/ModConnections.0/Amount" name="MidiCtrl/MidiCtrl.0/ModConnections.0/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.0/ModConnections.0/Connection" name="MidiCtrl/MidiCtrl.0/ModConnections.0/Connection" type="int" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.0/ModConnections.1/Amount" name="MidiCtrl/MidiCtrl.0/ModConnections.1/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.0/ModConnections.1/Connection" name="MidiCtrl/MidiCtrl.0/ModConnections.1/Connection" type="int" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.1/ModConnections.0/Amount" name="MidiCtrl/MidiCtrl.1/ModConnections.0/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.1/ModConnections.0/Connection" name="MidiCtrl/MidiCtrl.1/ModConnections.0/Connection" type="int" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.1/ModConnections.1/Amount" name="MidiCtrl/MidiCtrl.1/ModConnections.1/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.1/ModConnections.1/Connection" name="MidiCtrl/MidiCtrl.1/ModConnections.1/Connection" type="int" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.2/ModConnections.0/Amount" name="MidiCtrl/MidiCtrl.2/ModConnections.0/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.2/ModConnections.0/Connection" name="MidiCtrl/MidiCtrl.2/ModConnections.0/Connection" type="int" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.2/ModConnections.1/Amount" name="MidiCtrl/MidiCtrl.2/ModConnections.1/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/MidiCtrl.2/ModConnections.1/Connection" name="MidiCtrl/MidiCtrl.2/ModConnections.1/Connection" type="int" max="0" />
+        <dataval id="MidiCtrl/NeutralKey" name="MidiCtrl/NeutralKey" type="int" def="60" max="60" min="60" />
+        <dataval id="MidiCtrl/VelDst/ModConnections.0/Amount" name="MidiCtrl/VelDst/ModConnections.0/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/VelDst/ModConnections.0/Connection" name="MidiCtrl/VelDst/ModConnections.0/Connection" type="int" max="0" />
+        <dataval id="MidiCtrl/VelDst/ModConnections.1/Amount" name="MidiCtrl/VelDst/ModConnections.1/Amount" type="float" max="0" />
+        <dataval id="MidiCtrl/VelDst/ModConnections.1/Connection" name="MidiCtrl/VelDst/ModConnections.1/Connection" type="int" max="0" />
         <param id="Operator.0/Envelope/AttackLevel" name="Operator.0/Envelope/AttackLevel" type="float" def="0.0003162" min="0.0003162" />
         <param id="Operator.0/Envelope/AttackSlope" name="Operator.0/Envelope/AttackSlope" type="float" min="-1" />
         <param id="Operator.0/Envelope/AttackTime" name="Operator.0/Envelope/AttackTime" type="float" def="0.1" max="20000" min="0.1" />
-        <dataval id="Operator.0/Envelope/CurrentOverlay" name="Operator.0/Envelope/CurrentOverlay" type="int" max="0" noauto="1" />
+        <dataval id="Operator.0/Envelope/CurrentOverlay" name="Operator.0/Envelope/CurrentOverlay" type="int" max="0" />
         <param id="Operator.0/Envelope/DecayLevel" name="Operator.0/Envelope/DecayLevel" type="float" def="1" min="0.0003162" />
         <param id="Operator.0/Envelope/DecaySlope" name="Operator.0/Envelope/DecaySlope" type="float" def="1" min="-1" />
         <param id="Operator.0/Envelope/DecayTime" name="Operator.0/Envelope/DecayTime" type="float" def="40000" max="60000" min="1" />
@@ -1437,24 +1437,24 @@
         <param id="Operator.0/PitchEnvOn" name="Operator.0/PitchEnvOn" type="bool" />
         <param id="Operator.0/Retrigger" name="Operator.0/Retrigger" type="bool" def="1" />
         <param id="Operator.0/Tune/Coarse" name="Operator.0/Tune/Coarse" type="float" def="1" max="48" />
-        <dataval id="Operator.0/Tune/CoarseRelativePosition" name="Operator.0/Tune/CoarseRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" noauto="1" />
+        <dataval id="Operator.0/Tune/CoarseRelativePosition" name="Operator.0/Tune/CoarseRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" />
         <param id="Operator.0/Tune/Fine" name="Operator.0/Tune/Fine" type="float" max="1000" />
         <param id="Operator.0/Tune/FixedFrequency" name="Operator.0/Tune/FixedFrequency" type="float" def="100" max="2000" min="10" />
         <param id="Operator.0/Tune/FixedFrequencyMulti" name="Operator.0/Tune/FixedFrequencyMulti" type="float" def="4" max="5" />
         <param id="Operator.0/Tune/FixedFrequencyOn" name="Operator.0/Tune/FixedFrequencyOn" type="bool" />
         <param id="Operator.0/Tune/VelCoarseScale" name="Operator.0/Tune/VelCoarseScale" type="float" max="100" min="-100" />
         <param id="Operator.0/Tune/VelCoarseScaleQuantized" name="Operator.0/Tune/VelCoarseScaleQuantized" type="bool" def="1" />
-        <dataval id="Operator.0/UserHarmonics/ExpansionMode" name="Operator.0/UserHarmonics/ExpansionMode" type="int" max="0" noauto="1" />
-        <dataval id="Operator.0/UserHarmonics/Harmonics" name="Operator.0/UserHarmonics/Harmonics" type="list" noauto="1" />
-        <dataval id="Operator.0/UserHarmonics/Normalize" name="Operator.0/UserHarmonics/Normalize" type="bool" def="1" max="1e+07" min="-1e+07" noauto="1" />
-        <dataval id="Operator.0/UserHarmonics/NumHarmonics" name="Operator.0/UserHarmonics/NumHarmonics" type="int" max="2" noauto="1" />
+        <dataval id="Operator.0/UserHarmonics/ExpansionMode" name="Operator.0/UserHarmonics/ExpansionMode" type="int" max="0" />
+        <dataval id="Operator.0/UserHarmonics/Harmonics" name="Operator.0/UserHarmonics/Harmonics" type="list" />
+        <dataval id="Operator.0/UserHarmonics/Normalize" name="Operator.0/UserHarmonics/Normalize" type="bool" def="1" max="1e+07" min="-1e+07" />
+        <dataval id="Operator.0/UserHarmonics/NumHarmonics" name="Operator.0/UserHarmonics/NumHarmonics" type="int" max="2" />
         <param id="Operator.0/VelScale" name="Operator.0/VelScale" type="float" def="50" max="100" min="-100" />
         <param id="Operator.0/Volume" name="Operator.0/Volume" type="float" def="1" min="0.0003162" />
         <param id="Operator.0/WaveForm" name="Operator.0/WaveForm" type="int" def="22" />
         <param id="Operator.1/Envelope/AttackLevel" name="Operator.1/Envelope/AttackLevel" type="float" def="0.0003162" min="0.0003162" />
         <param id="Operator.1/Envelope/AttackSlope" name="Operator.1/Envelope/AttackSlope" type="float" min="-1" />
         <param id="Operator.1/Envelope/AttackTime" name="Operator.1/Envelope/AttackTime" type="float" def="0.1" max="20000" min="0.1" />
-        <dataval id="Operator.1/Envelope/CurrentOverlay" name="Operator.1/Envelope/CurrentOverlay" type="int" max="0" noauto="1" />
+        <dataval id="Operator.1/Envelope/CurrentOverlay" name="Operator.1/Envelope/CurrentOverlay" type="int" max="0" />
         <param id="Operator.1/Envelope/DecayLevel" name="Operator.1/Envelope/DecayLevel" type="float" def="1" min="0.0003162" />
         <param id="Operator.1/Envelope/DecaySlope" name="Operator.1/Envelope/DecaySlope" type="float" def="1" min="-1" />
         <param id="Operator.1/Envelope/DecayTime" name="Operator.1/Envelope/DecayTime" type="float" def="400" max="60000" min="1" />
@@ -1474,24 +1474,24 @@
         <param id="Operator.1/PitchEnvOn" name="Operator.1/PitchEnvOn" type="bool" />
         <param id="Operator.1/Retrigger" name="Operator.1/Retrigger" type="bool" def="1" />
         <param id="Operator.1/Tune/Coarse" name="Operator.1/Tune/Coarse" type="float" def="1" max="48" />
-        <dataval id="Operator.1/Tune/CoarseRelativePosition" name="Operator.1/Tune/CoarseRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" noauto="1" />
+        <dataval id="Operator.1/Tune/CoarseRelativePosition" name="Operator.1/Tune/CoarseRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" />
         <param id="Operator.1/Tune/Fine" name="Operator.1/Tune/Fine" type="float" max="1000" />
         <param id="Operator.1/Tune/FixedFrequency" name="Operator.1/Tune/FixedFrequency" type="float" def="100" max="2000" min="10" />
         <param id="Operator.1/Tune/FixedFrequencyMulti" name="Operator.1/Tune/FixedFrequencyMulti" type="float" def="4" max="5" />
         <param id="Operator.1/Tune/FixedFrequencyOn" name="Operator.1/Tune/FixedFrequencyOn" type="bool" />
         <param id="Operator.1/Tune/VelCoarseScale" name="Operator.1/Tune/VelCoarseScale" type="float" max="100" min="-100" />
         <param id="Operator.1/Tune/VelCoarseScaleQuantized" name="Operator.1/Tune/VelCoarseScaleQuantized" type="bool" def="1" />
-        <dataval id="Operator.1/UserHarmonics/ExpansionMode" name="Operator.1/UserHarmonics/ExpansionMode" type="int" max="0" noauto="1" />
-        <dataval id="Operator.1/UserHarmonics/Harmonics" name="Operator.1/UserHarmonics/Harmonics" type="list" noauto="1" />
-        <dataval id="Operator.1/UserHarmonics/Normalize" name="Operator.1/UserHarmonics/Normalize" type="bool" def="1" max="1e+07" min="-1e+07" noauto="1" />
-        <dataval id="Operator.1/UserHarmonics/NumHarmonics" name="Operator.1/UserHarmonics/NumHarmonics" type="int" max="2" noauto="1" />
+        <dataval id="Operator.1/UserHarmonics/ExpansionMode" name="Operator.1/UserHarmonics/ExpansionMode" type="int" max="0" />
+        <dataval id="Operator.1/UserHarmonics/Harmonics" name="Operator.1/UserHarmonics/Harmonics" type="list" />
+        <dataval id="Operator.1/UserHarmonics/Normalize" name="Operator.1/UserHarmonics/Normalize" type="bool" def="1" max="1e+07" min="-1e+07" />
+        <dataval id="Operator.1/UserHarmonics/NumHarmonics" name="Operator.1/UserHarmonics/NumHarmonics" type="int" max="2" />
         <param id="Operator.1/VelScale" name="Operator.1/VelScale" type="float" def="50" max="100" min="-100" />
         <param id="Operator.1/Volume" name="Operator.1/Volume" type="float" def="0.0003162" min="0.0003162" />
         <param id="Operator.1/WaveForm" name="Operator.1/WaveForm" type="int" def="22" />
         <param id="Operator.2/Envelope/AttackLevel" name="Operator.2/Envelope/AttackLevel" type="float" def="0.0003162" min="0.0003162" />
         <param id="Operator.2/Envelope/AttackSlope" name="Operator.2/Envelope/AttackSlope" type="float" min="-1" />
         <param id="Operator.2/Envelope/AttackTime" name="Operator.2/Envelope/AttackTime" type="float" def="0.1" max="20000" min="0.1" />
-        <dataval id="Operator.2/Envelope/CurrentOverlay" name="Operator.2/Envelope/CurrentOverlay" type="int" max="0" noauto="1" />
+        <dataval id="Operator.2/Envelope/CurrentOverlay" name="Operator.2/Envelope/CurrentOverlay" type="int" max="0" />
         <param id="Operator.2/Envelope/DecayLevel" name="Operator.2/Envelope/DecayLevel" type="float" def="1" min="0.0003162" />
         <param id="Operator.2/Envelope/DecaySlope" name="Operator.2/Envelope/DecaySlope" type="float" def="1" min="-1" />
         <param id="Operator.2/Envelope/DecayTime" name="Operator.2/Envelope/DecayTime" type="float" def="400" max="60000" min="1" />
@@ -1511,24 +1511,24 @@
         <param id="Operator.2/PitchEnvOn" name="Operator.2/PitchEnvOn" type="bool" />
         <param id="Operator.2/Retrigger" name="Operator.2/Retrigger" type="bool" def="1" />
         <param id="Operator.2/Tune/Coarse" name="Operator.2/Tune/Coarse" type="float" def="1" max="48" />
-        <dataval id="Operator.2/Tune/CoarseRelativePosition" name="Operator.2/Tune/CoarseRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" noauto="1" />
+        <dataval id="Operator.2/Tune/CoarseRelativePosition" name="Operator.2/Tune/CoarseRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" />
         <param id="Operator.2/Tune/Fine" name="Operator.2/Tune/Fine" type="float" max="1000" />
         <param id="Operator.2/Tune/FixedFrequency" name="Operator.2/Tune/FixedFrequency" type="float" def="100" max="2000" min="10" />
         <param id="Operator.2/Tune/FixedFrequencyMulti" name="Operator.2/Tune/FixedFrequencyMulti" type="float" def="4" max="5" />
         <param id="Operator.2/Tune/FixedFrequencyOn" name="Operator.2/Tune/FixedFrequencyOn" type="bool" />
         <param id="Operator.2/Tune/VelCoarseScale" name="Operator.2/Tune/VelCoarseScale" type="float" max="100" min="-100" />
         <param id="Operator.2/Tune/VelCoarseScaleQuantized" name="Operator.2/Tune/VelCoarseScaleQuantized" type="bool" def="1" />
-        <dataval id="Operator.2/UserHarmonics/ExpansionMode" name="Operator.2/UserHarmonics/ExpansionMode" type="int" max="0" noauto="1" />
-        <dataval id="Operator.2/UserHarmonics/Harmonics" name="Operator.2/UserHarmonics/Harmonics" type="list" noauto="1" />
-        <dataval id="Operator.2/UserHarmonics/Normalize" name="Operator.2/UserHarmonics/Normalize" type="bool" def="1" max="1e+07" min="-1e+07" noauto="1" />
-        <dataval id="Operator.2/UserHarmonics/NumHarmonics" name="Operator.2/UserHarmonics/NumHarmonics" type="int" max="2" noauto="1" />
+        <dataval id="Operator.2/UserHarmonics/ExpansionMode" name="Operator.2/UserHarmonics/ExpansionMode" type="int" max="0" />
+        <dataval id="Operator.2/UserHarmonics/Harmonics" name="Operator.2/UserHarmonics/Harmonics" type="list" />
+        <dataval id="Operator.2/UserHarmonics/Normalize" name="Operator.2/UserHarmonics/Normalize" type="bool" def="1" max="1e+07" min="-1e+07" />
+        <dataval id="Operator.2/UserHarmonics/NumHarmonics" name="Operator.2/UserHarmonics/NumHarmonics" type="int" max="2" />
         <param id="Operator.2/VelScale" name="Operator.2/VelScale" type="float" def="50" max="100" min="-100" />
         <param id="Operator.2/Volume" name="Operator.2/Volume" type="float" def="0.0003162" min="0.0003162" />
         <param id="Operator.2/WaveForm" name="Operator.2/WaveForm" type="int" def="22" />
         <param id="Operator.3/Envelope/AttackLevel" name="Operator.3/Envelope/AttackLevel" type="float" def="0.0003162" min="0.0003162" />
         <param id="Operator.3/Envelope/AttackSlope" name="Operator.3/Envelope/AttackSlope" type="float" min="-1" />
         <param id="Operator.3/Envelope/AttackTime" name="Operator.3/Envelope/AttackTime" type="float" def="0.1" max="20000" min="0.1" />
-        <dataval id="Operator.3/Envelope/CurrentOverlay" name="Operator.3/Envelope/CurrentOverlay" type="int" max="0" noauto="1" />
+        <dataval id="Operator.3/Envelope/CurrentOverlay" name="Operator.3/Envelope/CurrentOverlay" type="int" max="0" />
         <param id="Operator.3/Envelope/DecayLevel" name="Operator.3/Envelope/DecayLevel" type="float" def="1" min="0.0003162" />
         <param id="Operator.3/Envelope/DecaySlope" name="Operator.3/Envelope/DecaySlope" type="float" def="1" min="-1" />
         <param id="Operator.3/Envelope/DecayTime" name="Operator.3/Envelope/DecayTime" type="float" def="400" max="60000" min="1" />
@@ -1548,17 +1548,17 @@
         <param id="Operator.3/PitchEnvOn" name="Operator.3/PitchEnvOn" type="bool" />
         <param id="Operator.3/Retrigger" name="Operator.3/Retrigger" type="bool" def="1" />
         <param id="Operator.3/Tune/Coarse" name="Operator.3/Tune/Coarse" type="float" def="1" max="48" />
-        <dataval id="Operator.3/Tune/CoarseRelativePosition" name="Operator.3/Tune/CoarseRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" noauto="1" />
+        <dataval id="Operator.3/Tune/CoarseRelativePosition" name="Operator.3/Tune/CoarseRelativePosition" type="int" max="-1.07374e+09" min="-1.07374e+09" />
         <param id="Operator.3/Tune/Fine" name="Operator.3/Tune/Fine" type="float" max="1000" />
         <param id="Operator.3/Tune/FixedFrequency" name="Operator.3/Tune/FixedFrequency" type="float" def="100" max="2000" min="10" />
         <param id="Operator.3/Tune/FixedFrequencyMulti" name="Operator.3/Tune/FixedFrequencyMulti" type="float" def="4" max="5" />
         <param id="Operator.3/Tune/FixedFrequencyOn" name="Operator.3/Tune/FixedFrequencyOn" type="bool" />
         <param id="Operator.3/Tune/VelCoarseScale" name="Operator.3/Tune/VelCoarseScale" type="float" max="100" min="-100" />
         <param id="Operator.3/Tune/VelCoarseScaleQuantized" name="Operator.3/Tune/VelCoarseScaleQuantized" type="bool" def="1" />
-        <dataval id="Operator.3/UserHarmonics/ExpansionMode" name="Operator.3/UserHarmonics/ExpansionMode" type="int" max="0" noauto="1" />
-        <dataval id="Operator.3/UserHarmonics/Harmonics" name="Operator.3/UserHarmonics/Harmonics" type="list" noauto="1" />
-        <dataval id="Operator.3/UserHarmonics/Normalize" name="Operator.3/UserHarmonics/Normalize" type="bool" def="1" max="1e+07" min="-1e+07" noauto="1" />
-        <dataval id="Operator.3/UserHarmonics/NumHarmonics" name="Operator.3/UserHarmonics/NumHarmonics" type="int" max="2" noauto="1" />
+        <dataval id="Operator.3/UserHarmonics/ExpansionMode" name="Operator.3/UserHarmonics/ExpansionMode" type="int" max="0" />
+        <dataval id="Operator.3/UserHarmonics/Harmonics" name="Operator.3/UserHarmonics/Harmonics" type="list" />
+        <dataval id="Operator.3/UserHarmonics/Normalize" name="Operator.3/UserHarmonics/Normalize" type="bool" def="1" max="1e+07" min="-1e+07" />
+        <dataval id="Operator.3/UserHarmonics/NumHarmonics" name="Operator.3/UserHarmonics/NumHarmonics" type="int" max="2" />
         <param id="Operator.3/VelScale" name="Operator.3/VelScale" type="float" def="50" max="100" min="-100" />
         <param id="Operator.3/Volume" name="Operator.3/Volume" type="float" def="0.0003162" min="0.0003162" />
         <param id="Operator.3/WaveForm" name="Operator.3/WaveForm" type="int" def="22" />
@@ -1567,7 +1567,7 @@
         <param id="PitchEnv/PitchEnv/AttackLevel" name="PitchEnv/PitchEnv/AttackLevel" type="float" def="12" max="48" min="-48" />
         <param id="PitchEnv/PitchEnv/AttackSlope" name="PitchEnv/PitchEnv/AttackSlope" type="float" min="-1" />
         <param id="PitchEnv/PitchEnv/AttackTime" name="PitchEnv/PitchEnv/AttackTime" type="float" def="0.1" max="20000" min="0.1" />
-        <dataval id="PitchEnv/PitchEnv/CurrentOverlay" name="PitchEnv/PitchEnv/CurrentOverlay" type="int" max="0" noauto="1" />
+        <dataval id="PitchEnv/PitchEnv/CurrentOverlay" name="PitchEnv/PitchEnv/CurrentOverlay" type="int" max="0" />
         <param id="PitchEnv/PitchEnv/DecayLevel" name="PitchEnv/PitchEnv/DecayLevel" type="float" def="12" max="48" min="-48" />
         <param id="PitchEnv/PitchEnv/DecaySlope" name="PitchEnv/PitchEnv/DecaySlope" type="float" def="1" min="-1" />
         <param id="PitchEnv/PitchEnv/DecayTime" name="PitchEnv/PitchEnv/DecayTime" type="float" def="500" max="60000" min="1" />
@@ -1607,7 +1607,7 @@
         <param id="Mid" name="Mid" type="float" min="-1" />
         <param id="MidFreq" name="MidFreq" type="int" def="1" max="2" />
         <param id="Output" name="Output" type="float" max="20" min="-20" />
-        <dataval id="Oversampling" name="Oversampling" type="bool" noauto="1" />
+        <dataval id="Oversampling" name="Oversampling" type="bool" />
         <param id="Sub" name="Sub" type="bool" />
         <param id="Treble" name="Treble" type="float" min="-1" />
         <param id="Type" name="Type" type="int" max="2" />
@@ -1670,7 +1670,7 @@
         <param id="InFilterFreq" name="InFilterFreq" type="float" def="500" max="8000" min="50" />
         <param id="InFilterMode" name="InFilterMode" type="int" def="2" />
         <param id="InFilterOn" name="InFilterOn" type="bool" def="1" />
-        <dataval id="RelativePitchScrollPosition" name="RelativePitchScrollPosition" type="int" noauto="1" />
+        <dataval id="RelativePitchScrollPosition" name="RelativePitchScrollPosition" type="int" />
         <param id="ResColor" name="ResColor" type="float" def="90" max="100" />
         <param id="ResConst" name="ResConst" type="bool" def="1" />
         <param id="ResDecay" name="ResDecay" type="float" def="50" max="100" />
@@ -1681,7 +1681,7 @@
         <param id="ResGain5" name="ResGain5" type="float" def="1" max="1.99526" min="0.0003162" />
         <param id="ResMode" name="ResMode" type="bool" def="1" />
         <param id="ResNote" name="ResNote" type="float" def="48" max="84" min="12" />
-        <dataval id="ResNoteScrollPosition" name="ResNoteScrollPosition" type="int" noauto="1" />
+        <dataval id="ResNoteScrollPosition" name="ResNoteScrollPosition" type="int" />
         <param id="ResOn1" name="ResOn1" type="bool" def="1" />
         <param id="ResOn2" name="ResOn2" type="bool" def="1" />
         <param id="ResOn3" name="ResOn3" type="bool" def="1" />
@@ -1732,7 +1732,7 @@
         <param id="SizeModFreq" name="SizeModFreq" type="float" def="0.02" max="8" min="0.01" />
         <param id="SpinOn" name="SpinOn" type="bool" def="1" />
         <param id="StereoSeparation" name="StereoSeparation" type="float" def="100" max="120" />
-        <dataval id="StereoSeparationOnDrySignal" name="StereoSeparationOnDrySignal" type="bool" noauto="1" />
+        <dataval id="StereoSeparationOnDrySignal" name="StereoSeparationOnDrySignal" type="bool" />
       </params>
     </object>
     <object id="Saturator">
@@ -1744,10 +1744,10 @@
         <param id="ColorOn" name="ColorOn" type="bool" def="1" />
         <param id="ColorWidth" name="ColorWidth" type="float" def="0.5" />
         <param id="DryWet" name="DryWet" type="float" def="1" />
-        <dataval id="Oversampling" name="Oversampling" type="int" def="1" noauto="1" />
+        <dataval id="Oversampling" name="Oversampling" type="int" def="1" />
         <param id="PostClip" name="PostClip" type="bool" />
         <param id="PostDrive" name="PostDrive" type="float" max="0" min="-36" />
-        <dataval id="PreDcFilter" name="PreDcFilter" type="bool" noauto="1" />
+        <dataval id="PreDcFilter" name="PreDcFilter" type="bool" />
         <param id="PreDrive" name="PreDrive" type="float" def="-2.85714" max="36" min="-36" />
         <param id="Type" name="Type" type="int" def="2" max="2" />
         <param id="WaveShaper/Curve" name="WaveShaper: Curve" type="float" />
@@ -1774,7 +1774,7 @@
         <param id="Delay_TimeSixteenths" name="Delay_TimeSixteenths" type="float" def="3" max="16" min="1" />
         <param id="Delay_TimeUnit" name="Delay_TimeUnit" type="int" />
         <param id="DryWet" name="DryWet" type="float" def="0.5" />
-        <dataval id="Freezer_AvoidFreezingOnsets" name="Freezer_AvoidFreezingOnsets" type="bool" noauto="1" />
+        <dataval id="Freezer_AvoidFreezingOnsets" name="Freezer_AvoidFreezingOnsets" type="bool" />
         <param id="Freezer_CrossfadePercent" name="Freezer_CrossfadePercent" type="float" />
         <param id="Freezer_FadeIn" name="Freezer_FadeIn" type="float" def="0.002" max="10" min="0.002" />
         <param id="Freezer_FadeOut" name="Freezer_FadeOut" type="float" def="0.04" max="10" min="0.02" />
@@ -1788,24 +1788,24 @@
         <param id="Freezer_SyncIntervalSeconds" name="Freezer_SyncIntervalSeconds" type="float" def="0.5" max="10" min="0.02" />
         <param id="Freezer_SyncIntervalUnits" name="Freezer_SyncIntervalUnits" type="int" />
         <param id="InputSendGain" name="InputSendGain" type="float" def="1" />
-        <dataval id="Resolution" name="Resolution" type="int" def="1" noauto="1" />
+        <dataval id="Resolution" name="Resolution" type="int" def="1" />
       </params>
     </object>
     <object id="SpectrumAnalyzer">
       <data group="fx" />
       <params>
-        <dataval id="AnalyzeOn" name="AnalyzeOn" type="bool" def="1" noauto="1" />
-        <dataval id="AutoScaleY" name="AutoScaleY" type="bool" def="1" noauto="1" />
-        <dataval id="ChannelMode" name="ChannelMode" type="float" def="2" max="2" noauto="1" />
-        <dataval id="Length" name="Length" type="float" def="2" max="3" noauto="1" />
-        <dataval id="MinRefreshTime" name="MinRefreshTime" type="float" def="60" max="200" min="40" noauto="1" />
-        <dataval id="NumAverages" name="NumAverages" type="float" def="1" max="8" min="1" noauto="1" />
-        <dataval id="ScaleXMode" name="ScaleXMode" type="float" def="1" max="2" noauto="1" />
-        <dataval id="ScaleYBegin" name="ScaleYBegin" type="float" max="41" min="40" noauto="1" />
-        <dataval id="ScaleYRange" name="ScaleYRange" type="float" def="120" max="181" min="10" noauto="1" />
-        <dataval id="ShowBins" name="ShowBins" type="bool" noauto="1" />
-        <dataval id="ShowMax" name="ShowMax" type="bool" def="1" noauto="1" />
-        <dataval id="Window" name="Window" type="float" def="3" max="3" min="3" noauto="1" />
+        <dataval id="AnalyzeOn" name="AnalyzeOn" type="bool" def="1" />
+        <dataval id="AutoScaleY" name="AutoScaleY" type="bool" def="1" />
+        <dataval id="ChannelMode" name="ChannelMode" type="float" def="2" max="2" />
+        <dataval id="Length" name="Length" type="float" def="2" max="3" />
+        <dataval id="MinRefreshTime" name="MinRefreshTime" type="float" def="60" max="200" min="40" />
+        <dataval id="NumAverages" name="NumAverages" type="float" def="1" max="8" min="1" />
+        <dataval id="ScaleXMode" name="ScaleXMode" type="float" def="1" max="2" />
+        <dataval id="ScaleYBegin" name="ScaleYBegin" type="float" max="41" min="40" />
+        <dataval id="ScaleYRange" name="ScaleYRange" type="float" def="120" max="181" min="10" />
+        <dataval id="ShowBins" name="ShowBins" type="bool" />
+        <dataval id="ShowMax" name="ShowMax" type="bool" def="1" />
+        <dataval id="Window" name="Window" type="float" def="3" max="3" min="3" />
       </params>
     </object>
     <object id="StereoGain">
@@ -1813,15 +1813,15 @@
       <params>
         <param id="Balance" name="Balance" type="float" min="-1" />
         <param id="BassMono" name="BassMono" type="bool" />
-        <dataval id="BassMonoAudition" name="BassMonoAudition" type="bool" noauto="1" />
+        <dataval id="BassMonoAudition" name="BassMonoAudition" type="bool" />
         <param id="BassMonoFrequency" name="BassMonoFrequency" type="float" def="120" max="500" min="50" />
         <param id="ChannelMode" name="ChannelMode" type="int" def="1" />
         <param id="DcFilter" name="DcFilter" type="bool" />
         <param id="Gain" name="Gain" type="float" def="1" max="56.2341" />
         <param id="LegacyGain" name="LegacyGain" type="float" max="35" min="-35" />
-        <dataval id="LegacyMode" name="LegacyMode" type="bool" noauto="1" />
+        <dataval id="LegacyMode" name="LegacyMode" type="bool" />
         <param id="MidSideBalance" name="MidSideBalance" type="float" def="1" max="2" />
-        <dataval id="MidSideBalanceOn" name="MidSideBalanceOn" type="bool" noauto="1" />
+        <dataval id="MidSideBalanceOn" name="MidSideBalanceOn" type="bool" />
         <param id="Mono" name="Mono" type="bool" />
         <param id="Mute" name="Mute" type="bool" />
         <param id="PhaseInvertL" name="PhaseInvertL" type="bool" />
@@ -1840,7 +1840,7 @@
         <param id="BodySize" name="BodySize" type="int" def="2" />
         <param id="BodyToggle" name="BodyToggle" type="bool" />
         <param id="BodyType" name="BodyType" type="int" />
-        <dataval id="CurrentTab" name="CurrentTab" type="int" noauto="1" />
+        <dataval id="CurrentTab" name="CurrentTab" type="int" />
         <param id="DamperDamping" name="DamperDamping" type="float" def="0.5" />
         <param id="DamperGated" name="DamperGated" type="bool" />
         <param id="DamperMass" name="DamperMass" type="float" def="0.5" />
@@ -1903,7 +1903,7 @@
         <param id="LFOToggle" name="LFOToggle" type="bool" />
         <param id="LFOWaveShape" name="LFOWaveShape" type="int" />
         <param id="Octave" name="Octave" type="float" max="3" min="-3" />
-        <dataval id="OctaveRelativePosition" name="OctaveRelativePosition" type="int" max="-1e+07" min="-1.07374e+09" noauto="1" />
+        <dataval id="OctaveRelativePosition" name="OctaveRelativePosition" type="int" max="-1e+07" min="-1.07374e+09" />
         <param id="PickupPosition" name="PickupPosition" type="float" def="0.5" />
         <param id="PickupToggle" name="PickupToggle" type="bool" />
         <param id="PitchBendRange" name="PitchBendRange" type="float" def="2" max="12" />
@@ -1925,7 +1925,7 @@
         <param id="TerminationFretStiffness" name="TerminationFretStiffness" type="float" def="0.5" />
         <param id="TerminationToggle" name="TerminationToggle" type="bool" />
         <param id="Transpose" name="Transpose" type="float" max="12" min="-12" />
-        <dataval id="TransposeRelativePosition" name="TransposeRelativePosition" type="int" max="-1e+07" min="-1.07374e+09" noauto="1" />
+        <dataval id="TransposeRelativePosition" name="TransposeRelativePosition" type="int" max="-1e+07" min="-1.07374e+09" />
         <param id="VibratoAmount" name="VibratoAmount" type="float" def="0.5" />
         <param id="VibratoDelay" name="VibratoDelay" type="float" def="0.5" />
         <param id="VibratoError" name="VibratoError" type="float" def="0.5" />
@@ -1944,19 +1944,19 @@
         <param id="Global_DryWet" name="Global_DryWet" type="float" def="1" />
         <param id="Global_InputSend" name="Global_InputSend" type="float" max="24" min="-24" />
         <param id="Global_NumHarmonics" name="Global_NumHarmonics" type="float" def="256" max="256" min="1" />
-        <dataval id="Global_PitchMode" name="Global_PitchMode" type="int" noauto="1" />
+        <dataval id="Global_PitchMode" name="Global_PitchMode" type="int" />
         <param id="Global_Unison" name="Global_Unison" type="float" max="3" />
         <param id="Global_UnisonAmount" name="Global_UnisonAmount" type="float" def="0.1" />
         <param id="MidiPitch_Glide" name="MidiPitch_Glide" type="float" max="20" />
-        <dataval id="MidiPitch_MidiGate" name="MidiPitch_MidiGate" type="int" noauto="1" />
-        <dataval id="MidiPitch_MonoPolyMode" name="MidiPitch_MonoPolyMode" type="int" noauto="1" />
-        <dataval id="MidiPitch_PitchBendRange" name="MidiPitch_PitchBendRange" type="float" def="2" noauto="1" />
-        <dataval id="MidiPitch_Polyphony" name="MidiPitch_Polyphony" type="int" def="3" noauto="1" />
+        <dataval id="MidiPitch_MidiGate" name="MidiPitch_MidiGate" type="int" />
+        <dataval id="MidiPitch_MonoPolyMode" name="MidiPitch_MonoPolyMode" type="int" />
+        <dataval id="MidiPitch_PitchBendRange" name="MidiPitch_PitchBendRange" type="float" def="2" />
+        <dataval id="MidiPitch_Polyphony" name="MidiPitch_Polyphony" type="int" def="3" />
         <param id="MidiPitch_Transpose" name="MidiPitch_Transpose" type="float" max="48" min="-48" />
-        <dataval id="Modulation_ModMode" name="Modulation_ModMode" type="int" noauto="1" />
+        <dataval id="Modulation_ModMode" name="Modulation_ModMode" type="int" />
         <param id="Modulation_ModRate" name="Modulation_ModRate" type="float" def="0.1" />
         <param id="Modulation_PitchModAmount" name="Modulation_PitchModAmount" type="float" max="4" />
-        <dataval id="PartialFrequencies_FrequencyDialMode" name="PartialFrequencies_FrequencyDialMode" type="int" noauto="1" />
+        <dataval id="PartialFrequencies_FrequencyDialMode" name="PartialFrequencies_FrequencyDialMode" type="int" />
         <param id="PartialFrequencies_FrequencyHz" name="PartialFrequencies_FrequencyHz" type="float" def="110" max="2000" min="8.2" />
         <param id="PartialFrequencies_FrequencyNote" name="PartialFrequencies_FrequencyNote" type="float" def="45" max="96" />
         <param id="PartialFrequencies_PartialStretch" name="PartialFrequencies_PartialStretch" type="float" min="-1" />
@@ -1971,7 +1971,7 @@
         <param id="AutoBiasRelease" name="AutoBiasRelease" type="float" def="35" max="1500" min="1" />
         <param id="Bias" name="Bias" type="float" />
         <param id="DryWet" name="DryWet" type="float" def="1" />
-        <dataval id="Oversampling" name="Oversampling" type="int" noauto="1" />
+        <dataval id="Oversampling" name="Oversampling" type="int" />
         <param id="PostDrive" name="PostDrive" type="float" max="15" min="-15" />
         <param id="PreDrive" name="PreDrive" type="float" max="15" min="-15" />
         <param id="Tone" name="Tone" type="float" min="-1" />
@@ -1981,13 +1981,13 @@
     <object id="Tuner">
       <data group="fx" />
       <params>
-        <dataval id="DisplayPitchInHz" name="DisplayPitchInHz" type="bool" noauto="1" />
-        <dataval id="HistogramCenterNote" name="HistogramCenterNote" type="float" max="11.8415" noauto="1" />
-        <dataval id="HistogramFollowsPitch" name="HistogramFollowsPitch" type="bool" def="1" noauto="1" />
-        <dataval id="HistogramNoteRange" name="HistogramNoteRange" type="float" def="3.5" max="11" min="3.5" noauto="1" />
-        <dataval id="StrobeMode" name="StrobeMode" type="bool" noauto="1" />
+        <dataval id="DisplayPitchInHz" name="DisplayPitchInHz" type="bool" />
+        <dataval id="HistogramCenterNote" name="HistogramCenterNote" type="float" max="11.8415" />
+        <dataval id="HistogramFollowsPitch" name="HistogramFollowsPitch" type="bool" def="1" />
+        <dataval id="HistogramNoteRange" name="HistogramNoteRange" type="float" def="3.5" max="11" min="3.5" />
+        <dataval id="StrobeMode" name="StrobeMode" type="bool" />
         <param id="TuningFreq" name="TuningFreq" type="float" def="480" max="480" min="410" />
-        <dataval id="ViewMode" name="ViewMode" type="float" noauto="1" />
+        <dataval id="ViewMode" name="ViewMode" type="float" />
       </params>
     </object>
     <object id="UltraAnalog">
@@ -2006,14 +2006,14 @@
         <param id="NoiseLevel" name="NoiseLevel" type="float" def="0.8062" />
         <param id="NoiseToggle" name="NoiseToggle" type="bool" />
         <param id="Octave" name="Octave" type="float" max="3" min="-3" />
-        <dataval id="OctaveRelativePosition" name="OctaveRelativePosition" type="float" noauto="1" />
+        <dataval id="OctaveRelativePosition" name="OctaveRelativePosition" type="float" />
         <param id="PitchBendRange" name="PitchBendRange" type="float" def="0.166667" />
         <param id="Polyphony" name="Polyphony" type="int" def="3" />
         <param id="PortamentoLegato" name="PortamentoLegato" type="bool" />
         <param id="PortamentoMode" name="PortamentoMode" type="int" />
         <param id="PortamentoTime" name="PortamentoTime" type="float" def="0.5" />
         <param id="PortamentoToggle" name="PortamentoToggle" type="bool" />
-        <dataval id="SelectedFinger" name="SelectedFinger" type="float" def="7" max="7" noauto="1" />
+        <dataval id="SelectedFinger" name="SelectedFinger" type="float" def="7" max="7" />
         <param id="SignalChain1/AmplifierEnvPanMod" name="SignalChain1/AmplifierEnvPanMod" type="float" min="-1" />
         <param id="SignalChain1/AmplifierKbdAmpMod" name="SignalChain1/AmplifierKbdAmpMod" type="float" min="-1" />
         <param id="SignalChain1/AmplifierKbdPanMod" name="SignalChain1/AmplifierKbdPanMod" type="float" min="-1" />
@@ -2149,7 +2149,7 @@
         <param id="SignalChain2/OscillatorToggle" name="SignalChain2/OscillatorToggle" type="bool" def="1" />
         <param id="SignalChain2/OscillatorWaveShape" name="SignalChain2/OscillatorWaveShape" type="int" def="1" />
         <param id="Transpose" name="Transpose" type="float" max="12" min="-12" />
-        <dataval id="TransposeRelativePosition" name="TransposeRelativePosition" type="float" noauto="1" />
+        <dataval id="TransposeRelativePosition" name="TransposeRelativePosition" type="float" />
         <param id="VibratoAmount" name="VibratoAmount" type="float" />
         <param id="VibratoDelay" name="VibratoDelay" type="float" />
         <param id="VibratoError" name="VibratoError" type="float" />
@@ -2193,47 +2193,47 @@
         <param id="EnvelopeRate" name="EnvelopeRate" type="float" def="1" max="1000" min="1" />
         <param id="EnvelopeRelease" name="EnvelopeRelease" type="float" def="150" max="30000" min="10" />
         <param id="FilterBandWidth" name="FilterBandWidth" type="float" def="1" max="2" min="0.1" />
-        <dataval id="FilterBank/BandCount" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.0" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.1" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.10" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.11" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.12" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.13" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.14" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.15" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.16" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.17" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.18" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.19" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.2" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.20" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.21" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.22" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.23" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.24" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.25" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.26" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.27" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.28" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.29" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.3" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.30" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.31" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.32" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.33" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.34" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.35" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.36" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.37" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.38" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.39" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.4" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.5" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.6" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.7" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.8" type="float" noauto="1" />
-        <dataval id="FilterBank/BandLevel.9" type="float" noauto="1" />
+        <dataval id="FilterBank/BandCount" type="float" />
+        <dataval id="FilterBank/BandLevel.0" type="float" />
+        <dataval id="FilterBank/BandLevel.1" type="float" />
+        <dataval id="FilterBank/BandLevel.10" type="float" />
+        <dataval id="FilterBank/BandLevel.11" type="float" />
+        <dataval id="FilterBank/BandLevel.12" type="float" />
+        <dataval id="FilterBank/BandLevel.13" type="float" />
+        <dataval id="FilterBank/BandLevel.14" type="float" />
+        <dataval id="FilterBank/BandLevel.15" type="float" />
+        <dataval id="FilterBank/BandLevel.16" type="float" />
+        <dataval id="FilterBank/BandLevel.17" type="float" />
+        <dataval id="FilterBank/BandLevel.18" type="float" />
+        <dataval id="FilterBank/BandLevel.19" type="float" />
+        <dataval id="FilterBank/BandLevel.2" type="float" />
+        <dataval id="FilterBank/BandLevel.20" type="float" />
+        <dataval id="FilterBank/BandLevel.21" type="float" />
+        <dataval id="FilterBank/BandLevel.22" type="float" />
+        <dataval id="FilterBank/BandLevel.23" type="float" />
+        <dataval id="FilterBank/BandLevel.24" type="float" />
+        <dataval id="FilterBank/BandLevel.25" type="float" />
+        <dataval id="FilterBank/BandLevel.26" type="float" />
+        <dataval id="FilterBank/BandLevel.27" type="float" />
+        <dataval id="FilterBank/BandLevel.28" type="float" />
+        <dataval id="FilterBank/BandLevel.29" type="float" />
+        <dataval id="FilterBank/BandLevel.3" type="float" />
+        <dataval id="FilterBank/BandLevel.30" type="float" />
+        <dataval id="FilterBank/BandLevel.31" type="float" />
+        <dataval id="FilterBank/BandLevel.32" type="float" />
+        <dataval id="FilterBank/BandLevel.33" type="float" />
+        <dataval id="FilterBank/BandLevel.34" type="float" />
+        <dataval id="FilterBank/BandLevel.35" type="float" />
+        <dataval id="FilterBank/BandLevel.36" type="float" />
+        <dataval id="FilterBank/BandLevel.37" type="float" />
+        <dataval id="FilterBank/BandLevel.38" type="float" />
+        <dataval id="FilterBank/BandLevel.39" type="float" />
+        <dataval id="FilterBank/BandLevel.4" type="float" />
+        <dataval id="FilterBank/BandLevel.5" type="float" />
+        <dataval id="FilterBank/BandLevel.6" type="float" />
+        <dataval id="FilterBank/BandLevel.7" type="float" />
+        <dataval id="FilterBank/BandLevel.8" type="float" />
+        <dataval id="FilterBank/BandLevel.9" type="float" />
         <param id="FormantShift" name="FormantShift" type="float" max="36" min="-36" />
         <param id="HighFrequency" name="HighFrequency" type="float" def="12000" max="18000" min="200" />
         <param id="LevelGate" name="LevelGate" type="float" def="-60" max="12" min="-60" />

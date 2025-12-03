@@ -250,7 +250,7 @@
       <visual name="Low Pass (Old)" color="#33363d" />
       <params>
         <param id="frequency" name="Frequency" type="float" def="4000" max="22000" min="10" />
-        <dataval id="mode" name="Mode" type="string" def="lowpass" noauto="1" />
+        <dataval id="mode" name="Mode" type="string" def="lowpass" />
       </params>
     </object>
     <object id="naturalReverb">
@@ -314,7 +314,7 @@
       <data group="" />
       <visual name="Pitch Shifter" color="#33363d" />
       <params>
-        <dataval id="elastiqueOptions" name="Elastique Options" type="string" def="1/0/0/0/64" noauto="1" />
+        <dataval id="elastiqueOptions" name="Elastique Options" type="string" def="1/0/0/0/64" />
         <param id="semitonesUp" name="Pitch" type="float" max="24" min="-24" />
       </params>
     </object>

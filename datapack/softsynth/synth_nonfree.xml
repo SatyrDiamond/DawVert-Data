@@ -13,11 +13,11 @@
         <param id="comp_ratio" name="Comp Ratio" type="float" />
         <param id="comp_release" name="Comp Release" type="float" />
         <param id="comp_threshold" name="Comp Threshold" type="float" />
-        <dataval id="curve" name="Curve" type="list" noauto="1" />
-        <dataval id="curve1" name="Curve1" type="list" noauto="1" />
-        <dataval id="curve2" name="Curve2" type="list" noauto="1" />
-        <dataval id="curve3" name="Curve3" type="list" noauto="1" />
-        <dataval id="curve4" name="Curve4" type="list" noauto="1" />
+        <dataval id="curve" name="Curve" type="list" />
+        <dataval id="curve1" name="Curve1" type="list" />
+        <dataval id="curve2" name="Curve2" type="list" />
+        <dataval id="curve3" name="Curve3" type="list" />
+        <dataval id="curve4" name="Curve4" type="list" />
         <param id="delay_amount" name="Delay Amount" type="float" />
         <param id="delay_fb" name="Delay FB" type="float" />
         <param id="delay_on" name="Delay On" type="float" />
