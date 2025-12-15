@@ -11,44 +11,44 @@
     <object id="0">
       <visual name="Distortion" color="#B55718" />
       <params>
-        <param id="0" name="Bypass" type="int" def="0" max="1" min="0" />
-        <param id="1" name="Curve" type="int" def="64" max="127" min="0" />
+        <int id="0" name="Bypass" def="0" max="1" min="0" />
+        <int id="1" name="Curve" def="64" max="127" min="0" />
       </params>
     </object>
     <object id="5">
       <visual name="Delay" color="#165265" />
       <params>
-        <param id="0" name="Bypass" type="int" def="0" max="1" min="0" />
-        <param id="1" name="Feedback" type="int" def="64" max="127" min="0" />
-        <param id="2" name="Cutoff" type="int" def="64" max="127" min="0" />
-        <param id="3" name="Steps" type="int" def="100" max="127" min="0" />
+        <int id="0" name="Bypass" def="0" max="1" min="0" />
+        <int id="1" name="Feedback" def="64" max="127" min="0" />
+        <int id="2" name="Cutoff" def="64" max="127" min="0" />
+        <int id="3" name="Steps" def="100" max="127" min="0" />
       </params>
     </object>
     <object id="2">
       <visual name="Chorus" color="#A51464" />
       <params>
-        <param id="0" name="Bypass" type="int" def="0" max="1" min="0" />
-        <param id="1" name="Rate" type="int" def="16" max="127" min="0" />
-        <param id="2" name="Feedback" type="int" def="32" max="127" min="0" />
-        <param id="3" name="Delay" type="int" def="4" max="127" min="4" />
+        <int id="0" name="Bypass" def="0" max="1" min="0" />
+        <int id="1" name="Rate" def="16" max="127" min="0" />
+        <int id="2" name="Feedback" def="32" max="127" min="0" />
+        <int id="3" name="Delay" def="4" max="127" min="4" />
       </params>
     </object>
     <object id="3">
       <visual name="Filter" color="#4A3D63" />
       <params>
-        <param id="0" name="Bypass" type="int" def="0" max="1" min="0" />
-        <param id="1" name="Freq" type="int" def="64" max="127" min="0" />
-        <param id="2" name="Reso" type="int" def="64" max="127" min="0" />
-        <param id="3" name="Type" type="int" def="0" max="127" min="0" />
+        <int id="0" name="Bypass" def="0" max="1" min="0" />
+        <int id="1" name="Freq" def="64" max="127" min="0" />
+        <int id="2" name="Reso" def="64" max="127" min="0" />
+        <int id="3" name="Type" def="0" max="127" min="0" />
       </params>
     </object>
     <object id="6">
       <visual name="Reverb" color="#1F1F1F" />
       <params>
-        <param id="0" name="Bypass" type="int" def="0" max="1" min="0" />
-        <param id="1" name="Wet" type="int" def="48" max="127" min="0" />
-        <param id="2" name="High" type="int" def="32" max="127" min="0" />
-        <param id="3" name="Low" type="int" def="6" max="127" min="0" />
+        <int id="0" name="Bypass" def="0" max="1" min="0" />
+        <int id="1" name="Wet" def="48" max="127" min="0" />
+        <int id="2" name="High" def="32" max="127" min="0" />
+        <int id="3" name="Low" def="6" max="127" min="0" />
       </params>
     </object>
   </category>

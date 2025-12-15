@@ -6,23 +6,23 @@
     <object id="amplifier">
       <visual name="Amplifier" />
       <params>
-        <param id="left" name="Left gain" type="int" def="100" max="200" />
-        <param id="pan" name="Panning" type="int" max="100" min="-100" />
-        <param id="right" name="Right gain" type="int" def="100" max="200" />
-        <param id="volume" name="Volume" type="int" def="100" max="200" />
+        <int id="left" name="Left gain" def="100" max="200" />
+        <int id="pan" name="Panning" max="100" min="-100" />
+        <int id="right" name="Right gain" def="100" max="200" />
+        <int id="volume" name="Volume" def="100" max="200" />
       </params>
     </object>
     <object id="arpeggiator">
       <visual name="Arpeggio" />
       <params>
-        <param id="arp" name="Arpeggio type" type="int" def="1" max="94" min="1" />
-        <param id="arpcycle" name="Cycle steps" type="int" max="6" />
-        <param id="arpdir" name="Arp direction" type="int" max="4" />
-        <param id="arpgate" name="Arpeggio gate" type="int" def="100" max="200" min="1" />
-        <param id="arpmiss" name="Miss rate" type="int" max="100" />
-        <param id="arpmode" name="Arpeggio mode" type="int" max="2" />
-        <param id="arprange" name="Arpeggio range" type="int" def="1" max="9" min="1" />
-        <param id="arpskip" name="Skip rate" type="int" max="100" />
+        <int id="arp" name="Arpeggio type" def="1" max="94" min="1" />
+        <int id="arpcycle" name="Cycle steps" max="6" />
+        <int id="arpdir" name="Arp direction" max="4" />
+        <int id="arpgate" name="Arpeggio gate" def="100" max="200" min="1" />
+        <int id="arpmiss" name="Miss rate" max="100" />
+        <int id="arpmode" name="Arpeggio mode" max="2" />
+        <int id="arprange" name="Arpeggio range" def="1" max="9" min="1" />
+        <int id="arpskip" name="Skip rate" max="100" />
       </params>
     </object>
     <object id="audiofileprocessor">
@@ -31,450 +31,464 @@
     <object id="bassbooster">
       <visual name="BassBooster" />
       <params>
-        <param id="freq" name="Frequency" type="float" def="100" max="200" min="50" />
-        <param id="gain" name="Gain" type="float" def="1" max="5" min="0.1" />
-        <param id="ratio" name="Ratio" type="float" def="2" max="10" min="0.1" />
+        <float id="freq" name="Frequency" def="100" max="200" min="50" />
+        <float id="gain" name="Gain" def="1" max="5" min="0.1" />
+        <float id="ratio" name="Ratio" def="2" max="10" min="0.1" />
       </params>
     </object>
     <object id="bitcrush">
       <visual name="Bitcrush" />
       <params>
-        <param id="depthon" name="Depth Input gain" type="bool" def="1" />
-        <param id="ingain" name="Input gain" type="float" max="20" min="-20" />
-        <param id="innoise" name="Input noise" type="float" max="100" />
-        <param id="levels" name="Levels" type="float" def="256" max="256" min="1" />
-        <param id="outclip" name="Output clip" type="float" max="20" min="-20" />
-        <param id="outgain" name="Output gain" type="float" max="20" min="-20" />
-        <dataval id="rate" name="Sample rate" type="float" def="44100" max="44100" min="20" />
-        <param id="rateon" name="Rate enabled" type="bool" def="1" />
-        <param id="stereodiff" name="Stereo difference" type="float" max="50" min="-50" />
+        <bool id="depthon" name="Depth Input gain" def="1" />
+        <float id="ingain" name="Input gain" max="20" min="-20" />
+        <float id="innoise" name="Input noise" max="100" />
+        <float id="levels" name="Levels" def="256" max="256" min="1" />
+        <float id="outclip" name="Output clip" max="20" min="-20" />
+        <float id="outgain" name="Output gain" max="20" min="-20" />
+        <bool id="rateon" name="Rate enabled" def="1" />
+        <float id="stereodiff" name="Stereo difference" max="50" min="-50" />
       </params>
+      <datavals>
+        <float id="rate" name="Sample rate" def="44100" max="44100" min="20" />
+      </datavals>
     </object>
     <object id="bitinvader">
       <data group="" />
       <visual name="BitInvader" color="#dbdbdb" />
       <params>
-        <param id="interpolation" name="Interpolation" type="bool" def="1" />
-        <param id="normalize" name="Normalize" type="bool" def="1" />
-        <param id="sampleLength" name="sampleLength" type="int" def="128" max="200" min="4" />
-        <dataval id="sampleShape" name="sampleShape" type="string" def="AACAPwAAgD8AAIC/AACAvw==" />
-        <dataval id="version" name="version" type="string" def="0.1" />
+        <bool id="interpolation" name="Interpolation" def="1" />
+        <bool id="normalize" name="Normalize" def="1" />
+        <int id="sampleLength" def="128" max="200" min="4" />
       </params>
+      <datavals>
+        <string id="sampleShape" def="AACAPwAAgD8AAIC/AACAvw==" />
+        <string id="version" def="0.1" />
+      </datavals>
     </object>
     <object id="chordcreator">
       <visual name="Stacking" />
       <params>
-        <param id="chord" name="Chort Type" type="int" max="94" />
-        <param id="chordrange" name="Range" type="int" max="9" />
+        <int id="chord" name="Chort Type" max="94" />
+        <int id="chordrange" name="Range" max="9" />
       </params>
     </object>
     <object id="crossovereq">
       <visual name="Crossover EQ" />
       <params>
-        <param id="gain1" name="Band 1 Gain" type="float" max="30" min="-60" />
-        <param id="gain2" name="Band 2 Gain" type="float" max="30" min="-60" />
-        <param id="gain3" name="Band 3 Gain" type="float" max="30" min="-60" />
-        <param id="gain4" name="Band 4 Gain" type="float" max="30" min="-60" />
-        <param id="mute1" name="m_mute1" type="bool" def="1" />
-        <param id="mute2" name="m_mute2" type="bool" def="1" />
-        <param id="mute3" name="m_mute3" type="bool" def="1" />
-        <param id="mute4" name="m_mute4" type="bool" def="1" />
-        <param id="xover12" name="Band 1/2 Crossover" type="float" def="125" max="10000" min="50" />
-        <param id="xover23" name="Band 2/3 Crossover" type="float" def="1250" max="20000" min="50" />
-        <param id="xover34" name="Band 3/4 Crossover" type="float" def="5000" max="20000" min="50" />
+        <float id="gain1" name="Band 1 Gain" max="30" min="-60" />
+        <float id="gain2" name="Band 2 Gain" max="30" min="-60" />
+        <float id="gain3" name="Band 3 Gain" max="30" min="-60" />
+        <float id="gain4" name="Band 4 Gain" max="30" min="-60" />
+        <bool id="mute1" name="m_mute1" def="1" />
+        <bool id="mute2" name="m_mute2" def="1" />
+        <bool id="mute3" name="m_mute3" def="1" />
+        <bool id="mute4" name="m_mute4" def="1" />
+        <float id="xover12" name="Band 1/2 Crossover" def="125" max="10000" min="50" />
+        <float id="xover23" name="Band 2/3 Crossover" def="1250" max="20000" min="50" />
+        <float id="xover34" name="Band 3/4 Crossover" def="5000" max="20000" min="50" />
       </params>
     </object>
     <object id="delay">
       <visual name="Delay" />
       <params>
-        <param id="DelayTimeSamples" name="m_delayTimeModel" type="float" def="0.5" max="5" min="0.01" />
-        <param id="FeebackAmount" name="Feedback" type="float" />
-        <param id="LfoAmount" name="m_lfoAmountModel" type="float" max="0.5" />
-        <param id="LfoFrequency" name="m_lfoTimeModel" type="float" def="2" max="5" min="0.01" />
-        <param id="OutGain" name="Output gain" type="float" max="20" min="-60" />
+        <float id="DelayTimeSamples" name="m_delayTimeModel" def="0.5" max="5" min="0.01" />
+        <float id="FeebackAmount" name="Feedback" />
+        <float id="LfoAmount" name="m_lfoAmountModel" max="0.5" />
+        <float id="LfoFrequency" name="m_lfoTimeModel" def="2" max="5" min="0.01" />
+        <float id="OutGain" name="Output gain" max="20" min="-60" />
       </params>
     </object>
     <object id="dualfilter">
       <visual name="Dual Filter" />
       <params>
-        <param id="cut1" name="Cutoff frequency 1" type="float" def="7000" max="20000" min="1" />
-        <param id="cut2" name="Cutoff frequency 2" type="float" def="7000" max="20000" min="1" />
-        <param id="enabled" name="enabled" type="float" def="-1" max="-1" min="-1" />
-        <param id="enabled1" name="m_enabled1Model" type="bool" def="1" />
-        <param id="filter" name="filter" type="float" def="-1" max="-1" min="-1" />
-        <param id="filter1" name="filter1" type="float" def="-1" max="-1" min="-1" />
-        <param id="gain1" name="Gain 1" type="float" def="100" max="200" />
-        <param id="gain2" name="Gain 2" type="float" def="100" max="200" />
-        <param id="mix" name="Mix" type="float" min="-1" />
-        <param id="res1" name="Q/Resonance 1" type="float" def="0.5" max="10" />
-        <param id="res2" name="Q/Resonance 2" type="float" def="0.5" max="10" />
+        <float id="cut1" name="Cutoff frequency 1" def="7000" max="20000" min="1" />
+        <float id="cut2" name="Cutoff frequency 2" def="7000" max="20000" min="1" />
+        <float id="enabled" def="-1" max="-1" min="-1" />
+        <bool id="enabled1" name="m_enabled1Model" def="1" />
+        <float id="filter" def="-1" max="-1" min="-1" />
+        <float id="filter1" def="-1" max="-1" min="-1" />
+        <float id="gain1" name="Gain 1" def="100" max="200" />
+        <float id="gain2" name="Gain 2" def="100" max="200" />
+        <float id="mix" name="Mix" min="-1" />
+        <float id="res1" name="Q/Resonance 1" def="0.5" max="10" />
+        <float id="res2" name="Q/Resonance 2" def="0.5" max="10" />
       </params>
     </object>
     <object id="dynamicsprocessor">
       <visual name="Dynamics Processor" />
       <params>
-        <param id="attack" name="Attack time" type="float" def="10" max="500" min="1" />
-        <param id="inputGain" name="Input gain" type="float" def="1" max="5" />
-        <param id="outputGain" name="Output gain" type="float" def="1" max="5" />
-        <param id="release" name="Release time" type="float" def="100" max="500" min="1" />
-        <param id="stereoMode" name="Stereo mode " type="float" max="2" />
-        <dataval id="waveShape" name="waveShape" type="string" def="" />
+        <float id="attack" name="Attack time" def="10" max="500" min="1" />
+        <float id="inputGain" name="Input gain" def="1" max="5" />
+        <float id="outputGain" name="Output gain" def="1" max="5" />
+        <float id="release" name="Release time" def="100" max="500" min="1" />
+        <float id="stereoMode" name="Stereo mode " max="2" />
       </params>
+      <datavals>
+        <string id="waveShape" def="" />
+      </datavals>
     </object>
     <object id="eq">
       <visual name="Equalizer" />
       <params>
-        <param id="AnalyseIn" name="m_analyseInModel" type="bool" def="1" />
-        <param id="AnalyseOut" name="m_analyseOutModel" type="bool" def="1" />
-        <param id="HP" name="High-pass type " type="float" max="2" />
-        <param id="HP12" name="m_hp12Model" type="bool" />
-        <param id="HP24" name="m_hp24Model" type="bool" />
-        <param id="HP48" name="m_hp48Model" type="bool" />
-        <param id="HPactive" name="m_hpActiveModel" type="bool" />
-        <param id="HPfreq" name="HP freq" type="float" def="31" max="20000" min="20" />
-        <param id="HPres" name="HP res" type="float" def="0.707" max="10" min="0.003" />
-        <param id="HighShelfgain" name="High-shelf gain" type="float" max="18" min="-18" />
-        <param id="HighShelfres" name="High-shelf res" type="float" def="0.707" max="10" min="0.55" />
-        <param id="Highshelfactive" name="m_highShelfActiveModel" type="bool" />
-        <param id="Highshelffreq" name="High-shelf freq" type="float" def="12000" max="20000" min="20" />
-        <param id="Inputgain" name="Input gain" type="float" max="20" min="-60" />
-        <param id="LP" name="Low-pass type " type="float" max="2" />
-        <param id="LP12" name="m_lp12Model" type="bool" />
-        <param id="LP24" name="m_lp24Model" type="bool" />
-        <param id="LP48" name="m_lp48Model" type="bool" />
-        <param id="LPactive" name="m_lpActiveModel" type="bool" />
-        <param id="LPfreq" name="LP freq" type="float" def="18000" max="20000" min="20" />
-        <param id="LPres" name="LP res" type="float" def="0.707" max="10" min="0.003" />
-        <param id="LowShelffreq" name="Low-shelf freq" type="float" def="80" max="20000" min="20" />
-        <param id="LowShelfres" name="Low-shelf res" type="float" def="0.707" max="10" min="0.55" />
-        <param id="Lowshelfactive" name="m_lowShelfActiveModel" type="bool" />
-        <param id="Lowshelfgain" name="Low-shelf gain" type="float" max="18" min="-18" />
-        <param id="Outputgain" name="Output gain" type="float" max="20" min="-60" />
-        <param id="Peak1active" name="m_para1ActiveModel" type="bool" />
-        <param id="Peak1bw" name="Peak 1 BW" type="float" def="0.3" max="4" min="0.1" />
-        <param id="Peak1freq" name="Peak 1 freq" type="float" def="120" max="20000" min="20" />
-        <param id="Peak1gain" name="Peak 1 gain" type="float" max="18" min="-18" />
-        <param id="Peak2active" name="m_para2ActiveModel" type="bool" />
-        <param id="Peak2bw" name="Peak 2 BW" type="float" def="0.3" max="4" min="0.1" />
-        <param id="Peak2freq" name="Peak 2 freq" type="float" def="250" max="20000" min="20" />
-        <param id="Peak2gain" name="Peak 2 gain" type="float" max="18" min="-18" />
-        <param id="Peak3active" name="m_para3ActiveModel" type="bool" />
-        <param id="Peak3bw" name="Peak 3 BW" type="float" def="0.3" max="4" min="0.1" />
-        <param id="Peak3freq" name="Peak 3 freq" type="float" def="2000" max="20000" min="20" />
-        <param id="Peak3gain" name="Peak 3 gain" type="float" max="18" min="-18" />
-        <param id="Peak4active" name="m_para4ActiveModel" type="bool" />
-        <param id="Peak4bw" name="Peak 4 BW" type="float" def="0.3" max="4" min="0.1" />
-        <param id="Peak4freq" name="Peak 4 freq" type="float" def="4000" max="20000" min="20" />
-        <param id="Peak4gain" name="Peak 4 gain" type="float" max="18" min="-18" />
+        <bool id="AnalyseIn" name="m_analyseInModel" def="1" />
+        <bool id="AnalyseOut" name="m_analyseOutModel" def="1" />
+        <float id="HP" name="High-pass type " max="2" />
+        <bool id="HP12" name="m_hp12Model" />
+        <bool id="HP24" name="m_hp24Model" />
+        <bool id="HP48" name="m_hp48Model" />
+        <bool id="HPactive" name="m_hpActiveModel" />
+        <float id="HPfreq" name="HP freq" def="31" max="20000" min="20" />
+        <float id="HPres" name="HP res" def="0.707" max="10" min="0.003" />
+        <float id="HighShelfgain" name="High-shelf gain" max="18" min="-18" />
+        <float id="HighShelfres" name="High-shelf res" def="0.707" max="10" min="0.55" />
+        <bool id="Highshelfactive" name="m_highShelfActiveModel" />
+        <float id="Highshelffreq" name="High-shelf freq" def="12000" max="20000" min="20" />
+        <float id="Inputgain" name="Input gain" max="20" min="-60" />
+        <float id="LP" name="Low-pass type " max="2" />
+        <bool id="LP12" name="m_lp12Model" />
+        <bool id="LP24" name="m_lp24Model" />
+        <bool id="LP48" name="m_lp48Model" />
+        <bool id="LPactive" name="m_lpActiveModel" />
+        <float id="LPfreq" name="LP freq" def="18000" max="20000" min="20" />
+        <float id="LPres" name="LP res" def="0.707" max="10" min="0.003" />
+        <float id="LowShelffreq" name="Low-shelf freq" def="80" max="20000" min="20" />
+        <float id="LowShelfres" name="Low-shelf res" def="0.707" max="10" min="0.55" />
+        <bool id="Lowshelfactive" name="m_lowShelfActiveModel" />
+        <float id="Lowshelfgain" name="Low-shelf gain" max="18" min="-18" />
+        <float id="Outputgain" name="Output gain" max="20" min="-60" />
+        <bool id="Peak1active" name="m_para1ActiveModel" />
+        <float id="Peak1bw" name="Peak 1 BW" def="0.3" max="4" min="0.1" />
+        <float id="Peak1freq" name="Peak 1 freq" def="120" max="20000" min="20" />
+        <float id="Peak1gain" name="Peak 1 gain" max="18" min="-18" />
+        <bool id="Peak2active" name="m_para2ActiveModel" />
+        <float id="Peak2bw" name="Peak 2 BW" def="0.3" max="4" min="0.1" />
+        <float id="Peak2freq" name="Peak 2 freq" def="250" max="20000" min="20" />
+        <float id="Peak2gain" name="Peak 2 gain" max="18" min="-18" />
+        <bool id="Peak3active" name="m_para3ActiveModel" />
+        <float id="Peak3bw" name="Peak 3 BW" def="0.3" max="4" min="0.1" />
+        <float id="Peak3freq" name="Peak 3 freq" def="2000" max="20000" min="20" />
+        <float id="Peak3gain" name="Peak 3 gain" max="18" min="-18" />
+        <bool id="Peak4active" name="m_para4ActiveModel" />
+        <float id="Peak4bw" name="Peak 4 BW" def="0.3" max="4" min="0.1" />
+        <float id="Peak4freq" name="Peak 4 freq" def="4000" max="20000" min="20" />
+        <float id="Peak4gain" name="Peak 4 gain" max="18" min="-18" />
       </params>
     </object>
     <object id="flanger">
       <visual name="Flanger" />
       <params>
-        <param id="DelayTimeSamples" name="Delay samples" type="float" def="0.001" max="0.05" min="0.0001" />
-        <param id="Feedback" name="Regen" type="float" min="-1" />
-        <param id="Invert" name="Invert" type="bool" def="-1" />
-        <param id="LfoAmount" name="Seconds" type="float" max="0.0025" />
-        <param id="LfoFrequency" name="m_lfoFrequencyModel" type="float" def="0.25" max="60" min="0.01" />
-        <param id="WhiteNoise" name="Noise" type="float" max="0.05" />
+        <float id="DelayTimeSamples" name="Delay samples" def="0.001" max="0.05" min="0.0001" />
+        <float id="Feedback" name="Regen" min="-1" />
+        <bool id="Invert" def="-1" />
+        <float id="LfoAmount" name="Seconds" max="0.0025" />
+        <float id="LfoFrequency" name="m_lfoFrequencyModel" def="0.25" max="60" min="0.01" />
+        <float id="WhiteNoise" name="Noise" max="0.05" />
       </params>
     </object>
     <object id="gigplayer">
       <visual name="GIG Player" color="#8c0000" />
       <params>
-        <param id="bank" name="bank" type="int" max="999" />
-        <param id="gain" name="gain" type="float" def="1" max="5" />
-        <param id="patch" name="patch" type="int" max="127" />
-        <dataval id="src" name="src" type="string" def="" />
+        <int id="bank" max="999" />
+        <float id="gain" def="1" max="5" />
+        <int id="patch" max="127" />
       </params>
+      <datavals>
+        <string id="src" def="" />
+      </datavals>
     </object>
     <object id="kicker">
       <visual name="Kicker" color="#829393" />
       <params>
-        <param id="click" name="Click" type="float" def="0.4" />
-        <param id="decay" name="m_decayModel" type="float" def="440" max="5000" min="5" />
-        <param id="dist" name="Start distortion" type="float" def="0.8" max="100" />
-        <param id="distend" name="End distortion" type="float" def="0.8" max="100" />
-        <param id="endfreq" name="End frequency" type="float" def="40" max="1000" min="5" />
-        <param id="endnote" name="m_endNoteModel" type="bool" />
-        <param id="env" name="Envelope slope" type="float" def="0.163" min="0.01" />
-        <param id="gain" name="Gain" type="float" def="1" max="5" min="0.1" />
-        <param id="noise" name="Noise" type="float" />
-        <param id="slope" name="Frequency slope" type="float" def="0.06" min="0.001" />
-        <param id="startfreq" name="Start frequency" type="float" def="150" max="1000" min="5" />
-        <param id="startnote" name="m_startNoteModel" type="bool" def="1" />
-        <param id="version" name="version" type="float" max="100" />
+        <float id="click" name="Click" def="0.4" />
+        <float id="decay" name="m_decayModel" def="440" max="5000" min="5" />
+        <float id="dist" name="Start distortion" def="0.8" max="100" />
+        <float id="distend" name="End distortion" def="0.8" max="100" />
+        <float id="endfreq" name="End frequency" def="40" max="1000" min="5" />
+        <bool id="endnote" name="m_endNoteModel" />
+        <float id="env" name="Envelope slope" def="0.163" min="0.01" />
+        <float id="gain" name="Gain" def="1" max="5" min="0.1" />
+        <float id="noise" name="Noise" />
+        <float id="slope" name="Frequency slope" def="0.06" min="0.001" />
+        <float id="startfreq" name="Start frequency" def="150" max="1000" min="5" />
+        <bool id="startnote" name="m_startNoteModel" def="1" />
+        <float id="version" max="100" />
       </params>
     </object>
     <object id="lb302">
       <visual name="LB302" color="#cea5b7" />
       <params>
-        <param id="db24" name="db24Toggle" type="bool" />
-        <param id="dead" name="deadToggle" type="bool" />
-        <param id="dist" name="Distortion" type="float" />
-        <param id="shape" name="Waveform " type="float" def="8" max="11" />
-        <param id="slide" name="slideToggle" type="bool" />
-        <param id="slide_dec" name="Slide Decay" type="float" def="0.6" />
-        <param id="vcf_cut" name="VCF Cutoff Frequency" type="float" def="0.75" max="1.5" />
-        <param id="vcf_dec" name="VCF Envelope Decay" type="float" def="0.1" />
-        <param id="vcf_mod" name="VCF Envelope Mod" type="float" def="0.1" />
-        <param id="vcf_res" name="VCF Resonance" type="float" def="0.75" max="1.25" />
+        <bool id="db24" name="db24Toggle" />
+        <bool id="dead" name="deadToggle" />
+        <float id="dist" name="Distortion" />
+        <float id="shape" name="Waveform " def="8" max="11" />
+        <bool id="slide" name="slideToggle" />
+        <float id="slide_dec" name="Slide Decay" def="0.6" />
+        <float id="vcf_cut" name="VCF Cutoff Frequency" def="0.75" max="1.5" />
+        <float id="vcf_dec" name="VCF Envelope Decay" def="0.1" />
+        <float id="vcf_mod" name="VCF Envelope Mod" def="0.1" />
+        <float id="vcf_res" name="VCF Resonance" def="0.75" max="1.25" />
       </params>
     </object>
     <object id="malletsstk">
       <visual name="Mallets" color="#8c2111" />
       <params>
-        <param id="adsr" name="ADSR" type="float" def="64" max="128" />
-        <param id="crossfade" name="Crossfade" type="float" def="64" max="128" />
-        <param id="hardness" name="Hardness" type="float" def="64" max="128" />
-        <param id="lfo_depth" name="LFO depth" type="float" def="64" max="128" />
-        <param id="lfo_speed" name="LFO speed" type="float" def="64" max="128" />
-        <param id="modulator" name="Modulator" type="float" def="64" max="128" />
-        <param id="oldversion" name="oldversion" type="float" def="-1" max="-1" min="-1" />
-        <param id="position" name="Position" type="float" def="64" max="64" />
-        <dataval id="preset" name="preset" type="string" def="-1" />
-        <param id="pressure" name="Pressure" type="float" def="64" max="128" min="0.1" />
-        <param id="spread" name="spread" type="float" def="-1" max="-1" min="-1" />
-        <param id="stick_mix" name="Stick mix" type="float" max="128" />
-        <param id="strike" name="m_strikeModel" type="bool" def="1" />
-        <param id="velocity" name="Speed" type="float" def="64" max="128" min="0.1" />
-        <param id="version" name="version" type="float" def="-1" max="-1" min="-1" />
-        <param id="vib_freq" name="Vibrato frequency" type="float" max="128" />
-        <param id="vib_gain" name="Vibrato gain" type="float" max="128" />
+        <float id="adsr" name="ADSR" def="64" max="128" />
+        <float id="crossfade" name="Crossfade" def="64" max="128" />
+        <float id="hardness" name="Hardness" def="64" max="128" />
+        <float id="lfo_depth" name="LFO depth" def="64" max="128" />
+        <float id="lfo_speed" name="LFO speed" def="64" max="128" />
+        <float id="modulator" name="Modulator" def="64" max="128" />
+        <float id="oldversion" def="-1" max="-1" min="-1" />
+        <float id="position" name="Position" def="64" max="64" />
+        <float id="pressure" name="Pressure" def="64" max="128" min="0.1" />
+        <float id="spread" def="-1" max="-1" min="-1" />
+        <float id="stick_mix" name="Stick mix" max="128" />
+        <bool id="strike" name="m_strikeModel" def="1" />
+        <float id="velocity" name="Speed" def="64" max="128" min="0.1" />
+        <float id="version" def="-1" max="-1" min="-1" />
+        <float id="vib_freq" name="Vibrato frequency" max="128" />
+        <float id="vib_gain" name="Vibrato gain" max="128" />
       </params>
+      <datavals>
+        <string id="preset" def="-1" />
+      </datavals>
     </object>
     <object id="monstro">
       <visual name="Monstro" color="#a5adb2" />
       <params>
-        <param id="e1att" name="m_env1Att" type="float" max="2000" />
-        <param id="e1dec" name="m_env1Dec" type="float" max="4000" />
-        <param id="e1hol" name="m_env1Hold" type="float" max="4000" />
-        <param id="e1pre" name="m_env1Pre" type="float" max="2000" />
-        <param id="e1rel" name="m_env1Rel" type="float" max="4000" />
-        <param id="e1slo" name="Env 1 slope " type="float" min="-1" />
-        <param id="e1sus" name="Env 1 sustain " type="float" def="1" />
-        <param id="e2att" name="m_env2Att" type="float" max="2000" />
-        <param id="e2dec" name="m_env2Dec" type="float" max="4000" />
-        <param id="e2hol" name="m_env2Hold" type="float" max="4000" />
-        <param id="e2pre" name="m_env2Pre" type="float" max="2000" />
-        <param id="e2rel" name="m_env2Rel" type="float" max="4000" />
-        <param id="e2slo" name="Env 2 slope " type="float" min="-1" />
-        <param id="e2sus" name="Env 2 sustain " type="float" def="1" />
-        <param id="f1e1" name="Osc 1 - Pit env 1 " type="float" min="-1" />
-        <param id="f1e2" name="Osc 1 - Pit env 2 " type="float" min="-1" />
-        <param id="f1l1" name="Osc 1 - Pit LFO 1 " type="float" min="-1" />
-        <param id="f1l2" name="Osc 1 - Pit LFO 2 " type="float" min="-1" />
-        <param id="f2e1" name="Osc 2 - Pit env 1 " type="float" min="-1" />
-        <param id="f2e2" name="Osc 2 - Pit env 2 " type="float" min="-1" />
-        <param id="f2l1" name="Osc 2 - Pit LFO 1 " type="float" min="-1" />
-        <param id="f2l2" name="Osc 2 - Pit LFO 2 " type="float" min="-1" />
-        <param id="f3e1" name="Osc 3 - Pit env 1 " type="float" min="-1" />
-        <param id="f3e2" name="Osc 3 - Pit env 2 " type="float" min="-1" />
-        <param id="f3l1" name="Osc 3 - Pit LFO 1 " type="float" min="-1" />
-        <param id="f3l2" name="Osc 3 - Pit LFO 2 " type="float" min="-1" />
-        <param id="l1att" name="m_lfo1Att" type="float" max="2000" />
-        <param id="l1phs" name="LFO 1 phase " type="float" max="180" min="-180" />
-        <param id="l1rat" name="m_lfo1Rate" type="float" def="1" max="10000" min="0.1" />
-        <param id="l1wav" name="l1wav" type="float" def="-1" max="-1" min="-1" />
-        <param id="l2att" name="m_lfo2Att" type="float" max="2000" />
-        <param id="l2phs" name="LFO 2 phase " type="float" max="180" min="-180" />
-        <param id="l2rat" name="m_lfo2Rate" type="float" def="1" max="10000" min="0.1" />
-        <param id="l2wav" name="l2wav" type="float" def="-1" max="-1" min="-1" />
-        <param id="o1crs" name="Osc 1 coarse detune " type="float" max="24" min="-24" />
-        <param id="o1ftl" name="Osc 1 fine detune left " type="float" max="100" min="-100" />
-        <param id="o1ftr" name="Osc 1 fine detune right " type="float" max="100" min="-100" />
-        <param id="o1pan" name="Osc 1 panning " type="float" max="100" min="-100" />
-        <param id="o1pw" name="Osc 1 pulse width " type="float" def="50" max="100" />
-        <param id="o1spo" name="Osc 1 stereo phase offset " type="float" max="180" min="-180" />
-        <param id="o1ssf" name="m_osc1SSF" type="bool" />
-        <param id="o1ssr" name="m_osc1SSR" type="bool" />
-        <param id="o1vol" name="Osc 1 volume " type="float" def="33" max="200" />
-        <param id="o23mo" name="o23mo" type="float" def="-1" max="-1" min="-1" />
-        <param id="o2crs" name="Osc 2 coarse detune " type="float" max="24" min="-24" />
-        <param id="o2ftl" name="Osc 2 fine detune left " type="float" max="100" min="-100" />
-        <param id="o2ftr" name="Osc 2 fine detune right " type="float" max="100" min="-100" />
-        <param id="o2pan" name="Osc 2 panning " type="float" max="100" min="-100" />
-        <param id="o2spo" name="Osc 2 stereo phase offset " type="float" max="180" min="-180" />
-        <param id="o2syn" name="m_osc2SyncH" type="bool" />
-        <param id="o2synr" name="m_osc2SyncR" type="bool" />
-        <param id="o2vol" name="Osc 2 volume " type="float" def="33" max="200" />
-        <param id="o2wav" name="o2wav" type="float" def="-1" max="-1" min="-1" />
-        <param id="o3crs" name="Osc 3 coarse detune " type="float" max="24" min="-24" />
-        <param id="o3pan" name="Osc 3 panning " type="float" max="100" min="-100" />
-        <param id="o3spo" name="Osc 3 Stereo phase offset " type="float" max="180" min="-180" />
-        <param id="o3sub" name="Osc 3 sub-oscillator mix " type="float" max="100" min="-100" />
-        <param id="o3syn" name="m_osc3SyncH" type="bool" />
-        <param id="o3synr" name="m_osc3SyncR" type="bool" />
-        <param id="o3vol" name="Osc 3 volume " type="float" def="33" max="200" />
-        <param id="o3wav1" name="o3wav1" type="float" def="-1" max="-1" min="-1" />
-        <param id="o3wav2" name="o3wav2" type="float" def="-1" max="-1" min="-1" />
-        <param id="p1e1" name="Osc 1 - Phs env 1 " type="float" min="-1" />
-        <param id="p1e2" name="Osc 1 - Phs env 2 " type="float" min="-1" />
-        <param id="p1l1" name="Osc 1 - Phs LFO 1 " type="float" min="-1" />
-        <param id="p1l2" name="Osc 1 - Phs LFO 2 " type="float" min="-1" />
-        <param id="p2e1" name="Osc 2 - Phs env 1 " type="float" min="-1" />
-        <param id="p2e2" name="Osc 2 - Phs env 2 " type="float" min="-1" />
-        <param id="p2l1" name="Osc 2 - Phs LFO 1 " type="float" min="-1" />
-        <param id="p2l2" name="Osc 2 - Phs LFO 2 " type="float" min="-1" />
-        <param id="p3e1" name="Osc 3 - Phs env 1 " type="float" min="-1" />
-        <param id="p3e2" name="Osc 3 - Phs env 2 " type="float" min="-1" />
-        <param id="p3l1" name="Osc 3 - Phs LFO 1 " type="float" min="-1" />
-        <param id="p3l2" name="Osc 3 - Phs LFO 2 " type="float" min="-1" />
-        <param id="s3e1" name="Osc 3 - Sub env 1 " type="float" min="-1" />
-        <param id="s3e2" name="Osc 3 - Sub env 2 " type="float" min="-1" />
-        <param id="s3l1" name="Osc 3 - Sub LFO 1 " type="float" min="-1" />
-        <param id="s3l2" name="Osc 3 - Sub LFO 2 " type="float" min="-1" />
-        <param id="v1e1" name="Osc 1 - Vol env 1 " type="float" min="-1" />
-        <param id="v1e2" name="Osc 1 - Vol env 2 " type="float" min="-1" />
-        <param id="v1l1" name="Osc 1 - Vol LFO 1 " type="float" min="-1" />
-        <param id="v1l2" name="Osc 1 - Vol LFO 2 " type="float" min="-1" />
-        <param id="v2e1" name="Osc 2 - Vol env 1 " type="float" min="-1" />
-        <param id="v2e2" name="Osc 2 - Vol env 2 " type="float" min="-1" />
-        <param id="v2l1" name="Osc 2 - Vol LFO 1 " type="float" min="-1" />
-        <param id="v2l2" name="Osc 2 - Vol LFO 2 " type="float" min="-1" />
-        <param id="v3e1" name="Osc 3 - Vol env 1 " type="float" min="-1" />
-        <param id="v3e2" name="Osc 3 - Vol env 2 " type="float" min="-1" />
-        <param id="v3l1" name="Osc 3 - Vol LFO 1 " type="float" min="-1" />
-        <param id="v3l2" name="Osc 3 - Vol LFO 2 " type="float" min="-1" />
-        <param id="w1e1" name="Osc 1 - PW env 1 " type="float" min="-1" />
-        <param id="w1e2" name="Osc 1 - PW env 2 " type="float" min="-1" />
-        <param id="w1l1" name="Osc 1 - PW LFO 1 " type="float" min="-1" />
-        <param id="w1l2" name="Osc 1 - PW LFO 2 " type="float" min="-1" />
+        <float id="e1att" name="m_env1Att" max="2000" />
+        <float id="e1dec" name="m_env1Dec" max="4000" />
+        <float id="e1hol" name="m_env1Hold" max="4000" />
+        <float id="e1pre" name="m_env1Pre" max="2000" />
+        <float id="e1rel" name="m_env1Rel" max="4000" />
+        <float id="e1slo" name="Env 1 slope " min="-1" />
+        <float id="e1sus" name="Env 1 sustain " def="1" />
+        <float id="e2att" name="m_env2Att" max="2000" />
+        <float id="e2dec" name="m_env2Dec" max="4000" />
+        <float id="e2hol" name="m_env2Hold" max="4000" />
+        <float id="e2pre" name="m_env2Pre" max="2000" />
+        <float id="e2rel" name="m_env2Rel" max="4000" />
+        <float id="e2slo" name="Env 2 slope " min="-1" />
+        <float id="e2sus" name="Env 2 sustain " def="1" />
+        <float id="f1e1" name="Osc 1 - Pit env 1 " min="-1" />
+        <float id="f1e2" name="Osc 1 - Pit env 2 " min="-1" />
+        <float id="f1l1" name="Osc 1 - Pit LFO 1 " min="-1" />
+        <float id="f1l2" name="Osc 1 - Pit LFO 2 " min="-1" />
+        <float id="f2e1" name="Osc 2 - Pit env 1 " min="-1" />
+        <float id="f2e2" name="Osc 2 - Pit env 2 " min="-1" />
+        <float id="f2l1" name="Osc 2 - Pit LFO 1 " min="-1" />
+        <float id="f2l2" name="Osc 2 - Pit LFO 2 " min="-1" />
+        <float id="f3e1" name="Osc 3 - Pit env 1 " min="-1" />
+        <float id="f3e2" name="Osc 3 - Pit env 2 " min="-1" />
+        <float id="f3l1" name="Osc 3 - Pit LFO 1 " min="-1" />
+        <float id="f3l2" name="Osc 3 - Pit LFO 2 " min="-1" />
+        <float id="l1att" name="m_lfo1Att" max="2000" />
+        <float id="l1phs" name="LFO 1 phase " max="180" min="-180" />
+        <float id="l1rat" name="m_lfo1Rate" def="1" max="10000" min="0.1" />
+        <float id="l1wav" def="-1" max="-1" min="-1" />
+        <float id="l2att" name="m_lfo2Att" max="2000" />
+        <float id="l2phs" name="LFO 2 phase " max="180" min="-180" />
+        <float id="l2rat" name="m_lfo2Rate" def="1" max="10000" min="0.1" />
+        <float id="l2wav" def="-1" max="-1" min="-1" />
+        <float id="o1crs" name="Osc 1 coarse detune " max="24" min="-24" />
+        <float id="o1ftl" name="Osc 1 fine detune left " max="100" min="-100" />
+        <float id="o1ftr" name="Osc 1 fine detune right " max="100" min="-100" />
+        <float id="o1pan" name="Osc 1 panning " max="100" min="-100" />
+        <float id="o1pw" name="Osc 1 pulse width " def="50" max="100" />
+        <float id="o1spo" name="Osc 1 stereo phase offset " max="180" min="-180" />
+        <bool id="o1ssf" name="m_osc1SSF" />
+        <bool id="o1ssr" name="m_osc1SSR" />
+        <float id="o1vol" name="Osc 1 volume " def="33" max="200" />
+        <float id="o23mo" def="-1" max="-1" min="-1" />
+        <float id="o2crs" name="Osc 2 coarse detune " max="24" min="-24" />
+        <float id="o2ftl" name="Osc 2 fine detune left " max="100" min="-100" />
+        <float id="o2ftr" name="Osc 2 fine detune right " max="100" min="-100" />
+        <float id="o2pan" name="Osc 2 panning " max="100" min="-100" />
+        <float id="o2spo" name="Osc 2 stereo phase offset " max="180" min="-180" />
+        <bool id="o2syn" name="m_osc2SyncH" />
+        <bool id="o2synr" name="m_osc2SyncR" />
+        <float id="o2vol" name="Osc 2 volume " def="33" max="200" />
+        <float id="o2wav" def="-1" max="-1" min="-1" />
+        <float id="o3crs" name="Osc 3 coarse detune " max="24" min="-24" />
+        <float id="o3pan" name="Osc 3 panning " max="100" min="-100" />
+        <float id="o3spo" name="Osc 3 Stereo phase offset " max="180" min="-180" />
+        <float id="o3sub" name="Osc 3 sub-oscillator mix " max="100" min="-100" />
+        <bool id="o3syn" name="m_osc3SyncH" />
+        <bool id="o3synr" name="m_osc3SyncR" />
+        <float id="o3vol" name="Osc 3 volume " def="33" max="200" />
+        <float id="o3wav1" def="-1" max="-1" min="-1" />
+        <float id="o3wav2" def="-1" max="-1" min="-1" />
+        <float id="p1e1" name="Osc 1 - Phs env 1 " min="-1" />
+        <float id="p1e2" name="Osc 1 - Phs env 2 " min="-1" />
+        <float id="p1l1" name="Osc 1 - Phs LFO 1 " min="-1" />
+        <float id="p1l2" name="Osc 1 - Phs LFO 2 " min="-1" />
+        <float id="p2e1" name="Osc 2 - Phs env 1 " min="-1" />
+        <float id="p2e2" name="Osc 2 - Phs env 2 " min="-1" />
+        <float id="p2l1" name="Osc 2 - Phs LFO 1 " min="-1" />
+        <float id="p2l2" name="Osc 2 - Phs LFO 2 " min="-1" />
+        <float id="p3e1" name="Osc 3 - Phs env 1 " min="-1" />
+        <float id="p3e2" name="Osc 3 - Phs env 2 " min="-1" />
+        <float id="p3l1" name="Osc 3 - Phs LFO 1 " min="-1" />
+        <float id="p3l2" name="Osc 3 - Phs LFO 2 " min="-1" />
+        <float id="s3e1" name="Osc 3 - Sub env 1 " min="-1" />
+        <float id="s3e2" name="Osc 3 - Sub env 2 " min="-1" />
+        <float id="s3l1" name="Osc 3 - Sub LFO 1 " min="-1" />
+        <float id="s3l2" name="Osc 3 - Sub LFO 2 " min="-1" />
+        <float id="v1e1" name="Osc 1 - Vol env 1 " min="-1" />
+        <float id="v1e2" name="Osc 1 - Vol env 2 " min="-1" />
+        <float id="v1l1" name="Osc 1 - Vol LFO 1 " min="-1" />
+        <float id="v1l2" name="Osc 1 - Vol LFO 2 " min="-1" />
+        <float id="v2e1" name="Osc 2 - Vol env 1 " min="-1" />
+        <float id="v2e2" name="Osc 2 - Vol env 2 " min="-1" />
+        <float id="v2l1" name="Osc 2 - Vol LFO 1 " min="-1" />
+        <float id="v2l2" name="Osc 2 - Vol LFO 2 " min="-1" />
+        <float id="v3e1" name="Osc 3 - Vol env 1 " min="-1" />
+        <float id="v3e2" name="Osc 3 - Vol env 2 " min="-1" />
+        <float id="v3l1" name="Osc 3 - Vol LFO 1 " min="-1" />
+        <float id="v3l2" name="Osc 3 - Vol LFO 2 " min="-1" />
+        <float id="w1e1" name="Osc 1 - PW env 1 " min="-1" />
+        <float id="w1e2" name="Osc 1 - PW env 2 " min="-1" />
+        <float id="w1l1" name="Osc 1 - PW LFO 1 " min="-1" />
+        <float id="w1l2" name="Osc 1 - PW LFO 2 " min="-1" />
       </params>
     </object>
     <object id="multitapecho">
       <visual name="Multitap Echo" />
       <params>
-        <dataval id="ampsteps" name="ampsteps" type="string" def="" />
-        <param id="drygain" name="m_dryGain" type="float" max="20" min="-80" />
-        <dataval id="lpsteps" name="lpsteps" type="string" def="" />
-        <param id="stages" name="m_stages" type="float" def="1" max="4" min="1" />
-        <param id="steplength" name="m_stepLength" type="float" def="100" max="500" min="1" />
-        <param id="steps" name="m_steps" type="float" def="16" max="32" min="4" />
-        <param id="swapinputs" name="m_swapInputs" type="bool" />
+        <float id="drygain" name="m_dryGain" max="20" min="-80" />
+        <float id="stages" name="m_stages" def="1" max="4" min="1" />
+        <float id="steplength" name="m_stepLength" def="100" max="500" min="1" />
+        <float id="steps" name="m_steps" def="16" max="32" min="4" />
+        <bool id="swapinputs" name="m_swapInputs" />
       </params>
+      <datavals>
+        <string id="ampsteps" def="" />
+        <string id="lpsteps" def="" />
+      </datavals>
     </object>
     <object id="nes">
       <visual name="Nescaline" color="#e52116" />
       <params>
-        <param id="crs1" name="Channel 1 coarse detune " type="int" max="24" min="-24" />
-        <param id="crs2" name="Channel 2 Coarse detune " type="int" max="24" min="-24" />
-        <param id="crs3" name="Channel 3 coarse detune " type="int" max="24" min="-24" />
-        <param id="dc1" name="dc1" type="float" def="-1" max="-1" min="-1" />
-        <param id="dc2" name="dc2" type="float" def="-1" max="-1" min="-1" />
-        <param id="envlen1" name="Channel 1 envelope length " type="int" max="15" />
-        <param id="envlen2" name="Channel 2 envelope length " type="int" max="15" />
-        <param id="envlen4" name="Channel 4 envelope length " type="int" max="15" />
-        <param id="envloop1" name="m_ch1EnvLooped" type="bool" />
-        <param id="envloop2" name="m_ch2EnvLooped" type="bool" />
-        <param id="envloop4" name="m_ch4EnvLooped" type="bool" />
-        <param id="envon1" name="m_ch1EnvEnabled" type="bool" />
-        <param id="envon2" name="m_ch2EnvEnabled" type="bool" />
-        <param id="envon4" name="m_ch4EnvEnabled" type="bool" />
-        <param id="nfreq4" name="Channel 4 noise frequency " type="int" max="15" />
-        <param id="nfrqmode4" name="m_ch4NoiseFreqMode" type="bool" />
-        <param id="nmode4" name="m_ch4NoiseMode" type="bool" />
-        <param id="nq4" name="m_ch4NoiseQuantize" type="bool" def="1" />
-        <param id="nswp4" name="Channel 4 noise frequency sweep " type="int" max="7" min="-7" />
-        <param id="on1" name="m_ch1Enabled" type="bool" def="1" />
-        <param id="on2" name="m_ch2Enabled" type="bool" def="1" />
-        <param id="on3" name="m_ch3Enabled" type="bool" def="1" />
-        <param id="on4" name="m_ch4Enabled" type="bool" />
-        <param id="swamt1" name="Channel 1 sweep amount " type="int" max="7" min="-7" />
-        <param id="swamt2" name="Channel 2 sweep amount " type="int" max="7" min="-7" />
-        <param id="sweep1" name="m_ch1SweepEnabled" type="bool" />
-        <param id="sweep2" name="m_ch2SweepEnabled" type="bool" />
-        <param id="swrate1" name="Channel 1 sweep rate " type="int" max="7" />
-        <param id="swrate2" name="Channel 2 sweep rate " type="int" max="7" />
-        <param id="vibr" name="Vibrato " type="int" max="15" />
-        <param id="vol" name="Master volume " type="int" def="1.0" max="2" />
-        <param id="vol1" name="Channel 1 volume " type="int" def="15.0" max="15" />
-        <param id="vol2" name="Channel 2 Volume " type="int" def="15.0" max="15" />
-        <param id="vol3" name="Channel 3 volume " type="int" def="15.0" max="15" />
-        <param id="vol4" name="Channel 4 volume " type="int" def="15.0" max="15" />
+        <int id="crs1" name="Channel 1 coarse detune " max="24" min="-24" />
+        <int id="crs2" name="Channel 2 Coarse detune " max="24" min="-24" />
+        <int id="crs3" name="Channel 3 coarse detune " max="24" min="-24" />
+        <float id="dc1" def="-1" max="-1" min="-1" />
+        <float id="dc2" def="-1" max="-1" min="-1" />
+        <int id="envlen1" name="Channel 1 envelope length " max="15" />
+        <int id="envlen2" name="Channel 2 envelope length " max="15" />
+        <int id="envlen4" name="Channel 4 envelope length " max="15" />
+        <bool id="envloop1" name="m_ch1EnvLooped" />
+        <bool id="envloop2" name="m_ch2EnvLooped" />
+        <bool id="envloop4" name="m_ch4EnvLooped" />
+        <bool id="envon1" name="m_ch1EnvEnabled" />
+        <bool id="envon2" name="m_ch2EnvEnabled" />
+        <bool id="envon4" name="m_ch4EnvEnabled" />
+        <int id="nfreq4" name="Channel 4 noise frequency " max="15" />
+        <bool id="nfrqmode4" name="m_ch4NoiseFreqMode" />
+        <bool id="nmode4" name="m_ch4NoiseMode" />
+        <bool id="nq4" name="m_ch4NoiseQuantize" def="1" />
+        <int id="nswp4" name="Channel 4 noise frequency sweep " max="7" min="-7" />
+        <bool id="on1" name="m_ch1Enabled" def="1" />
+        <bool id="on2" name="m_ch2Enabled" def="1" />
+        <bool id="on3" name="m_ch3Enabled" def="1" />
+        <bool id="on4" name="m_ch4Enabled" />
+        <int id="swamt1" name="Channel 1 sweep amount " max="7" min="-7" />
+        <int id="swamt2" name="Channel 2 sweep amount " max="7" min="-7" />
+        <bool id="sweep1" name="m_ch1SweepEnabled" />
+        <bool id="sweep2" name="m_ch2SweepEnabled" />
+        <int id="swrate1" name="Channel 1 sweep rate " max="7" />
+        <int id="swrate2" name="Channel 2 sweep rate " max="7" />
+        <int id="vibr" name="Vibrato " max="15" />
+        <int id="vol" name="Master volume " def="1.0" max="2" />
+        <int id="vol1" name="Channel 1 volume " def="15.0" max="15" />
+        <int id="vol2" name="Channel 2 Volume " def="15.0" max="15" />
+        <int id="vol3" name="Channel 3 volume " def="15.0" max="15" />
+        <int id="vol4" name="Channel 4 volume " def="15.0" max="15" />
       </params>
     </object>
     <object id="organic">
       <visual name="Organic" color="#3dc121" />
       <params>
-        <param id="foldback" name="foldback" type="float" def="1" />
-        <param id="newdetune0" name="newdetune0" type="int" max="1200" min="-1200" />
-        <param id="newdetune1" name="newdetune1" type="int" max="1200" min="-1200" />
-        <param id="newdetune2" name="newdetune2" type="int" max="1200" min="-1200" />
-        <param id="newdetune3" name="newdetune3" type="int" max="1200" min="-1200" />
-        <param id="newdetune4" name="newdetune4" type="int" max="1200" min="-1200" />
-        <param id="newdetune5" name="newdetune5" type="int" max="1200" min="-1200" />
-        <param id="newdetune6" name="newdetune6" type="int" max="1200" min="-1200" />
-        <param id="newdetune7" name="newdetune7" type="int" max="1200" min="-1200" />
-        <param id="newharmonic0" name="newharmonic0" type="int" max="17" />
-        <param id="newharmonic1" name="newharmonic1" type="int" def="1" max="17" />
-        <param id="newharmonic2" name="newharmonic2" type="int" def="2" max="17" />
-        <param id="newharmonic3" name="newharmonic3" type="int" def="3" max="17" />
-        <param id="newharmonic4" name="newharmonic4" type="int" def="4" max="17" />
-        <param id="newharmonic5" name="newharmonic5" type="int" def="5" max="17" />
-        <param id="newharmonic6" name="newharmonic6" type="int" def="6" max="17" />
-        <param id="newharmonic7" name="newharmonic7" type="int" def="7" max="17" />
-        <param id="num_osc" name="num_osc" type="int" def="8" max="8" />
-        <param id="pan0" name="pan0" type="int" max="100" min="-100" />
-        <param id="pan1" name="pan1" type="int" max="100" min="-100" />
-        <param id="pan2" name="pan2" type="int" max="100" min="-100" />
-        <param id="pan3" name="pan3" type="int" max="100" min="-100" />
-        <param id="pan4" name="pan4" type="int" max="100" min="-100" />
-        <param id="pan5" name="pan5" type="int" max="100" min="-100" />
-        <param id="pan6" name="pan6" type="int" max="100" min="-100" />
-        <param id="pan7" name="pan7" type="int" max="100" min="-100" />
-        <param id="vol" name="vol" type="int" def="100" max="200" />
-        <param id="vol0" name="vol0" type="int" def="100" max="100" />
-        <param id="vol1" name="vol1" type="int" max="100" />
-        <param id="vol2" name="vol2" type="int" max="100" />
-        <param id="vol3" name="vol3" type="int" max="100" />
-        <param id="vol4" name="vol4" type="int" max="100" />
-        <param id="vol5" name="vol5" type="int" max="100" />
-        <param id="vol6" name="vol6" type="int" max="100" />
-        <param id="vol7" name="vol7" type="int" max="100" />
-        <param id="wavetype0" name="wavetype0" type="int" max="5" />
-        <param id="wavetype1" name="wavetype1" type="int" max="5" />
-        <param id="wavetype2" name="wavetype2" type="int" max="5" />
-        <param id="wavetype3" name="wavetype3" type="int" max="5" />
-        <param id="wavetype4" name="wavetype4" type="int" max="5" />
-        <param id="wavetype5" name="wavetype5" type="int" max="5" />
-        <param id="wavetype6" name="wavetype6" type="int" max="5" />
-        <param id="wavetype7" name="wavetype7" type="int" max="5" />
+        <float id="foldback" def="1" />
+        <int id="newdetune0" max="1200" min="-1200" />
+        <int id="newdetune1" max="1200" min="-1200" />
+        <int id="newdetune2" max="1200" min="-1200" />
+        <int id="newdetune3" max="1200" min="-1200" />
+        <int id="newdetune4" max="1200" min="-1200" />
+        <int id="newdetune5" max="1200" min="-1200" />
+        <int id="newdetune6" max="1200" min="-1200" />
+        <int id="newdetune7" max="1200" min="-1200" />
+        <int id="newharmonic0" max="17" />
+        <int id="newharmonic1" def="1" max="17" />
+        <int id="newharmonic2" def="2" max="17" />
+        <int id="newharmonic3" def="3" max="17" />
+        <int id="newharmonic4" def="4" max="17" />
+        <int id="newharmonic5" def="5" max="17" />
+        <int id="newharmonic6" def="6" max="17" />
+        <int id="newharmonic7" def="7" max="17" />
+        <int id="num_osc" def="8" max="8" />
+        <int id="pan0" max="100" min="-100" />
+        <int id="pan1" max="100" min="-100" />
+        <int id="pan2" max="100" min="-100" />
+        <int id="pan3" max="100" min="-100" />
+        <int id="pan4" max="100" min="-100" />
+        <int id="pan5" max="100" min="-100" />
+        <int id="pan6" max="100" min="-100" />
+        <int id="pan7" max="100" min="-100" />
+        <int id="vol" def="100" max="200" />
+        <int id="vol0" def="100" max="100" />
+        <int id="vol1" max="100" />
+        <int id="vol2" max="100" />
+        <int id="vol3" max="100" />
+        <int id="vol4" max="100" />
+        <int id="vol5" max="100" />
+        <int id="vol6" max="100" />
+        <int id="vol7" max="100" />
+        <int id="wavetype0" max="5" />
+        <int id="wavetype1" max="5" />
+        <int id="wavetype2" max="5" />
+        <int id="wavetype3" max="5" />
+        <int id="wavetype4" max="5" />
+        <int id="wavetype5" max="5" />
+        <int id="wavetype6" max="5" />
+        <int id="wavetype7" max="5" />
       </params>
     </object>
     <object id="papu">
       <visual name="Freeboy" color="#99cc23" />
       <params>
-        <param id="Bass" name="Bass " type="float" def="461" max="600" min="-1" />
-        <param id="Treble" name="Treble " type="float" def="-20" max="200" min="-100" />
-        <param id="ch1so1" name="Channel 1 to SO1 (Right)" type="bool" def="1" />
-        <param id="ch1so2" name="Channel 1 to SO2 (Left)" type="bool" def="1" />
-        <param id="ch1ssl" name="Length of each step in sweep " type="float" max="7" />
-        <param id="ch1vol" name="Channel 1 volume " type="float" def="15" max="15" />
-        <param id="ch1vsd" name="Volume sweep direction " type="bool" />
-        <param id="ch1wpd" name="Wave pattern duty cycle " type="float" def="2" max="3" />
-        <param id="ch2so1" name="Channel 2 to SO1 (Right)" type="bool" def="1" />
-        <param id="ch2so2" name="Channel 2 to SO2 (Left)" type="bool" def="1" />
-        <param id="ch2ssl" name="Length of each step in sweep " type="float" max="7" />
-        <param id="ch2vol" name="Channel 2 volume " type="float" def="15" max="15" />
-        <param id="ch2vsd" name="Volume sweep direction " type="bool" />
-        <param id="ch2wpd" name="Wave pattern duty cycle " type="float" def="2" max="3" />
-        <param id="ch3so1" name="Channel 3 to SO1 (Right)" type="bool" def="1" />
-        <param id="ch3so2" name="Channel 3 to SO2 (Left)" type="bool" def="1" />
-        <param id="ch3vol" name="Channel 3 volume " type="float" def="3" max="3" />
-        <param id="ch4so1" name="Channel 4 to SO1 (Right)" type="bool" />
-        <param id="ch4so2" name="Channel 4 to SO2 (Left)" type="bool" />
-        <param id="ch4ssl" name="Length of each step in sweep " type="float" max="7" />
-        <param id="ch4vol" name="Channel 4 volume " type="float" def="15" max="15" />
-        <param id="ch4vsd" name="Volume sweep direction " type="bool" />
-        <dataval id="sampleShape" name="sampleShape" type="string" def="" />
-        <param id="sd" name="Sweep direction " type="bool" />
-        <param id="so1vol" name="Right output level" type="float" def="7" max="7" />
-        <param id="so2vol" name="Left output level " type="float" def="7" max="7" />
-        <param id="srs" name="Sweep rate shift amount " type="float" def="4" max="7" />
-        <param id="srw" name="Shift Register width " type="bool" />
-        <param id="st" name="Sweep time " type="float" def="4" max="7" />
+        <float id="Bass" name="Bass " def="461" max="600" min="-1" />
+        <float id="Treble" name="Treble " def="-20" max="200" min="-100" />
+        <bool id="ch1so1" name="Channel 1 to SO1 (Right)" def="1" />
+        <bool id="ch1so2" name="Channel 1 to SO2 (Left)" def="1" />
+        <float id="ch1ssl" name="Length of each step in sweep " max="7" />
+        <float id="ch1vol" name="Channel 1 volume " def="15" max="15" />
+        <bool id="ch1vsd" name="Volume sweep direction " />
+        <float id="ch1wpd" name="Wave pattern duty cycle " def="2" max="3" />
+        <bool id="ch2so1" name="Channel 2 to SO1 (Right)" def="1" />
+        <bool id="ch2so2" name="Channel 2 to SO2 (Left)" def="1" />
+        <float id="ch2ssl" name="Length of each step in sweep " max="7" />
+        <float id="ch2vol" name="Channel 2 volume " def="15" max="15" />
+        <bool id="ch2vsd" name="Volume sweep direction " />
+        <float id="ch2wpd" name="Wave pattern duty cycle " def="2" max="3" />
+        <bool id="ch3so1" name="Channel 3 to SO1 (Right)" def="1" />
+        <bool id="ch3so2" name="Channel 3 to SO2 (Left)" def="1" />
+        <float id="ch3vol" name="Channel 3 volume " def="3" max="3" />
+        <bool id="ch4so1" name="Channel 4 to SO1 (Right)" />
+        <bool id="ch4so2" name="Channel 4 to SO2 (Left)" />
+        <float id="ch4ssl" name="Length of each step in sweep " max="7" />
+        <float id="ch4vol" name="Channel 4 volume " def="15" max="15" />
+        <bool id="ch4vsd" name="Volume sweep direction " />
+        <bool id="sd" name="Sweep direction " />
+        <float id="so1vol" name="Right output level" def="7" max="7" />
+        <float id="so2vol" name="Left output level " def="7" max="7" />
+        <float id="srs" name="Sweep rate shift amount " def="4" max="7" />
+        <bool id="srw" name="Shift Register width " />
+        <float id="st" name="Sweep time " def="4" max="7" />
       </params>
+      <datavals>
+        <string id="sampleShape" def="" />
+      </datavals>
     </object>
     <object id="patman">
       <visual name="PatMan" color="#f7ff54" />
@@ -482,24 +496,24 @@
     <object id="peakcontrollereffect">
       <visual name="Peak Controller" />
       <params>
-        <param id="abs" name="abs" type="float" def="-1" max="-1" min="-1" />
-        <param id="amount" name="amount" type="float" def="-1" max="-1" min="-1" />
-        <param id="amountmult" name="amountmult" type="float" def="-1" max="-1" min="-1" />
-        <param id="attack" name="attack" type="float" def="-1" max="-1" min="-1" />
-        <param id="base" name="base" type="float" def="-1" max="-1" min="-1" />
-        <param id="decay" name="decay" type="float" def="-1" max="-1" min="-1" />
-        <param id="effectId" name="effectId" type="float" def="-1" max="-1" min="-1" />
-        <param id="mute" name="mute" type="float" def="-1" max="-1" min="-1" />
-        <param id="treshold" name="treshold" type="float" def="-1" max="-1" min="-1" />
+        <float id="abs" def="-1" max="-1" min="-1" />
+        <float id="amount" def="-1" max="-1" min="-1" />
+        <float id="amountmult" def="-1" max="-1" min="-1" />
+        <float id="attack" def="-1" max="-1" min="-1" />
+        <float id="base" def="-1" max="-1" min="-1" />
+        <float id="decay" def="-1" max="-1" min="-1" />
+        <float id="effectId" def="-1" max="-1" min="-1" />
+        <float id="mute" def="-1" max="-1" min="-1" />
+        <float id="treshold" def="-1" max="-1" min="-1" />
       </params>
     </object>
     <object id="reverbsc">
       <visual name="ReverbSC" />
       <params>
-        <param id="color" name="Color " type="float" def="10000" max="15000" min="100" />
-        <param id="input_gain" name="Input gain " type="float" max="15" min="-60" />
-        <param id="output_gain" name="Output gain " type="float" max="15" min="-60" />
-        <param id="size" name="Size " type="float" def="0.89" />
+        <float id="color" name="Color " def="10000" max="15000" min="100" />
+        <float id="input_gain" name="Input gain " max="15" min="-60" />
+        <float id="output_gain" name="Output gain " max="15" min="-60" />
+        <float id="size" name="Size " def="0.89" />
       </params>
     </object>
     <object id="sf2player">
@@ -508,74 +522,74 @@
     <object id="sfxr">
       <visual name="sfxr" color="#ffb200" />
       <params>
-        <param id="att" name="att" type="float" max="-1" />
-        <param id="changeAmt" name="changeAmt" type="float" max="-1" />
-        <param id="changeSpeed" name="changeSpeed" type="float" max="-1" />
-        <param id="dSlide" name="dSlide" type="float" max="-1" />
-        <param id="dec" name="dec" type="float" max="-1" />
-        <param id="hold" name="hold" type="float" max="-1" />
-        <param id="hpFilCut" name="hpFilCut" type="float" max="-1" />
-        <param id="hpFilCutSweep" name="hpFilCutSweep" type="float" max="-1" />
-        <param id="lpFilCut" name="lpFilCut" type="float" max="-1" />
-        <param id="lpFilCutSweep" name="lpFilCutSweep" type="float" max="-1" />
-        <param id="lpFilReso" name="lpFilReso" type="float" max="-1" />
-        <param id="minFreq" name="minFreq" type="float" max="-1" />
-        <param id="phaserOffset" name="phaserOffset" type="float" max="-1" />
-        <param id="phaserSweep" name="phaserSweep" type="float" max="-1" />
-        <param id="repeatSpeed" name="repeatSpeed" type="float" max="-1" />
-        <param id="slide" name="slide" type="float" max="-1" />
-        <param id="sqrDuty" name="sqrDuty" type="float" max="-1" />
-        <param id="sqrSweep" name="sqrSweep" type="float" max="-1" />
-        <param id="startFreq" name="startFreq" type="float" max="-1" />
-        <param id="sus" name="sus" type="float" max="-1" />
-        <param id="version" name="version" type="float" max="-1" />
-        <param id="vibDepth" name="vibDepth" type="float" max="-1" />
-        <param id="vibSpeed" name="vibSpeed" type="float" max="-1" />
-        <param id="waveForm" name="waveForm" type="float" max="-1" />
+        <float id="att" max="-1" />
+        <float id="changeAmt" max="-1" />
+        <float id="changeSpeed" max="-1" />
+        <float id="dSlide" max="-1" />
+        <float id="dec" max="-1" />
+        <float id="hold" max="-1" />
+        <float id="hpFilCut" max="-1" />
+        <float id="hpFilCutSweep" max="-1" />
+        <float id="lpFilCut" max="-1" />
+        <float id="lpFilCutSweep" max="-1" />
+        <float id="lpFilReso" max="-1" />
+        <float id="minFreq" max="-1" />
+        <float id="phaserOffset" max="-1" />
+        <float id="phaserSweep" max="-1" />
+        <float id="repeatSpeed" max="-1" />
+        <float id="slide" max="-1" />
+        <float id="sqrDuty" max="-1" />
+        <float id="sqrSweep" max="-1" />
+        <float id="startFreq" max="-1" />
+        <float id="sus" max="-1" />
+        <float id="version" max="-1" />
+        <float id="vibDepth" max="-1" />
+        <float id="vibSpeed" max="-1" />
+        <float id="waveForm" max="-1" />
       </params>
     </object>
     <object id="sid">
       <visual name="SID" color="#baafa0" />
       <params>
-        <param id="attack0" name="attack0" type="int" def="8" max="15" />
-        <param id="attack1" name="attack1" type="int" def="8" max="15" />
-        <param id="attack2" name="attack2" type="int" def="8" max="15" />
-        <param id="chipModel" name="chipModel" type="int" def="1" />
-        <param id="coarse0" name="coarse0" type="int" max="24" min="-24" />
-        <param id="coarse1" name="coarse1" type="int" max="24" min="-24" />
-        <param id="coarse2" name="coarse2" type="int" max="24" min="-24" />
-        <param id="decay0" name="decay0" type="int" def="8" max="15" />
-        <param id="decay1" name="decay1" type="int" def="8" max="15" />
-        <param id="decay2" name="decay2" type="int" def="8" max="15" />
-        <param id="filterFC" name="filterFC" type="int" def="1024" max="2047" />
-        <param id="filterMode" name="filterMode" type="int" def="2" max="2" />
-        <param id="filterResonance" name="filterResonance" type="int" def="8" max="15" />
-        <param id="filtered0" name="filtered0" type="bool" />
-        <param id="filtered1" name="filtered1" type="bool" />
-        <param id="filtered2" name="filtered2" type="bool" />
-        <param id="pulsewidth0" name="pulsewidth0" type="int" def="2048" max="4095" />
-        <param id="pulsewidth1" name="pulsewidth1" type="int" def="2048" max="4095" />
-        <param id="pulsewidth2" name="pulsewidth2" type="int" def="2048" max="4095" />
-        <param id="release0" name="release0" type="int" def="8" max="15" />
-        <param id="release1" name="release1" type="int" def="8" max="15" />
-        <param id="release2" name="release2" type="int" def="8" max="15" />
-        <param id="ringmod0" name="ringmod0" type="bool" />
-        <param id="ringmod1" name="ringmod1" type="bool" />
-        <param id="ringmod2" name="ringmod2" type="bool" />
-        <param id="sustain0" name="sustain0" type="int" def="15" max="15" />
-        <param id="sustain1" name="sustain1" type="int" def="15" max="15" />
-        <param id="sustain2" name="sustain2" type="int" def="15" max="15" />
-        <param id="sync0" name="sync0" type="bool" />
-        <param id="sync1" name="sync1" type="bool" />
-        <param id="sync2" name="sync2" type="bool" />
-        <param id="test0" name="test0" type="bool" />
-        <param id="test1" name="test1" type="bool" />
-        <param id="test2" name="test2" type="bool" />
-        <param id="voice3Off" name="voice3Off" type="bool" />
-        <param id="volume" name="volume" type="int" def="15" max="15" />
-        <param id="waveform0" name="waveform0" type="int" max="3" />
-        <param id="waveform1" name="waveform1" type="int" max="3" />
-        <param id="waveform2" name="waveform2" type="int" max="3" />
+        <int id="attack0" def="8" max="15" />
+        <int id="attack1" def="8" max="15" />
+        <int id="attack2" def="8" max="15" />
+        <int id="chipModel" def="1" />
+        <int id="coarse0" max="24" min="-24" />
+        <int id="coarse1" max="24" min="-24" />
+        <int id="coarse2" max="24" min="-24" />
+        <int id="decay0" def="8" max="15" />
+        <int id="decay1" def="8" max="15" />
+        <int id="decay2" def="8" max="15" />
+        <int id="filterFC" def="1024" max="2047" />
+        <int id="filterMode" def="2" max="2" />
+        <int id="filterResonance" def="8" max="15" />
+        <bool id="filtered0" />
+        <bool id="filtered1" />
+        <bool id="filtered2" />
+        <int id="pulsewidth0" def="2048" max="4095" />
+        <int id="pulsewidth1" def="2048" max="4095" />
+        <int id="pulsewidth2" def="2048" max="4095" />
+        <int id="release0" def="8" max="15" />
+        <int id="release1" def="8" max="15" />
+        <int id="release2" def="8" max="15" />
+        <bool id="ringmod0" />
+        <bool id="ringmod1" />
+        <bool id="ringmod2" />
+        <int id="sustain0" def="15" max="15" />
+        <int id="sustain1" def="15" max="15" />
+        <int id="sustain2" def="15" max="15" />
+        <bool id="sync0" />
+        <bool id="sync1" />
+        <bool id="sync2" />
+        <bool id="test0" />
+        <bool id="test1" />
+        <bool id="test2" />
+        <bool id="voice3Off" />
+        <int id="volume" def="15" max="15" />
+        <int id="waveform0" max="3" />
+        <int id="waveform1" max="3" />
+        <int id="waveform2" max="3" />
       </params>
     </object>
     <object id="spectrumanalyzer">
@@ -584,48 +598,48 @@
     <object id="stereoenhancer">
       <visual name="StereoEnhancer" />
       <params>
-        <param id="width" name="Width" type="int" max="180" />
+        <int id="width" name="Width" max="180" />
       </params>
     </object>
     <object id="stereomatrix">
       <visual name="Stereo Matrix" />
       <params>
-        <param id="l-l" name="Left to Left" type="float" min="-1" />
-        <param id="l-r" name="Left to Right" type="float" min="-1" />
-        <param id="r-l" name="Right to Left" type="float" min="-1" />
-        <param id="r-r" name="Right to Right" type="float" min="-1" />
+        <float id="l-l" name="Left to Left" min="-1" />
+        <float id="l-r" name="Left to Right" min="-1" />
+        <float id="r-l" name="Right to Left" min="-1" />
+        <float id="r-r" name="Right to Right" min="-1" />
       </params>
     </object>
     <object id="tripleoscillator">
       <visual name="TripleOscillator" color="#ff5621" />
       <params>
-        <param id="coarse0" name="Osc 1 coarse detuning" type="int" max="24" min="-24" />
-        <param id="coarse1" name="Osc 2 coarse detuning" type="int" def="-12" max="24" min="-24" />
-        <param id="coarse2" name="Osc 3 coarse detuning" type="int" def="-24" max="24" min="-24" />
-        <param id="finel0" name="Osc 1 fine detuning left" type="int" max="100" min="-100" />
-        <param id="finel1" name="Osc 2 fine detuning left" type="int" max="100" min="-100" />
-        <param id="finel2" name="Osc 3 fine detuning left" type="int" max="100" min="-100" />
-        <param id="finer0" name="Osc 1 fine detuning right" type="int" max="100" min="-100" />
-        <param id="finer1" name="Osc 2 fine detuning right" type="int" max="100" min="-100" />
-        <param id="finer2" name="Osc 3 fine detuning right" type="int" max="100" min="-100" />
-        <param id="modalgo1" name="Modulation type 1" type="int" def="2" max="4" />
-        <param id="modalgo2" name="Modulation type 2" type="int" def="2" max="4" />
-        <param id="modalgo3" name="Modulation type 3" type="int" def="2" max="4" />
-        <param id="pan0" name="Osc 1 pan" type="int" max="100" min="-100" />
-        <param id="pan1" name="Osc 2 pan" type="int" max="100" min="-100" />
-        <param id="pan2" name="Osc 3 pan" type="int" max="100" min="-100" />
-        <param id="phoffset0" name="Osc 1 phase-offset" type="int" max="360" />
-        <param id="phoffset1" name="Osc 2 phase-offset" type="int" max="360" />
-        <param id="phoffset2" name="Osc 3 phase-offset" type="int" max="360" />
-        <param id="stphdetun0" name="Osc 1 stereo phase-detuning" type="int" max="359" />
-        <param id="stphdetun1" name="Osc 2 stereo phase-detuning" type="int" max="360" />
-        <param id="stphdetun2" name="Osc 3 stereo phase-detuning" type="int" max="3601" />
-        <param id="vol0" name="Osc 1 volume" type="int" def="3" max="100" />
-        <param id="vol1" name="Osc 2 volume" type="int" def="33" max="100" />
-        <param id="vol2" name="Osc 3 volume" type="int" def="33" max="100" />
-        <param id="wavetype0" name="Osc 1 wave shape" type="int" max="7" />
-        <param id="wavetype1" name="Osc 2 wave shape" type="int" max="7" />
-        <param id="wavetype2" name="Osc 3 wave shape" type="int" max="7" />
+        <int id="coarse0" name="Osc 1 coarse detuning" max="24" min="-24" />
+        <int id="coarse1" name="Osc 2 coarse detuning" def="-12" max="24" min="-24" />
+        <int id="coarse2" name="Osc 3 coarse detuning" def="-24" max="24" min="-24" />
+        <int id="finel0" name="Osc 1 fine detuning left" max="100" min="-100" />
+        <int id="finel1" name="Osc 2 fine detuning left" max="100" min="-100" />
+        <int id="finel2" name="Osc 3 fine detuning left" max="100" min="-100" />
+        <int id="finer0" name="Osc 1 fine detuning right" max="100" min="-100" />
+        <int id="finer1" name="Osc 2 fine detuning right" max="100" min="-100" />
+        <int id="finer2" name="Osc 3 fine detuning right" max="100" min="-100" />
+        <int id="modalgo1" name="Modulation type 1" def="2" max="4" />
+        <int id="modalgo2" name="Modulation type 2" def="2" max="4" />
+        <int id="modalgo3" name="Modulation type 3" def="2" max="4" />
+        <int id="pan0" name="Osc 1 pan" max="100" min="-100" />
+        <int id="pan1" name="Osc 2 pan" max="100" min="-100" />
+        <int id="pan2" name="Osc 3 pan" max="100" min="-100" />
+        <int id="phoffset0" name="Osc 1 phase-offset" max="360" />
+        <int id="phoffset1" name="Osc 2 phase-offset" max="360" />
+        <int id="phoffset2" name="Osc 3 phase-offset" max="360" />
+        <int id="stphdetun0" name="Osc 1 stereo phase-detuning" max="359" />
+        <int id="stphdetun1" name="Osc 2 stereo phase-detuning" max="360" />
+        <int id="stphdetun2" name="Osc 3 stereo phase-detuning" max="3601" />
+        <int id="vol0" name="Osc 1 volume" def="3" max="100" />
+        <int id="vol1" name="Osc 2 volume" def="33" max="100" />
+        <int id="vol2" name="Osc 3 volume" def="33" max="100" />
+        <int id="wavetype0" name="Osc 1 wave shape" max="7" />
+        <int id="wavetype1" name="Osc 2 wave shape" max="7" />
+        <int id="wavetype2" name="Osc 3 wave shape" max="7" />
       </params>
     </object>
     <object id="vestige">
@@ -634,176 +648,184 @@
     <object id="vibedstrings">
       <visual name="Vibed" color="#637787" />
       <params>
-        <param id="active0" name="String 1 Enabled" type="bool" def="1" />
-        <param id="active1" name="String 2 Enabled" type="bool" />
-        <param id="active2" name="String 3 Enabled" type="bool" />
-        <param id="active3" name="String 4 Enabled" type="bool" />
-        <param id="active4" name="String 5 Enabled" type="bool" />
-        <param id="active5" name="String 6 Enabled" type="bool" />
-        <param id="active6" name="String 7 Enabled" type="bool" />
-        <param id="active7" name="String 8 Enabled" type="bool" />
-        <param id="active8" name="String 9 Enabled" type="bool" />
-        <param id="detune0" name="String 1 detune" type="float" max="0.1" min="-0.1" />
-        <param id="detune1" name="String 2 detune" type="float" max="0.1" min="-0.1" />
-        <param id="detune2" name="String 3 detune" type="float" max="0.1" min="-0.1" />
-        <param id="detune3" name="String 4 detune" type="float" max="0.1" min="-0.1" />
-        <param id="detune4" name="String 5 detune" type="float" max="0.1" min="-0.1" />
-        <param id="detune5" name="String 6 detune" type="float" max="0.1" min="-0.1" />
-        <param id="detune6" name="String 7 detune" type="float" max="0.1" min="-0.1" />
-        <param id="detune7" name="String 8 detune" type="float" max="0.1" min="-0.1" />
-        <param id="detune8" name="String 9 detune" type="float" max="0.1" min="-0.1" />
-        <dataval id="graph0" name="Graph 1" type="string" def="" />
-        <dataval id="graph1" name="Graph 2" type="string" def="" />
-        <dataval id="graph2" name="Graph 3" type="string" def="" />
-        <dataval id="graph3" name="Graph 4" type="string" def="" />
-        <dataval id="graph4" name="Graph 5" type="string" def="" />
-        <dataval id="graph5" name="Graph 6" type="string" def="" />
-        <dataval id="graph6" name="Graph 7" type="string" def="" />
-        <dataval id="graph7" name="Graph 8" type="string" def="" />
-        <dataval id="graph8" name="Graph 9" type="string" def="" />
-        <param id="impulse0" name="Impulse 1" type="bool" def="1" />
-        <param id="impulse1" name="Impulse 2" type="bool" def="1" />
-        <param id="impulse2" name="Impulse 3" type="bool" def="1" />
-        <param id="impulse3" name="Impulse 4" type="bool" def="1" />
-        <param id="impulse4" name="Impulse 5" type="bool" def="1" />
-        <param id="impulse5" name="Impulse 6" type="bool" def="1" />
-        <param id="impulse6" name="Impulse 7" type="bool" def="1" />
-        <param id="impulse7" name="Impulse 8" type="bool" def="1" />
-        <param id="impulse8" name="Impulse 9" type="bool" def="1" />
-        <param id="length0" name="String 1 length" type="int" def="1" max="16" min="1" />
-        <param id="length1" name="String 2 length" type="int" def="1" max="16" min="1" />
-        <param id="length2" name="String 3 length" type="int" def="1" max="16" min="1" />
-        <param id="length3" name="String 4 length" type="int" def="1" max="16" min="1" />
-        <param id="length4" name="String 5 length" type="int" def="1" max="16" min="1" />
-        <param id="length5" name="String 6 length" type="int" def="1" max="16" min="1" />
-        <param id="length6" name="String 7 length" type="int" def="1" max="16" min="1" />
-        <param id="length7" name="String 8 length" type="int" def="1" max="16" min="1" />
-        <param id="length8" name="String 9 length" type="int" def="1" max="16" min="1" />
-        <param id="octave0" type="int" def="2" max="8" />
-        <param id="octave1" type="int" def="2" max="8" />
-        <param id="octave2" type="int" def="2" max="8" />
-        <param id="octave3" type="int" def="2" max="8" />
-        <param id="octave4" type="int" def="2" max="8" />
-        <param id="octave5" type="int" def="2" max="8" />
-        <param id="octave6" type="int" def="2" max="8" />
-        <param id="octave7" type="int" def="2" max="8" />
-        <param id="octave8" type="int" def="2" max="8" />
-        <param id="pan0" name="String 1 panning" type="float" min="-1" />
-        <param id="pan1" name="String 2 panning" type="float" min="-1" />
-        <param id="pan2" name="String 3 panning" type="float" min="-1" />
-        <param id="pan3" name="String 4 panning" type="float" min="-1" />
-        <param id="pan4" name="String 5 panning" type="float" min="-1" />
-        <param id="pan5" name="String 6 panning" type="float" min="-1" />
-        <param id="pan6" name="String 7 panning" type="float" min="-1" />
-        <param id="pan7" name="String 8 panning" type="float" min="-1" />
-        <param id="pan8" name="String 9 panning" type="float" min="-1" />
-        <param id="pick0" name="Pick 1 position" type="float" max="0.05" />
-        <param id="pick1" name="Pick 2 position" type="float" max="0.05" />
-        <param id="pick2" name="Pick 3 position" type="float" max="0.05" />
-        <param id="pick3" name="Pick 4 position" type="float" def="-1" max="0.05" />
-        <param id="pick4" name="Pick 5 position" type="float" max="0.05" />
-        <param id="pick5" name="Pick 6 position" type="float" max="0.05" />
-        <param id="pick6" name="Pick 7 position" type="float" max="0.05" />
-        <param id="pick7" name="Pick 8 position" type="float" max="0.05" />
-        <param id="pick8" name="Pick 9 position" type="float" max="0.05" />
-        <param id="pickup0" name="Pickup 1 position" type="float" def="0.05" max="0.05" />
-        <param id="pickup1" name="Pickup 2 position" type="float" def="0.05" max="0.05" />
-        <param id="pickup2" name="Pickup 3 position" type="float" def="0.05" max="0.05" />
-        <param id="pickup3" name="Pickup 4 position" type="float" def="0.05" max="0.05" />
-        <param id="pickup4" name="Pickup 5 position" type="float" def="0.05" max="0.05" />
-        <param id="pickup5" name="Pickup 6 position" type="float" def="0.05" max="0.05" />
-        <param id="pickup6" name="Pickup 7 position" type="float" def="0.05" max="0.05" />
-        <param id="pickup7" name="Pickup 8 position" type="float" def="0.05" max="0.05" />
-        <param id="pickup8" name="Pickup 9 position" type="float" def="0.05" max="0.05" />
-        <param id="slap0" name="slap0" type="float" max="0.75" />
-        <param id="slap1" name="slap1" type="float" max="0.75" />
-        <param id="slap2" name="slap2" type="float" max="0.75" />
-        <param id="slap3" name="slap3" type="float" max="0.75" />
-        <param id="slap4" name="slap4" type="float" max="0.75" />
-        <param id="slap5" name="slap5" type="float" max="0.75" />
-        <param id="slap6" name="slap6" type="float" max="0.75" />
-        <param id="slap7" name="slap7" type="float" max="0.75" />
-        <param id="slap8" name="slap8" type="float" max="0.75" />
-        <param id="stiffness0" name="String 1 stiffness" type="float" max="0.05" />
-        <param id="stiffness1" name="String 2 stiffness" type="float" max="0.05" />
-        <param id="stiffness2" name="String 3 stiffness" type="float" max="0.05" />
-        <param id="stiffness3" name="String 4 stiffness" type="float" max="0.05" />
-        <param id="stiffness4" name="String 5 stiffness" type="float" max="0.05" />
-        <param id="stiffness5" name="String 6 stiffness" type="float" max="0.05" />
-        <param id="stiffness6" name="String 7 stiffness" type="float" max="0.05" />
-        <param id="stiffness7" name="String 8 stiffness" type="float" max="0.05" />
-        <param id="stiffness8" name="String 9 stiffness" type="float" max="0.05" />
-        <dataval id="version" name="version" type="string" def="0.1" />
-        <param id="volume0" name="String 1 volume" type="int" def="100" max="200" />
-        <param id="volume1" name="String 2 volume" type="int" def="100" max="200" />
-        <param id="volume2" name="String 3 volume" type="int" def="100" max="200" />
-        <param id="volume3" name="String 4 volume" type="int" def="100" max="200" />
-        <param id="volume4" name="String 5 volume" type="int" def="100" max="200" />
-        <param id="volume5" name="String 6 volume" type="int" def="100" max="200" />
-        <param id="volume6" name="String 7 volume" type="int" def="100" max="200" />
-        <param id="volume7" name="String 8 volume" type="int" def="100" max="200" />
-        <param id="volume8" name="String 9 volume" type="int" def="100" max="200" />
+        <bool id="active0" name="String 1 Enabled" def="1" />
+        <bool id="active1" name="String 2 Enabled" />
+        <bool id="active2" name="String 3 Enabled" />
+        <bool id="active3" name="String 4 Enabled" />
+        <bool id="active4" name="String 5 Enabled" />
+        <bool id="active5" name="String 6 Enabled" />
+        <bool id="active6" name="String 7 Enabled" />
+        <bool id="active7" name="String 8 Enabled" />
+        <bool id="active8" name="String 9 Enabled" />
+        <float id="detune0" name="String 1 detune" max="0.1" min="-0.1" />
+        <float id="detune1" name="String 2 detune" max="0.1" min="-0.1" />
+        <float id="detune2" name="String 3 detune" max="0.1" min="-0.1" />
+        <float id="detune3" name="String 4 detune" max="0.1" min="-0.1" />
+        <float id="detune4" name="String 5 detune" max="0.1" min="-0.1" />
+        <float id="detune5" name="String 6 detune" max="0.1" min="-0.1" />
+        <float id="detune6" name="String 7 detune" max="0.1" min="-0.1" />
+        <float id="detune7" name="String 8 detune" max="0.1" min="-0.1" />
+        <float id="detune8" name="String 9 detune" max="0.1" min="-0.1" />
+        <bool id="impulse0" name="Impulse 1" def="1" />
+        <bool id="impulse1" name="Impulse 2" def="1" />
+        <bool id="impulse2" name="Impulse 3" def="1" />
+        <bool id="impulse3" name="Impulse 4" def="1" />
+        <bool id="impulse4" name="Impulse 5" def="1" />
+        <bool id="impulse5" name="Impulse 6" def="1" />
+        <bool id="impulse6" name="Impulse 7" def="1" />
+        <bool id="impulse7" name="Impulse 8" def="1" />
+        <bool id="impulse8" name="Impulse 9" def="1" />
+        <int id="length0" name="String 1 length" def="1" max="16" min="1" />
+        <int id="length1" name="String 2 length" def="1" max="16" min="1" />
+        <int id="length2" name="String 3 length" def="1" max="16" min="1" />
+        <int id="length3" name="String 4 length" def="1" max="16" min="1" />
+        <int id="length4" name="String 5 length" def="1" max="16" min="1" />
+        <int id="length5" name="String 6 length" def="1" max="16" min="1" />
+        <int id="length6" name="String 7 length" def="1" max="16" min="1" />
+        <int id="length7" name="String 8 length" def="1" max="16" min="1" />
+        <int id="length8" name="String 9 length" def="1" max="16" min="1" />
+        <int id="octave0" def="2" max="8" />
+        <int id="octave1" def="2" max="8" />
+        <int id="octave2" def="2" max="8" />
+        <int id="octave3" def="2" max="8" />
+        <int id="octave4" def="2" max="8" />
+        <int id="octave5" def="2" max="8" />
+        <int id="octave6" def="2" max="8" />
+        <int id="octave7" def="2" max="8" />
+        <int id="octave8" def="2" max="8" />
+        <float id="pan0" name="String 1 panning" min="-1" />
+        <float id="pan1" name="String 2 panning" min="-1" />
+        <float id="pan2" name="String 3 panning" min="-1" />
+        <float id="pan3" name="String 4 panning" min="-1" />
+        <float id="pan4" name="String 5 panning" min="-1" />
+        <float id="pan5" name="String 6 panning" min="-1" />
+        <float id="pan6" name="String 7 panning" min="-1" />
+        <float id="pan7" name="String 8 panning" min="-1" />
+        <float id="pan8" name="String 9 panning" min="-1" />
+        <float id="pick0" name="Pick 1 position" max="0.05" />
+        <float id="pick1" name="Pick 2 position" max="0.05" />
+        <float id="pick2" name="Pick 3 position" max="0.05" />
+        <float id="pick3" name="Pick 4 position" def="-1" max="0.05" />
+        <float id="pick4" name="Pick 5 position" max="0.05" />
+        <float id="pick5" name="Pick 6 position" max="0.05" />
+        <float id="pick6" name="Pick 7 position" max="0.05" />
+        <float id="pick7" name="Pick 8 position" max="0.05" />
+        <float id="pick8" name="Pick 9 position" max="0.05" />
+        <float id="pickup0" name="Pickup 1 position" def="0.05" max="0.05" />
+        <float id="pickup1" name="Pickup 2 position" def="0.05" max="0.05" />
+        <float id="pickup2" name="Pickup 3 position" def="0.05" max="0.05" />
+        <float id="pickup3" name="Pickup 4 position" def="0.05" max="0.05" />
+        <float id="pickup4" name="Pickup 5 position" def="0.05" max="0.05" />
+        <float id="pickup5" name="Pickup 6 position" def="0.05" max="0.05" />
+        <float id="pickup6" name="Pickup 7 position" def="0.05" max="0.05" />
+        <float id="pickup7" name="Pickup 8 position" def="0.05" max="0.05" />
+        <float id="pickup8" name="Pickup 9 position" def="0.05" max="0.05" />
+        <float id="slap0" max="0.75" />
+        <float id="slap1" max="0.75" />
+        <float id="slap2" max="0.75" />
+        <float id="slap3" max="0.75" />
+        <float id="slap4" max="0.75" />
+        <float id="slap5" max="0.75" />
+        <float id="slap6" max="0.75" />
+        <float id="slap7" max="0.75" />
+        <float id="slap8" max="0.75" />
+        <float id="stiffness0" name="String 1 stiffness" max="0.05" />
+        <float id="stiffness1" name="String 2 stiffness" max="0.05" />
+        <float id="stiffness2" name="String 3 stiffness" max="0.05" />
+        <float id="stiffness3" name="String 4 stiffness" max="0.05" />
+        <float id="stiffness4" name="String 5 stiffness" max="0.05" />
+        <float id="stiffness5" name="String 6 stiffness" max="0.05" />
+        <float id="stiffness6" name="String 7 stiffness" max="0.05" />
+        <float id="stiffness7" name="String 8 stiffness" max="0.05" />
+        <float id="stiffness8" name="String 9 stiffness" max="0.05" />
+        <int id="volume0" name="String 1 volume" def="100" max="200" />
+        <int id="volume1" name="String 2 volume" def="100" max="200" />
+        <int id="volume2" name="String 3 volume" def="100" max="200" />
+        <int id="volume3" name="String 4 volume" def="100" max="200" />
+        <int id="volume4" name="String 5 volume" def="100" max="200" />
+        <int id="volume5" name="String 6 volume" def="100" max="200" />
+        <int id="volume6" name="String 7 volume" def="100" max="200" />
+        <int id="volume7" name="String 8 volume" def="100" max="200" />
+        <int id="volume8" name="String 9 volume" def="100" max="200" />
       </params>
+      <datavals>
+        <string id="graph0" name="Graph 1" def="" />
+        <string id="graph1" name="Graph 2" def="" />
+        <string id="graph2" name="Graph 3" def="" />
+        <string id="graph3" name="Graph 4" def="" />
+        <string id="graph4" name="Graph 5" def="" />
+        <string id="graph5" name="Graph 6" def="" />
+        <string id="graph6" name="Graph 7" def="" />
+        <string id="graph7" name="Graph 8" def="" />
+        <string id="graph8" name="Graph 9" def="" />
+        <string id="version" def="0.1" />
+      </datavals>
     </object>
     <object id="watsyn">
       <visual name="Watsyn" color="#cedddd" />
       <params>
-        <param id="a1_ltune" name="Left detune A1" type="float" max="600" min="-600" />
-        <param id="a1_mult" name="Freq. multiplier A1" type="float" def="8" max="24" min="1" />
-        <param id="a1_pan" name="Panning A1" type="float" max="100" min="-100" />
-        <param id="a1_rtune" name="Right detune A1" type="float" max="600" min="-600" />
-        <param id="a1_vol" name="Volume A1" type="float" def="100" max="200" />
-        <dataval id="a1_wave" name="Wave A1" type="string" def="" />
-        <param id="a2_ltune" name="Left detune A2" type="float" max="600" min="-600" />
-        <param id="a2_mult" name="Freq. multiplier A2" type="float" def="8" max="24" min="1" />
-        <param id="a2_pan" name="Panning A2" type="float" max="100" min="-100" />
-        <param id="a2_rtune" name="Right detune A2" type="float" max="600" min="-600" />
-        <param id="a2_vol" name="Volume A2" type="float" def="100" max="200" />
-        <dataval id="a2_wave" name="Wave A2" type="string" def="" />
-        <param id="abmix" name="A-B Mix" type="float" max="100" min="-100" />
-        <param id="amod" name="A2-A1 modulation" type="float" max="3" />
-        <param id="b1_ltune" name="Left detune B1" type="float" max="600" min="-600" />
-        <param id="b1_mult" name="Freq. multiplier B1" type="float" def="8" max="24" min="1" />
-        <param id="b1_pan" name="Panning B1" type="float" max="100" min="-100" />
-        <param id="b1_rtune" name="Right detune B1" type="float" max="600" min="-600" />
-        <param id="b1_vol" name="Volume B1" type="float" def="100" max="200" />
-        <dataval id="b1_wave" name="Wave B1" type="string" def="" />
-        <param id="b2_ltune" name="Left detune B2" type="float" max="600" min="-600" />
-        <param id="b2_mult" name="Freq. multiplier B2" type="float" def="8" max="24" min="1" />
-        <param id="b2_pan" name="Panning B2" type="float" max="100" min="-100" />
-        <param id="b2_rtune" name="Right detune B2" type="float" max="600" min="-600" />
-        <param id="b2_vol" name="Panning B2" type="float" def="100" max="200" />
-        <dataval id="b2_wave" name="Wave B2" type="string" def="" />
-        <param id="bmod" name="B2-B1 modulation" type="float" max="3" />
-        <param id="envAmt" name="A-B Mix envelope amount" type="float" max="200" min="-200" />
-        <param id="envAtt" name="A-B Mix envelope attack" type="float" max="2000" />
-        <param id="envDec" name="A-B Mix envelope decay" type="float" max="2000" />
-        <param id="envHold" name="A-B Mix envelope hold" type="float" max="2000" />
-        <param id="xtalk" name="A1-B2 Crosstalk" type="float" max="100" />
+        <float id="a1_ltune" name="Left detune A1" max="600" min="-600" />
+        <float id="a1_mult" name="Freq. multiplier A1" def="8" max="24" min="1" />
+        <float id="a1_pan" name="Panning A1" max="100" min="-100" />
+        <float id="a1_rtune" name="Right detune A1" max="600" min="-600" />
+        <float id="a1_vol" name="Volume A1" def="100" max="200" />
+        <float id="a2_ltune" name="Left detune A2" max="600" min="-600" />
+        <float id="a2_mult" name="Freq. multiplier A2" def="8" max="24" min="1" />
+        <float id="a2_pan" name="Panning A2" max="100" min="-100" />
+        <float id="a2_rtune" name="Right detune A2" max="600" min="-600" />
+        <float id="a2_vol" name="Volume A2" def="100" max="200" />
+        <float id="abmix" name="A-B Mix" max="100" min="-100" />
+        <float id="amod" name="A2-A1 modulation" max="3" />
+        <float id="b1_ltune" name="Left detune B1" max="600" min="-600" />
+        <float id="b1_mult" name="Freq. multiplier B1" def="8" max="24" min="1" />
+        <float id="b1_pan" name="Panning B1" max="100" min="-100" />
+        <float id="b1_rtune" name="Right detune B1" max="600" min="-600" />
+        <float id="b1_vol" name="Volume B1" def="100" max="200" />
+        <float id="b2_ltune" name="Left detune B2" max="600" min="-600" />
+        <float id="b2_mult" name="Freq. multiplier B2" def="8" max="24" min="1" />
+        <float id="b2_pan" name="Panning B2" max="100" min="-100" />
+        <float id="b2_rtune" name="Right detune B2" max="600" min="-600" />
+        <float id="b2_vol" name="Panning B2" def="100" max="200" />
+        <float id="bmod" name="B2-B1 modulation" max="3" />
+        <float id="envAmt" name="A-B Mix envelope amount" max="200" min="-200" />
+        <float id="envAtt" name="A-B Mix envelope attack" max="2000" />
+        <float id="envDec" name="A-B Mix envelope decay" max="2000" />
+        <float id="envHold" name="A-B Mix envelope hold" max="2000" />
+        <float id="xtalk" name="A1-B2 Crosstalk" max="100" />
       </params>
+      <datavals>
+        <string id="a1_wave" name="Wave A1" def="" />
+        <string id="a2_wave" name="Wave A2" def="" />
+        <string id="b1_wave" name="Wave B1" def="" />
+        <string id="b2_wave" name="Wave B2" def="" />
+      </datavals>
     </object>
     <object id="waveshaper">
       <visual name="WaveShaper" />
       <params>
-        <param id="clipInput" name="Clip input" type="bool" def="-1" />
-        <param id="inputGain" name="Input gain" type="float" def="1" max="5" />
-        <param id="outputGain" name="Output gain" type="float" def="1" max="5" />
-        <dataval id="waveShape" name="Shape" type="string" def="" />
+        <bool id="clipInput" name="Clip input" def="-1" />
+        <float id="inputGain" name="Input gain" def="1" max="5" />
+        <float id="outputGain" name="Output gain" def="1" max="5" />
       </params>
+      <datavals>
+        <string id="waveShape" name="Shape" def="" />
+      </datavals>
     </object>
     <object id="zynaddsubfx">
       <visual name="ZynAddSubFX" color="#bfbfbf" />
       <params>
-        <param id="bandwidth" name="Bandwidth" type="int" def="64" max="127" />
-        <param id="filterfreq" name="Filter frequency" type="int" def="64" max="127" />
-        <param id="filterq" name="Filter resonance" type="int" def="64" max="127" />
-        <param id="fmgain" name="FM gain" type="int" def="127" max="127" />
-        <param id="forwardmidicc" name="Forward MIDI control change events" type="int" def="1" />
-        <dataval id="modifiedcontrollers" name="Modified Controllers " type="string" def="" />
-        <param id="portamento" name="Portamento" type="int" max="127" />
-        <param id="resbandwidth" name="Resonance bandwidth" type="int" def="64" max="127" />
-        <param id="rescenterfreq" name="Resonance center frequency" type="int" def="64" max="127" />
+        <int id="bandwidth" name="Bandwidth" def="64" max="127" />
+        <int id="filterfreq" name="Filter frequency" def="64" max="127" />
+        <int id="filterq" name="Filter resonance" def="64" max="127" />
+        <int id="fmgain" name="FM gain" def="127" max="127" />
+        <int id="forwardmidicc" name="Forward MIDI control change events" def="1" />
+        <int id="portamento" name="Portamento" max="127" />
+        <int id="resbandwidth" name="Resonance bandwidth" def="64" max="127" />
+        <int id="rescenterfreq" name="Resonance center frequency" def="64" max="127" />
       </params>
+      <datavals>
+        <string id="modifiedcontrollers" name="Modified Controllers " def="" />
+      </datavals>
     </object>
   </category>
 </datapack>

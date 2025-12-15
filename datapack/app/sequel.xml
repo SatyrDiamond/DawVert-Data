@@ -3,285 +3,285 @@
     <object id="pingpongdelay">
       <visual name="PingPongDelay" />
       <params>
-        <param id="delay" type="float" def="50.0" />
-        <param id="temposync" type="float" def="1.0" />
-        <param id="syncnote" type="float" def="0.0" />
-        <param id="feedback" type="float" def="50.0" />
-        <param id="filterL" type="float" def="50.0" />
-        <param id="filterLOn" type="float" def="1.0" />
-        <param id="filterH" type="float" def="15000.0" />
-        <param id="filterHOn" type="float" def="1.0" />
-        <param id="mix" type="float" def="50.0" />
-        <param id="pan" type="float" def="50.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="delay" def="50.0" />
+        <float id="temposync" def="1.0" />
+        <float id="syncnote" def="0.0" />
+        <float id="feedback" def="50.0" />
+        <float id="filterL" def="50.0" />
+        <float id="filterLOn" def="1.0" />
+        <float id="filterH" def="15000.0" />
+        <float id="filterHOn" def="1.0" />
+        <float id="mix" def="50.0" />
+        <float id="pan" def="50.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="stereodelay">
       <visual name="StereoDelay" />
       <params>
-        <param id="delay1" type="float" def="150.0" />
-        <param id="temposync1" type="float" def="1.0" />
-        <param id="syncnote1" type="float" def="0.0" />
-        <param id="feedback1" type="float" def="50.0" />
-        <param id="filterL1" type="float" def="50.0" />
-        <param id="filterLOn1" type="float" def="1.0" />
-        <param id="filterH1" type="float" def="15000.0" />
-        <param id="filterHOn1" type="float" def="1.0" />
-        <param id="mix1" type="float" def="50.0" />
-        <param id="pan1" type="float" def="-100.0" />
-        <param id="delay2" type="float" def="550.0" />
-        <param id="temposync2" type="float" def="1.0" />
-        <param id="syncnote2" type="float" def="0.0" />
-        <param id="feedback2" type="float" def="50.0" />
-        <param id="filterL2" type="float" def="50.0" />
-        <param id="filterLOn2" type="float" def="1.0" />
-        <param id="filterH2" type="float" def="15000.0" />
-        <param id="filterHOn2" type="float" def="1.0" />
-        <param id="mix2" type="float" def="50.0" />
-        <param id="pan2" type="float" def="100.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="delay1" def="150.0" />
+        <float id="temposync1" def="1.0" />
+        <float id="syncnote1" def="0.0" />
+        <float id="feedback1" def="50.0" />
+        <float id="filterL1" def="50.0" />
+        <float id="filterLOn1" def="1.0" />
+        <float id="filterH1" def="15000.0" />
+        <float id="filterHOn1" def="1.0" />
+        <float id="mix1" def="50.0" />
+        <float id="pan1" def="-100.0" />
+        <float id="delay2" def="550.0" />
+        <float id="temposync2" def="1.0" />
+        <float id="syncnote2" def="0.0" />
+        <float id="feedback2" def="50.0" />
+        <float id="filterL2" def="50.0" />
+        <float id="filterLOn2" def="1.0" />
+        <float id="filterH2" def="15000.0" />
+        <float id="filterHOn2" def="1.0" />
+        <float id="mix2" def="50.0" />
+        <float id="pan2" def="100.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="compressor">
       <visual name="Compressor" />
       <params>
-        <param id="threshold" type="float" def="0.0" />
-        <param id="ratio" type="float" def="3.0" />
-        <param id="attack" type="float" def="1.0" />
-        <param id="release" type="float" def="500.0" />
-        <param id="autorelease" type="float" def="0.0" />
-        <param id="hold" type="float" def="1.0" />
-        <param id="makeUp" type="float" def="0.0" />
-        <param id="automakeup" type="float" def="1.0" />
-        <param id="softknee" type="float" def="0.0" />
-        <param id="rms" type="float" def="80.0" />
-        <param id="live" type="float" def="1.0" />
-        <param id="resetMaxGainRed" type="float" def="0.0" />
-        <param id="bypass" type="float" def="1.0" />
-        <param id="makeupMode" type="float" def="0.0" />
+        <float id="threshold" def="0.0" />
+        <float id="ratio" def="3.0" />
+        <float id="attack" def="1.0" />
+        <float id="release" def="500.0" />
+        <float id="autorelease" def="0.0" />
+        <float id="hold" def="1.0" />
+        <float id="makeUp" def="0.0" />
+        <float id="automakeup" def="1.0" />
+        <float id="softknee" def="0.0" />
+        <float id="rms" def="80.0" />
+        <float id="live" def="1.0" />
+        <float id="resetMaxGainRed" def="0.0" />
+        <float id="bypass" def="1.0" />
+        <float id="makeupMode" def="0.0" />
       </params>
     </object>
     <object id="ampsimulator">
       <visual name="AmpSimulator" />
       <params>
-        <param id="ampmodel" type="float" def="1.0" />
-        <param id="drive" type="float" def="5.0" />
-        <param id="bass" type="float" def="5.0" />
-        <param id="mid" type="float" def="5.0" />
-        <param id="treble" type="float" def="5.0" />
-        <param id="presence" type="float" def="5.0" />
-        <param id="volume" type="float" def="5.0" />
-        <param id="speakertype" type="float" def="1.0" />
-        <param id="damplo" type="float" def="5.0" />
-        <param id="damphi" type="float" def="50.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="ampmodel" def="1.0" />
+        <float id="drive" def="5.0" />
+        <float id="bass" def="5.0" />
+        <float id="mid" def="5.0" />
+        <float id="treble" def="5.0" />
+        <float id="presence" def="5.0" />
+        <float id="volume" def="5.0" />
+        <float id="speakertype" def="1.0" />
+        <float id="damplo" def="5.0" />
+        <float id="damphi" def="50.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="distortion">
       <visual name="Distortion" />
       <params>
-        <param id="boost" type="float" def="0.0" />
-        <param id="feedback" type="float" def="0.0" />
-        <param id="tone" type="float" def="8.0" />
-        <param id="spatial" type="float" def="0.0" />
-        <param id="output" type="float" def="0.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="boost" def="0.0" />
+        <float id="feedback" def="0.0" />
+        <float id="tone" def="8.0" />
+        <float id="spatial" def="0.0" />
+        <float id="output" def="0.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="gate">
       <visual name="Gate" />
       <params>
-        <param id="threshold" type="float" def="-19.999998807907104" />
-        <param id="attack" type="float" def="1.0" />
-        <param id="release" type="float" def="149.99999433755875" />
-        <param id="autorelease" type="float" def="0.0" />
-        <param id="hold" type="float" def="1.0" />
-        <param id="rms" type="float" def="80.0" />
-        <param id="scon" type="float" def="1.0" />
-        <param id="sclisten" type="float" def="0.0" />
-        <param id="filtertype" type="float" def="1.0" />
-        <param id="centerfreq" type="float" def="500.0" />
-        <param id="qfactor" type="float" def="0.1" />
-        <param id="live" type="float" def="1.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="threshold" def="-19.999998807907104" />
+        <float id="attack" def="1.0" />
+        <float id="release" def="149.99999433755875" />
+        <float id="autorelease" def="0.0" />
+        <float id="hold" def="1.0" />
+        <float id="rms" def="80.0" />
+        <float id="scon" def="1.0" />
+        <float id="sclisten" def="0.0" />
+        <float id="filtertype" def="1.0" />
+        <float id="centerfreq" def="500.0" />
+        <float id="qfactor" def="0.1" />
+        <float id="live" def="1.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="maximizer">
       <visual name="Maximizer" />
       <params>
-        <param id="softclipper" type="float" def="1.0" />
-        <param id="optimise" type="float" def="0.0" />
-        <param id="output" type="float" def="0.0" />
-        <param id="resetMaxGainRed" type="float" def="0.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="softclipper" def="1.0" />
+        <float id="optimise" def="0.0" />
+        <float id="output" def="0.0" />
+        <float id="resetMaxGainRed" def="0.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="dualfilter">
       <visual name="DualFilter" />
       <params>
-        <param id="pos" type="float" def="0.0" />
-        <param id="reso" type="float" def="1.0000000037252903" />
-        <param id="width" type="float" def="100.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="pos" def="0.0" />
+        <float id="reso" def="1.0000000037252903" />
+        <float id="width" def="100.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="reverb">
       <visual name="Reverb" />
       <params>
-        <param id="mix" type="float" def="0.4" />
-        <param id="time" type="float" def="0.4345879896760937" />
-        <param id="lowFreq" type="float" def="0.0" />
-        <param id="lowAmount" type="float" def="0.6241963430045102" />
-        <param id="highFreq" type="float" def="0.6084750807294722" />
-        <param id="highAmount" type="float" def="-1.009870442698636e-08" />
-        <param id="size" type="float" def="0.0" />
-        <param id="efficiency" type="float" def="0.1" />
-        <param id="width" type="float" def="1.0" />
-        <param id="preDelay" type="float" def="0.31622776811741254" />
-        <param id="loShelfFreq" type="float" def="0.0" />
-        <param id="loShelfGain" type="float" def="0.75" />
-        <param id="hiShelfFreq" type="float" def="0.0" />
-        <param id="hiShelfGain" type="float" def="0.75" />
-        <param id="variation" type="float" def="0.564" />
-        <param id="hold" type="float" def="0.0" />
-        <param id="amount" type="float" def="0.0" />
-        <param id="attack" type="float" def="0.0" />
-        <param id="release" type="float" def="0.0" />
-        <param id="diffusion" type="float" def="0.5" />
-        <param id="balance" type="float" def="0.5" />
-        <param id="distance" type="float" def="0.5" />
-        <param id="rotate" type="float" def="0.0" />
-        <param id="export" type="float" def="1.0" />
-        <param id="bypass" type="float" def="0.0" />
-        <param id="send" type="float" def="0.0" />
+        <float id="mix" def="0.4" />
+        <float id="time" def="0.4345879896760937" />
+        <float id="lowFreq" def="0.0" />
+        <float id="lowAmount" def="0.6241963430045102" />
+        <float id="highFreq" def="0.6084750807294722" />
+        <float id="highAmount" def="-1.009870442698636e-08" />
+        <float id="size" def="0.0" />
+        <float id="efficiency" def="0.1" />
+        <float id="width" def="1.0" />
+        <float id="preDelay" def="0.31622776811741254" />
+        <float id="loShelfFreq" def="0.0" />
+        <float id="loShelfGain" def="0.75" />
+        <float id="hiShelfFreq" def="0.0" />
+        <float id="hiShelfGain" def="0.75" />
+        <float id="variation" def="0.564" />
+        <float id="hold" def="0.0" />
+        <float id="amount" def="0.0" />
+        <float id="attack" def="0.0" />
+        <float id="release" def="0.0" />
+        <float id="diffusion" def="0.5" />
+        <float id="balance" def="0.5" />
+        <float id="distance" def="0.5" />
+        <float id="rotate" def="0.0" />
+        <float id="export" def="1.0" />
+        <float id="bypass" def="0.0" />
+        <float id="send" def="0.0" />
       </params>
     </object>
     <object id="stereoenhancer">
       <visual name="StereoEnhancer" />
       <params>
-        <param id="width" type="float" def="100.0" />
-        <param id="delayon" type="float" def="0.0" />
-        <param id="delay" type="float" def="10.0" />
-        <param id="colouron" type="float" def="0.0" />
-        <param id="colour" type="float" def="10.0" />
-        <param id="monoout" type="float" def="0.0" />
-        <param id="bypass" type="float" def="0.0" />
-        <param id="widthVu" type="float" def="0.0" />
+        <float id="width" def="100.0" />
+        <float id="delayon" def="0.0" />
+        <float id="delay" def="10.0" />
+        <float id="colouron" def="0.0" />
+        <float id="colour" def="10.0" />
+        <float id="monoout" def="0.0" />
+        <float id="bypass" def="0.0" />
+        <float id="widthVu" def="0.0" />
       </params>
     </object>
     <object id="autopan">
       <visual name="AutoPan" />
       <params>
-        <param id="rate" type="float" def="1.0" />
-        <param id="temposync" type="float" def="0.0" />
-        <param id="syncnote" type="float" def="0.0" />
-        <param id="width" type="float" def="75.0" />
-        <param id="shape" type="float" def="1.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="rate" def="1.0" />
+        <float id="temposync" def="0.0" />
+        <float id="syncnote" def="0.0" />
+        <float id="width" def="75.0" />
+        <float id="shape" def="1.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="chorus">
       <visual name="Chorus" />
       <params>
-        <param id="mix" type="float" def="50.0" />
-        <param id="rate" type="float" def="0.1" />
-        <param id="temposync" type="float" def="0.0" />
-        <param id="syncnote" type="float" def="0.0" />
-        <param id="width" type="float" def="10.0" />
-        <param id="delay" type="float" def="20.0" />
-        <param id="shape" type="float" def="1.0" />
-        <param id="filterL" type="float" def="50.0" />
-        <param id="filterH" type="float" def="12000.0" />
-        <param id="spatial" type="float" def="75.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="mix" def="50.0" />
+        <float id="rate" def="0.1" />
+        <float id="temposync" def="0.0" />
+        <float id="syncnote" def="0.0" />
+        <float id="width" def="10.0" />
+        <float id="delay" def="20.0" />
+        <float id="shape" def="1.0" />
+        <float id="filterL" def="50.0" />
+        <float id="filterH" def="12000.0" />
+        <float id="spatial" def="75.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="flanger">
       <visual name="Flanger" />
       <params>
-        <param id="mix" type="float" def="50.0" />
-        <param id="rate" type="float" def="1.0" />
-        <param id="temposync" type="float" def="0.0" />
-        <param id="syncnote" type="float" def="0.0" />
-        <param id="rangeLo" type="float" def="50.0" />
-        <param id="rangeHi" type="float" def="50.0" />
-        <param id="delay" type="float" def="2.0" />
-        <param id="shape" type="float" def="1.0" />
-        <param id="loCut" type="float" def="50.0" />
-        <param id="hiCut" type="float" def="12000.0" />
-        <param id="feedback" type="float" def="50.0" />
-        <param id="modmode" type="float" def="0.0" />
-        <param id="modall" type="float" def="0.0" />
-        <param id="spatial" type="float" def="75.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="mix" def="50.0" />
+        <float id="rate" def="1.0" />
+        <float id="temposync" def="0.0" />
+        <float id="syncnote" def="0.0" />
+        <float id="rangeLo" def="50.0" />
+        <float id="rangeHi" def="50.0" />
+        <float id="delay" def="2.0" />
+        <float id="shape" def="1.0" />
+        <float id="loCut" def="50.0" />
+        <float id="hiCut" def="12000.0" />
+        <float id="feedback" def="50.0" />
+        <float id="modmode" def="0.0" />
+        <float id="modall" def="0.0" />
+        <float id="spatial" def="75.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="phaser">
       <visual name="Phaser" />
       <params>
-        <param id="mix" type="float" def="50.0" />
-        <param id="rate" type="float" def="1.0" />
-        <param id="temposync" type="float" def="0.0" />
-        <param id="syncnote" type="float" def="0.0" />
-        <param id="width" type="float" def="50.0" />
-        <param id="filterL" type="float" def="50.0" />
-        <param id="filterH" type="float" def="12000.0" />
-        <param id="feedback" type="float" def="50.0" />
-        <param id="modmode" type="float" def="0.0" />
-        <param id="modall" type="float" def="0.0" />
-        <param id="spatial" type="float" def="75.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="mix" def="50.0" />
+        <float id="rate" def="1.0" />
+        <float id="temposync" def="0.0" />
+        <float id="syncnote" def="0.0" />
+        <float id="width" def="50.0" />
+        <float id="filterL" def="50.0" />
+        <float id="filterH" def="12000.0" />
+        <float id="feedback" def="50.0" />
+        <float id="modmode" def="0.0" />
+        <float id="modall" def="0.0" />
+        <float id="spatial" def="75.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="rotary">
       <visual name="Rotary" />
       <params>
-        <param id="speed" type="float" def="0.5" />
-        <param id="speedmod" type="float" def="0.0" />
-        <param id="speedmodenable" type="float" def="1.0" />
-        <param id="output" type="float" def="0.5" />
-        <param id="mix" type="float" def="1.0" />
-        <param id="overdrive" type="float" def="0.15" />
-        <param id="xover" type="float" def="0.20535714285714285" />
-        <param id="angle" type="float" def="0.8888888888888888" />
-        <param id="distance" type="float" def="0.0" />
-        <param id="lowam" type="float" def="0.5" />
-        <param id="lowmix" type="float" def="0.5" />
-        <param id="higham" type="float" def="0.8" />
-        <param id="highfm" type="float" def="0.3968" />
-        <param id="phasing" type="float" def="0.7" />
-        <param id="highslow" type="float" def="0.07027777777777779" />
-        <param id="highrate" type="float" def="0.5083333333333333" />
-        <param id="highfast" type="float" def="0.6272222222222222" />
-        <param id="lowslow" type="float" def="0.059027777777777776" />
-        <param id="lowrate" type="float" def="0.5084722222222222" />
-        <param id="lowfast" type="float" def="0.5490277777777778" />
-        <param id="mode" type="float" def="0.0" />
-        <param id="bypass" type="float" def="0.0" />
-        <param id="midicontrol" type="float" def="0.0" />
+        <float id="speed" def="0.5" />
+        <float id="speedmod" def="0.0" />
+        <float id="speedmodenable" def="1.0" />
+        <float id="output" def="0.5" />
+        <float id="mix" def="1.0" />
+        <float id="overdrive" def="0.15" />
+        <float id="xover" def="0.20535714285714285" />
+        <float id="angle" def="0.8888888888888888" />
+        <float id="distance" def="0.0" />
+        <float id="lowam" def="0.5" />
+        <float id="lowmix" def="0.5" />
+        <float id="higham" def="0.8" />
+        <float id="highfm" def="0.3968" />
+        <float id="phasing" def="0.7" />
+        <float id="highslow" def="0.07027777777777779" />
+        <float id="highrate" def="0.5083333333333333" />
+        <float id="highfast" def="0.6272222222222222" />
+        <float id="lowslow" def="0.059027777777777776" />
+        <float id="lowrate" def="0.5084722222222222" />
+        <float id="lowfast" def="0.5490277777777778" />
+        <float id="mode" def="0.0" />
+        <float id="bypass" def="0.0" />
+        <float id="midicontrol" def="0.0" />
       </params>
     </object>
     <object id="tremolo">
       <visual name="Tremolo" />
       <params>
-        <param id="rate" type="float" def="8.0" />
-        <param id="temposync" type="float" def="0.0" />
-        <param id="syncnote" type="float" def="0.0" />
-        <param id="depth" type="float" def="75.0" />
-        <param id="spatial" type="float" def="75.0" />
-        <param id="output" type="float" def="0.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="rate" def="8.0" />
+        <float id="temposync" def="0.0" />
+        <float id="syncnote" def="0.0" />
+        <float id="depth" def="75.0" />
+        <float id="spatial" def="75.0" />
+        <float id="output" def="0.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
     <object id="vibrato">
       <visual name="Vibrato" />
       <params>
-        <param id="rate" type="float" def="1.0" />
-        <param id="temposync" type="float" def="0.0" />
-        <param id="syncnote" type="float" def="0.0" />
-        <param id="depth" type="float" def="75.0" />
-        <param id="spatial" type="float" def="75.0" />
-        <param id="bypass" type="float" def="0.0" />
+        <float id="rate" def="1.0" />
+        <float id="temposync" def="0.0" />
+        <float id="syncnote" def="0.0" />
+        <float id="depth" def="75.0" />
+        <float id="spatial" def="75.0" />
+        <float id="bypass" def="0.0" />
       </params>
     </object>
   </category>

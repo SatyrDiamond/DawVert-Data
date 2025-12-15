@@ -15,12 +15,12 @@
     <object id="TCE-1">
       <visual name="TCE-1 Compressor" color="#28829e" />
       <params>
-        <param id="RMS" name="RMS" type="float" def="1" />
-        <param id="Attack" name="Attack" type="float" def="0.0001" min="0.0001" />
-        <param id="Release" name="Release" type="float" def="0.01" />
-        <param id="Threshold" name="Threshold" type="float" def="-10.5" max="9" min="-30" />
-        <param id="Ratio" name="Ratio" type="float" def="0.5" />
-        <param id="OutputGain" name="OutputGain" type="float" def="4.25" max="24" />
+        <float id="RMS" def="1" />
+        <float id="Attack" def="0.0001" min="0.0001" />
+        <float id="Release" def="0.01" />
+        <float id="Threshold" def="-10.5" max="9" min="-30" />
+        <float id="Ratio" def="0.5" />
+        <float id="OutputGain" def="4.25" max="24" />
       </params>
     </object>
   </category>

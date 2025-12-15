@@ -2,197 +2,197 @@
   <category id="plugin">
     <object id="chorus">
       <visual name="Chorus" />
-      <params>
-        <param id="delay" name="Delay" type="float" />
-        <param id="depth" name="Depth" type="float" />
-        <param id="feedback" name="Feedback" type="float" />
-        <param id="frequency" name="Frequency" type="float" />
-        <param id="phase" name="Phase" type="float" />
-        <param id="waveshape" name="WaveShape" type="float" />
-        <param id="wetdrymix" name="WetDryMix" type="float" />
-      </params>
       <datadef>
         <struct name="main">
-          <part type="skip" size="4"/>
-          <part type="float" name="wetdrymix"/>
-          <part type="float" name="depth"/>
-          <part type="float" name="frequency"/>
-          <part type="float" name="waveshape"/>
-          <part type="float" name="phase"/>
-          <part type="float" name="feedback"/>
-          <part type="float" name="delay"/>
+          <part type="skip" size="4" />
+          <part type="float" name="wetdrymix" />
+          <part type="float" name="depth" />
+          <part type="float" name="frequency" />
+          <part type="float" name="waveshape" />
+          <part type="float" name="phase" />
+          <part type="float" name="feedback" />
+          <part type="float" name="delay" />
         </struct>
       </datadef>
+      <params>
+        <float id="delay" name="Delay" />
+        <float id="depth" name="Depth" />
+        <float id="feedback" name="Feedback" />
+        <float id="frequency" name="Frequency" />
+        <float id="phase" name="Phase" />
+        <float id="waveshape" name="WaveShape" />
+        <float id="wetdrymix" name="WetDryMix" />
+      </params>
     </object>
     <object id="compressor">
       <visual name="Compressor" />
-      <params>
-        <param id="attack" name="Attack" type="float" />
-        <param id="gain" name="Gain" type="float" />
-        <param id="predelay" name="Predelay" type="float" />
-        <param id="ratio" name="Ratio" type="float" />
-        <param id="release" name="Release" type="float" />
-        <param id="threshold" name="Threshold" type="float" />
-      </params>
       <datadef>
         <struct name="main">
-          <part type="skip" size="4"/>
-          <part type="float" name="gain"/>
-          <part type="float" name="attack"/>
-          <part type="float" name="release"/>
-          <part type="float" name="threshold"/>
-          <part type="float" name="ratio"/>
-          <part type="float" name="predelay"/>
+          <part type="skip" size="4" />
+          <part type="float" name="gain" />
+          <part type="float" name="attack" />
+          <part type="float" name="release" />
+          <part type="float" name="threshold" />
+          <part type="float" name="ratio" />
+          <part type="float" name="predelay" />
         </struct>
       </datadef>
+      <params>
+        <float id="attack" name="Attack" />
+        <float id="gain" name="Gain" />
+        <float id="predelay" name="Predelay" />
+        <float id="ratio" name="Ratio" />
+        <float id="release" name="Release" />
+        <float id="threshold" name="Threshold" />
+      </params>
     </object>
     <object id="distortion">
       <visual name="Distortion" />
-      <params>
-        <param id="edge" name="Edge" type="float" />
-        <param id="gain" name="Gain" type="float" />
-        <param id="posteqbandwidth" name="Post-EQ Bandwidth" type="float" />
-        <param id="posteqcenterfrequency" name="Post-EQ Center Frequency" type="float" />
-        <param id="prelowpasscutoff" name="Pre-Lowpass Cutoff" type="float" />
-      </params>
       <datadef>
         <struct name="main">
-          <part type="skip" size="4"/>
-          <part type="float" name="gain"/>
-          <part type="float" name="edge"/>
-          <part type="float" name="prelowpasscutoff"/>
-          <part type="float" name="posteqcenterfrequency"/>
-          <part type="float" name="posteqbandwidth"/>
+          <part type="skip" size="4" />
+          <part type="float" name="gain" />
+          <part type="float" name="edge" />
+          <part type="float" name="prelowpasscutoff" />
+          <part type="float" name="posteqcenterfrequency" />
+          <part type="float" name="posteqbandwidth" />
         </struct>
       </datadef>
+      <params>
+        <float id="edge" name="Edge" />
+        <float id="gain" name="Gain" />
+        <float id="posteqbandwidth" name="Post-EQ Bandwidth" />
+        <float id="posteqcenterfrequency" name="Post-EQ Center Frequency" />
+        <float id="prelowpasscutoff" name="Pre-Lowpass Cutoff" />
+      </params>
     </object>
     <object id="echo">
       <visual name="Echo" />
-      <params>
-        <param id="feedback" name="Feedback" type="float" />
-        <param id="leftdelay" name="Left Delay" type="float" />
-        <param id="pandelay" name="Pan Delay" type="float" />
-        <param id="rightdelay" name="Right Delay" type="float" />
-        <param id="wetdry" name="WetDryMix" type="float" />
-      </params>
       <datadef>
         <struct name="main">
-          <part type="skip" size="4"/>
-          <part type="float" name="wetdry"/>
-          <part type="float" name="feedback"/>
-          <part type="float" name="leftdelay"/>
-          <part type="float" name="rightdelay"/>
-          <part type="float" name="pandelay"/>
+          <part type="skip" size="4" />
+          <part type="float" name="wetdry" />
+          <part type="float" name="feedback" />
+          <part type="float" name="leftdelay" />
+          <part type="float" name="rightdelay" />
+          <part type="float" name="pandelay" />
         </struct>
       </datadef>
+      <params>
+        <float id="feedback" name="Feedback" />
+        <float id="leftdelay" name="Left Delay" />
+        <float id="pandelay" name="Pan Delay" />
+        <float id="rightdelay" name="Right Delay" />
+        <float id="wetdry" name="WetDryMix" />
+      </params>
     </object>
     <object id="flanger">
       <visual name="Flanger" />
-      <params>
-        <param id="delay" name="Delay" type="float" />
-        <param id="depth" name="Depth" type="float" />
-        <param id="feedback" name="Feedback" type="float" />
-        <param id="frequency" name="Frequency" type="float" />
-        <param id="phase" name="Phase" type="float" />
-        <param id="waveshape" name="WaveShape" type="float" />
-        <param id="wetdrymix" name="WetDryMix" type="float" />
-      </params>
       <datadef>
         <struct name="main">
-          <part type="skip" size="4"/>
-          <part type="float" name="wetdrymix"/>
-          <part type="float" name="waveshape"/>
-          <part type="float" name="frequency"/>
-          <part type="float" name="depth"/>
-          <part type="float" name="phase"/>
-          <part type="float" name="feedback"/>
-          <part type="float" name="delay"/>
+          <part type="skip" size="4" />
+          <part type="float" name="wetdrymix" />
+          <part type="float" name="waveshape" />
+          <part type="float" name="frequency" />
+          <part type="float" name="depth" />
+          <part type="float" name="phase" />
+          <part type="float" name="feedback" />
+          <part type="float" name="delay" />
         </struct>
       </datadef>
+      <params>
+        <float id="delay" name="Delay" />
+        <float id="depth" name="Depth" />
+        <float id="feedback" name="Feedback" />
+        <float id="frequency" name="Frequency" />
+        <float id="phase" name="Phase" />
+        <float id="waveshape" name="WaveShape" />
+        <float id="wetdrymix" name="WetDryMix" />
+      </params>
     </object>
     <object id="gargle">
       <visual name="Gargle" />
-      <params>
-        <param id="rate" name="Rate" type="float" />
-        <param id="waveshape" name="WaveShape" type="float" />
-      </params>
       <datadef>
         <struct name="main">
-          <part type="skip" size="4"/>
-          <part type="float" name="rate"/>
-          <part type="float" name="waveshape"/>
+          <part type="skip" size="4" />
+          <part type="float" name="rate" />
+          <part type="float" name="waveshape" />
         </struct>
       </datadef>
+      <params>
+        <float id="rate" name="Rate" />
+        <float id="waveshape" name="WaveShape" />
+      </params>
     </object>
     <object id="i3dl2reverb">
       <visual name="I3DL2Reverb" />
-      <params>
-        <param id="decayhfratio" name="DecayHFRatio" type="float" />
-        <param id="decaytime" name="DecayTime" type="float" />
-        <param id="density" name="Density" type="float" />
-        <param id="diffusion" name="Diffusion" type="float" />
-        <param id="hfreference" name="HFReference" type="float" />
-        <param id="quality" name="Quality" type="float" />
-        <param id="reflections" name="Reflections" type="float" />
-        <param id="reflectionsdelay" name="ReflectionsDelay" type="float" />
-        <param id="reverb" name="Reverb" type="float" />
-        <param id="reverbdelay" name="ReverbDelay" type="float" />
-        <param id="room" name="Room" type="float" />
-        <param id="roomhf" name="RoomHF" type="float" />
-        <param id="roomrollofffactor" name="RoomRolloffFactor" type="float" />
-      </params>
       <datadef>
         <struct name="main">
-          <part type="skip" size="4"/>
-          <part type="float" name="room"/>
-          <part type="float" name="roomhf"/>
-          <part type="float" name="roomrollofffactor"/>
-          <part type="float" name="decaytime"/>
-          <part type="float" name="decayhfratio"/>
-          <part type="float" name="reflections"/>
-          <part type="float" name="reflectionsdelay"/>
-          <part type="float" name="reverb"/>
-          <part type="float" name="reverbdelay"/>
-          <part type="float" name="diffusion"/>
-          <part type="float" name="density"/>
-          <part type="float" name="hfreference"/>
-          <part type="float" name="quality"/>
+          <part type="skip" size="4" />
+          <part type="float" name="room" />
+          <part type="float" name="roomhf" />
+          <part type="float" name="roomrollofffactor" />
+          <part type="float" name="decaytime" />
+          <part type="float" name="decayhfratio" />
+          <part type="float" name="reflections" />
+          <part type="float" name="reflectionsdelay" />
+          <part type="float" name="reverb" />
+          <part type="float" name="reverbdelay" />
+          <part type="float" name="diffusion" />
+          <part type="float" name="density" />
+          <part type="float" name="hfreference" />
+          <part type="float" name="quality" />
         </struct>
       </datadef>
+      <params>
+        <float id="decayhfratio" name="DecayHFRatio" />
+        <float id="decaytime" name="DecayTime" />
+        <float id="density" name="Density" />
+        <float id="diffusion" name="Diffusion" />
+        <float id="hfreference" name="HFReference" />
+        <float id="quality" name="Quality" />
+        <float id="reflections" name="Reflections" />
+        <float id="reflectionsdelay" name="ReflectionsDelay" />
+        <float id="reverb" name="Reverb" />
+        <float id="reverbdelay" name="ReverbDelay" />
+        <float id="room" name="Room" />
+        <float id="roomhf" name="RoomHF" />
+        <float id="roomrollofffactor" name="RoomRolloffFactor" />
+      </params>
     </object>
     <object id="parameq">
       <visual name="ParamEq" />
-      <params>
-        <param id="bandwidth" name="Bandwidth" type="float" />
-        <param id="center" name="Center" type="float" />
-        <param id="eqgain" name="Gain" type="float" />
-      </params>
       <datadef>
         <struct name="main">
-          <part type="skip" size="4"/>
-          <part type="float" name="center"/>
-          <part type="float" name="bandwidth"/>
-          <part type="float" name="eqgain"/>
+          <part type="skip" size="4" />
+          <part type="float" name="center" />
+          <part type="float" name="bandwidth" />
+          <part type="float" name="eqgain" />
         </struct>
       </datadef>
+      <params>
+        <float id="bandwidth" name="Bandwidth" />
+        <float id="center" name="Center" />
+        <float id="eqgain" name="Gain" />
+      </params>
     </object>
     <object id="wavesreverb">
       <visual name="WavesReverb" />
-      <params>
-        <param id="highfreqrtratio" name="HighFreqRTRatio" type="float" />
-        <param id="ingain" name="InGain" type="float" />
-        <param id="reverbmix" name="ReverbMix" type="float" />
-        <param id="reverbtime" name="ReverbTime" type="float" />
-      </params>
       <datadef>
         <struct name="main">
-          <part type="skip" size="4"/>
-          <part type="float" name="ingain"/>
-          <part type="float" name="reverbmix"/>
-          <part type="float" name="reverbtime"/>
-          <part type="float" name="highfreqrtratio"/>
+          <part type="skip" size="4" />
+          <part type="float" name="ingain" />
+          <part type="float" name="reverbmix" />
+          <part type="float" name="reverbtime" />
+          <part type="float" name="highfreqrtratio" />
         </struct>
       </datadef>
+      <params>
+        <float id="highfreqrtratio" name="HighFreqRTRatio" />
+        <float id="ingain" name="InGain" />
+        <float id="reverbmix" name="ReverbMix" />
+        <float id="reverbtime" name="ReverbTime" />
+      </params>
     </object>
   </category>
 </datapack>

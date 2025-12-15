@@ -3,38 +3,38 @@
     <object id="auto_wah">
       <visual name="Auto-Wah" color="#4fa8c7" />
       <params>
-        <param id="0" name="Cutoff" type="float" def="2.23" max="4" min="0.5" />
-        <param id="1" name="Speed" type="float" def="0.4" max="0.5" />
-        <param id="2" name="Depth" type="float" def="1" />
-        <param id="3" name="Reso" type="float" def="0.5" />
-        <param id="4" name="Wet" type="float" def="1" />
+        <float id="0" name="Cutoff" def="2.23" max="4" min="0.5" />
+        <float id="1" name="Speed" def="0.4" max="0.5" />
+        <float id="2" name="Depth" def="1" />
+        <float id="3" name="Reso" def="0.5" />
+        <float id="4" name="Wet" def="1" />
       </params>
     </object>
     <object id="autopan">
       <visual name="Auto-Pan" color="#eddbbc" />
       <params>
-        <param id="0" name="Depth" type="float" def="0.5" />
-        <param id="1" name="Rate" type="float" def="0.5" />
-        <param id="2" name="Smooth" type="float" def="1" />
+        <float id="0" name="Depth" def="0.5" />
+        <float id="1" name="Rate" def="0.5" />
+        <float id="2" name="Smooth" def="1" />
       </params>
     </object>
     <object id="bitcrush">
       <visual name="Bitcrush" color="#e2a8a8" />
       <params>
-        <param id="0" name="Depth" type="float" def="3.85" max="15.903" min="1.04854" />
-        <param id="1" name="Rate" type="float" def="0.1" max="0.5" min="0.01" />
-        <param id="2" name="Wet" type="float" def="1" />
-        <param id="3" name="Jitter" type="float" />
+        <float id="0" name="Depth" def="3.85" max="15.903" min="1.04854" />
+        <float id="1" name="Rate" def="0.1" max="0.5" min="0.01" />
+        <float id="2" name="Wet" def="1" />
+        <float id="3" name="Jitter" />
       </params>
     </object>
     <object id="cabsim">
       <visual name="Cab Sim" color="#4fc4a8" />
       <params>
-        <param id="0" name="Width" type="float" />
-        <param id="1" name="Height" type="float" />
-        <param id="2" name="Damp" type="float" def="1" min="0.252427" />
-        <param id="3" name="Tone" type="float" def="0.5" />
-        <param id="4" name="Wet" type="float" def="0.5" />
+        <float id="0" name="Width" />
+        <float id="1" name="Height" />
+        <float id="2" name="Damp" def="1" min="0.252427" />
+        <float id="3" name="Tone" def="0.5" />
+        <float id="4" name="Wet" def="0.5" />
       </params>
     </object>
     <object id="chorus">
@@ -43,141 +43,141 @@
       </drumset>
       <visual name="Chorus" color="#8793d6" />
       <params>
-        <param id="0" name="Rate" type="float" def="0.25" max="0.5" min="0.1" />
-        <param id="1" name="Depth" type="float" def="0.4" max="2" min="0.0208333" />
-        <param id="2" name="Delay" type="float" max="0.7" />
-        <param id="3" name="Wet" type="float" def="0.5" max="0.5" />
+        <float id="0" name="Rate" def="0.25" max="0.5" min="0.1" />
+        <float id="1" name="Depth" def="0.4" max="2" min="0.0208333" />
+        <float id="2" name="Delay" max="0.7" />
+        <float id="3" name="Wet" def="0.5" max="0.5" />
       </params>
     </object>
     <object id="comb">
       <visual name="Comb" color="#7f5ed6" />
       <params>
-        <param id="0" name="Wet" type="float" def="0.8" max="0.9" min="0.006819" />
-        <param id="1" name="Reso" type="float" def="10" max="50" min="2" />
-        <param id="2" name="Feedback" type="float" def="0.475" max="0.95" />
+        <float id="0" name="Wet" def="0.8" max="0.9" min="0.006819" />
+        <float id="1" name="Reso" def="10" max="50" min="2" />
+        <float id="2" name="Feedback" def="0.475" max="0.95" />
       </params>
     </object>
     <object id="compresser">
       <visual name="Compr." color="#bab5aa" />
       <params>
-        <param id="0" name="Thresh." type="float" def="0.1" />
-        <param id="1" name="Ratio" type="float" def="1" />
-        <param id="2" name="Attack" type="float" def="0.01" max="0.2" min="1e-05" />
-        <param id="3" name="Release" type="float" def="0.05" max="0.199356" min="0.001644" />
+        <float id="0" name="Thresh." def="0.1" />
+        <float id="1" name="Ratio" def="1" />
+        <float id="2" name="Attack" def="0.01" max="0.2" min="1e-05" />
+        <float id="3" name="Release" def="0.05" max="0.199356" min="0.001644" />
       </params>
     </object>
     <object id="delay">
       <visual name="Delay" color="#afcce8" />
       <params>
-        <param id="0" name="Delay" type="float" def="8" max="12" min="1" />
-        <param id="1" name="Feedback" type="float" def="0.48503" />
-        <param id="2" name="Wet" type="float" def="0.553892" />
+        <float id="0" name="Delay" def="8" max="12" min="1" />
+        <float id="1" name="Feedback" def="0.48503" />
+        <float id="2" name="Wet" def="0.553892" />
       </params>
     </object>
     <object id="distortion">
       <visual name="Distortion" color="#f4b238" />
       <params>
-        <param id="0" name="Pre" type="float" def="3.97814" max="4.98382" />
-        <param id="1" name="Amount" type="float" def="12.4155" max="20" min="1" />
-        <param id="2" name="Post" type="float" def="0.1" />
-        <param id="3" name="Program" type="float" max="3" />
+        <float id="0" name="Pre" def="3.97814" max="4.98382" />
+        <float id="1" name="Amount" def="12.4155" max="20" min="1" />
+        <float id="2" name="Post" def="0.1" />
+        <float id="3" name="Program" max="3" />
       </params>
     </object>
     <object id="filter">
       <visual name="Filter" color="#dddddd" />
       <params>
-        <param id="0" name="Freq" type="float" def="0.54" min="0.102913" />
-        <param id="1" name="Reso" type="float" max="12" min="-12" />
-        <param id="2" name="Gain" type="float" def="0.5" />
+        <float id="0" name="Freq" def="0.54" min="0.102913" />
+        <float id="1" name="Reso" max="12" min="-12" />
+        <float id="2" name="Gain" def="0.5" />
       </params>
     </object>
     <object id="flanger">
       <visual name="Flanger" color="#b26899" />
       <params>
-        <param id="0" name="Depth" type="float" def="0.25" max="0.95" min="0.1" />
-        <param id="1" name="Rate" type="float" def="0.4" max="2" min="0.0208333" />
-        <param id="2" name="Feedback" type="float" def="0.4" max="0.9" min="0.25" />
-        <param id="3" name="Wet" type="float" def="0.5" />
+        <float id="0" name="Depth" def="0.25" max="0.95" min="0.1" />
+        <float id="1" name="Rate" def="0.4" max="2" min="0.0208333" />
+        <float id="2" name="Feedback" def="0.4" max="0.9" min="0.25" />
+        <float id="3" name="Wet" def="0.5" />
       </params>
     </object>
     <object id="limiter">
       <visual name="Limiter" color="#a53838" />
       <params>
-        <param id="0" name="Pre" type="float" def="2" max="4" />
-        <param id="1" name="Post" type="float" def="0.5" max="1.99206" />
-        <param id="2" name="Attack" type="float" def="0.01" max="0.05" min="1e-05" />
-        <param id="3" name="Release" type="float" def="0.5" max="0.5" min="0.01" />
+        <float id="0" name="Pre" def="2" max="4" />
+        <float id="1" name="Post" def="0.5" max="1.99206" />
+        <float id="2" name="Attack" def="0.01" max="0.05" min="1e-05" />
+        <float id="3" name="Release" def="0.5" max="0.5" min="0.01" />
       </params>
     </object>
     <object id="octaver">
       <visual name="Octaver" color="#99594f" />
       <params>
-        <param id="0" name="-1 Gain" type="float" def="1" max="2" />
-        <param id="1" name="-1 Tone" type="float" def="0.2" min="0.2" />
-        <param id="2" name="+1 Gain" type="float" def="1" max="2" min="0.0453076" />
-        <param id="3" name="+1 Tone" type="float" def="0.3" min="0.3" />
-        <param id="4" name="Dry" type="float" def="1" min="0.0097037" />
+        <float id="0" name="-1 Gain" def="1" max="2" />
+        <float id="1" name="-1 Tone" def="0.2" min="0.2" />
+        <float id="2" name="+1 Gain" def="1" max="2" min="0.0453076" />
+        <float id="3" name="+1 Tone" def="0.3" min="0.3" />
+        <float id="4" name="Dry" def="1" min="0.0097037" />
       </params>
     </object>
     <object id="parameq">
       <visual name="Param. EQ" color="#a58470" />
       <params>
-        <param id="0" name="Freq" type="float" def="0.54" min="0.08" />
-        <param id="1" name="Gain" type="float" max="12" min="-12" />
-        <param id="2" name="Bandwidth" type="float" def="-2.0192" max="-0.5744" min="-3.464" />
+        <float id="0" name="Freq" def="0.54" min="0.08" />
+        <float id="1" name="Gain" max="12" min="-12" />
+        <float id="2" name="Bandwidth" def="-2.0192" max="-0.5744" min="-3.464" />
       </params>
     </object>
     <object id="phaser">
       <visual name="Phaser" color="#7ac170" />
       <params>
-        <param id="0" name="Depth" type="float" def="0.8" max="0.9" min="0.001" />
-        <param id="1" name="Rate" type="float" def="10" max="50" min="2" />
-        <param id="2" name="Feedback" type="float" def="0.475" max="0.95" />
-        <param id="3" name="Low" type="float" def="0.0099773" max="0.5" min="0.002" />
-        <param id="4" name="High" type="float" def="0.090703" max="0.5" min="0.002" />
+        <float id="0" name="Depth" def="0.8" max="0.9" min="0.001" />
+        <float id="1" name="Rate" def="10" max="50" min="2" />
+        <float id="2" name="Feedback" def="0.475" max="0.95" />
+        <float id="3" name="Low" def="0.0099773" max="0.5" min="0.002" />
+        <float id="4" name="High" def="0.090703" max="0.5" min="0.002" />
       </params>
     </object>
     <object id="reverb">
       <visual name="Reverb" color="#f2f4bf" />
       <params>
-        <param id="0" name="Room" type="float" def="0.85" max="0.925" />
-        <param id="1" name="Damp" type="float" def="0.25" max="0.8" />
-        <param id="2" name="Delay" type="float" def="0.04625" max="0.0925" />
-        <param id="3" name="Width" type="float" def="1" />
-        <param id="4" name="Wet" type="float" def="0.195" />
+        <float id="0" name="Room" def="0.85" max="0.925" />
+        <float id="1" name="Damp" def="0.25" max="0.8" />
+        <float id="2" name="Delay" def="0.04625" max="0.0925" />
+        <float id="3" name="Width" def="1" />
+        <float id="4" name="Wet" def="0.195" />
       </params>
     </object>
     <object id="staticflanger">
       <visual name="S. Flanger" color="#5454ff" />
       <params>
-        <param id="0" name="Delay" type="float" max="0.95" min="-0.95" />
-        <param id="2" name="Feedback" type="float" def="0.575" max="0.9" min="0.25" />
-        <param id="3" name="Wet" type="float" def="0.5" />
+        <float id="0" name="Delay" max="0.95" min="-0.95" />
+        <float id="2" name="Feedback" def="0.575" max="0.9" min="0.25" />
+        <float id="3" name="Wet" def="0.5" />
       </params>
     </object>
     <object id="tremolo">
       <visual name="Tremolo" color="#b7f2f2" />
       <params>
-        <param id="0" name="Depth" type="float" def="0.5" />
-        <param id="1" name="Rate" type="float" def="0.5" />
-        <param id="2" name="Smooth" type="float" def="1" />
+        <float id="0" name="Depth" def="0.5" />
+        <float id="1" name="Rate" def="0.5" />
+        <float id="2" name="Smooth" def="1" />
       </params>
     </object>
     <object id="vibrato">
       <visual name="Vibrato" color="#d69ed8" />
       <params>
-        <param id="0" name="Depth" type="float" def="0.125" max="0.5" />
-        <param id="1" name="Rate" type="float" def="1.76" max="3.5" min="0.02" />
+        <float id="0" name="Depth" def="0.125" max="0.5" />
+        <float id="1" name="Rate" def="1.76" max="3.5" min="0.02" />
       </params>
     </object>
     <object id="vinylsim">
       <visual name="Vinyl Sim" color="#5b5b5b" />
       <params>
-        <param id="0" name="Dust" type="float" def="0.620659" />
-        <param id="1" name="Scratch" type="float" def="0.25" />
-        <param id="2" name="Noise" type="float" def="0.335331" />
-        <param id="3" name="Age" type="float" def="0.478452" />
-        <param id="4" name="Wet" type="float" def="1" max="2" />
+        <float id="0" name="Dust" def="0.620659" />
+        <float id="1" name="Scratch" def="0.25" />
+        <float id="2" name="Noise" def="0.335331" />
+        <float id="3" name="Age" def="0.478452" />
+        <float id="4" name="Wet" def="1" max="2" />
       </params>
     </object>
   </category>
@@ -185,13 +185,13 @@
     <object id="8SYN">
       <visual name="8BitSynth" color="#d1c6a0" />
       <params>
-        <param id="0" name="0" type="float" max="0" />
-        <param id="1" name="Octave" type="int" max="4" min="-4" />
-        <param id="2" name="Semis" type="int" max="12" min="-12" />
-        <param id="3" name="Cents" type="float" max="100" min="-100" />
-        <param id="4" name="Volume" type="float" def="1" max="1.98411" />
-        <param id="6" name="A&gt;B" type="float" />
-        <param id="7" name="Prog" type="bool" />
+        <float id="0" max="0" />
+        <int id="1" name="Octave" max="4" min="-4" />
+        <int id="2" name="Semis" max="12" min="-12" />
+        <float id="3" name="Cents" max="100" min="-100" />
+        <float id="4" name="Volume" def="1" max="1.98411" />
+        <float id="6" name="A&gt;B" />
+        <bool id="7" name="Prog" />
       </params>
     </object>
     <object id="BBOX">
@@ -200,118 +200,118 @@
     <object id="BLNE">
       <visual name="BassLine" color="#fcfcfc" />
       <params>
-        <param id="0" name="Waveform" type="int" max="2" />
-        <param id="1" name="Tune" type="float" max="12" min="-12" />
-        <param id="10" name="LFO Rate" type="int" def="1" max="12" />
-        <param id="11" name="LFO Depth" type="float" />
-        <param id="12" name="LFO Phase" type="float" />
-        <param id="13" name="Dist. Program" type="int" max="4" />
-        <param id="14" name="Dist. Pre" type="float" def="4.05" max="5" />
-        <param id="15" name="Dist. Amount" type="float" def="16.3" max="20" min="1" />
-        <param id="16" name="Dist. Post" type="float" def="0.1" />
-        <param id="17" name="17" type="float" max="0" />
-        <param id="2" name="Cutoff" type="float" def="0.405" max="0.8" min="0.01" />
-        <param id="3" name="Reso" type="float" def="0.99" max="0.99" min="0.01" />
-        <param id="4" name="Env.Mod" type="float" def="0.99" max="0.99" min="0.01" />
-        <param id="5" name="Decay" type="float" max="0.99" />
-        <param id="6" name="Accent" type="float" def="0.5" max="0.996028" />
-        <param id="7" name="Volume" type="float" def="1" max="2" />
-        <param id="8" name="Pulse Width" type="float" max="0" min="-0.45" />
-        <param id="9" name="LFO Target" type="int" max="3" />
+        <int id="0" name="Waveform" max="2" />
+        <float id="1" name="Tune" max="12" min="-12" />
+        <int id="10" name="LFO Rate" def="1" max="12" />
+        <float id="11" name="LFO Depth" />
+        <float id="12" name="LFO Phase" />
+        <int id="13" name="Dist. Program" max="4" />
+        <float id="14" name="Dist. Pre" def="4.05" max="5" />
+        <float id="15" name="Dist. Amount" def="16.3" max="20" min="1" />
+        <float id="16" name="Dist. Post" def="0.1" />
+        <float id="17" max="0" />
+        <float id="2" name="Cutoff" def="0.405" max="0.8" min="0.01" />
+        <float id="3" name="Reso" def="0.99" max="0.99" min="0.01" />
+        <float id="4" name="Env.Mod" def="0.99" max="0.99" min="0.01" />
+        <float id="5" name="Decay" max="0.99" />
+        <float id="6" name="Accent" def="0.5" max="0.996028" />
+        <float id="7" name="Volume" def="1" max="2" />
+        <float id="8" name="Pulse Width" max="0" min="-0.45" />
+        <int id="9" name="LFO Target" max="3" />
       </params>
     </object>
     <object id="FMSN">
       <visual name="FMSynth" color="#49c6c1" />
       <params>
-        <param id="0" name="0" type="float" max="0" />
-        <param id="1" name="Feedback" type="float" max="0.249007" />
-        <param id="10" name="Depth" type="float" />
-        <param id="11" name="Op1 Level" type="float" def="0.5" />
-        <param id="12" name="Op1 Vel" type="bool" />
-        <param id="13" name="Op1 Fixed" type="bool" />
-        <param id="14" name="Op1 Octave" type="int" max="4" min="-4" />
-        <param id="15" name="Op1 Semi" type="int" max="6" min="-6" />
-        <param id="16" name="Op1 Attack Exp" type="bool" />
-        <param id="17" name="Op1 Attack" type="float" max="1.74305" />
-        <param id="18" name="Op1 Decay Exp" type="bool" />
-        <param id="19" name="Op1 Decay" type="float" max="1.74305" />
-        <param id="2" name="Feedback Vel" type="bool" />
-        <param id="20" name="Op1 AttRel Link" type="bool" />
-        <param id="21" name="Op1 Sustain" type="float" def="1" />
-        <param id="22" name="Op1 Release Exp" type="bool" />
-        <param id="23" name="Op1 Release" type="float" max="1.74305" />
-        <param id="24" name="Op2 Level" type="float" def="0.5" max="0.992053" />
-        <param id="25" name="Op2 Vel" type="bool" />
-        <param id="26" name="Op2 Fixed" type="bool" />
-        <param id="27" name="Op2 Octave" type="int" max="4" min="-4" />
-        <param id="28" name="Op2 Semi" type="int" max="6" min="-6" />
-        <param id="29" name="Op2 Attack Exp" type="bool" />
-        <param id="3" name="Volume" type="float" def="0.5" />
-        <param id="30" name="Op2 Attack" type="float" max="1.75" />
-        <param id="31" name="Op2 Decay Exp" type="bool" />
-        <param id="32" name="Op2 Decay" type="float" max="1.75" />
-        <param id="33" name="Op2 AttRel Link" type="bool" />
-        <param id="34" name="Op2 Sustain" type="float" def="1" />
-        <param id="35" name="Op2 Release Exp" type="bool" />
-        <param id="36" name="Op2 Release" type="float" max="1.75" />
-        <param id="37" name="Op3 Level" type="float" def="0.5" max="0.996027" />
-        <param id="38" name="Op3 Vel" type="bool" />
-        <param id="39" name="Op3 Fixed" type="bool" />
-        <param id="4" name="Volume Vel" type="bool" />
-        <param id="40" name="Op3 Octave" type="int" max="4" min="-4" />
-        <param id="41" name="Op3 Semi" type="int" max="6" min="-6" />
-        <param id="42" name="Op3 Attack Exp" type="bool" />
-        <param id="43" name="Op3 Attack" type="float" max="1.75" />
-        <param id="44" name="Op3 Decay Exp" type="bool" />
-        <param id="45" name="Op3 Decay" type="float" max="1.75" />
-        <param id="46" name="Op3 AttRel Link" type="bool" />
-        <param id="47" name="Op3 Sustain" type="float" def="1" />
-        <param id="48" name="Op3 Release Exp" type="bool" />
-        <param id="49" name="Op3 Release" type="float" max="1.75" />
-        <param id="5" name="A1" type="bool" />
-        <param id="6" name="A2" type="bool" />
-        <param id="60" name="F1" type="bool" />
-        <param id="61" name="F2" type="bool" />
-        <param id="62" name="F3" type="bool" />
-        <param id="7" name="A3" type="bool" />
-        <param id="8" name="A0" type="bool" />
-        <param id="9" name="Rate" type="float" def="1" max="12" />
+        <float id="0" max="0" />
+        <float id="1" name="Feedback" max="0.249007" />
+        <float id="10" name="Depth" />
+        <float id="11" name="Op1 Level" def="0.5" />
+        <bool id="12" name="Op1 Vel" />
+        <bool id="13" name="Op1 Fixed" />
+        <int id="14" name="Op1 Octave" max="4" min="-4" />
+        <int id="15" name="Op1 Semi" max="6" min="-6" />
+        <bool id="16" name="Op1 Attack Exp" />
+        <float id="17" name="Op1 Attack" max="1.74305" />
+        <bool id="18" name="Op1 Decay Exp" />
+        <float id="19" name="Op1 Decay" max="1.74305" />
+        <bool id="2" name="Feedback Vel" />
+        <bool id="20" name="Op1 AttRel Link" />
+        <float id="21" name="Op1 Sustain" def="1" />
+        <bool id="22" name="Op1 Release Exp" />
+        <float id="23" name="Op1 Release" max="1.74305" />
+        <float id="24" name="Op2 Level" def="0.5" max="0.992053" />
+        <bool id="25" name="Op2 Vel" />
+        <bool id="26" name="Op2 Fixed" />
+        <int id="27" name="Op2 Octave" max="4" min="-4" />
+        <int id="28" name="Op2 Semi" max="6" min="-6" />
+        <bool id="29" name="Op2 Attack Exp" />
+        <float id="3" name="Volume" def="0.5" />
+        <float id="30" name="Op2 Attack" max="1.75" />
+        <bool id="31" name="Op2 Decay Exp" />
+        <float id="32" name="Op2 Decay" max="1.75" />
+        <bool id="33" name="Op2 AttRel Link" />
+        <float id="34" name="Op2 Sustain" def="1" />
+        <bool id="35" name="Op2 Release Exp" />
+        <float id="36" name="Op2 Release" max="1.75" />
+        <float id="37" name="Op3 Level" def="0.5" max="0.996027" />
+        <bool id="38" name="Op3 Vel" />
+        <bool id="39" name="Op3 Fixed" />
+        <bool id="4" name="Volume Vel" />
+        <int id="40" name="Op3 Octave" max="4" min="-4" />
+        <int id="41" name="Op3 Semi" max="6" min="-6" />
+        <bool id="42" name="Op3 Attack Exp" />
+        <float id="43" name="Op3 Attack" max="1.75" />
+        <bool id="44" name="Op3 Decay Exp" />
+        <float id="45" name="Op3 Decay" max="1.75" />
+        <bool id="46" name="Op3 AttRel Link" />
+        <float id="47" name="Op3 Sustain" def="1" />
+        <bool id="48" name="Op3 Release Exp" />
+        <float id="49" name="Op3 Release" max="1.75" />
+        <bool id="5" name="A1" />
+        <bool id="6" name="A2" />
+        <bool id="60" name="F1" />
+        <bool id="61" name="F2" />
+        <bool id="62" name="F3" />
+        <bool id="7" name="A3" />
+        <bool id="8" name="A0" />
+        <float id="9" name="Rate" def="1" max="12" />
       </params>
     </object>
     <object id="KSSN">
       <visual name="KSSynth" color="#8c9170" />
       <params>
-        <param id="0" name="0" type="float" max="0" />
-        <param id="1" name="Pre-Filter" type="float" def="0.62" max="0.99" min="0.25" />
-        <param id="10" name="Unit 1 Semis" type="int" max="6" min="-6" />
-        <param id="11" name="Unit 1 Cents" type="float" max="48.411" min="-50" />
-        <param id="12" name="Unit 1 Damping" type="float" def="0.45" max="0.9" min="0.001" />
-        <param id="13" name="Unit 1 Damping Track" type="float" def="0.5" max="0.996027" />
-        <param id="14" name="Unit 1 Damping Vel" type="float" def="0.5" max="0.992053" />
-        <param id="15" name="Unit 1 Inv" type="bool" />
-        <param id="2" name="Pre-Filter Track" type="float" def="0.5" max="0.99" min="0.0001" />
-        <param id="20" name="Unit 2 KB Follow" type="bool" />
-        <param id="21" name="Unit 2 Octave" type="int" max="2" min="-2" />
-        <param id="22" name="Unit 2 Semis" type="int" max="6" min="-6" />
-        <param id="23" name="Unit 2 Cents" type="float" max="50" min="-50" />
-        <param id="24" name="Unit 2 Damping" type="float" def="0.45" max="0.9" min="0.001" />
-        <param id="25" name="Unit 2 Damping Track" type="float" def="0.5" max="0.988079" />
-        <param id="26" name="Unit 2 Damping Vel" type="float" def="0.5" max="0.996027" />
-        <param id="27" name="Unit 2 Inv" type="bool" />
-        <param id="3" name="Pre-Filter Vel" type="float" def="0.5" max="0.99" min="0.0001" />
-        <param id="4" name="Decay" type="float" def="1" max="2" />
-        <param id="5" name="Volume" type="float" def="1" max="2" />
-        <param id="6" name="Mix" type="float" def="0.5" />
-        <param id="7" name="Inv" type="bool" def="1" />
-        <param id="8" name="Unit 1 KB Follow" type="bool" />
-        <param id="9" name="Unit 1 Octave" type="int" max="2" min="-2" />
+        <float id="0" max="0" />
+        <float id="1" name="Pre-Filter" def="0.62" max="0.99" min="0.25" />
+        <int id="10" name="Unit 1 Semis" max="6" min="-6" />
+        <float id="11" name="Unit 1 Cents" max="48.411" min="-50" />
+        <float id="12" name="Unit 1 Damping" def="0.45" max="0.9" min="0.001" />
+        <float id="13" name="Unit 1 Damping Track" def="0.5" max="0.996027" />
+        <float id="14" name="Unit 1 Damping Vel" def="0.5" max="0.992053" />
+        <bool id="15" name="Unit 1 Inv" />
+        <float id="2" name="Pre-Filter Track" def="0.5" max="0.99" min="0.0001" />
+        <bool id="20" name="Unit 2 KB Follow" />
+        <int id="21" name="Unit 2 Octave" max="2" min="-2" />
+        <int id="22" name="Unit 2 Semis" max="6" min="-6" />
+        <float id="23" name="Unit 2 Cents" max="50" min="-50" />
+        <float id="24" name="Unit 2 Damping" def="0.45" max="0.9" min="0.001" />
+        <float id="25" name="Unit 2 Damping Track" def="0.5" max="0.988079" />
+        <float id="26" name="Unit 2 Damping Vel" def="0.5" max="0.996027" />
+        <bool id="27" name="Unit 2 Inv" />
+        <float id="3" name="Pre-Filter Vel" def="0.5" max="0.99" min="0.0001" />
+        <float id="4" name="Decay" def="1" max="2" />
+        <float id="5" name="Volume" def="1" max="2" />
+        <float id="6" name="Mix" def="0.5" />
+        <bool id="7" name="Inv" def="1" />
+        <bool id="8" name="Unit 1 KB Follow" />
+        <int id="9" name="Unit 1 Octave" max="2" min="-2" />
       </params>
     </object>
     <object id="MDLR">
       <visual name="Modular" color="#727272" />
       <params>
-        <param id="0" name="0" type="float" max="0" />
-        <param id="1" name="Volume" type="float" def="1" max="2" />
+        <float id="0" max="0" />
+        <float id="1" name="Volume" def="1" max="2" />
       </params>
     </object>
     <object id="NULL">
@@ -320,49 +320,49 @@
     <object id="ORGN">
       <visual name="Organ" color="#ad4c07" />
       <params>
-        <param id="0" name="0" type="float" max="0" />
-        <param id="1" name="Perc Tone" type="float" def="0.142029" />
-        <param id="2" name="Perc Decay" type="float" max="0.5" />
-        <param id="24" name="Drawbar 1" type="float" def="1" />
-        <param id="25" name="Drawbar 2" type="float" />
-        <param id="26" name="Drawbar 3" type="float" />
-        <param id="27" name="Drawbar 4" type="float" />
-        <param id="28" name="Drawbar 5" type="float" />
-        <param id="29" name="Drawbar 6" type="float" />
-        <param id="3" name="Leslie Speed" type="float" max="0.7" />
-        <param id="30" name="Drawbar 7" type="float" />
-        <param id="31" name="Drawbar 8" type="float" />
-        <param id="32" name="Drawbar 9" type="float" />
-        <param id="4" name="Leslie Depth" type="float" def="1" max="0.992053" />
-        <param id="5" name="Amp Drive" type="float" def="0.382585" max="0.4" />
-        <param id="6" name="Amp Volume" type="float" def="1.08284" max="2" />
+        <float id="0" max="0" />
+        <float id="1" name="Perc Tone" def="0.142029" />
+        <float id="2" name="Perc Decay" max="0.5" />
+        <float id="24" name="Drawbar 1" def="1" />
+        <float id="25" name="Drawbar 2" />
+        <float id="26" name="Drawbar 3" />
+        <float id="27" name="Drawbar 4" />
+        <float id="28" name="Drawbar 5" />
+        <float id="29" name="Drawbar 6" />
+        <float id="3" name="Leslie Speed" max="0.7" />
+        <float id="30" name="Drawbar 7" />
+        <float id="31" name="Drawbar 8" />
+        <float id="32" name="Drawbar 9" />
+        <float id="4" name="Leslie Depth" def="1" max="0.992053" />
+        <float id="5" name="Amp Drive" def="0.382585" max="0.4" />
+        <float id="6" name="Amp Volume" def="1.08284" max="2" />
       </params>
     </object>
     <object id="PADS">
       <visual name="PadSynth" color="#fcfcaf" />
       <params>
-        <param id="0" name="0" type="float" max="0" />
-        <param id="1" name="Volume" type="float" def="1" max="2" />
-        <param id="10" name="Morph Blend" type="float" />
-        <param id="11" name="Morph Env" type="bool" />
-        <param id="12" name="Morph Attack" type="float" max="3" />
-        <param id="13" name="Morph Decay" type="float" max="3" />
-        <param id="14" name="Morph Sustain" type="float" def="1" />
-        <param id="15" name="Morph Release" type="float" max="3" />
-        <param id="16" name="Gain 1" type="float" def="1" />
-        <param id="17" name="Gain 2" type="float" def="1" />
-        <param id="18" name="Gain Attack" type="float" max="3" />
-        <param id="19" name="Gain Decay" type="float" max="3" />
-        <param id="2" name="LFO 1 Target" type="int" max="3" />
-        <param id="20" name="Gain Sustain" type="float" def="1" />
-        <param id="21" name="Gain Release" type="float" max="3" />
-        <param id="3" name="LFO 1 Rate" type="int" def="6" max="12" />
-        <param id="4" name="LFO 1 Depth" type="float" />
-        <param id="5" name="LFO 1 Phase" type="float" max="0.5" min="-0.5" />
-        <param id="6" name="LFO 2 Target" type="int" max="3" />
-        <param id="7" name="LFO 2 Rate" type="int" def="6" max="12" />
-        <param id="8" name="LFO 2 Depth" type="float" max="0.984111" />
-        <param id="9" name="LFO 2 Phase" type="float" max="0.5" min="-0.5" />
+        <float id="0" max="0" />
+        <float id="1" name="Volume" def="1" max="2" />
+        <float id="10" name="Morph Blend" />
+        <bool id="11" name="Morph Env" />
+        <float id="12" name="Morph Attack" max="3" />
+        <float id="13" name="Morph Decay" max="3" />
+        <float id="14" name="Morph Sustain" def="1" />
+        <float id="15" name="Morph Release" max="3" />
+        <float id="16" name="Gain 1" def="1" />
+        <float id="17" name="Gain 2" def="1" />
+        <float id="18" name="Gain Attack" max="3" />
+        <float id="19" name="Gain Decay" max="3" />
+        <int id="2" name="LFO 1 Target" max="3" />
+        <float id="20" name="Gain Sustain" def="1" />
+        <float id="21" name="Gain Release" max="3" />
+        <int id="3" name="LFO 1 Rate" def="6" max="12" />
+        <float id="4" name="LFO 1 Depth" />
+        <float id="5" name="LFO 1 Phase" max="0.5" min="-0.5" />
+        <int id="6" name="LFO 2 Target" max="3" />
+        <int id="7" name="LFO 2 Rate" def="6" max="12" />
+        <float id="8" name="LFO 2 Depth" max="0.984111" />
+        <float id="9" name="LFO 2 Phase" max="0.5" min="-0.5" />
       </params>
     </object>
     <object id="PCMS">
@@ -371,92 +371,92 @@
     <object id="SAWS">
       <visual name="SawSynth" color="#fc993f" />
       <params>
-        <param id="0" name="0" type="float" max="0" />
-        <param id="1" name="Wave" type="int" max="2" />
-        <param id="10" name="Filter Attack" type="float" max="1.75" />
-        <param id="11" name="Filter Decay" type="float" max="1.75" />
-        <param id="12" name="Filter Sustain" type="float" def="1" />
-        <param id="13" name="Filter Release" type="float" def="1.75" max="1.75" />
-        <param id="14" name="Amp Attack" type="float" max="1.75" />
-        <param id="15" name="Amp Deacy" type="float" def="0.65" max="1.75" />
-        <param id="16" name="Amp Sustain" type="float" def="0.25" />
-        <param id="17" name="Amp Release" type="float" def="0.65" max="1.75" />
-        <param id="18" name="LFO Target" type="int" max="5" />
-        <param id="2" name="Stereo Width" type="float" def="0.19" max="0.996025" />
-        <param id="21" name="LFO Depth" type="float" />
-        <param id="22" name="LFO Rate" type="int" def="6" max="12" />
-        <param id="23" name="Pitch Env Amount" type="float" min="-1" />
-        <param id="24" name="Pitch Env Time" type="float" max="1.414" />
-        <param id="3" name="Detune" type="float" def="0.65" />
-        <param id="31" name="Volume" type="float" def="0.5" />
-        <param id="4" name="Mix" type="float" def="1" />
-        <param id="5" name="Cutoff" type="float" def="1" />
-        <param id="6" name="Res" type="float" max="0.9" />
-        <param id="7" name="Filter Type" type="int" max="3" />
-        <param id="8" name="Filter KB Track" type="float" />
-        <param id="9" name="Filter Env Amount" type="float" def="1" min="-1" />
+        <float id="0" max="0" />
+        <int id="1" name="Wave" max="2" />
+        <float id="10" name="Filter Attack" max="1.75" />
+        <float id="11" name="Filter Decay" max="1.75" />
+        <float id="12" name="Filter Sustain" def="1" />
+        <float id="13" name="Filter Release" def="1.75" max="1.75" />
+        <float id="14" name="Amp Attack" max="1.75" />
+        <float id="15" name="Amp Deacy" def="0.65" max="1.75" />
+        <float id="16" name="Amp Sustain" def="0.25" />
+        <float id="17" name="Amp Release" def="0.65" max="1.75" />
+        <int id="18" name="LFO Target" max="5" />
+        <float id="2" name="Stereo Width" def="0.19" max="0.996025" />
+        <float id="21" name="LFO Depth" />
+        <int id="22" name="LFO Rate" def="6" max="12" />
+        <float id="23" name="Pitch Env Amount" min="-1" />
+        <float id="24" name="Pitch Env Time" max="1.414" />
+        <float id="3" name="Detune" def="0.65" />
+        <float id="31" name="Volume" def="0.5" />
+        <float id="4" name="Mix" def="1" />
+        <float id="5" name="Cutoff" def="1" />
+        <float id="6" name="Res" max="0.9" />
+        <int id="7" name="Filter Type" max="3" />
+        <float id="8" name="Filter KB Track" />
+        <float id="9" name="Filter Env Amount" def="1" min="-1" />
       </params>
     </object>
     <object id="SSYN">
       <visual name="SubSynth" color="#c9d1e8" />
       <params>
-        <param id="0" name="0" type="float" max="0" />
-        <param id="1" name="Osc 1 Shape" type="int" max="8" />
-        <param id="10" name="LFO 1 Shape" type="int" max="2" />
-        <param id="11" name="LFO 1 Target" type="int" max="9" />
-        <param id="12" name="LFO 1 Rate" type="int" max="12" />
-        <param id="13" name="LFO 1 Depth" type="float" />
-        <param id="14" name="LFO 2 Target" type="int" max="9" />
-        <param id="15" name="LFO 2 Rate" type="int" max="12" />
-        <param id="16" name="LFO 2 Depth" type="float" />
-        <param id="17" name="Filter Cutoff" type="float" def="0.217691" min="0.001" />
-        <param id="18" name="Filter Res" type="float" def="0.9" max="0.9" />
-        <param id="19" name="Filter Type" type="float" def="2" max="6" />
-        <param id="2" name="Osc 1 Mix" type="float" def="0.543478" />
-        <param id="20" name="Filter Track" type="float" />
-        <param id="21" name="Filter Attack" type="float" max="1.75" />
-        <param id="22" name="Filter Decay" type="float" def="0.585869" max="1.75" />
-        <param id="23" name="Filter Sustain" type="float" def="1" />
-        <param id="24" name="Filter Release" type="float" max="1.75" />
-        <param id="25" name="Volume Attack" type="float" max="1.75" />
-        <param id="26" name="Volume Decay" type="float" def="1.75" max="1.75" />
-        <param id="27" name="Volume Sustain" type="float" def="1" />
-        <param id="28" name="Volume Release" type="float" max="1.75" />
-        <param id="29" name="Volume" type="float" max="2" />
-        <param id="3" name="Osc 1 Bend" type="float" max="0.99" min="-0.99" />
-        <param id="31" name="Osc 1 Mod" type="float" />
-        <param id="4" name="Osc 2 Shape" type="int" max="9" />
-        <param id="5" name="Osc 2 Phase" type="float" def="-0.004348" max="0.5" min="-0.5" />
-        <param id="6" name="Osc 2 Octave" type="int" max="4" min="-4" />
-        <param id="7" name="Osc 2 Semis" type="int" max="12" min="-12" />
-        <param id="8" name="Osc 2 Mod" type="float" def="4.34788" max="50" min="-50" />
+        <float id="0" max="0" />
+        <int id="1" name="Osc 1 Shape" max="8" />
+        <int id="10" name="LFO 1 Shape" max="2" />
+        <int id="11" name="LFO 1 Target" max="9" />
+        <int id="12" name="LFO 1 Rate" max="12" />
+        <float id="13" name="LFO 1 Depth" />
+        <int id="14" name="LFO 2 Target" max="9" />
+        <int id="15" name="LFO 2 Rate" max="12" />
+        <float id="16" name="LFO 2 Depth" />
+        <float id="17" name="Filter Cutoff" def="0.217691" min="0.001" />
+        <float id="18" name="Filter Res" def="0.9" max="0.9" />
+        <float id="19" name="Filter Type" def="2" max="6" />
+        <float id="2" name="Osc 1 Mix" def="0.543478" />
+        <float id="20" name="Filter Track" />
+        <float id="21" name="Filter Attack" max="1.75" />
+        <float id="22" name="Filter Decay" def="0.585869" max="1.75" />
+        <float id="23" name="Filter Sustain" def="1" />
+        <float id="24" name="Filter Release" max="1.75" />
+        <float id="25" name="Volume Attack" max="1.75" />
+        <float id="26" name="Volume Decay" def="1.75" max="1.75" />
+        <float id="27" name="Volume Sustain" def="1" />
+        <float id="28" name="Volume Release" max="1.75" />
+        <float id="29" name="Volume" max="2" />
+        <float id="3" name="Osc 1 Bend" max="0.99" min="-0.99" />
+        <float id="31" name="Osc 1 Mod" />
+        <int id="4" name="Osc 2 Shape" max="9" />
+        <float id="5" name="Osc 2 Phase" def="-0.004348" max="0.5" min="-0.5" />
+        <int id="6" name="Osc 2 Octave" max="4" min="-4" />
+        <int id="7" name="Osc 2 Semis" max="12" min="-12" />
+        <float id="8" name="Osc 2 Mod" def="4.34788" max="50" min="-50" />
       </params>
     </object>
     <object id="VCDR">
       <visual name="Vocoder" color="#bc5959" />
       <params>
-        <param id="10" name="Char 180" type="float" def="1" max="2" />
-        <param id="11" name="Char 300" type="float" def="1" max="2" />
-        <param id="12" name="Char 500" type="float" def="1" max="2" />
-        <param id="13" name="Char 800" type="float" def="1" max="2" />
-        <param id="14" name="Char 1300" type="float" def="1" max="2" />
-        <param id="15" name="Char 2200" type="float" def="1" max="2" />
-        <param id="16" name="Char 3600" type="float" def="1" max="2" />
-        <param id="17" name="Char 6000" type="float" def="1" max="2" />
-        <param id="2" name="Send Notes to Carrier" type="bool" />
-        <param id="3" name="Unison" type="float" />
-        <param id="30" name="30" type="float" def="1" max="0" min="1" />
-        <param id="31" name="31" type="float" max="0" />
-        <param id="32" name="32" type="float" max="0" />
-        <param id="33" name="33" type="float" max="0" />
-        <param id="34" name="34" type="float" max="0" />
-        <param id="35" name="35" type="float" />
-        <param id="4" name="Sub" type="float" />
-        <param id="5" name="Noise" type="float" />
-        <param id="6" name="Dry" type="float" />
-        <param id="7" name="Slew" type="float" def="0.2" max="0.4" />
-        <param id="8" name="HF Bypass" type="float" />
-        <param id="9" name="Volume" type="float" def="1" max="2" />
+        <float id="10" name="Char 180" def="1" max="2" />
+        <float id="11" name="Char 300" def="1" max="2" />
+        <float id="12" name="Char 500" def="1" max="2" />
+        <float id="13" name="Char 800" def="1" max="2" />
+        <float id="14" name="Char 1300" def="1" max="2" />
+        <float id="15" name="Char 2200" def="1" max="2" />
+        <float id="16" name="Char 3600" def="1" max="2" />
+        <float id="17" name="Char 6000" def="1" max="2" />
+        <bool id="2" name="Send Notes to Carrier" />
+        <float id="3" name="Unison" />
+        <float id="30" def="1" max="0" min="1" />
+        <float id="31" max="0" />
+        <float id="32" max="0" />
+        <float id="33" max="0" />
+        <float id="34" max="0" />
+        <float id="35" />
+        <float id="4" name="Sub" />
+        <float id="5" name="Noise" />
+        <float id="6" name="Dry" />
+        <float id="7" name="Slew" def="0.2" max="0.4" />
+        <float id="8" name="HF Bypass" />
+        <float id="9" name="Volume" def="1" max="2" />
       </params>
     </object>
   </category>
@@ -464,49 +464,49 @@
     <object id="master_delay">
       <visual name="Delay" color="#a3c6dd" />
       <params>
-        <param id="1" name="time" type="float" def="8" max="12" min="1" />
-        <param id="2" name="feedback" type="float" def="0.5" />
-        <param id="3" name="damping" type="float" max="0.9999" />
-        <param id="4" name="wet" type="float" def="0.5" max="0.976167" />
-        <param id="5" name="pan1" type="float" />
-        <param id="6" name="pan2" type="float" def="1" />
-        <param id="7" name="pan3" type="float" def="0.5" />
-        <param id="8" name="pan4" type="float" def="0.5" />
-        <param id="9" name="pan5" type="float" def="0.5" />
+        <float id="1" name="time" def="8" max="12" min="1" />
+        <float id="2" name="feedback" def="0.5" />
+        <float id="3" name="damping" max="0.9999" />
+        <float id="4" name="wet" def="0.5" max="0.976167" />
+        <float id="5" name="pan1" />
+        <float id="6" name="pan2" def="1" />
+        <float id="7" name="pan3" def="0.5" />
+        <float id="8" name="pan4" def="0.5" />
+        <float id="9" name="pan5" def="0.5" />
       </params>
     </object>
     <object id="master_eq">
       <visual name="Equalizer" color="#c14444" />
       <params>
-        <param id="30" name="low" type="float" def="1.1" max="2.2" />
-        <param id="31" name="freq_lowmid" type="float" def="0.5" />
-        <param id="32" name="mid" type="float" def="1" max="2" />
-        <param id="33" name="freq_midhigh" type="float" def="0.5" />
-        <param id="34" name="high" type="float" def="1.1" max="2.2" />
+        <float id="30" name="low" def="1.1" max="2.2" />
+        <float id="31" name="freq_lowmid" def="0.5" />
+        <float id="32" name="mid" def="1" max="2" />
+        <float id="33" name="freq_midhigh" def="0.5" />
+        <float id="34" name="high" def="1.1" max="2.2" />
       </params>
     </object>
     <object id="master_limiter">
       <visual name="Limiter" color="#9e7c6b" />
       <params>
-        <param id="35" name="pre" type="float" def="1" max="2" />
-        <param id="36" name="attack" type="float" def="0.0213" max="0.1" min="0.003" />
-        <param id="37" name="release" type="float" def="0.26" max="0.5" min="0.02" />
-        <param id="38" name="post" type="float" def="1" max="2" />
+        <float id="35" name="pre" def="1" max="2" />
+        <float id="36" name="attack" def="0.0213" max="0.1" min="0.003" />
+        <float id="37" name="release" def="0.26" max="0.5" min="0.02" />
+        <float id="38" name="post" def="1" max="2" />
       </params>
     </object>
     <object id="master_reverb">
       <visual name="Reverb" color="#d3d182" />
       <params>
-        <param id="16" name="predelay" type="float" def="0.025" max="0.0925" />
-        <param id="17" name="room_size" type="float" def="0.755" max="0.925" />
-        <param id="18" name="hf_damping" type="float" def="0.156" max="0.8" />
-        <param id="19" name="diffuse" type="float" def="0.7" max="0.7" />
-        <param id="20" name="dither_echoes" type="bool" />
-        <param id="21" name="early_reflect" type="float" def="1" />
-        <param id="22" name="er_decay" type="float" def="0.25" />
-        <param id="23" name="stereo_delay" type="float" def="0.5" max="0.988084" />
-        <param id="24" name="stereo_spread" type="float" def="0.5" />
-        <param id="25" name="wet" type="float" def="0.25" max="0.5" />
+        <float id="16" name="predelay" def="0.025" max="0.0925" />
+        <float id="17" name="room_size" def="0.755" max="0.925" />
+        <float id="18" name="hf_damping" def="0.156" max="0.8" />
+        <float id="19" name="diffuse" def="0.7" max="0.7" />
+        <bool id="20" name="dither_echoes" />
+        <float id="21" name="early_reflect" def="1" />
+        <float id="22" name="er_decay" def="0.25" />
+        <float id="23" name="stereo_delay" def="0.5" max="0.988084" />
+        <float id="24" name="stereo_spread" def="0.5" />
+        <float id="25" name="wet" def="0.25" max="0.5" />
       </params>
     </object>
   </category>
