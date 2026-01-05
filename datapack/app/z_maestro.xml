@@ -49,20 +49,20 @@
         <object id="HighPassFilter">
             <visual name="High Pass Filter" />
             <params>
-                <float id="Frequency" max="20000" min="10" />
+                <int id="Frequency" max="20000" min="10" />
             </params>
         </object>
         <object id="Level">
             <visual name="Level" />
             <params>
                 <float id="NoiseThreshold" max="-20" min="-75" />
-                <float id="Passes" max="6" min="1" />
+                <int id="Passes" max="6" min="1" />
             </params>
         </object>
         <object id="LowPassFilter">
             <visual name="Low Pass Filter" />
             <params>
-                <float id="Frequency" max="20000" min="10" />
+                <int id="Frequency" max="20000" min="10" />
             </params>
         </object>
         <object id="StereoWiden">
