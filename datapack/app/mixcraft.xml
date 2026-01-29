@@ -1,0 +1,43 @@
+<datapack>
+  <category id="track">
+    <colorset id="old">
+      <color>#FFFFFF</color>
+      <color>#C0C0C0</color>
+      <color>#8080FF</color>
+      <color>#80FFFF</color>
+      <color>#80FF80</color>
+      <color>#FFFF80</color>
+      <color>#FF8080</color>
+      <color>#800000</color>
+      <color>#008000</color>
+      <color>#000080</color>
+      <color>#808000</color>
+      <color>#FF00FF</color>
+      <color>#0000FF</color>
+      <color>#00FFFF</color>
+      <color>#00FF00</color>
+      <color>#FFFF00</color>
+      <color>#FF0000</color>
+      <color>#000000</color>
+    </colorset>
+    <colorset id="main">
+      <color>#FFFFFF</color>
+      <color>#C0C0C0</color>
+      <color>#000000</color>
+      <color>#1B1464</color>
+      <color>#2E3192</color>
+      <color>#0071BC</color>
+      <color>#29ABE2</color>
+      <color>#22B296</color>
+      <color>#006837</color>
+      <color>#39B54A</color>
+      <color>#C0DD43</color>
+      <color>#FCD721</color>
+      <color>#F79327</color>
+      <color>#F15A24</color>
+      <color>#FF0000</color>
+      <color>#ED1E79</color>
+      <color>#93278F</color>
+      <color>#662D91</color>
+    </colorset>
+</datapack>
